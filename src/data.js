@@ -117,168 +117,188 @@ export const characters = [
 export const itemsCatalog = {
   knockdown: {
     id: 'knockdown',
-    name: 'Knockdown',
+    name: 'Knockdown (Nakavt)',
     category: 'Spirit',
-    cost: '3.000 Ruh',
-    tier: 'Tier 3',
-    activation: 'Aktif (Hedefli)',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'AKTİF (Hedefli)',
     image: '/assets/items/knockdown.png',
     imageAlt:
-      'Knockdown eşya ikonu - Havadaki rakipleri yere düşüren ve sersemleten 3.000 Ruh değerinde Spirit eşyası',
+      'Knockdown (Nakavt) eşya ikonu - Havadaki rakipleri yere düşüren ve sersemleten $ 3200 (Aşama III) değerinde Büyü (Mor) eşyası',
     baseDesc:
       'Hedefin üzerine 2 saniye gecikmeyle devasa bir örs düşürür; rakibi sersemletir, havadaki karakterleri yere çakar ve kanalize yetenekleri anında iptal eder.',
   },
   healbane: {
     id: 'healbane',
-    name: 'Healbane',
+    name: 'Healbane (Şifakıran)',
     category: 'Vitality',
-    cost: '1.250 Ruh',
-    tier: 'Tier 2',
+    cost: '$ 1600',
+    tier: 'Aşama II',
     activation: 'Pasif',
     image: '/assets/items/healbane.png',
     imageAlt:
-      'Healbane eşya ikonu - Spirit hasarı ile rakibin can yenilemesini azaltan 1.250 Ruh değerinde Vitality eşyası',
+      'Healbane (Şifakıran) eşya ikonu - Büyü hasarı ile rakibin can yenilemesini azaltan $ 1600 (Aşama II) değerinde Can (Yeşil) eşyası',
     baseDesc:
-      'Spirit hasarı verdiğinizde hedefin aldığı tüm iyileştirme ve can yenileme etkilerini 6 saniye boyunca %40 oranında azaltır.',
+      'Büyü (Spirit) hasarı verdiğinizde hedefin aldığı tüm iyileştirme ve can yenileme etkilerini 6 saniye boyunca %40 oranında azaltır.',
   },
   decay: {
     id: 'decay',
-    name: 'Decay',
+    name: 'Decay (Çürüme)',
     category: 'Spirit',
-    cost: '1.250 Ruh',
-    tier: 'Tier 2',
-    activation: 'Aktif (Hedefli)',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'AKTİF (Hedefli)',
     image: '/assets/items/decay.png',
     imageAlt:
-      'Decay eşya ikonu - Rakibe zamanla ruh hasarı veren ve iyileşmeyi %50 kıran 1.250 Ruh değerinde Spirit eşyası',
+      'Decay (Çürüme) eşya ikonu - Rakibe zamanla büyü hasarı veren ve iyileşmeyi azaltan $ 3200 (Aşama III) değerinde Büyü (Mor) eşyası',
     baseDesc:
-      'Hedefe maksimum canına oranla zamanla hasar verir ve 10 saniye boyunca sağlık yenilemesini %50 oranında düşürür.',
+      'Hedefe maksimum canına oranla zamanla hasar verir ve sağlık yenilemesini önemli ölçüde düşürür.',
   },
   'reactive-barrier': {
     id: 'reactive-barrier',
-    name: 'Reactive Barrier',
+    name: 'Reactive Barrier (Reaktif Bariyer)',
     category: 'Vitality',
-    cost: '1.250 Ruh',
-    tier: 'Tier 2',
+    cost: '$ 1600',
+    tier: 'Aşama II',
     activation: 'Pasif (Tetiklemeli)',
     image: '/assets/items/reactive-barrier.png',
     imageAlt:
-      'Reactive Barrier eşya ikonu - Kitle kontrolü altında otomatik kalkan sağlayan 1.250 Ruh değerinde Vitality eşyası',
+      'Reactive Barrier (Reaktif Bariyer) eşya ikonu - Kitle kontrolü altında otomatik kalkan sağlayan $ 1600 (Aşama II) değerinde Can (Yeşil) eşyası',
     baseDesc:
-      'Sersemletme (Stun), sabitleme (Tether) veya uyutma etkisine maruz kaldığınızda otomatik olarak 400 Mermi Kalkanı ve 200 Spirit Kalkanı üretir.',
+      'Sersemletme (Stun), sabitleme (Tether) veya hareketsiz bırakma etkisine maruz kaldığınızda otomatik olarak koruyucu bariyer üretir.',
   },
   'silence-glyph': {
     id: 'silence-glyph',
-    name: 'Silence Glyph',
+    name: 'Silence Wave (Susturma Dalgası)',
     category: 'Spirit',
-    cost: '3.000 Ruh',
-    tier: 'Tier 3',
-    activation: 'Aktif (Atış)',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'AKTİF (Atış)',
     image: '/assets/items/silence-glyph.png',
     imageAlt:
-      'Silence Glyph eşya ikonu - Rakibin yeteneklerini 3 saniye susturan 3.000 Ruh değerinde Spirit eşyası',
+      'Susturma Dalgası (Silence Glyph) eşya ikonu - Rakibin yeteneklerini susturan $ 3200 (Aşama III) değerinde Büyü (Mor) eşyası',
     baseDesc:
-      'İleri doğru bir enerji dalgası gönderir; isabet eden rakibi 3 saniye boyunca susturarak kaçış veya ulti yeteneklerini kullanmasını engeller.',
+      'İleri doğru bir enerji dalgası gönderir; isabet eden rakibi susturarak kaçış veya ulti yeteneklerini kullanmasını engeller.',
   },
   'metal-skin': {
     id: 'metal-skin',
-    name: 'Metal Skin',
+    name: 'Metal Skin (Metal Deri)',
     category: 'Vitality',
-    cost: '3.000 Ruh',
-    tier: 'Tier 3',
-    activation: 'Aktif',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'AKTİF',
     image: '/assets/items/metal-skin.png',
     imageAlt:
-      'Metal Skin eşya ikonu - Mermi ve yakın dövüş hasarına geçici bağışıklık veren 3.000 Ruh değerinde Vitality eşyası',
+      'Metal Skin (Metal Deri) eşya ikonu - Mermi ve yakın dövüş hasarına geçici bağışıklık veren $ 3200 (Aşama III) değerinde Can (Yeşil) eşyası',
     baseDesc:
-      '3.5 saniye boyunca tüm mermi (Bullet) hasarlarına ve yakın dövüş (Light/Heavy Melee) saldırılarına karşı tam bağışıklık sağlar.',
+      'Kısa süreliğine tüm mermi (Bullet) hasarlarına ve yakın dövüş (Light/Heavy Melee) saldırılarına karşı tam bağışıklık sağlar.',
   },
   'warp-stone': {
     id: 'warp-stone',
-    name: 'Warp Stone',
-    category: 'Weapon',
-    cost: '3.000 Ruh',
-    tier: 'Tier 3',
-    activation: 'Aktif (Işınlanma)',
+    name: 'Warp Stone (Işınlanma Taşı)',
+    category: 'Vitality',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'AKTİF (Işınlanma)',
     image: '/assets/items/warp-stone.png',
     imageAlt:
-      'Warp Stone eşya ikonu - Anında ileri ışınlanma ve mermi direnci sağlayan 3.000 Ruh değerinde Weapon eşyası',
+      'Warp Stone (Işınlanma Taşı) eşya ikonu - Anında ileri ışınlanma ve mermi direnci sağlayan $ 3200 (Aşama III) değerinde Can (Yeşil) eşyası',
     baseDesc:
-      'Anında ileri doğru ışınlanmanızı sağlar ve 5 saniye boyunca +%30 Mermi Direnci kazandırır; alan etkili ultilerden kaçmak veya mesafe kapatmak için idealdir.',
+      'Anında ileri doğru ışınlanmanızı sağlar ve mermi direnci kazandırır; alan etkili ultilerden kaçmak veya mesafe kapatmak için idealdir.',
   },
   'debuff-reducer': {
     id: 'debuff-reducer',
-    name: 'Debuff Reducer',
+    name: 'Debuff Reducer (Zayıflatma Azaltıcı)',
     category: 'Vitality',
-    cost: '1.250 Ruh',
-    tier: 'Tier 2',
+    cost: '$ 1600',
+    tier: 'Aşama II',
     activation: 'Pasif',
     image: '/assets/items/debuff-reducer.png',
     imageAlt:
-      'Debuff Reducer eşya ikonu - Olumsuz etki ve sersemletme sürelerini azaltan 1.250 Ruh değerinde Vitality eşyası',
+      'Debuff Reducer (Zayıflatma Azaltıcı) eşya ikonu - Olumsuz etki ve sersemletme sürelerini azaltan $ 1600 (Aşama II) değerinde Can (Yeşil) eşyası',
     baseDesc:
-      'Üzerinize uygulanan tüm olumsuz etkilerin (zırh kırma, yavaşlatma, sabitleme ve sersemletme) süresini %30 oranında kısaltır.',
+      'Üzerinize uygulanan tüm olumsuz etkilerin (zırh kırma, yavaşlatma, sabitleme ve sersemletme) süresini azaltır.',
   },
   'ethereal-shift': {
     id: 'ethereal-shift',
-    name: 'Ethereal Shift',
+    name: 'Ethereal Shift (Ruhani Değişim)',
     category: 'Spirit',
-    cost: '3.000 Ruh',
-    tier: 'Tier 3',
-    activation: 'Aktif',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'AKTİF',
     image: '/assets/items/ethereal-shift.png',
     imageAlt:
-      'Ethereal Shift eşya ikonu - Boyut değiştirerek geçici dokunulmazlık sağlayan 3.000 Ruh değerinde Spirit eşyası',
+      'Ethereal Shift (Ruhani Değişim) eşya ikonu - Boyut değiştirerek geçici dokunulmazlık sağlayan $ 6400 (Aşama IV) değerinde Büyü (Mor) eşyası',
     baseDesc:
-      '3.5 saniyeliğine başka bir boyuta geçerek hasar görmez ve hedef alınamaz hale gelirsiniz; gecikmeli patlamaları ve infaz atışlarını boşa çıkarır.',
+      'Kısa süreliğine başka bir boyuta geçerek hasar görmez ve hedef alınamaz hale gelirsiniz; gecikmeli patlamaları ve infaz atışlarını boşa çıkarır.',
   },
   'toxic-bullets': {
     id: 'toxic-bullets',
-    name: 'Toxic Bullets',
+    name: 'Toxic Bullets (Toksik Mermiler)',
     category: 'Weapon',
-    cost: '3.000 Ruh',
-    tier: 'Tier 3',
+    cost: '$ 3200',
+    tier: 'Aşama III',
     activation: 'Pasif (Mermi Etkisi)',
     image: '/assets/items/toxic-bullets.png',
     imageAlt:
-      'Toxic Bullets eşya ikonu - Mermilerle kanama ve %65 iyileşme azaltma uygulayan 3.000 Ruh değerinde Weapon eşyası',
+      'Toxic Bullets (Toksik Mermiler) eşya ikonu - Mermilerle kanama ve iyileşme azaltma uygulayan $ 3200 (Aşama III) değerinde Silah (Turuncu) eşyası',
     baseDesc:
-      'Sürekli mermi isabeti hedefte kanama biriktirir; maksimum yüke ulaştığında yüzde bazlı hasar verir ve iyileşmeyi %65 oranında keser.',
+      'Sürekli mermi isabeti hedefte kanama biriktirir; maksimum yüke ulaştığında yüzde bazlı hasar verir ve hedefin iyileşmesini keser.',
   },
   unstoppable: {
     id: 'unstoppable',
-    name: 'Unstoppable',
+    name: 'Unstoppable (Durdurulamaz)',
     category: 'Vitality',
-    cost: '6.200 Ruh',
-    tier: 'Tier 4',
-    activation: 'Aktif',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'AKTİF',
     image: '/assets/items/unstoppable.png',
     imageAlt:
-      'Unstoppable eşya ikonu - Tüm kitle kontrol etkilerine 6 saniye bağışıklık veren 6.200 Ruh değerinde Tier 4 Vitality eşyası',
+      'Unstoppable (Durdurulamaz) eşya ikonu - Tüm kitle kontrol etkilerine bağışıklık veren $ 6400 (Aşama IV) değerinde Can (Yeşil) eşyası',
     baseDesc:
-      '6 saniye boyunca tüm kitle kontrol (Stun, Silence, Tether, Knockdown) etkilerine karşı tam bağışıklık sağlar ve mevcut zayıflatmaları temizler.',
+      'Aktif edildiğinde tüm kitle kontrol (Stun, Silence, Tether, Knockdown) etkilerine karşı tam bağışıklık sağlar.',
   },
   'slowing-hex': {
     id: 'slowing-hex',
-    name: 'Slowing Hex',
+    name: 'Slowing Hex (Yavaşlatma Büyüsü)',
     category: 'Spirit',
-    cost: '1.250 Ruh',
-    tier: 'Tier 2',
-    activation: 'Aktif (Hedefli)',
+    cost: '$ 1600',
+    tier: 'Aşama II',
+    activation: 'AKTİF (Hedefli)',
     image: '/assets/items/slowing-hex.png',
     imageAlt:
-      'Slowing Hex eşya ikonu - Rakibin hareket yeteneklerini kilitleyen 1.250 Ruh değerinde Spirit eşyası',
+      'Slowing Hex (Yavaşlatma Büyüsü) eşya ikonu - Rakibin hareket yeteneklerini kilitleyen $ 1600 (Aşama II) değerinde Büyü (Mor) eşyası',
     baseDesc:
-      'Rakibin hareket hızını %30 düşürür ve 3 saniye boyunca tüm hareket tabanlı yeteneklerini (Flight, Charge, Quantum Entanglement) kilitler.',
+      'Rakibin hareket hızını düşürür ve 3 saniye boyunca tüm hareket tabanlı yeteneklerini (Flight, Charge, Quantum Entanglement) kilitler.',
   },
 };
 
-// Yardımcı fonksiyon: katalog verisi ile karşılaşmaya özel açıklamayı birleştirir
-const buildItemRecommendation = (itemId, priority, matchupReason) => ({
-  ...itemsCatalog[itemId],
-  priority,
-  matchupReason,
-});
+// Yardımcı fonksiyon: katalog verisi ile karşılaşmaya özel açıklamayı birleştirir.
+// Listede bulunmayan veya fiyatı doğrulanmamış bir eşya varsa fiyatı otomatik 'TBD' olarak işaretlenir.
+const buildItemRecommendation = (itemId, priority, matchupReason) => {
+  const item = itemsCatalog[itemId];
+  if (!item) {
+    return {
+      id: itemId,
+      name: itemId,
+      category: 'Spirit',
+      cost: 'TBD',
+      tier: 'TBD',
+      activation: 'TBD',
+      image: `/assets/items/${itemId}.png`,
+      imageAlt: `${itemId} eşya ikonu (Fiyat: TBD)`,
+      baseDesc: 'Bu eşyanın güncel yama verisi henüz doğrulanmamıştır (TBD).',
+      priority,
+      matchupReason,
+    };
+  }
+  return {
+    ...item,
+    cost: item.cost || 'TBD',
+    priority,
+    matchupReason,
+  };
+};
 
 export const matchups = {
   // ==========================================
@@ -867,7 +887,7 @@ export const methodologyData = {
       step: '02',
       title: 'Ruh (Soul) Verimliliği ve Zamanlama Analizi',
       description:
-        'Bir counter eşyasının yalnızca etkisi değil, kaçıncı dakikada alınabileceği de kritiktir. 1.250 Ruhluk erken oyun eşyaları (Healbane, Reactive Barrier) koridor aşaması için; 3.000 ve 6.200 Ruhluk eşyalar (Knockdown, Silence Glyph, Unstoppable) ise orta/geç oyun güç patlamaları için önceliklendirilir.',
+        'Bir counter eşyasının yalnızca etkisi değil, kaçıncı dakikada alınabileceği de kritiktir. $ 800 (Aşama I) ve $ 1600 (Aşama II) erken oyun eşyaları (Şifakıran, Reaktif Bariyer, Yavaşlatma Büyüsü) koridor aşaması için; $ 3200 (Aşama III) ve $ 6400 (Aşama IV) eşyalar (Nakavt, Susturma Dalgası, Ruhani Değişim, Durdurulamaz) ise orta/geç oyun güç patlamaları için önceliklendirilir.',
     },
     {
       step: '03',
@@ -1003,19 +1023,19 @@ export const categoryStyles = {
     badge: 'bg-orange-500/20 text-orange-300 border-orange-500/40',
     border: 'border-orange-500/30 hover:border-orange-400/60',
     accent: '#fb923c',
-    label: 'Weapon (Silah)',
+    label: 'Silah (Turuncu)',
   },
   Vitality: {
     badge: 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40',
     border: 'border-emerald-500/30 hover:border-emerald-400/60',
     accent: '#34d399',
-    label: 'Vitality (Dayanıklılık)',
+    label: 'Can (Yeşil)',
   },
   Spirit: {
     badge: 'bg-purple-500/20 text-purple-300 border-purple-500/40',
     border: 'border-purple-500/30 hover:border-purple-400/60',
     accent: '#c084fc',
-    label: 'Spirit (Ruh Gücü)',
+    label: 'Büyü (Mor)',
   },
 };
 
