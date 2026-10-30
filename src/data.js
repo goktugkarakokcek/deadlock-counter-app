@@ -1176,19 +1176,6 @@ export const itemsCatalog = {
     baseDesc:
       'Kısa süreliğine başka bir boyuta geçerek hasar görmez ve hedef alınamaz hale gelirsiniz; gecikmeli patlamaları ve infaz atışlarını boşa çıkarır.',
   },
-  'toxic-bullets': {
-    id: 'toxic-bullets',
-    name: 'Toxic Bullets (Toksik Mermiler)',
-    category: 'Weapon',
-    cost: '$ 3200',
-    tier: 'Aşama III',
-    activation: 'Pasif (Mermi Etkisi)',
-    image: '/assets/items/toxic-bullets.png',
-    imageAlt:
-      'Toxic Bullets (Toksik Mermiler) eşya ikonu - Mermilerle kanama ve iyileşme azaltma uygulayan $ 3200 (Aşama III) değerinde Silah (Turuncu) eşyası',
-    baseDesc:
-      'Sürekli mermi isabeti hedefte kanama biriktirir; maksimum yüke ulaştığında yüzde bazlı hasar verir ve hedefin iyileşmesini keser.',
-  },
   unstoppable: {
     id: 'unstoppable',
     name: 'Unstoppable (Durdurulamaz)',
@@ -1214,6 +1201,699 @@ export const itemsCatalog = {
       'Slowing Hex (Yavaşlatma Büyüsü) eşya ikonu - Rakibin hareket yeteneklerini kilitleyen $ 1600 (Aşama II) değerinde Büyü (Mor) eşyası',
     baseDesc:
       'Rakibin hareket hızını düşürür ve 3 saniye boyunca tüm hareket tabanlı yeteneklerini (Flight, Charge, Quantum Entanglement) kilitler.',
+  },
+  // Silah (Turuncu) Eşyaları - $ 800 (Aşama I) Grubu
+  'close-quarters': {
+    id: 'close-quarters',
+    name: 'Close Quarters (Yakın Mesafe)',
+    category: 'Weapon',
+    cost: '$ 800',
+    tier: 'Aşama I',
+    activation: 'Pasif',
+    image: '/assets/items/close-quarters.png',
+    imageAlt:
+      'Close Quarters (Yakın Mesafe) eşya ikonu - $ 800 (Aşama I) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Yakın Mesafe eşyasının doğrulanmış istatistik ve pasif etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'extended-magazine': {
+    id: 'extended-magazine',
+    name: 'Extended Magazine (Genişletilmiş Şarjör)',
+    category: 'Weapon',
+    cost: '$ 800',
+    tier: 'Aşama I',
+    activation: 'Pasif',
+    image: '/assets/items/extended-magazine.png',
+    imageAlt:
+      'Extended Magazine (Genişletilmiş Şarjör) eşya ikonu - $ 800 (Aşama I) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Genişletilmiş Şarjör eşyasının doğrulanmış istatistik ve cephane artışı değerleri manuel veri girişi beklemektedir.',
+  },
+  'headshot-booster': {
+    id: 'headshot-booster',
+    name: 'Headshot Booster (Kafadan Vuruş Güçlendiricisi)',
+    category: 'Weapon',
+    cost: '$ 800',
+    tier: 'Aşama I',
+    activation: 'Pasif',
+    image: '/assets/items/headshot-booster.png',
+    imageAlt:
+      'Headshot Booster (Kafadan Vuruş Güçlendiricisi) eşya ikonu - $ 800 (Aşama I) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Kafadan Vuruş Güçlendiricisi eşyasının doğrulanmış istatistik ve hasar değerleri manuel veri girişi beklemektedir.',
+  },
+  'high-velocity-rounds': {
+    id: 'high-velocity-rounds',
+    name: 'High-Velocity Rounds (Yüksek Hızlı Mermiler)',
+    category: 'Weapon',
+    cost: '$ 800',
+    tier: 'Aşama I',
+    activation: 'Pasif',
+    image: '/assets/items/high-velocity-rounds.png',
+    imageAlt:
+      'High-Velocity Rounds (Yüksek Hızlı Mermiler) eşya ikonu - $ 800 (Aşama I) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Yüksek Hızlı Mermiler eşyasının doğrulanmış mermi hızı ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'monster-rounds': {
+    id: 'monster-rounds',
+    name: 'Monster Rounds (Anticanavar Mermileri)',
+    category: 'Weapon',
+    cost: '$ 800',
+    tier: 'Aşama I',
+    activation: 'Pasif',
+    image: '/assets/items/monster-rounds.png',
+    imageAlt:
+      'Monster Rounds (Anticanavar Mermileri) eşya ikonu - $ 800 (Aşama I) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Anticanavar Mermileri eşyasının doğrulanmış PvE/Trooper hasar ve direnç değerleri manuel veri girişi beklemektedir.',
+  },
+  'rapid-rounds': {
+    id: 'rapid-rounds',
+    name: 'Rapid Rounds (Seri Atış)',
+    category: 'Weapon',
+    cost: '$ 800',
+    tier: 'Aşama I',
+    activation: 'Pasif',
+    image: '/assets/items/rapid-rounds.png',
+    imageAlt:
+      'Rapid Rounds (Seri Atış) eşya ikonu - $ 800 (Aşama I) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Seri Atış eşyasının doğrulanmış atış hızı (Fire Rate) ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'restorative-shot': {
+    id: 'restorative-shot',
+    name: 'Restorative Shot (Şifalı Atış)',
+    category: 'Weapon',
+    cost: '$ 800',
+    tier: 'Aşama I',
+    activation: 'Pasif (Tetiklemeli)',
+    image: '/assets/items/restorative-shot.png',
+    imageAlt:
+      'Restorative Shot (Şifalı Atış) eşya ikonu - $ 800 (Aşama I) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Şifalı Atış eşyasının doğrulanmış iyileştirme ve bekleme süresi değerleri manuel veri girişi beklemektedir.',
+  },
+  // Silah (Turuncu) Eşyaları - $ 1600 (Aşama II) Grubu
+  'active-reload': {
+    id: 'active-reload',
+    name: 'Active Reload (Aktif Şarjör Değiştirme)',
+    category: 'Weapon',
+    cost: '$ 1600',
+    tier: 'Aşama II',
+    activation: 'Pasif (Zamanlamalı)',
+    image: '/assets/items/active-reload.png',
+    imageAlt:
+      'Active Reload (Aktif Şarjör Değiştirme) eşya ikonu - $ 1600 (Aşama II) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Aktif Şarjör Değiştirme eşyasının doğrulanmış istatistik ve pasif etki değerleri manuel veri girişi beklemektedir.',
+  },
+  fleetfoot: {
+    id: 'fleetfoot',
+    name: 'Fleetfoot (AKTİF Hızlı Adımlar)',
+    category: 'Weapon',
+    cost: '$ 1600',
+    tier: 'Aşama II',
+    activation: 'AKTİF',
+    image: '/assets/items/fleetfoot.png',
+    imageAlt:
+      'Fleetfoot (AKTİF Hızlı Adımlar) eşya ikonu - $ 1600 (Aşama II) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — AKTİF Hızlı Adımlar eşyasının doğrulanmış hareket hızı ve aktif etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'intensifying-magazine': {
+    id: 'intensifying-magazine',
+    name: 'Intensifying Magazine (Şiddetlenen Şarjör)',
+    category: 'Weapon',
+    cost: '$ 1600',
+    tier: 'Aşama II',
+    activation: 'Pasif',
+    image: '/assets/items/intensifying-magazine.png',
+    imageAlt:
+      'Intensifying Magazine (Şiddetlenen Şarjör) eşya ikonu - $ 1600 (Aşama II) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Şiddetlenen Şarjör eşyasının doğrulanmış silah hasarı artışı ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'kinetic-dash': {
+    id: 'kinetic-dash',
+    name: 'Kinetic Dash (Kinetik Atılma)',
+    category: 'Weapon',
+    cost: '$ 1600',
+    tier: 'Aşama II',
+    activation: 'Pasif',
+    image: '/assets/items/kinetic-dash.png',
+    imageAlt:
+      'Kinetic Dash (Kinetik Atılma) eşya ikonu - $ 1600 (Aşama II) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Kinetik Atılma eşyasının doğrulanmış atılma (Dash-Jump) ve geçici cephane/atış hızı değerleri manuel veri girişi beklemektedir.',
+  },
+  'long-range': {
+    id: 'long-range',
+    name: 'Long Range (Uzun Menzil)',
+    category: 'Weapon',
+    cost: '$ 1600',
+    tier: 'Aşama II',
+    activation: 'Pasif',
+    image: '/assets/items/long-range.png',
+    imageAlt:
+      'Long Range (Uzun Menzil) eşya ikonu - $ 1600 (Aşama II) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Uzun Menzil eşyasının doğrulanmış mesafe bazlı silah hasarı ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'melee-charge': {
+    id: 'melee-charge',
+    name: 'Melee Charge (Yakın Dövüş Hücumu)',
+    category: 'Weapon',
+    cost: '$ 1600',
+    tier: 'Aşama II',
+    activation: 'Pasif',
+    image: '/assets/items/melee-charge.png',
+    imageAlt:
+      'Melee Charge (Yakın Dövüş Hücumu) eşya ikonu - $ 1600 (Aşama II) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Yakın Dövüş Hücumu eşyasının doğrulanmış ağır yakın dövüş mesafesi ve cephane yenileme değerleri manuel veri girişi beklemektedir.',
+  },
+  'mystic-shot': {
+    id: 'mystic-shot',
+    name: 'Mystic Shot (Mistik Atış)',
+    category: 'Weapon',
+    cost: '$ 1600',
+    tier: 'Aşama II',
+    activation: 'Pasif (Tetiklemeli)',
+    image: '/assets/items/mystic-shot.png',
+    imageAlt:
+      'Mystic Shot (Mistik Atış) eşya ikonu - $ 1600 (Aşama II) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Mistik Atış eşyasının doğrulanmış büyü (Spirit) hasarı ve bekleme süresi değerleri manuel veri girişi beklemektedir.',
+  },
+  'opening-rounds': {
+    id: 'opening-rounds',
+    name: 'Opening Rounds (Deşici Mermiler)',
+    category: 'Weapon',
+    cost: '$ 1600',
+    tier: 'Aşama II',
+    activation: 'Pasif',
+    image: '/assets/items/opening-rounds.png',
+    imageAlt:
+      'Opening Rounds (Deşici Mermiler) eşya ikonu - $ 1600 (Aşama II) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Deşici Mermiler eşyasının doğrulanmış yüksek canlı hedeflere karşı silah hasarı değerleri manuel veri girişi beklemektedir.',
+  },
+  'recharging-rush': {
+    id: 'recharging-rush',
+    name: 'Recharging Rush (Şarj Edici Mermiler)',
+    category: 'Weapon',
+    cost: '$ 1600',
+    tier: 'Aşama II',
+    activation: 'Pasif',
+    image: '/assets/items/recharging-rush.png',
+    imageAlt:
+      'Recharging Rush (Şarj Edici Mermiler) eşya ikonu - $ 1600 (Aşama II) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Şarj Edici Mermiler eşyasının doğrulanmış istatistik ve pasif etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'slowing-bullets': {
+    id: 'slowing-bullets',
+    name: 'Slowing Bullets (Yavaşlatan Mermiler)',
+    category: 'Weapon',
+    cost: '$ 1600',
+    tier: 'Aşama II',
+    activation: 'Pasif (Mermi Etkisi)',
+    image: '/assets/items/slowing-bullets.png',
+    imageAlt:
+      'Slowing Bullets (Yavaşlatan Mermiler) eşya ikonu - $ 1600 (Aşama II) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Yavaşlatan Mermiler eşyasının doğrulanmış hareket yavaşlatma yüzdesi ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'spirit-shredder': {
+    id: 'spirit-shredder',
+    name: 'Spirit Shredder Bullets (Büyü Parçalayan Mermiler)',
+    category: 'Weapon',
+    cost: '$ 1600',
+    tier: 'Aşama II',
+    activation: 'Pasif (Mermi Etkisi)',
+    image: '/assets/items/spirit-shredder.png',
+    imageAlt:
+      'Spirit Shredder Bullets (Büyü Parçalayan Mermiler) eşya ikonu - $ 1600 (Aşama II) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Büyü Parçalayan Mermiler eşyasının doğrulanmış büyü direnci azaltma ve büyü can çalma değerleri manuel veri girişi beklemektedir.',
+  },
+  'split-shot': {
+    id: 'split-shot',
+    name: 'Split Shot (AKTİF Parçalı Atış)',
+    category: 'Weapon',
+    cost: '$ 1600',
+    tier: 'Aşama II',
+    activation: 'AKTİF',
+    image: '/assets/items/split-shot.png',
+    imageAlt:
+      'Split Shot (AKTİF Parçalı Atış) eşya ikonu - $ 1600 (Aşama II) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — AKTİF Parçalı Atış eşyasının doğrulanmış çoklu mermi atışı ve aktif etki değerleri manuel veri girişi beklemektedir.',
+  },
+  stalker: {
+    id: 'stalker',
+    name: 'Stalker (İz Sürücü)',
+    category: 'Weapon',
+    cost: '$ 1600',
+    tier: 'Aşama II',
+    activation: 'Pasif',
+    image: '/assets/items/stalker.png',
+    imageAlt:
+      'Stalker (İz Sürücü) eşya ikonu - $ 1600 (Aşama II) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — İz Sürücü eşyasının doğrulanmış istatistik ve pasif etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'swift-striker': {
+    id: 'swift-striker',
+    name: 'Swift Striker (Tempolu Atış)',
+    category: 'Weapon',
+    cost: '$ 1600',
+    tier: 'Aşama II',
+    activation: 'Pasif',
+    image: '/assets/items/swift-striker.png',
+    imageAlt:
+      'Swift Striker (Tempolu Atış) eşya ikonu - $ 1600 (Aşama II) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Tempolu Atış eşyasının doğrulanmış atış hızı (Fire Rate) ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'titanic-magazine': {
+    id: 'titanic-magazine',
+    name: 'Titanic Magazine (Devasa Şarjör)',
+    category: 'Weapon',
+    cost: '$ 1600',
+    tier: 'Aşama II',
+    activation: 'Pasif',
+    image: '/assets/items/titanic-magazine.png',
+    imageAlt:
+      'Titanic Magazine (Devasa Şarjör) eşya ikonu - $ 1600 (Aşama II) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Devasa Şarjör eşyasının doğrulanmış cephane kapasitesi ve silah hasarı değerleri manuel veri girişi beklemektedir.',
+  },
+  'weakening-headshot': {
+    id: 'weakening-headshot',
+    name: 'Weakening Headshot (Zayıflatan Kafadan Vuruş)',
+    category: 'Weapon',
+    cost: '$ 1600',
+    tier: 'Aşama II',
+    activation: 'Pasif',
+    image: '/assets/items/weakening-headshot.png',
+    imageAlt:
+      'Weakening Headshot (Zayıflatan Kafadan Vuruş) eşya ikonu - $ 1600 (Aşama II) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Zayıflatan Kafadan Vuruş eşyasının doğrulanmış mermi direnci kırma ve kafadan vuruş değerleri manuel veri girişi beklemektedir.',
+  },
+  // Silah (Turuncu) Eşyaları - $ 3200 (Aşama III) Grubu
+  'alchemical-fire': {
+    id: 'alchemical-fire',
+    name: 'Alchemical Fire (AKTİF Simya Alevi)',
+    category: 'Weapon',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'AKTİF',
+    image: '/assets/items/alchemical-fire.png',
+    imageAlt:
+      'Alchemical Fire (AKTİF Simya Alevi) eşya ikonu - $ 3200 (Aşama III) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — AKTİF Simya Alevi eşyasının doğrulanmış alan hasarı, silah hasarı bonusu ve bekleme süresi değerleri manuel veri girişi beklemektedir.',
+  },
+  'ballistic-enchantment': {
+    id: 'ballistic-enchantment',
+    name: 'Ballistic Enchantment (GÜÇLENDİR Balistik Sihir)',
+    category: 'Weapon',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'GÜÇLENDİR (Imbue)',
+    image: '/assets/items/ballistic-enchantment.png',
+    imageAlt:
+      'Ballistic Enchantment (GÜÇLENDİR Balistik Sihir) eşya ikonu - $ 3200 (Aşama III) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — GÜÇLENDİR Balistik Sihir eşyasının doğrulanmış yetenek güçlendirme ve silah istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  berserker: {
+    id: 'berserker',
+    name: 'Berserker (Cinnetkâr)',
+    category: 'Weapon',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'Pasif',
+    image: '/assets/items/berserker.png',
+    imageAlt:
+      'Berserker (Cinnetkâr) eşya ikonu - $ 3200 (Aşama III) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Cinnetkâr eşyasının doğrulanmış alınan hasara bağlı silah hasarı artışı ve direnç değerleri manuel veri girişi beklemektedir.',
+  },
+  'blood-tribute': {
+    id: 'blood-tribute',
+    name: 'Blood Tribute (AKTİF Kanlı Haraç)',
+    category: 'Weapon',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'AKTİF',
+    image: '/assets/items/blood-tribute.png',
+    imageAlt:
+      'Blood Tribute (AKTİF Kanlı Haraç) eşya ikonu - $ 3200 (Aşama III) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — AKTİF Kanlı Haraç eşyasının doğrulanmış aktif etki, can bedeli ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'burst-fire': {
+    id: 'burst-fire',
+    name: 'Burst Fire (Hızlı Atış)',
+    category: 'Weapon',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'Pasif',
+    image: '/assets/items/burst-fire.png',
+    imageAlt:
+      'Burst Fire (Hızlı Atış) eşya ikonu - $ 3200 (Aşama III) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Hızlı Atış eşyasının doğrulanmış atış hızı (Fire Rate), kayma mesafesi ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'cultist-sacrifice': {
+    id: 'cultist-sacrifice',
+    name: 'Cultist Sacrifice (AKTİF Kült Kurbanı)',
+    category: 'Weapon',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'AKTİF',
+    image: '/assets/items/cultist-sacrifice.png',
+    imageAlt:
+      'Cultist Sacrifice (AKTİF Kült Kurbanı) eşya ikonu - $ 3200 (Aşama III) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — AKTİF Kült Kurbanı eşyasının doğrulanmış aktif kurban etkisi ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'escalating-resilience': {
+    id: 'escalating-resilience',
+    name: 'Escalating Resilience (Artan Direnç)',
+    category: 'Weapon',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'Pasif',
+    image: '/assets/items/escalating-resilience.png',
+    imageAlt:
+      'Escalating Resilience (Artan Direnç) eşya ikonu - $ 3200 (Aşama III) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Artan Direnç eşyasının doğrulanmış mermi isabetiyle biriken mermi direnci (Bullet Resist) değerleri manuel veri girişi beklemektedir.',
+  },
+  'express-shot': {
+    id: 'express-shot',
+    name: 'Express Shot (Ekspres Atış)',
+    category: 'Weapon',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'Pasif',
+    image: '/assets/items/express-shot.png',
+    imageAlt:
+      'Express Shot (Ekspres Atış) eşya ikonu - $ 3200 (Aşama III) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Ekspres Atış eşyasının doğrulanmış pasif atış etkisi ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  headhunter: {
+    id: 'headhunter',
+    name: 'Headhunter (Kelle Avcısı)',
+    category: 'Weapon',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'Pasif',
+    image: '/assets/items/headhunter.png',
+    imageAlt:
+      'Headhunter (Kelle Avcısı) eşya ikonu - $ 3200 (Aşama III) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Kelle Avcısı eşyasının doğrulanmış kafadan vuruş bonusu, iyileştirme ve hareket hızı değerleri manuel veri girişi beklemektedir.',
+  },
+  'heroic-aura': {
+    id: 'heroic-aura',
+    name: 'Heroic Aura (AKTİF Kahramanlık Aurası)',
+    category: 'Weapon',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'AKTİF',
+    image: '/assets/items/heroic-aura.png',
+    imageAlt:
+      'Heroic Aura (AKTİF Kahramanlık Aurası) eşya ikonu - $ 3200 (Aşama III) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — AKTİF Kahramanlık Aurası eşyasının doğrulanmış dost birim aura etkisi ve aktif hız/ateş gücü değerleri manuel veri girişi beklemektedir.',
+  },
+  'hollow-point': {
+    id: 'hollow-point',
+    name: 'Hollow Point (Oyuklu Mermi)',
+    category: 'Weapon',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'Pasif',
+    image: '/assets/items/hollow-point.png',
+    imageAlt:
+      'Hollow Point (Oyuklu Mermi) eşya ikonu - $ 3200 (Aşama III) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Oyuklu Mermi eşyasının doğrulanmış can eşiğine bağlı silah hasarı ve büyü kalkanı değerleri manuel veri girişi beklemektedir.',
+  },
+  'hunters-aura': {
+    id: 'hunters-aura',
+    name: "Hunter's Aura (Avcı Aurası)",
+    category: 'Weapon',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'Pasif (Aura)',
+    image: '/assets/items/hunters-aura.png',
+    imageAlt:
+      "Hunter's Aura (Avcı Aurası) eşya ikonu - $ 3200 (Aşama III) değerinde Silah (Turuncu) eşyası",
+    baseDesc:
+      'TBD (Needs Manual Entry) — Avcı Aurası eşyasının doğrulanmış yakındaki rakiplerin mermi direncini ve atış hızını düşürme değerleri manuel veri girişi beklemektedir.',
+  },
+  'point-blank': {
+    id: 'point-blank',
+    name: 'Point Blank (Yakından Vuruş)',
+    category: 'Weapon',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'Pasif',
+    image: '/assets/items/point-blank.png',
+    imageAlt:
+      'Point Blank (Yakından Vuruş) eşya ikonu - $ 3200 (Aşama III) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Yakından Vuruş eşyasının doğrulanmış yakın mesafe silah hasarı ve yavaşlatma değerleri manuel veri girişi beklemektedir.',
+  },
+  'shadow-weave': {
+    id: 'shadow-weave',
+    name: 'Shadow Weave (AKTİF Gölge Pelerin)',
+    category: 'Weapon',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'AKTİF',
+    image: '/assets/items/shadow-weave.png',
+    imageAlt:
+      'Shadow Weave (AKTİF Gölge Pelerin) eşya ikonu - $ 3200 (Aşama III) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — AKTİF Gölge Pelerin eşyasının doğrulanmış görünmezlik (Stealth) ve pusu sonrası atış hızı/büyü gücü değerleri manuel veri girişi beklemektedir.',
+  },
+  sharpshooter: {
+    id: 'sharpshooter',
+    name: 'Sharpshooter (Keskin Nişancı)',
+    category: 'Weapon',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'Pasif',
+    image: '/assets/items/sharpshooter.png',
+    imageAlt:
+      'Sharpshooter (Keskin Nişancı) eşya ikonu - $ 3200 (Aşama III) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Keskin Nişancı eşyasının doğrulanmış uzun mesafe silah hasarı ve menzil değerleri manuel veri girişi beklemektedir.',
+  },
+  'spirit-rend': {
+    id: 'spirit-rend',
+    name: 'Spirit Rend (Büyü Parçalama)',
+    category: 'Weapon',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'Pasif',
+    image: '/assets/items/spirit-rend.png',
+    imageAlt:
+      'Spirit Rend (Büyü Parçalama) eşya ikonu - $ 3200 (Aşama III) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Büyü Parçalama eşyasının doğrulanmış büyü direnci kırma ve pasif etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'tesla-bullets': {
+    id: 'tesla-bullets',
+    name: 'Tesla Bullets (Tesla Mermileri)',
+    category: 'Weapon',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'Pasif (Mermi Etkisi)',
+    image: '/assets/items/tesla-bullets.png',
+    imageAlt:
+      'Tesla Bullets (Tesla Mermileri) eşya ikonu - $ 3200 (Aşama III) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Tesla Mermileri eşyasının doğrulanmış zincirleme yıldırım (Shock) hasarı ve tetiklenme olasılığı değerleri manuel veri girişi beklemektedir.',
+  },
+  'toxic-bullets': {
+    id: 'toxic-bullets',
+    name: 'Toxic Bullets (Toksik Mermiler)',
+    category: 'Weapon',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'Pasif (Mermi Etkisi)',
+    image: '/assets/items/toxic-bullets.png',
+    imageAlt:
+      'Toxic Bullets (Toksik Mermiler) eşya ikonu - Mermilerle kanama ve iyileşme azaltma uygulayan $ 3200 (Aşama III) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'Sürekli mermi isabeti hedefte kanama biriktirir; maksimum yüke ulaştığında yüzde bazlı hasar verir ve hedefin iyileşmesini keser.',
+  },
+  'weighted-shots': {
+    id: 'weighted-shots',
+    name: 'Weighted Shots (Ağırlıklı Atışlar)',
+    category: 'Weapon',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'Pasif',
+    image: '/assets/items/weighted-shots.png',
+    imageAlt:
+      'Weighted Shots (Ağırlıklı Atışlar) eşya ikonu - $ 3200 (Aşama III) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Ağırlıklı Atışlar eşyasının doğrulanmış silah hasarı ve pasif etki değerleri manuel veri girişi beklemektedir.',
+  },
+  // Silah (Turuncu) Eşyaları - $ 6400 (Aşama IV) Grubu
+  'armor-piercer': {
+    id: 'armor-piercer',
+    name: 'Armor Piercing Rounds (Zırh Delen)',
+    category: 'Weapon',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'Pasif',
+    image: '/assets/items/armor-piercer.png',
+    imageAlt:
+      'Armor Piercing Rounds (Zırh Delen) eşya ikonu - $ 6400 (Aşama IV) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Zırh Delen eşyasının doğrulanmış mermi direnci yok sayma (Bullet Resist Piercing) ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  capacitor: {
+    id: 'capacitor',
+    name: 'Capacitor (AKTİF Kondansatör)',
+    category: 'Weapon',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'AKTİF',
+    image: '/assets/items/capacitor.png',
+    imageAlt:
+      'Capacitor (AKTİF Kondansatör) eşya ikonu - $ 6400 (Aşama IV) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — AKTİF Kondansatör eşyasının doğrulanmış aktif elektrik/arınma etkisi ve silah istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'crippling-headshot': {
+    id: 'crippling-headshot',
+    name: 'Crippling Headshot (Sakatlayan Kafadan Vuruş)',
+    category: 'Weapon',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'Pasif',
+    image: '/assets/items/crippling-headshot.png',
+    imageAlt:
+      'Crippling Headshot (Sakatlayan Kafadan Vuruş) eşya ikonu - $ 6400 (Aşama IV) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Sakatlayan Kafadan Vuruş eşyasının doğrulanmış kafadan vuruşta mermi ve büyü direnci kırma değerleri manuel veri girişi beklemektedir.',
+  },
+  'crushing-fists': {
+    id: 'crushing-fists',
+    name: 'Crushing Fists (Ezici Yumruklar)',
+    category: 'Weapon',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'Pasif',
+    image: '/assets/items/crushing-fists.png',
+    imageAlt:
+      'Crushing Fists (Ezici Yumruklar) eşya ikonu - $ 6400 (Aşama IV) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Ezici Yumruklar eşyasının doğrulanmış yakın dövüş (Melee) hasarı ve pasif zayıflatma değerleri manuel veri girişi beklemektedir.',
+  },
+  frenzy: {
+    id: 'frenzy',
+    name: 'Frenzy (Savaş Çılgınlığı)',
+    category: 'Weapon',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'Pasif',
+    image: '/assets/items/frenzy.png',
+    imageAlt:
+      'Frenzy (Savaş Çılgınlığı) eşya ikonu - $ 6400 (Aşama IV) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Savaş Çılgınlığı eşyasının doğrulanmış düşük can eşiğinde sağladığı atış hızı, hareket hızı ve direnç değerleri manuel veri girişi beklemektedir.',
+  },
+  'glass-cannon': {
+    id: 'glass-cannon',
+    name: 'Glass Cannon (Kırılgan Kudret)',
+    category: 'Weapon',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'Pasif',
+    image: '/assets/items/glass-cannon.png',
+    imageAlt:
+      'Glass Cannon (Kırılgan Kudret) eşya ikonu - $ 6400 (Aşama IV) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Kırılgan Kudret eşyasının doğrulanmış yüksek silah hasarı bonusu ve maksimum can azalması değerleri manuel veri girişi beklemektedir.',
+  },
+  'lucky-shot': {
+    id: 'lucky-shot',
+    name: 'Lucky Shot (Şanslı Atış)',
+    category: 'Weapon',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'Pasif',
+    image: '/assets/items/lucky-shot.png',
+    imageAlt:
+      'Lucky Shot (Şanslı Atış) eşya ikonu - $ 6400 (Aşama IV) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Şanslı Atış eşyasının doğrulanmış kritik/bonus mermi hasarı olasılığı ve yavaşlatma değerleri manuel veri girişi beklemektedir.',
+  },
+  ricochet: {
+    id: 'ricochet',
+    name: 'Ricochet (Mermi Sekmesi)',
+    category: 'Weapon',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'Pasif',
+    image: '/assets/items/ricochet.png',
+    imageAlt:
+      'Ricochet (Mermi Sekmesi) eşya ikonu - $ 6400 (Aşama IV) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Mermi Sekmesi eşyasının doğrulanmış yakındaki hedeflere sekme sayısı ve sekme hasarı oranı değerleri manuel veri girişi beklemektedir.',
+  },
+  silencer: {
+    id: 'silencer',
+    name: 'Silencer (Susturucu)',
+    category: 'Weapon',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'Pasif',
+    image: '/assets/items/silencer.png',
+    imageAlt:
+      'Silencer (Susturucu) eşya ikonu - $ 6400 (Aşama IV) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Susturucu eşyasının doğrulanmış mermi isabetiyle susturma (Silence) etkisi ve silah istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  spellsinger: {
+    id: 'spellsinger',
+    name: 'Spellslinger (Büyü Silahşoru)',
+    category: 'Weapon',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'Pasif',
+    image: '/assets/items/spellsinger.png',
+    imageAlt:
+      'Spellslinger (Büyü Silahşoru) eşya ikonu - $ 6400 (Aşama IV) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Büyü Silahşoru eşyasının doğrulanmış yetenek ve silah etkileşimi istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'spiritual-overflow': {
+    id: 'spiritual-overflow',
+    name: 'Spiritual Overflow (Büyülü Coşkunluk)',
+    category: 'Weapon',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'Pasif',
+    image: '/assets/items/spiritual-overflow.png',
+    imageAlt:
+      'Spiritual Overflow (Büyülü Coşkunluk) eşya ikonu - $ 6400 (Aşama IV) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Büyülü Coşkunluk eşyasının doğrulanmış mermi isabetiyle biriken büyü gücü (Spirit Power) ve dolum süresi azaltma değerleri manuel veri girişi beklemektedir.',
   },
 };
 
