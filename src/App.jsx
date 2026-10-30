@@ -1,5 +1,10 @@
 import { useState } from 'react';
-import { characters, matchups, getMirrorMatchup } from './data';
+import {
+  characters,
+  matchups,
+  getMirrorMatchup,
+  getPendingMatchup,
+} from './data';
 import Header from './components/Header';
 import HeroMatchup from './components/HeroMatchup';
 import GeneralMeta from './components/GeneralMeta';
@@ -23,7 +28,7 @@ export default function App() {
   const currentMatchup = hasBothSelected
     ? isMirror
       ? getMirrorMatchup(playerHero)
-      : matchups[matchupKey]
+      : matchups[matchupKey] || getPendingMatchup(playerHero, enemyHero)
     : null;
 
   const handleSwapHeroes = () => {

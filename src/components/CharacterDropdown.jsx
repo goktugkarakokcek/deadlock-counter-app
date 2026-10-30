@@ -142,7 +142,7 @@ export default function CharacterDropdown({
         <ul
           role="listbox"
           aria-labelledby={`${id}-label`}
-          className="absolute z-30 mt-2 w-full rounded-xl bg-slate-900 border border-slate-700 shadow-2xl overflow-hidden divide-y divide-slate-800/80"
+          className="absolute z-30 mt-2 w-full max-h-72 overflow-y-auto rounded-xl bg-slate-900 border border-slate-700 shadow-2xl divide-y divide-slate-800/80"
         >
           {characters.map((hero) => {
             const isSelected = selectedHero?.id === hero.id;

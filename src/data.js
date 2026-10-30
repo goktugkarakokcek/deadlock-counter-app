@@ -112,6 +112,950 @@ export const characters = [
       'Storm Cloud (Fırtına Bulutu Ultisi)',
     ],
   },
+  {
+    id: 'apollo',
+    name: 'Apollo',
+    title: 'TBD (Needs Manual Entry)',
+    role: 'TBD (Needs Manual Entry)',
+    difficulty: 'TBD',
+    image: '/assets/characters/apollo.png',
+    imageAlt: 'Apollo karakter portresi - Deadlock oynanabilir kahraman görseli',
+    shortBio:
+      'TBD - Apollo karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Needs Manual Entry).',
+    stats: {
+      survive: 'TBD',
+      damage: 'TBD',
+      mobility: 'TBD',
+      control: 'TBD',
+    },
+    abilities: [
+      'Yetenek 1: TBD',
+      'Yetenek 2: TBD',
+      'Yetenek 3: TBD',
+      'Ulti: TBD',
+    ],
+  },
+  {
+    id: 'baba',
+    name: 'Baba',
+    title: 'TBD (Needs Manual Entry)',
+    role: 'TBD (Needs Manual Entry)',
+    difficulty: 'TBD',
+    image: '/assets/characters/baba.png',
+    imageAlt: 'Baba karakter portresi - Deadlock oynanabilir kahraman görseli',
+    shortBio:
+      'TBD - Baba karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Needs Manual Entry).',
+    stats: {
+      survive: 'TBD',
+      damage: 'TBD',
+      mobility: 'TBD',
+      control: 'TBD',
+    },
+    abilities: [
+      'Yetenek 1: TBD',
+      'Yetenek 2: TBD',
+      'Yetenek 3: TBD',
+      'Ulti: TBD',
+    ],
+  },
+  {
+    id: 'bebop',
+    name: 'Bebop',
+    title: 'TBD (Needs Manual Entry)',
+    role: 'TBD (Needs Manual Entry)',
+    difficulty: 'TBD',
+    image: '/assets/characters/bebop.png',
+    imageAlt: 'Bebop karakter portresi - Deadlock oynanabilir kahraman görseli',
+    shortBio:
+      'TBD - Bebop karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Needs Manual Entry).',
+    stats: {
+      survive: 'TBD',
+      damage: 'TBD',
+      mobility: 'TBD',
+      control: 'TBD',
+    },
+    abilities: [
+      'Yetenek 1: TBD',
+      'Yetenek 2: TBD',
+      'Yetenek 3: TBD',
+      'Ulti: TBD',
+    ],
+  },
+  {
+    id: 'billy',
+    name: 'Billy',
+    title: 'TBD (Needs Manual Entry)',
+    role: 'TBD (Needs Manual Entry)',
+    difficulty: 'TBD',
+    image: '/assets/characters/billy.png',
+    imageAlt: 'Billy karakter portresi - Deadlock oynanabilir kahraman görseli',
+    shortBio:
+      'TBD - Billy karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Needs Manual Entry).',
+    stats: {
+      survive: 'TBD',
+      damage: 'TBD',
+      mobility: 'TBD',
+      control: 'TBD',
+    },
+    abilities: [
+      'Yetenek 1: TBD',
+      'Yetenek 2: TBD',
+      'Yetenek 3: TBD',
+      'Ulti: TBD',
+    ],
+  },
+  {
+    id: 'calico',
+    name: 'Calico',
+    title: 'TBD (Needs Manual Entry)',
+    role: 'TBD (Needs Manual Entry)',
+    difficulty: 'TBD',
+    image: '/assets/characters/calico.png',
+    imageAlt: 'Calico karakter portresi - Deadlock oynanabilir kahraman görseli',
+    shortBio:
+      'TBD - Calico karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Needs Manual Entry).',
+    stats: {
+      survive: 'TBD',
+      damage: 'TBD',
+      mobility: 'TBD',
+      control: 'TBD',
+    },
+    abilities: [
+      'Yetenek 1: TBD',
+      'Yetenek 2: TBD',
+      'Yetenek 3: TBD',
+      'Ulti: TBD',
+    ],
+  },
+  {
+    id: 'celeste',
+    name: 'Celeste',
+    title: 'TBD (Needs Manual Entry)',
+    role: 'TBD (Needs Manual Entry)',
+    difficulty: 'TBD',
+    image: '/assets/characters/celeste.png',
+    imageAlt: 'Celeste karakter portresi - Deadlock oynanabilir kahraman görseli',
+    shortBio:
+      'TBD - Celeste karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Needs Manual Entry).',
+    stats: {
+      survive: 'TBD',
+      damage: 'TBD',
+      mobility: 'TBD',
+      control: 'TBD',
+    },
+    abilities: [
+      'Yetenek 1: TBD',
+      'Yetenek 2: TBD',
+      'Yetenek 3: TBD',
+      'Ulti: TBD',
+    ],
+  },
+  {
+    id: 'deadman-danny',
+    name: 'Deadman Danny',
+    title: 'TBD (Needs Manual Entry)',
+    role: 'TBD (Needs Manual Entry)',
+    difficulty: 'TBD',
+    image: '/assets/characters/deadman-danny.png',
+    imageAlt:
+      'Deadman Danny karakter portresi - Deadlock oynanabilir kahraman görseli',
+    shortBio:
+      'TBD - Deadman Danny karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Needs Manual Entry).',
+    stats: {
+      survive: 'TBD',
+      damage: 'TBD',
+      mobility: 'TBD',
+      control: 'TBD',
+    },
+    abilities: [
+      'Yetenek 1: TBD',
+      'Yetenek 2: TBD',
+      'Yetenek 3: TBD',
+      'Ulti: TBD',
+    ],
+  },
+  {
+    id: 'drifter',
+    name: 'Drifter',
+    title: 'TBD (Needs Manual Entry)',
+    role: 'TBD (Needs Manual Entry)',
+    difficulty: 'TBD',
+    image: '/assets/characters/drifter.png',
+    imageAlt: 'Drifter karakter portresi - Deadlock oynanabilir kahraman görseli',
+    shortBio:
+      'TBD - Drifter karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Needs Manual Entry).',
+    stats: {
+      survive: 'TBD',
+      damage: 'TBD',
+      mobility: 'TBD',
+      control: 'TBD',
+    },
+    abilities: [
+      'Yetenek 1: TBD',
+      'Yetenek 2: TBD',
+      'Yetenek 3: TBD',
+      'Ulti: TBD',
+    ],
+  },
+  {
+    id: 'grey-talon',
+    name: 'Grey Talon',
+    title: 'TBD (Needs Manual Entry)',
+    role: 'TBD (Needs Manual Entry)',
+    difficulty: 'TBD',
+    image: '/assets/characters/grey-talon.png',
+    imageAlt:
+      'Grey Talon karakter portresi - Deadlock oynanabilir kahraman görseli',
+    shortBio:
+      'TBD - Grey Talon karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Needs Manual Entry).',
+    stats: {
+      survive: 'TBD',
+      damage: 'TBD',
+      mobility: 'TBD',
+      control: 'TBD',
+    },
+    abilities: [
+      'Yetenek 1: TBD',
+      'Yetenek 2: TBD',
+      'Yetenek 3: TBD',
+      'Ulti: TBD',
+    ],
+  },
+  {
+    id: 'graves',
+    name: 'Graves',
+    title: 'TBD (Needs Manual Entry)',
+    role: 'TBD (Needs Manual Entry)',
+    difficulty: 'TBD',
+    image: '/assets/characters/graves.png',
+    imageAlt: 'Graves karakter portresi - Deadlock oynanabilir kahraman görseli',
+    shortBio:
+      'TBD - Graves karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Needs Manual Entry).',
+    stats: {
+      survive: 'TBD',
+      damage: 'TBD',
+      mobility: 'TBD',
+      control: 'TBD',
+    },
+    abilities: [
+      'Yetenek 1: TBD',
+      'Yetenek 2: TBD',
+      'Yetenek 3: TBD',
+      'Ulti: TBD',
+    ],
+  },
+  {
+    id: 'holliday',
+    name: 'Holliday',
+    title: 'TBD (Needs Manual Entry)',
+    role: 'TBD (Needs Manual Entry)',
+    difficulty: 'TBD',
+    image: '/assets/characters/holliday.png',
+    imageAlt:
+      'Holliday karakter portresi - Deadlock oynanabilir kahraman görseli',
+    shortBio:
+      'TBD - Holliday karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Needs Manual Entry).',
+    stats: {
+      survive: 'TBD',
+      damage: 'TBD',
+      mobility: 'TBD',
+      control: 'TBD',
+    },
+    abilities: [
+      'Yetenek 1: TBD',
+      'Yetenek 2: TBD',
+      'Yetenek 3: TBD',
+      'Ulti: TBD',
+    ],
+  },
+  {
+    id: 'infernus',
+    name: 'Infernus',
+    title: 'TBD (Needs Manual Entry)',
+    role: 'TBD (Needs Manual Entry)',
+    difficulty: 'TBD',
+    image: '/assets/characters/infernus.png',
+    imageAlt:
+      'Infernus karakter portresi - Deadlock oynanabilir kahraman görseli',
+    shortBio:
+      'TBD - Infernus karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Needs Manual Entry).',
+    stats: {
+      survive: 'TBD',
+      damage: 'TBD',
+      mobility: 'TBD',
+      control: 'TBD',
+    },
+    abilities: [
+      'Yetenek 1: TBD',
+      'Yetenek 2: TBD',
+      'Yetenek 3: TBD',
+      'Ulti: TBD',
+    ],
+  },
+  {
+    id: 'ivy',
+    name: 'Ivy',
+    title: 'TBD (Needs Manual Entry)',
+    role: 'TBD (Needs Manual Entry)',
+    difficulty: 'TBD',
+    image: '/assets/characters/ivy.png',
+    imageAlt: 'Ivy karakter portresi - Deadlock oynanabilir kahraman görseli',
+    shortBio:
+      'TBD - Ivy karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Needs Manual Entry).',
+    stats: {
+      survive: 'TBD',
+      damage: 'TBD',
+      mobility: 'TBD',
+      control: 'TBD',
+    },
+    abilities: [
+      'Yetenek 1: TBD',
+      'Yetenek 2: TBD',
+      'Yetenek 3: TBD',
+      'Ulti: TBD',
+    ],
+  },
+  {
+    id: 'kelvin',
+    name: 'Kelvin',
+    title: 'TBD (Needs Manual Entry)',
+    role: 'TBD (Needs Manual Entry)',
+    difficulty: 'TBD',
+    image: '/assets/characters/kelvin.png',
+    imageAlt:
+      'Kelvin karakter portresi - Deadlock oynanabilir kahraman görseli',
+    shortBio:
+      'TBD - Kelvin karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Needs Manual Entry).',
+    stats: {
+      survive: 'TBD',
+      damage: 'TBD',
+      mobility: 'TBD',
+      control: 'TBD',
+    },
+    abilities: [
+      'Yetenek 1: TBD',
+      'Yetenek 2: TBD',
+      'Yetenek 3: TBD',
+      'Ulti: TBD',
+    ],
+  },
+  {
+    id: 'haze',
+    name: 'Haze',
+    title: 'TBD (Needs Manual Entry)',
+    role: 'TBD (Needs Manual Entry)',
+    difficulty: 'TBD',
+    image: '/assets/characters/haze.png',
+    imageAlt: 'Haze karakter portresi - Deadlock oynanabilir kahraman görseli',
+    shortBio:
+      'TBD - Haze karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Needs Manual Entry).',
+    stats: {
+      survive: 'TBD',
+      damage: 'TBD',
+      mobility: 'TBD',
+      control: 'TBD',
+    },
+    abilities: [
+      'Yetenek 1: TBD',
+      'Yetenek 2: TBD',
+      'Yetenek 3: TBD',
+      'Ulti: TBD',
+    ],
+  },
+  {
+    id: 'lady-geist',
+    name: 'Lady Geist',
+    title: 'TBD (Needs Manual Entry)',
+    role: 'TBD (Needs Manual Entry)',
+    difficulty: 'TBD',
+    image: '/assets/characters/lady-geist.png',
+    imageAlt:
+      'Lady Geist karakter portresi - Deadlock oynanabilir kahraman görseli',
+    shortBio:
+      'TBD - Lady Geist karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Needs Manual Entry).',
+    stats: {
+      survive: 'TBD',
+      damage: 'TBD',
+      mobility: 'TBD',
+      control: 'TBD',
+    },
+    abilities: [
+      'Yetenek 1: TBD',
+      'Yetenek 2: TBD',
+      'Yetenek 3: TBD',
+      'Ulti: TBD',
+    ],
+  },
+  {
+    id: 'lash',
+    name: 'Lash',
+    title: 'TBD (Needs Manual Entry)',
+    role: 'TBD (Needs Manual Entry)',
+    difficulty: 'TBD',
+    image: '/assets/characters/lash.png',
+    imageAlt: 'Lash karakter portresi - Deadlock oynanabilir kahraman görseli',
+    shortBio:
+      'TBD - Lash karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Needs Manual Entry).',
+    stats: {
+      survive: 'TBD',
+      damage: 'TBD',
+      mobility: 'TBD',
+      control: 'TBD',
+    },
+    abilities: [
+      'Yetenek 1: TBD',
+      'Yetenek 2: TBD',
+      'Yetenek 3: TBD',
+      'Ulti: TBD',
+    ],
+  },
+  {
+    id: 'mcginnis',
+    name: 'McGinnis',
+    title: 'TBD (Needs Manual Entry)',
+    role: 'TBD (Needs Manual Entry)',
+    difficulty: 'TBD',
+    image: '/assets/characters/mcginnis.png',
+    imageAlt:
+      'McGinnis karakter portresi - Deadlock oynanabilir kahraman görseli',
+    shortBio:
+      'TBD - McGinnis karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Needs Manual Entry).',
+    stats: {
+      survive: 'TBD',
+      damage: 'TBD',
+      mobility: 'TBD',
+      control: 'TBD',
+    },
+    abilities: [
+      'Yetenek 1: TBD',
+      'Yetenek 2: TBD',
+      'Yetenek 3: TBD',
+      'Ulti: TBD',
+    ],
+  },
+  {
+    id: 'mina',
+    name: 'Mina',
+    title: 'TBD (Needs Manual Entry)',
+    role: 'TBD (Needs Manual Entry)',
+    difficulty: 'TBD',
+    image: '/assets/characters/mina.png',
+    imageAlt: 'Mina karakter portresi - Deadlock oynanabilir kahraman görseli',
+    shortBio:
+      'TBD - Mina karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Needs Manual Entry).',
+    stats: {
+      survive: 'TBD',
+      damage: 'TBD',
+      mobility: 'TBD',
+      control: 'TBD',
+    },
+    abilities: [
+      'Yetenek 1: TBD',
+      'Yetenek 2: TBD',
+      'Yetenek 3: TBD',
+      'Ulti: TBD',
+    ],
+  },
+  {
+    id: 'mirage',
+    name: 'Mirage',
+    title: 'TBD (Needs Manual Entry)',
+    role: 'TBD (Needs Manual Entry)',
+    difficulty: 'TBD',
+    image: '/assets/characters/mirage.png',
+    imageAlt:
+      'Mirage karakter portresi - Deadlock oynanabilir kahraman görseli',
+    shortBio:
+      'TBD - Mirage karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Needs Manual Entry).',
+    stats: {
+      survive: 'TBD',
+      damage: 'TBD',
+      mobility: 'TBD',
+      control: 'TBD',
+    },
+    abilities: [
+      'Yetenek 1: TBD',
+      'Yetenek 2: TBD',
+      'Yetenek 3: TBD',
+      'Ulti: TBD',
+    ],
+  },
+  {
+    id: 'mo-and-krill',
+    name: 'Mo & Krill',
+    title: 'TBD (Needs Manual Entry)',
+    role: 'TBD (Needs Manual Entry)',
+    difficulty: 'TBD',
+    image: '/assets/characters/mo-and-krill.png',
+    imageAlt:
+      'Mo & Krill karakter portresi - Deadlock oynanabilir kahraman görseli',
+    shortBio:
+      'TBD - Mo & Krill karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Needs Manual Entry).',
+    stats: {
+      survive: 'TBD',
+      damage: 'TBD',
+      mobility: 'TBD',
+      control: 'TBD',
+    },
+    abilities: [
+      'Yetenek 1: TBD',
+      'Yetenek 2: TBD',
+      'Yetenek 3: TBD',
+      'Ulti: TBD',
+    ],
+  },
+  {
+    id: 'nurse-harrow',
+    name: 'Nurse Harrow',
+    title: 'TBD (Needs Manual Entry)',
+    role: 'TBD (Needs Manual Entry)',
+    difficulty: 'TBD',
+    image: '/assets/characters/nurse-harrow.png',
+    imageAlt:
+      'Nurse Harrow karakter portresi - Deadlock oynanabilir kahraman görseli',
+    shortBio:
+      'TBD - Nurse Harrow karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Needs Manual Entry).',
+    stats: {
+      survive: 'TBD',
+      damage: 'TBD',
+      mobility: 'TBD',
+      control: 'TBD',
+    },
+    abilities: [
+      'Yetenek 1: TBD',
+      'Yetenek 2: TBD',
+      'Yetenek 3: TBD',
+      'Ulti: TBD',
+    ],
+  },
+  {
+    id: 'paige',
+    name: 'Paige',
+    title: 'TBD (Needs Manual Entry)',
+    role: 'TBD (Needs Manual Entry)',
+    difficulty: 'TBD',
+    image: '/assets/characters/paige.png',
+    imageAlt: 'Paige karakter portresi - Deadlock oynanabilir kahraman görseli',
+    shortBio:
+      'TBD - Paige karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Needs Manual Entry).',
+    stats: {
+      survive: 'TBD',
+      damage: 'TBD',
+      mobility: 'TBD',
+      control: 'TBD',
+    },
+    abilities: [
+      'Yetenek 1: TBD',
+      'Yetenek 2: TBD',
+      'Yetenek 3: TBD',
+      'Ulti: TBD',
+    ],
+  },
+  {
+    id: 'paradox',
+    name: 'Paradox',
+    title: 'TBD (Needs Manual Entry)',
+    role: 'TBD (Needs Manual Entry)',
+    difficulty: 'TBD',
+    image: '/assets/characters/paradox.png',
+    imageAlt:
+      'Paradox karakter portresi - Deadlock oynanabilir kahraman görseli',
+    shortBio:
+      'TBD - Paradox karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Needs Manual Entry).',
+    stats: {
+      survive: 'TBD',
+      damage: 'TBD',
+      mobility: 'TBD',
+      control: 'TBD',
+    },
+    abilities: [
+      'Yetenek 1: TBD',
+      'Yetenek 2: TBD',
+      'Yetenek 3: TBD',
+      'Ulti: TBD',
+    ],
+  },
+  {
+    id: 'pocket',
+    name: 'Pocket',
+    title: 'TBD (Needs Manual Entry)',
+    role: 'TBD (Needs Manual Entry)',
+    difficulty: 'TBD',
+    image: '/assets/characters/pocket.png',
+    imageAlt:
+      'Pocket karakter portresi - Deadlock oynanabilir kahraman görseli',
+    shortBio:
+      'TBD - Pocket karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Needs Manual Entry).',
+    stats: {
+      survive: 'TBD',
+      damage: 'TBD',
+      mobility: 'TBD',
+      control: 'TBD',
+    },
+    abilities: [
+      'Yetenek 1: TBD',
+      'Yetenek 2: TBD',
+      'Yetenek 3: TBD',
+      'Ulti: TBD',
+    ],
+  },
+  {
+    id: 'rat-king',
+    name: 'Rat King',
+    title: 'TBD (Needs Manual Entry)',
+    role: 'TBD (Needs Manual Entry)',
+    difficulty: 'TBD',
+    image: '/assets/characters/rat-king.png',
+    imageAlt:
+      'Rat King karakter portresi - Deadlock oynanabilir kahraman görseli',
+    shortBio:
+      'TBD - Rat King karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Needs Manual Entry).',
+    stats: {
+      survive: 'TBD',
+      damage: 'TBD',
+      mobility: 'TBD',
+      control: 'TBD',
+    },
+    abilities: [
+      'Yetenek 1: TBD',
+      'Yetenek 2: TBD',
+      'Yetenek 3: TBD',
+      'Ulti: TBD',
+    ],
+  },
+  {
+    id: 'rem',
+    name: 'Rem',
+    title: 'TBD (Needs Manual Entry)',
+    role: 'TBD (Needs Manual Entry)',
+    difficulty: 'TBD',
+    image: '/assets/characters/rem.png',
+    imageAlt: 'Rem karakter portresi - Deadlock oynanabilir kahraman görseli',
+    shortBio:
+      'TBD - Rem karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Needs Manual Entry).',
+    stats: {
+      survive: 'TBD',
+      damage: 'TBD',
+      mobility: 'TBD',
+      control: 'TBD',
+    },
+    abilities: [
+      'Yetenek 1: TBD',
+      'Yetenek 2: TBD',
+      'Yetenek 3: TBD',
+      'Ulti: TBD',
+    ],
+  },
+  {
+    id: 'shiv',
+    name: 'Shiv',
+    title: 'TBD (Needs Manual Entry)',
+    role: 'TBD (Needs Manual Entry)',
+    difficulty: 'TBD',
+    image: '/assets/characters/shiv.png',
+    imageAlt: 'Shiv karakter portresi - Deadlock oynanabilir kahraman görseli',
+    shortBio:
+      'TBD - Shiv karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Needs Manual Entry).',
+    stats: {
+      survive: 'TBD',
+      damage: 'TBD',
+      mobility: 'TBD',
+      control: 'TBD',
+    },
+    abilities: [
+      'Yetenek 1: TBD',
+      'Yetenek 2: TBD',
+      'Yetenek 3: TBD',
+      'Ulti: TBD',
+    ],
+  },
+  {
+    id: 'silver',
+    name: 'Silver',
+    title: 'TBD (Needs Manual Entry)',
+    role: 'TBD (Needs Manual Entry)',
+    difficulty: 'TBD',
+    image: '/assets/characters/silver.png',
+    imageAlt:
+      'Silver karakter portresi - Deadlock oynanabilir kahraman görseli',
+    shortBio:
+      'TBD - Silver karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Needs Manual Entry).',
+    stats: {
+      survive: 'TBD',
+      damage: 'TBD',
+      mobility: 'TBD',
+      control: 'TBD',
+    },
+    abilities: [
+      'Yetenek 1: TBD',
+      'Yetenek 2: TBD',
+      'Yetenek 3: TBD',
+      'Ulti: TBD',
+    ],
+  },
+  {
+    id: 'solomon',
+    name: 'Solomon',
+    title: 'TBD (Needs Manual Entry)',
+    role: 'TBD (Needs Manual Entry)',
+    difficulty: 'TBD',
+    image: '/assets/characters/solomon.png',
+    imageAlt:
+      'Solomon karakter portresi - Deadlock oynanabilir kahraman görseli',
+    shortBio:
+      'TBD - Solomon karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Needs Manual Entry).',
+    stats: {
+      survive: 'TBD',
+      damage: 'TBD',
+      mobility: 'TBD',
+      control: 'TBD',
+    },
+    abilities: [
+      'Yetenek 1: TBD',
+      'Yetenek 2: TBD',
+      'Yetenek 3: TBD',
+      'Ulti: TBD',
+    ],
+  },
+  {
+    id: 'doorman',
+    name: 'Doorman',
+    title: 'TBD (Needs Manual Entry)',
+    role: 'TBD (Needs Manual Entry)',
+    difficulty: 'TBD',
+    image: '/assets/characters/doorman.png',
+    imageAlt:
+      'Doorman karakter portresi - Deadlock oynanabilir kahraman görseli',
+    shortBio:
+      'TBD - Doorman karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Needs Manual Entry).',
+    stats: {
+      survive: 'TBD',
+      damage: 'TBD',
+      mobility: 'TBD',
+      control: 'TBD',
+    },
+    abilities: [
+      'Yetenek 1: TBD',
+      'Yetenek 2: TBD',
+      'Yetenek 3: TBD',
+      'Ulti: TBD',
+    ],
+  },
+  {
+    id: 'victor',
+    name: 'Victor',
+    title: 'TBD (Needs Manual Entry)',
+    role: 'TBD (Needs Manual Entry)',
+    difficulty: 'TBD',
+    image: '/assets/characters/victor.png',
+    imageAlt:
+      'Victor karakter portresi - Deadlock oynanabilir kahraman görseli',
+    shortBio:
+      'TBD - Victor karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Needs Manual Entry).',
+    stats: {
+      survive: 'TBD',
+      damage: 'TBD',
+      mobility: 'TBD',
+      control: 'TBD',
+    },
+    abilities: [
+      'Yetenek 1: TBD',
+      'Yetenek 2: TBD',
+      'Yetenek 3: TBD',
+      'Ulti: TBD',
+    ],
+  },
+  {
+    id: 'sinclair',
+    name: 'Sinclair',
+    title: 'TBD (Needs Manual Entry)',
+    role: 'TBD (Needs Manual Entry)',
+    difficulty: 'TBD',
+    image: '/assets/characters/sinclair.png',
+    imageAlt:
+      'Sinclair karakter portresi - Deadlock oynanabilir kahraman görseli',
+    shortBio:
+      'TBD - Sinclair karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Needs Manual Entry).',
+    stats: {
+      survive: 'TBD',
+      damage: 'TBD',
+      mobility: 'TBD',
+      control: 'TBD',
+    },
+    abilities: [
+      'Yetenek 1: TBD',
+      'Yetenek 2: TBD',
+      'Yetenek 3: TBD',
+      'Ulti: TBD',
+    ],
+  },
+  {
+    id: 'venator',
+    name: 'Venator',
+    title: 'TBD (Needs Manual Entry)',
+    role: 'TBD (Needs Manual Entry)',
+    difficulty: 'TBD',
+    image: '/assets/characters/venator.png',
+    imageAlt:
+      'Venator karakter portresi - Deadlock oynanabilir kahraman görseli',
+    shortBio:
+      'TBD - Venator karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Needs Manual Entry).',
+    stats: {
+      survive: 'TBD',
+      damage: 'TBD',
+      mobility: 'TBD',
+      control: 'TBD',
+    },
+    abilities: [
+      'Yetenek 1: TBD',
+      'Yetenek 2: TBD',
+      'Yetenek 3: TBD',
+      'Ulti: TBD',
+    ],
+  },
+  {
+    id: 'violet',
+    name: 'Violet',
+    title: 'TBD (Needs Manual Entry)',
+    role: 'TBD (Needs Manual Entry)',
+    difficulty: 'TBD',
+    image: '/assets/characters/violet.png',
+    imageAlt:
+      'Violet karakter portresi - Deadlock oynanabilir kahraman görseli',
+    shortBio:
+      'TBD - Violet karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Needs Manual Entry).',
+    stats: {
+      survive: 'TBD',
+      damage: 'TBD',
+      mobility: 'TBD',
+      control: 'TBD',
+    },
+    abilities: [
+      'Yetenek 1: TBD',
+      'Yetenek 2: TBD',
+      'Yetenek 3: TBD',
+      'Ulti: TBD',
+    ],
+  },
+  {
+    id: 'viscous',
+    name: 'Viscous',
+    title: 'TBD (Needs Manual Entry)',
+    role: 'TBD (Needs Manual Entry)',
+    difficulty: 'TBD',
+    image: '/assets/characters/viscous.png',
+    imageAlt:
+      'Viscous karakter portresi - Deadlock oynanabilir kahraman görseli',
+    shortBio:
+      'TBD - Viscous karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Needs Manual Entry).',
+    stats: {
+      survive: 'TBD',
+      damage: 'TBD',
+      mobility: 'TBD',
+      control: 'TBD',
+    },
+    abilities: [
+      'Yetenek 1: TBD',
+      'Yetenek 2: TBD',
+      'Yetenek 3: TBD',
+      'Ulti: TBD',
+    ],
+  },
+  {
+    id: 'vyper',
+    name: 'Vyper',
+    title: 'TBD (Needs Manual Entry)',
+    role: 'TBD (Needs Manual Entry)',
+    difficulty: 'TBD',
+    image: '/assets/characters/vyper.png',
+    imageAlt: 'Vyper karakter portresi - Deadlock oynanabilir kahraman görseli',
+    shortBio:
+      'TBD - Vyper karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Needs Manual Entry).',
+    stats: {
+      survive: 'TBD',
+      damage: 'TBD',
+      mobility: 'TBD',
+      control: 'TBD',
+    },
+    abilities: [
+      'Yetenek 1: TBD',
+      'Yetenek 2: TBD',
+      'Yetenek 3: TBD',
+      'Ulti: TBD',
+    ],
+  },
+  {
+    id: 'warden',
+    name: 'Warden',
+    title: 'TBD (Needs Manual Entry)',
+    role: 'TBD (Needs Manual Entry)',
+    difficulty: 'TBD',
+    image: '/assets/characters/warden.png',
+    imageAlt:
+      'Warden karakter portresi - Deadlock oynanabilir kahraman görseli',
+    shortBio:
+      'TBD - Warden karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Needs Manual Entry).',
+    stats: {
+      survive: 'TBD',
+      damage: 'TBD',
+      mobility: 'TBD',
+      control: 'TBD',
+    },
+    abilities: [
+      'Yetenek 1: TBD',
+      'Yetenek 2: TBD',
+      'Yetenek 3: TBD',
+      'Ulti: TBD',
+    ],
+  },
+  {
+    id: 'wraith',
+    name: 'Wraith',
+    title: 'TBD (Needs Manual Entry)',
+    role: 'TBD (Needs Manual Entry)',
+    difficulty: 'TBD',
+    image: '/assets/characters/wraith.png',
+    imageAlt:
+      'Wraith karakter portresi - Deadlock oynanabilir kahraman görseli',
+    shortBio:
+      'TBD - Wraith karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Needs Manual Entry).',
+    stats: {
+      survive: 'TBD',
+      damage: 'TBD',
+      mobility: 'TBD',
+      control: 'TBD',
+    },
+    abilities: [
+      'Yetenek 1: TBD',
+      'Yetenek 2: TBD',
+      'Yetenek 3: TBD',
+      'Ulti: TBD',
+    ],
+  },
+  {
+    id: 'yamato',
+    name: 'Yamato',
+    title: 'TBD (Needs Manual Entry)',
+    role: 'TBD (Needs Manual Entry)',
+    difficulty: 'TBD',
+    image: '/assets/characters/yamato.png',
+    imageAlt:
+      'Yamato karakter portresi - Deadlock oynanabilir kahraman görseli',
+    shortBio:
+      'TBD - Yamato karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Needs Manual Entry).',
+    stats: {
+      survive: 'TBD',
+      damage: 'TBD',
+      mobility: 'TBD',
+      control: 'TBD',
+    },
+    abilities: [
+      'Yetenek 1: TBD',
+      'Yetenek 2: TBD',
+      'Yetenek 3: TBD',
+      'Ulti: TBD',
+    ],
+  },
 ];
 
 export const itemsCatalog = {
@@ -818,6 +1762,41 @@ export const getMirrorMatchup = (hero) => ({
     ],
     winCondition:
       'Ruh (Soul) ekonomisinde öne geçip aktif counter eşyasını rakibinizden önce tamamlayarak ilk yetenek takasını kazanmak.',
+  },
+});
+
+// Doğrulanmış karşılaşma verisi henüz girilmemiş yeni karakterler için "Zero Hallucination" (TBD) veri üreteci
+export const getPendingMatchup = (playerHero, enemyHero) => ({
+  summary: `${playerHero.name} vs ${enemyHero.name}: Bu karşılaşma için doğrulanmış yama ve istatistik verileri henüz girilmemiştir (TBD / Needs Manual Entry). Data Integrity kuralları gereği doğrulanmamış eşleşme verileri uydurulmaz.`,
+  difficulty: 'Dengeli',
+  advantageScore: 'TBD (Needs Manual Entry)',
+  recommendedItems: [
+    buildItemRecommendation(
+      'reactive-barrier',
+      'TBD (Needs Manual Entry)',
+      `${enemyHero.name} karşısında ${playerHero.name} için doğrulanmış eşya açıklaması bekleniyor (TBD).`
+    ),
+    buildItemRecommendation(
+      'warp-stone',
+      'TBD (Needs Manual Entry)',
+      `${enemyHero.name} karşısında ${playerHero.name} için doğrulanmış pozisyon eşyası notu bekleniyor (TBD).`
+    ),
+    buildItemRecommendation(
+      'silence-glyph',
+      'TBD (Needs Manual Entry)',
+      `${enemyHero.name} karşısında ${playerHero.name} için doğrulanmış aktif counter notu bekleniyor (TBD).`
+    ),
+  ],
+  playstyle: {
+    earlyGame: 'TBD (Needs Manual Entry) — Erken oyun koridor verisi bekleniyor.',
+    midGame: 'TBD (Needs Manual Entry) — Orta oyun rotasyon verisi bekleniyor.',
+    lateGame: 'TBD (Needs Manual Entry) — Geç oyun takım savaşı verisi bekleniyor.',
+    counterTips: [
+      'TBD (Needs Manual Entry) — Doğrulanmış mikro-mekanik ipucu 1 bekleniyor.',
+      'TBD (Needs Manual Entry) — Doğrulanmış mikro-mekanik ipucu 2 bekleniyor.',
+      'TBD (Needs Manual Entry) — Doğrulanmış mikro-mekanik ipucu 3 bekleniyor.',
+    ],
+    winCondition: 'TBD (Needs Manual Entry) — Kazanma koşulu verisi bekleniyor.',
   },
 });
 
