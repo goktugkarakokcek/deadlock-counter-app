@@ -864,3 +864,123 @@ export const methodologyData = {
     },
   ],
 };
+
+// YENİ BÖLÜM: Harita ve Makro Zamanlamalar Verileri (Kutu Rotaları, Tünel Hatları, Spawn Timeline)
+export const mapMacroData = {
+  crateRoutes: [
+    {
+      id: 'outer-lane-crates',
+      routeTitle: 'Dış Koridor (Sarı & Yeşil) Mağaza ve Çatı Döngüsü',
+      crateCount: '~16 - 20 Kutu',
+      statueCount: '6 Altın Heykel',
+      avgDuration: '22 Saniye',
+      difficulty: 'Düşük Risk',
+      description:
+        'Trooper dalgasını rakip Guardian kulesine ittikten sonra yan mağaza (Shop) binasının alt katından girip merdiven boşluğundan çatıya çıkarak tamamlanan en verimli erken oyun kutu rotasıdır.',
+      tips: [
+        'Mermi harcamamak için kutuların içinden kayarak (Ctrl / Slide) veya Hafif Yakın Dövüş (Light Melee) ile geçin.',
+        'Çatıdaki Altın Heykeller kalıcı Ateş Hızı (%Fire Rate), Maksimum Can ve Spirit Gücü buff’ları düşürür.',
+      ],
+    },
+    {
+      id: 'mid-museum-crates',
+      routeTitle: 'Merkez Müze (Mid-Boss Üstü) ve Köprü Altı Rotası',
+      crateCount: '~22 - 26 Kutu',
+      statueCount: '8 Altın Heykel',
+      avgDuration: '30 Saniye',
+      difficulty: 'Orta Risk (Çatışma Bölgesi)',
+      description:
+        'Mavi ve Mor iç koridorların ortasındaki Mid-Boss binasının üst balkonları, nehir köprüsü ayakları ve büfe alanlarını kapsayan haritanın en yoğun kutu kümesidir.',
+      tips: [
+        '10. dakikadaki Köprü Buff’ları (Bridge Buffs) çıkmadan 30 saniye önce bu rotayı temizleyip pozisyon alın.',
+        'Alan hasarlı yetenekler (Lightning Ball, Kinetic Pulse) aynı anda 4-5 kutuyu tek seferde kırabilir.',
+      ],
+    },
+    {
+      id: 'subway-underpass-crates',
+      routeTitle: 'Yeraltı Metro (Subway) ve Kanalizasyon Hattı',
+      crateCount: '~12 - 15 Kutu',
+      statueCount: '5 Altın Heykel',
+      avgDuration: '18 Saniye',
+      difficulty: 'Güvenli Rotasyon',
+      description:
+        'Koridorlar arası rotasyon (Gank) atarken yeraltı metro girişleri, bilet gişeleri ve tünel odalarında bulunan, rakip görüşünden uzak güvenli ekonomik kaynak rotasıdır.',
+      tips: [
+        'Canınız azaldığında üsse dönmek yerine yeraltı kutularını kırarak çıkan sağlık küreleriyle (Healing Orbs) koridorda kalın.',
+        'Kutular kırıldıktan sonra yaklaşık her 3 dakikada (180 sn) bir yeniden doğar.',
+      ],
+    },
+  ],
+  transitRoutes: [
+    {
+      id: 'corner-teleporters',
+      name: 'Dış Koridor Köşe Işınlayıcıları (Corner Teleporters)',
+      badge: '08:00 Dk Açılış',
+      routeType: 'Çift Yönlü Anlık Geçiş',
+      connects: 'Sarı Koridor (En Sol) ⟷ Yeşil Koridor (En Sağ)',
+      description:
+        'Haritanın iki zıt ucundaki solo koridorları birbirine bağlar. Rakip takım bir yan koridora 3 kişi yüklendiğinde saniyeler içinde diğer kanada geçip Walker kulesini yıkmanızı (Split Push) sağlar.',
+    },
+    {
+      id: 'central-subway-tunnels',
+      name: 'Merkez Metro ve Nehir Altı Tünelleri (Underpass Transit)',
+      badge: 'Görüş Korumalı',
+      routeType: 'Kapalı Yeraltı Geçidi',
+      connects: 'Mavi Koridor ⟷ Mid-Boss Çukuru ⟷ Mor Koridor',
+      description:
+        'Vindicta ve Seven gibi havadan görüşe dayalı karakterlerin (Line of Sight) mermi ve ultilerinden tamamen korunarak iç koridorlar arasında baskın (Gank) yapmanızı ve Urn taşımanızı sağlar.',
+    },
+    {
+      id: 'zipline-air-vents',
+      name: 'Transit Zipline Hatları ve Çatı Hava Fanları (Air Vents)',
+      badge: 'Yüksek Mobilite',
+      routeType: 'Hava & Raylı Ulaşım',
+      connects: 'Patron Üssü ⟷ 4 Ana Koridor & Yüksek Çatılar',
+      description:
+        '4 renkli Zipline hattı üsten cepheye hızlı ulaşım sunar. Zipline üzerinde hasar alırsanız yere düşüp sersemlersiniz; bu yüzden çatılardaki dikey Hava Fanlarını (Jump Pads) kullanarak koridor değiştirmek savaş anında çok daha güvenlidir.',
+    },
+  ],
+  spawnTimeline: [
+    {
+      time: '00:00',
+      phase: 'Maç Başlangıcı',
+      title: 'Trooper Dalgaları ve Erken Ruh Mekanikleri',
+      badgeColor: 'sky',
+      details:
+        'İlk Trooper dalgaları Zipline ile koridorlara iner. İlk 8 dakika boyunca Trooper kesildiğinde ruhun %50’si anında, kalan %50’si ise çıkan Ruh Küresi (Soul Orb) vurulduğunda kazanılır.',
+    },
+    {
+      time: '02:00',
+      phase: 'Erken Orman & Kutu',
+      title: 'Küçük Nötr Kamplar (Tier 1), Kutular ve Altın Heykeller',
+      badgeColor: 'emerald',
+      details:
+        'Koridor kenarlarındaki ilk küçük nötr yaratık kampları, ahşap kutular (Crates) ve kalıcı istatistik veren Altın Heykeller doğar. Küçük kamplar kesildikten 4 dakika sonra yeniden çıkar.',
+    },
+    {
+      time: '07:00',
+      phase: 'Orta Orman & Slot',
+      title: 'Orta/Büyük Kamplar (Tier 2-3) & Sinner’s Sacrifice',
+      badgeColor: 'purple',
+      details:
+        'Yüksek ruh veren Orta ve Büyük orman kampları ile Sinner’s Sacrifice (Slot Makineleri) aktifleşir. Slot makinesine ışıklar tam dolduğunda Ağır Yakın Dövüş (Heavy Melee) vurmak çoklu Altın Heykel buff’ı kazandırır.',
+    },
+    {
+      time: '08:00',
+      phase: 'Ekonomik Kırılma',
+      title: '%100 Küre Ekonomisi ve Köşe Işınlayıcıların Açılışı',
+      badgeColor: 'amber',
+      details:
+        '8. dakikadan itibaren Trooperlar ölürken doğrudan ruh vermez; tüm değer (%100) havaya çıkan Ruh Küresine aktarılır. Aynı anda dış koridorlardaki Köşe Işınlayıcıları (Teleporters) kullanıma açılır.',
+    },
+    {
+      time: '10:00',
+      phase: 'Büyük Objektifler',
+      title: 'Mid-Boss, Soul Urn (Ruh Vazosu) ve Köprü Buff’ları',
+      badgeColor: 'rose',
+      details:
+        'Merkezde Mid-Boss (Rejuvenator Kristali), yan koridorlarda Soul Urn (Ruh Vazosu - her 5 dakikada bir yenilenir) ve köprü üstlerinde Gun/Spirit/Survival/Movement güçlendirmeleri aynı anda haritada doğar.',
+    },
+  ],
+};
+
