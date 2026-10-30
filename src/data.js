@@ -984,3 +984,67 @@ export const mapMacroData = {
   ],
 };
 
+// Merkezi Stil Sabitleri (Yüksek Kontrastlı Tailwind Sınıfları)
+export const categoryStyles = {
+  Weapon: {
+    badge: 'bg-orange-500/20 text-orange-300 border-orange-500/40',
+    border: 'border-orange-500/30 hover:border-orange-400/60',
+    accent: '#fb923c',
+    label: 'Weapon (Silah)',
+  },
+  Vitality: {
+    badge: 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40',
+    border: 'border-emerald-500/30 hover:border-emerald-400/60',
+    accent: '#34d399',
+    label: 'Vitality (Dayanıklılık)',
+  },
+  Spirit: {
+    badge: 'bg-purple-500/20 text-purple-300 border-purple-500/40',
+    border: 'border-purple-500/30 hover:border-purple-400/60',
+    accent: '#c084fc',
+    label: 'Spirit (Ruh Gücü)',
+  },
+};
+
+export const difficultyStyles = {
+  Avantajlı: 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40',
+  Dengeli: 'bg-sky-500/20 text-sky-300 border-sky-500/40',
+  Zorlu: 'bg-amber-500/20 text-amber-300 border-amber-500/40',
+  'Yüksek Tehdit': 'bg-rose-500/20 text-rose-300 border-rose-500/40',
+};
+
+export const timelineBadgeStyles = {
+  sky: 'bg-sky-500/20 text-sky-300 border-sky-500/40',
+  emerald: 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40',
+  purple: 'bg-purple-500/20 text-purple-300 border-purple-500/40',
+  amber: 'bg-amber-500/20 text-amber-300 border-amber-500/40',
+  rose: 'bg-rose-500/20 text-rose-300 border-rose-500/40',
+};
+
+// Görsel henüz manuel eklenmediyse kırık ikon göstermemek için şık SVG Data URI üreteci
+// (<img /> etiketini ve semantic alt metnini DOM'da korur)
+export const createPlaceholderDataUri = (label, accentColor = '#f59e0b') => {
+  const initials = label
+    .split(' ')
+    .map((word) => word[0])
+    .join('')
+    .slice(0, 2)
+    .toUpperCase();
+
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160">
+    <defs>
+      <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#0f172a"/>
+        <stop offset="100%" stop-color="#1e293b"/>
+      </linearGradient>
+    </defs>
+    <rect width="160" height="160" rx="20" fill="url(#bg)" stroke="${accentColor}" stroke-width="4"/>
+    <circle cx="80" cy="64" r="28" fill="${accentColor}" fill-opacity="0.18" stroke="${accentColor}" stroke-width="2"/>
+    <text x="80" y="73" text-anchor="middle" fill="#f8fafc" font-family="system-ui, sans-serif" font-weight="800" font-size="24">${initials}</text>
+    <text x="80" y="128" text-anchor="middle" fill="#cbd5e1" font-family="system-ui, sans-serif" font-weight="600" font-size="13">${label.slice(0, 14)}</text>
+  </svg>`;
+
+  return `data:image/svg+xml;utf8,${encodeURIComponent(svg)}`;
+};
+
+

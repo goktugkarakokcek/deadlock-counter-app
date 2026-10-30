@@ -1,0 +1,68 @@
+export default function Header() {
+  return (
+    <header className="sticky top-0 z-40 backdrop-blur-md bg-slate-950/90 border-b border-slate-800/80">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        <a
+          href="#matchup-section"
+          aria-label="Deadlock Tactics ana sayfa ve karşılaşma simülatörü"
+          className="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 rounded-lg p-1"
+        >
+          <div
+            className="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center text-slate-950 font-black text-lg shadow-md shadow-amber-500/20"
+            aria-hidden="true"
+          >
+            DL
+          </div>
+          <div>
+            <span className="text-base sm:text-lg font-extrabold tracking-tight text-white block leading-none">
+              DEADLOCK <span className="text-amber-400">TACTICS</span>
+            </span>
+            <span className="text-[11px] text-slate-300 font-medium block mt-0.5">
+              Rekabetçi Matchup &amp; Counter Asistanı
+            </span>
+          </div>
+        </a>
+
+        <nav
+          aria-label="Sayfa Bölümleri"
+          className="hidden md:flex items-center gap-1"
+        >
+          <a
+            href="#matchup-section"
+            className="px-3 py-2 rounded-lg text-sm font-semibold text-slate-200 hover:text-amber-400 hover:bg-slate-900 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400"
+          >
+            1. Hero Matchup
+          </a>
+          <a
+            href="#meta-section"
+            className="px-3 py-2 rounded-lg text-sm font-semibold text-slate-200 hover:text-amber-400 hover:bg-slate-900 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400"
+          >
+            2. Genel Meta
+          </a>
+          <a
+            href="#map-macro-section"
+            className="px-3 py-2 rounded-lg text-sm font-semibold text-slate-200 hover:text-amber-400 hover:bg-slate-900 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400"
+          >
+            3. Harita &amp; Zamanlamalar
+          </a>
+          <a
+            href="#methodology-section"
+            className="px-3 py-2 rounded-lg text-sm font-semibold text-slate-200 hover:text-amber-400 hover:bg-slate-900 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400"
+          >
+            4. Metodoloji
+          </a>
+        </nav>
+
+        <div className="flex items-center gap-2">
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
+            <span
+              className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"
+              aria-hidden="true"
+            />
+            Meta Güncel
+          </span>
+        </div>
+      </div>
+    </header>
+  );
+}
