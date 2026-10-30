@@ -1,6 +1,19 @@
 // src/data.js
-// Deadlock Taktiksel Matchup & Counter Rehberi - Merkezi Veri Kaynağı
+// Deadlock Taktiksel Matchup & Counter Rehberi - Merkezi Veri Kaynağı (Single Source of Truth)
 // Tüm karakter ve eşya görselleri local "/public/assets/..." dizinine referans verir.
+
+export const appMetaInfo = {
+  brandName: 'DEADLOCK',
+  brandHighlight: 'TACTICS',
+  brandSubtitle: 'Rekabetçi Matchup & Counter Asistanı',
+  patchBadge: 'Son Güncelleme: Patch v0.42 (Beta)',
+  disclaimerText:
+    'Veriler oyunun beta sürecine göre değişiklik gösterebilir.',
+  disclaimerDetail:
+    'Deadlock aktif geliştirme (Closed Beta) aşamasındadır. Karakter dengeleri, eşya (item) maliyetleri ve harita spawn süreleri güncellemelerle değişebilir; doğrulanmamış istatistikler TBD (Güncellenecek) olarak işaretlenmiştir.',
+  footerBuildNote:
+    'React (Vite) & Tailwind CSS ile geliştirilmiştir • Vercel Deploy Uyumlu',
+};
 
 export const characters = [
   {
@@ -802,8 +815,8 @@ export const generalMetaTips = [
       '8. dakikadan sonra Trooperların kendisi ruh vermez; tüm değer havaya çıkan Ruh küresine aktarılır.',
       'Koridoru rakip Guardian kulesine ittikten sonra yandaki küçük orman kamplarını (Tier 1 Camps) ve altın heykelleri (Golden Statues) toplayın.',
     ],
-    keyMetric: '+%24 Ruh Avantajı',
-    metricLabel: 'Yakın dövüş son vuruşu ve Deny odaklı koridor oyununda ortalama 8. dakika farkı',
+    keyMetric: '%100 Ruh Güvencesi (Melee)',
+    metricLabel: 'Yakın dövüş son vuruşu ile rakibe Deny şansı bırakmadan kazanılan net koridor ruhu',
   },
   {
     id: 'mid-boss-timing',
@@ -817,8 +830,8 @@ export const generalMetaTips = [
       'Kristal yere inerken çukurun içine bir oyuncunuzu Parry (F tuşu) ve kitle kontrolü için görevlendirin; rakibin çalma (Steal) girişimini engelleyin.',
       'Rejuvenator aldıktan sonra orman dönmek yerine 4 koridoru aynı anda iterek Patron savunmasını kırın.',
     ],
-    keyMetric: '%78 Kazanma Oranı',
-    metricLabel: 'İlk Rejuvenator kristalini başarıyla güvenceye alan takımların maç kazanma istatistiği',
+    keyMetric: '10:00 Dk İlk Çıkış',
+    metricLabel: 'Mid-Boss ve Rejuvenator kristalinin harita merkezinde aktifleştiği resmi dakika',
   },
   {
     id: 'urn-and-flex-slots',
