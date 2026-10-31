@@ -1,9 +1,41 @@
 import CharacterDropdown from './CharacterDropdown';
 import {
+  itemsCatalog,
   categoryStyles,
   difficultyStyles,
   createPlaceholderDataUri,
 } from '../data';
+
+const itemsByName = Object.values(itemsCatalog).reduce((acc, item) => {
+  acc[item.name] = item;
+  const baseName = item.name.split(' (')[0].trim();
+  if (!acc[baseName]) acc[baseName] = item;
+  return acc;
+}, {});
+
+const buildStages = [
+  {
+    key: 'earlyGame',
+    title: 'Early Game (Erken Oyun)',
+    subtitle: 'Koridor & Başlangıç ($ 800)',
+    badgeClass: 'bg-sky-500/15 text-sky-300 border-sky-500/30',
+    accentDot: 'bg-sky-400',
+  },
+  {
+    key: 'coreItems',
+    title: 'Core Items (Çekirdek Eşyalar)',
+    subtitle: 'Orta Oyun Güç Patlaması ($ 1600 - $ 3200)',
+    badgeClass: 'bg-amber-500/15 text-amber-300 border-amber-500/30',
+    accentDot: 'bg-amber-400',
+  },
+  {
+    key: 'lateGame',
+    title: 'Late Game (Geç Oyun)',
+    subtitle: 'Maksimum Taşıyıcı Dizilimi ($ 6400)',
+    badgeClass: 'bg-purple-500/15 text-purple-300 border-purple-500/30',
+    accentDot: 'bg-purple-400',
+  },
+];
 
 export default function HeroMatchup({
   playerHero,
@@ -401,6 +433,127 @@ export default function HeroMatchup({
                   })}
                 </div>
               </div>
+
+              {/* YENİ BÖLÜM: POPÜLER BUILD (META DİZİLİMİ) */}
+              {playerHero.popularBuilds && (
+                <div className="mb-12">
+                  <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-2 mb-6">
+                    <div>
+                      <h3 className="text-2xl font-extrabold text-white flex items-center gap-2.5">
+                        <span
+                          className="w-3 h-7 rounded bg-purple-400 inline-block"
+                          aria-hidden="true"
+                        />
+                        {playerHero.name} Popüler Build (Meta Dizilimi)
+                      </h3>
+                      <p className="text-sm text-slate-300 mt-1">
+                        {playerHero.name} ({playerHero.role}) için oyun safhasına
+                        göre en yüksek kazanma oranına sahip standart meta eşya
+                        dizilimi
+                      </p>
+                    </div>
+                    <span className="text-xs font-semibold px-3 py-1 rounded-full bg-purple-500/15 text-purple-300 border border-purple-500/30 self-start sm:self-auto">
+                      Early • Core • Late Game
+                    </span>
+                  </div>
+
+                  <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    {buildStages.map((stage) => {
+                      const stageItems =
+                        playerHero.popularBuilds[stage.key] || [];
+                      return (
+                        <article
+                          key={stage.key}
+                          className="rounded-2xl bg-slate-950/90 border border-slate-800/90 p-5 shadow-xl flex flex-col justify-between"
+                        >
+                          <div>
+                            <div className="flex items-center justify-between gap-2 pb-3.5 mb-4 border-b border-slate-800">
+                              <div>
+                                <div className="flex items-center gap-2">
+                                  <span
+                                    className={`w-2.5 h-2.5 rounded-full ${stage.accentDot}`}
+                                    aria-hidden="true"
+                                  />
+                                  <h4 className="text-base sm:text-lg font-extrabold text-white">
+                                    {stage.title}
+                                  </h4>
+                                </div>
+                                <p className="text-xs text-slate-400 mt-0.5">
+                                  {stage.subtitle}
+                                </p>
+                              </div>
+                              <span
+                                className={`text-[11px] font-bold px-2.5 py-0.5 rounded-full border shrink-0 ${stage.badgeClass}`}
+                              >
+                                {stageItems.length} Eşya
+                              </span>
+                            </div>
+
+                            <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-3">
+                              {stageItems.map((itemName) => {
+                                const catalogItem = itemsByName[itemName];
+                                const catStyle =
+                                  categoryStyles[catalogItem?.category] ||
+                                  categoryStyles.Spirit;
+                                const imgSrc =
+                                  catalogItem?.image ||
+                                  createPlaceholderDataUri(
+                                    itemName,
+                                    catStyle.accent
+                                  );
+                                const imgAlt =
+                                  catalogItem?.imageAlt ||
+                                  `${itemName} eşya ikonu`;
+
+                                return (
+                                  <li
+                                    key={itemName}
+                                    className={`flex items-center gap-3.5 p-2.5 rounded-xl bg-slate-900/90 border transition-all duration-150 ${catStyle.border}`}
+                                  >
+                                    <div className="w-12 h-12 rounded-lg bg-slate-950 border border-slate-700/80 p-1 shrink-0 flex items-center justify-center overflow-hidden shadow">
+                                      <img
+                                        src={imgSrc}
+                                        alt={imgAlt}
+                                        onError={(e) => {
+                                          e.currentTarget.onerror = null;
+                                          e.currentTarget.src =
+                                            createPlaceholderDataUri(
+                                              itemName,
+                                              catStyle.accent
+                                            );
+                                        }}
+                                        className="w-full h-full object-contain rounded"
+                                      />
+                                    </div>
+
+                                    <div className="min-w-0 flex-1">
+                                      <p className="text-xs sm:text-sm font-bold text-white truncate">
+                                        {itemName}
+                                      </p>
+                                      <div className="flex items-center gap-2 mt-1 flex-wrap">
+                                        <span
+                                          className={`text-[10px] font-bold px-2 py-0.5 rounded border ${catStyle.badge}`}
+                                        >
+                                          {catStyle.label}
+                                        </span>
+                                        {catalogItem?.cost && (
+                                          <span className="text-[11px] font-extrabold text-emerald-300">
+                                            {catalogItem.cost}
+                                          </span>
+                                        )}
+                                      </div>
+                                    </div>
+                                  </li>
+                                );
+                              })}
+                            </ul>
+                          </div>
+                        </article>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
 
               {/* DİNAMİK ÇIKTI 2: TAKTİKSEL OYNAYIŞ (PLAYSTYLE) ÖNERİLERİ (H3 -> H4) */}
               <div>

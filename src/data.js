@@ -60,7 +60,27 @@ export const characters = [
       "healbane",
       "toxic-bullets",
       "decay"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Melee Lifesteal (Vampir Yumruklar)",
+        "Extra Health (Ekstra Sağlık)",
+        "Close Quarters (Yakın Mesafe)",
+        "Extra Regen (Ekstra Yenilenme)"
+      ],
+      "coreItems": [
+        "Enduring Speed (Kalıcı Hız)",
+        "Healbane (Şifakıran)",
+        "Lifestrike (İyileştiren Yumruk)",
+        "Fortitude (Metanet)"
+      ],
+      "lateGame": [
+        "Crushing Fists (Ezici Yumruklar)",
+        "Leech (Sülük)",
+        "Colossus (AKTİF Dev)",
+        "Unstoppable (Durdurulamaz)"
+      ]
+    }
   },
   {
     "id": "vindicta",
@@ -108,7 +128,27 @@ export const characters = [
       "knockdown",
       "phantom-strike",
       "metal-skin"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Headshot Booster (Kafadan Vuruş Güçlendiricisi)",
+        "High-Velocity Rounds (Yüksek Hızlı Mermiler)",
+        "Extended Magazine (Genişletilmiş Şarjör)",
+        "Extra Stamina (Ekstra Kuvvet)"
+      ],
+      "coreItems": [
+        "Long Range (Uzun Menzil)",
+        "Sharpshooter (Keskin Nişancı)",
+        "Headhunter (Kelle Avcısı)",
+        "Toxic Bullets (Toksik Mermiler)"
+      ],
+      "lateGame": [
+        "Crippling Headshot (Sakatlayan Kafadan Vuruş)",
+        "Glass Cannon (Kırılgan Kudret)",
+        "Lucky Shot (Şanslı Atış)",
+        "Ethereal Shift (Ruhani Değişim)"
+      ]
+    }
   },
   {
     "id": "dynamo",
@@ -156,7 +196,27 @@ export const characters = [
       "silence-glyph",
       "unstoppable",
       "healbane"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Extra Spirit (Ekstra Büyü)",
+        "Mystic Expansion (GÜÇLENDİR Mistik Genişleme)",
+        "Extra Stamina (Ekstra Kuvvet)",
+        "Healing Rite (AKTİF İyileştirme Ayini)"
+      ],
+      "coreItems": [
+        "Improved Spirit (Geliştirilmiş Büyü)",
+        "Superior Duration (Üstün Süre Uzatıcı)",
+        "Enduring Speed (Kalıcı Hız)",
+        "Reactive Barrier (Reaktif Bariyer)"
+      ],
+      "lateGame": [
+        "Refresher (AKTİF Yenileyici)",
+        "Unstoppable (Durdurulamaz)",
+        "Boundless Spirit (Sınırsız Büyü)",
+        "Healing Tempo (İyileştirici Tempo)"
+      ]
+    }
   },
   {
     "id": "seven",
@@ -204,7 +264,27 @@ export const characters = [
       "knockdown",
       "spirit-resilience",
       "spellbreaker"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Extra Spirit (Ekstra Büyü)",
+        "Mystic Burst (Mistik Patlama)",
+        "Extra Charge (Ekstra Şarj)",
+        "Extra Health (Ekstra Sağlık)"
+      ],
+      "coreItems": [
+        "Improved Spirit (Geliştirilmiş Büyü)",
+        "Surge of Power (GÜÇLENDİR Güç Artışı)",
+        "Spirit Lifesteal (Büyü Can Çalması)",
+        "Torment Pulse (Yayılan İşkence)"
+      ],
+      "lateGame": [
+        "Boundless Spirit (Sınırsız Büyü)",
+        "Unstoppable (Durdurulamaz)",
+        "Mystic Reverb (GÜÇLENDİR Mistik Titreşimler)",
+        "Escalating Exposure (Artan Hassasiyet)"
+      ]
+    }
   },
   {
     "id": "apollo",
@@ -251,7 +331,27 @@ export const characters = [
       "slowing-hex",
       "silence-glyph",
       "metal-skin"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Melee Lifesteal (Vampir Yumruklar)",
+        "Extra Stamina (Ekstra Kuvvet)",
+        "Close Quarters (Yakın Mesafe)",
+        "Extra Health (Ekstra Sağlık)"
+      ],
+      "coreItems": [
+        "Lifestrike (İyileştiren Yumruk)",
+        "Fortitude (Metanet)",
+        "Berserker (Cinnetkâr)",
+        "Enduring Speed (Kalıcı Hız)"
+      ],
+      "lateGame": [
+        "Crushing Fists (Ezici Yumruklar)",
+        "Leech (Sülük)",
+        "Unstoppable (Durdurulamaz)",
+        "Phantom Strike (AKTİF Hayalet Saldırı)"
+      ]
+    }
   },
   {
     "id": "baba",
@@ -297,7 +397,27 @@ export const characters = [
       "slowing-hex",
       "knockdown",
       "spellbreaker"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Extra Spirit (Ekstra Büyü)",
+        "Mystic Burst (Mistik Patlama)",
+        "Sprint Boots (Hızlı Koşma Botları)",
+        "Extra Charge (Ekstra Şarj)"
+      ],
+      "coreItems": [
+        "Improved Spirit (Geliştirilmiş Büyü)",
+        "Mystic Slow (Mistik Yavaşlatma)",
+        "Compress Cooldown (GÜÇLENDİR Kısa Dolum Süresi)",
+        "Spirit Lifesteal (Büyü Can Çalması)"
+      ],
+      "lateGame": [
+        "Boundless Spirit (Sınırsız Büyü)",
+        "Escalating Exposure (Artan Hassasiyet)",
+        "Ethereal Shift (Ruhani Değişim)",
+        "Mystic Reverb (GÜÇLENDİR Mistik Titreşimler)"
+      ]
+    }
   },
   {
     "id": "bebop",
@@ -346,7 +466,27 @@ export const characters = [
       "ethereal-shift",
       "reactive-barrier",
       "dispel-magic"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Mystic Burst (Mistik Patlama)",
+        "Extra Spirit (Ekstra Büyü)",
+        "Mystic Expansion (GÜÇLENDİR Mistik Genişleme)",
+        "Extra Health (Ekstra Sağlık)"
+      ],
+      "coreItems": [
+        "Improved Spirit (Geliştirilmiş Büyü)",
+        "Surge of Power (GÜÇLENDİR Güç Artışı)",
+        "Compress Cooldown (GÜÇLENDİR Kısa Dolum Süresi)",
+        "Warp Stone (Işınlanma Taşı)"
+      ],
+      "lateGame": [
+        "Echo Shard (GÜÇLENDİR Yankı Parçası)",
+        "Refresher (AKTİF Yenileyici)",
+        "Boundless Spirit (Sınırsız Büyü)",
+        "Unstoppable (Durdurulamaz)"
+      ]
+    }
   },
   {
     "id": "billy",
@@ -394,7 +534,27 @@ export const characters = [
       "metal-skin",
       "healbane",
       "toxic-bullets"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Melee Lifesteal (Vampir Yumruklar)",
+        "Extra Health (Ekstra Sağlık)",
+        "Close Quarters (Yakın Mesafe)",
+        "Extra Stamina (Ekstra Kuvvet)"
+      ],
+      "coreItems": [
+        "Lifestrike (İyileştiren Yumruk)",
+        "Enduring Speed (Kalıcı Hız)",
+        "Fortitude (Metanet)",
+        "Berserker (Cinnetkâr)"
+      ],
+      "lateGame": [
+        "Crushing Fists (Ezici Yumruklar)",
+        "Leech (Sülük)",
+        "Colossus (AKTİF Dev)",
+        "Unstoppable (Durdurulamaz)"
+      ]
+    }
   },
   {
     "id": "calico",
@@ -441,7 +601,27 @@ export const characters = [
       "slowing-hex",
       "silence-glyph",
       "reactive-barrier"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Extra Spirit (Ekstra Büyü)",
+        "Extra Charge (Ekstra Şarj)",
+        "Close Quarters (Yakın Mesafe)",
+        "Extra Stamina (Ekstra Kuvvet)"
+      ],
+      "coreItems": [
+        "Improved Spirit (Geliştirilmiş Büyü)",
+        "Rapid Recharge (Hızlı Şarj)",
+        "Lifestrike (İyileştiren Yumruk)",
+        "Enduring Speed (Kalıcı Hız)"
+      ],
+      "lateGame": [
+        "Echo Shard (GÜÇLENDİR Yankı Parçası)",
+        "Boundless Spirit (Sınırsız Büyü)",
+        "Crushing Fists (Ezici Yumruklar)",
+        "Ethereal Shift (Ruhani Değişim)"
+      ]
+    }
   },
   {
     "id": "celeste",
@@ -487,7 +667,27 @@ export const characters = [
       "capacitor",
       "silence-glyph",
       "spellbreaker"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Extra Spirit (Ekstra Büyü)",
+        "Mystic Burst (Mistik Patlama)",
+        "Extra Charge (Ekstra Şarj)",
+        "Extra Health (Ekstra Sağlık)"
+      ],
+      "coreItems": [
+        "Improved Spirit (Geliştirilmiş Büyü)",
+        "Compress Cooldown (GÜÇLENDİR Kısa Dolum Süresi)",
+        "Superior Duration (Üstün Süre Uzatıcı)",
+        "Spirit Lifesteal (Büyü Can Çalması)"
+      ],
+      "lateGame": [
+        "Boundless Spirit (Sınırsız Büyü)",
+        "Escalating Exposure (Artan Hassasiyet)",
+        "Mystic Reverb (GÜÇLENDİR Mistik Titreşimler)",
+        "Ethereal Shift (Ruhani Değişim)"
+      ]
+    }
   },
   {
     "id": "deadman-danny",
@@ -543,7 +743,27 @@ export const characters = [
       "slowing-hex",
       "counterspell",
       "reactive-barrier"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Extra Spirit (Ekstra Büyü)",
+        "Mystic Burst (Mistik Patlama)",
+        "Extra Health (Ekstra Sağlık)",
+        "Close Quarters (Yakın Mesafe)"
+      ],
+      "coreItems": [
+        "Improved Spirit (Geliştirilmiş Büyü)",
+        "Spirit Lifesteal (Büyü Can Çalması)",
+        "Compress Cooldown (GÜÇLENDİR Kısa Dolum Süresi)",
+        "Bullet Resist Shredder (Mermi Direnci Kırıcı)"
+      ],
+      "lateGame": [
+        "Boundless Spirit (Sınırsız Büyü)",
+        "Unstoppable (Durdurulamaz)",
+        "Escalating Exposure (Artan Hassasiyet)",
+        "Leech (Sülük)"
+      ]
+    }
   },
   {
     "id": "drifter",
@@ -590,7 +810,27 @@ export const characters = [
       "slowing-hex",
       "metal-skin",
       "healbane"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Melee Lifesteal (Vampir Yumruklar)",
+        "Close Quarters (Yakın Mesafe)",
+        "Extra Stamina (Ekstra Kuvvet)",
+        "Extra Health (Ekstra Sağlık)"
+      ],
+      "coreItems": [
+        "Lifestrike (İyileştiren Yumruk)",
+        "Stalker (İz Sürücü)",
+        "Berserker (Cinnetkâr)",
+        "Enduring Speed (Kalıcı Hız)"
+      ],
+      "lateGame": [
+        "Crushing Fists (Ezici Yumruklar)",
+        "Leech (Sülük)",
+        "Phantom Strike (AKTİF Hayalet Saldırı)",
+        "Unstoppable (Durdurulamaz)"
+      ]
+    }
   },
   {
     "id": "grey-talon",
@@ -635,7 +875,27 @@ export const characters = [
       "knockdown",
       "spellbreaker",
       "spirit-shielding"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Headshot Booster (Kafadan Vuruş Güçlendiricisi)",
+        "High-Velocity Rounds (Yüksek Hızlı Mermiler)",
+        "Extra Spirit (Ekstra Büyü)",
+        "Extra Charge (Ekstra Şarj)"
+      ],
+      "coreItems": [
+        "Long Range (Uzun Menzil)",
+        "Sharpshooter (Keskin Nişancı)",
+        "Improved Spirit (Geliştirilmiş Büyü)",
+        "Rapid Recharge (Hızlı Şarj)"
+      ],
+      "lateGame": [
+        "Glass Cannon (Kırılgan Kudret)",
+        "Crippling Headshot (Sakatlayan Kafadan Vuruş)",
+        "Boundless Spirit (Sınırsız Büyü)",
+        "Ethereal Shift (Ruhani Değişim)"
+      ]
+    }
   },
   {
     "id": "graves",
@@ -681,7 +941,27 @@ export const characters = [
       "decay",
       "healbane",
       "ricochet"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Extra Spirit (Ekstra Büyü)",
+        "Extra Charge (Ekstra Şarj)",
+        "Mystic Burst (Mistik Patlama)",
+        "Extra Health (Ekstra Sağlık)"
+      ],
+      "coreItems": [
+        "Improved Spirit (Geliştirilmiş Büyü)",
+        "Rapid Recharge (Hızlı Şarj)",
+        "Spirit Lifesteal (Büyü Can Çalması)",
+        "Compress Cooldown (GÜÇLENDİR Kısa Dolum Süresi)"
+      ],
+      "lateGame": [
+        "Boundless Spirit (Sınırsız Büyü)",
+        "Echo Shard (GÜÇLENDİR Yankı Parçası)",
+        "Escalating Exposure (Artan Hassasiyet)",
+        "Leech (Sülük)"
+      ]
+    }
   },
   {
     "id": "holliday",
@@ -727,7 +1007,27 @@ export const characters = [
       "reactive-barrier",
       "indomitable",
       "metal-skin"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Headshot Booster (Kafadan Vuruş Güçlendiricisi)",
+        "Extended Magazine (Genişletilmiş Şarjör)",
+        "High-Velocity Rounds (Yüksek Hızlı Mermiler)",
+        "Extra Charge (Ekstra Şarj)"
+      ],
+      "coreItems": [
+        "Sharpshooter (Keskin Nişancı)",
+        "Headhunter (Kelle Avcısı)",
+        "Rapid Recharge (Hızlı Şarj)",
+        "Kinetic Dash (Kinetik Atılma)"
+      ],
+      "lateGame": [
+        "Crippling Headshot (Sakatlayan Kafadan Vuruş)",
+        "Lucky Shot (Şanslı Atış)",
+        "Echo Shard (GÜÇLENDİR Yankı Parçası)",
+        "Glass Cannon (Kırılgan Kudret)"
+      ]
+    }
   },
   {
     "id": "infernus",
@@ -774,7 +1074,27 @@ export const characters = [
       "debuff-reducer",
       "dispel-magic",
       "healbane"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Extra Spirit (Ekstra Büyü)",
+        "Rapid Rounds (Seri Atış)",
+        "Extra Health (Ekstra Sağlık)",
+        "Extra Stamina (Ekstra Kuvvet)"
+      ],
+      "coreItems": [
+        "Improved Spirit (Geliştirilmiş Büyü)",
+        "Toxic Bullets (Toksik Mermiler)",
+        "Spirit Lifesteal (Büyü Can Çalması)",
+        "Duration Extender (GÜÇLENDİR Süre Uzatıcı)"
+      ],
+      "lateGame": [
+        "Leech (Sülük)",
+        "Escalating Exposure (Artan Hassasiyet)",
+        "Unstoppable (Durdurulamaz)",
+        "Spiritual Overflow (Büyülü Coşkunluk)"
+      ]
+    }
   },
   {
     "id": "ivy",
@@ -818,7 +1138,27 @@ export const characters = [
       "knockdown",
       "healbane",
       "silence-glyph"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Extra Spirit (Ekstra Büyü)",
+        "Mystic Burst (Mistik Patlama)",
+        "Healing Rite (AKTİF İyileştirme Ayini)",
+        "Extra Health (Ekstra Sağlık)"
+      ],
+      "coreItems": [
+        "Improved Spirit (Geliştirilmiş Büyü)",
+        "Healing Booster (İyileştirme Güçlendirici)",
+        "Reactive Barrier (Reaktif Bariyer)",
+        "Mystic Slow (Mistik Yavaşlatma)"
+      ],
+      "lateGame": [
+        "Boundless Spirit (Sınırsız Büyü)",
+        "Healing Tempo (İyileştirici Tempo)",
+        "Divine Barrier (AKTİF İlahi Bariyer)",
+        "Escalating Exposure (Artan Hassasiyet)"
+      ]
+    }
   },
   {
     "id": "kelvin",
@@ -863,7 +1203,27 @@ export const characters = [
       "enduring-speed",
       "unstoppable",
       "healbane"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Extra Spirit (Ekstra Büyü)",
+        "Healing Rite (AKTİF İyileştirme Ayini)",
+        "Extra Health (Ekstra Sağlık)",
+        "Mystic Expansion (GÜÇLENDİR Mistik Genişleme)"
+      ],
+      "coreItems": [
+        "Improved Spirit (Geliştirilmiş Büyü)",
+        "Healing Booster (İyileştirme Güçlendirici)",
+        "Superior Duration (Üstün Süre Uzatıcı)",
+        "Enduring Speed (Kalıcı Hız)"
+      ],
+      "lateGame": [
+        "Boundless Spirit (Sınırsız Büyü)",
+        "Healing Tempo (İyileştirici Tempo)",
+        "Unstoppable (Durdurulamaz)",
+        "Divine Barrier (AKTİF İlahi Bariyer)"
+      ]
+    }
   },
   {
     "id": "haze",
@@ -908,7 +1268,27 @@ export const characters = [
       "metal-skin",
       "return-fire",
       "plated-armor"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Rapid Rounds (Seri Atış)",
+        "Extended Magazine (Genişletilmiş Şarjör)",
+        "Headshot Booster (Kafadan Vuruş Güçlendiricisi)",
+        "Extra Stamina (Ekstra Kuvvet)"
+      ],
+      "coreItems": [
+        "Swift Striker (Tempolu Atış)",
+        "Toxic Bullets (Toksik Mermiler)",
+        "Hunter's Aura (Avcı Aurası)",
+        "Bullet Lifesteal (Mermi Can Çalması)"
+      ],
+      "lateGame": [
+        "Ricochet (Mermi Sekmesi)",
+        "Frenzy (Savaş Çılgınlığı)",
+        "Siphon Bullets (Can Çalma Mermileri)",
+        "Unstoppable (Durdurulamaz)"
+      ]
+    }
   },
   {
     "id": "lady-geist",
@@ -954,7 +1334,27 @@ export const characters = [
       "silence-glyph",
       "healbane",
       "spellbreaker"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Extra Spirit (Ekstra Büyü)",
+        "Mystic Burst (Mistik Patlama)",
+        "Extra Health (Ekstra Sağlık)",
+        "Extra Charge (Ekstra Şarj)"
+      ],
+      "coreItems": [
+        "Improved Spirit (Geliştirilmiş Büyü)",
+        "Spirit Lifesteal (Büyü Can Çalması)",
+        "Surge of Power (GÜÇLENDİR Güç Artışı)",
+        "Compress Cooldown (GÜÇLENDİR Kısa Dolum Süresi)"
+      ],
+      "lateGame": [
+        "Boundless Spirit (Sınırsız Büyü)",
+        "Refresher (AKTİF Yenileyici)",
+        "Leech (Sülük)",
+        "Escalating Exposure (Artan Hassasiyet)"
+      ]
+    }
   },
   {
     "id": "lash",
@@ -1001,7 +1401,27 @@ export const characters = [
       "slowing-hex",
       "silence-glyph",
       "ethereal-shift"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Extra Stamina (Ekstra Kuvvet)",
+        "Mystic Burst (Mistik Patlama)",
+        "Extra Spirit (Ekstra Büyü)",
+        "Extra Charge (Ekstra Şarj)"
+      ],
+      "coreItems": [
+        "Improved Spirit (Geliştirilmiş Büyü)",
+        "Stamina Mastery (Kuvvet Ustalığı)",
+        "Majestic Leap (AKTİF Görkemli Sıçrama)",
+        "Tankbuster (Tank Patlatan)"
+      ],
+      "lateGame": [
+        "Boundless Spirit (Sınırsız Büyü)",
+        "Echo Shard (GÜÇLENDİR Yankı Parçası)",
+        "Unstoppable (Durdurulamaz)",
+        "Mystic Reverb (GÜÇLENDİR Mistik Titreşimler)"
+      ]
+    }
   },
   {
     "id": "mcginnis",
@@ -1049,7 +1469,27 @@ export const characters = [
       "healbane",
       "warp-stone",
       "ricochet"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Extra Spirit (Ekstra Büyü)",
+        "Extended Magazine (Genişletilmiş Şarjör)",
+        "Healing Rite (AKTİF İyileştirme Ayini)",
+        "Extra Health (Ekstra Sağlık)"
+      ],
+      "coreItems": [
+        "Improved Spirit (Geliştirilmiş Büyü)",
+        "Superior Duration (Üstün Süre Uzatıcı)",
+        "Intensifying Magazine (Şiddetlenen Şarjör)",
+        "Healing Booster (İyileştirme Güçlendirici)"
+      ],
+      "lateGame": [
+        "Boundless Spirit (Sınırsız Büyü)",
+        "Ricochet (Mermi Sekmesi)",
+        "Healing Tempo (İyileştirici Tempo)",
+        "Unstoppable (Durdurulamaz)"
+      ]
+    }
   },
   {
     "id": "mina",
@@ -1095,7 +1535,27 @@ export const characters = [
       "healbane",
       "silence-glyph",
       "toxic-bullets"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Rapid Rounds (Seri Atış)",
+        "Extended Magazine (Genişletilmiş Şarjör)",
+        "Extra Spirit (Ekstra Büyü)",
+        "Extra Stamina (Ekstra Kuvvet)"
+      ],
+      "coreItems": [
+        "Improved Spirit (Geliştirilmiş Büyü)",
+        "Cold Front (AKTİF Soğuk Dalga)",
+        "Toxic Bullets (Toksik Mermiler)",
+        "Spirit Lifesteal (Büyü Can Çalması)"
+      ],
+      "lateGame": [
+        "Boundless Spirit (Sınırsız Büyü)",
+        "Mystic Reverb (GÜÇLENDİR Mistik Titreşimler)",
+        "Leech (Sülük)",
+        "Ethereal Shift (Ruhani Değişim)"
+      ]
+    }
   },
   {
     "id": "mirage",
@@ -1140,7 +1600,27 @@ export const characters = [
       "debuff-reducer",
       "slowing-hex",
       "silence-glyph"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Extra Spirit (Ekstra Büyü)",
+        "Rapid Rounds (Seri Atış)",
+        "Mystic Burst (Mistik Patlama)",
+        "Extra Stamina (Ekstra Kuvvet)"
+      ],
+      "coreItems": [
+        "Improved Spirit (Geliştirilmiş Büyü)",
+        "Toxic Bullets (Toksik Mermiler)",
+        "Compress Cooldown (GÜÇLENDİR Kısa Dolum Süresi)",
+        "Mystic Shot (Mistik Atış)"
+      ],
+      "lateGame": [
+        "Boundless Spirit (Sınırsız Büyü)",
+        "Escalating Exposure (Artan Hassasiyet)",
+        "Leech (Sülük)",
+        "Ethereal Shift (Ruhani Değişim)"
+      ]
+    }
   },
   {
     "id": "mo-and-krill",
@@ -1189,7 +1669,27 @@ export const characters = [
       "toxic-bullets",
       "decay",
       "reactive-barrier"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Extra Health (Ekstra Sağlık)",
+        "Extra Regen (Ekstra Yenilenme)",
+        "Melee Lifesteal (Vampir Yumruklar)",
+        "Extra Spirit (Ekstra Büyü)"
+      ],
+      "coreItems": [
+        "Improved Spirit (Geliştirilmiş Büyü)",
+        "Superior Duration (Üstün Süre Uzatıcı)",
+        "Fortitude (Metanet)",
+        "Enduring Speed (Kalıcı Hız)"
+      ],
+      "lateGame": [
+        "Boundless Spirit (Sınırsız Büyü)",
+        "Refresher (AKTİF Yenileyici)",
+        "Unstoppable (Durdurulamaz)",
+        "Leech (Sülük)"
+      ]
+    }
   },
   {
     "id": "nurse-harrow",
@@ -1236,7 +1736,27 @@ export const characters = [
       "dispel-magic",
       "debuff-reducer",
       "silence-glyph"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Extra Spirit (Ekstra Büyü)",
+        "Healing Rite (AKTİF İyileştirme Ayini)",
+        "Mystic Burst (Mistik Patlama)",
+        "Extra Health (Ekstra Sağlık)"
+      ],
+      "coreItems": [
+        "Improved Spirit (Geliştirilmiş Büyü)",
+        "Healing Booster (İyileştirme Güçlendirici)",
+        "Duration Extender (GÜÇLENDİR Süre Uzatıcı)",
+        "Spirit Lifesteal (Büyü Can Çalması)"
+      ],
+      "lateGame": [
+        "Healing Tempo (İyileştirici Tempo)",
+        "Boundless Spirit (Sınırsız Büyü)",
+        "Escalating Exposure (Artan Hassasiyet)",
+        "Divine Barrier (AKTİF İlahi Bariyer)"
+      ]
+    }
   },
   {
     "id": "paige",
@@ -1279,7 +1799,27 @@ export const characters = [
       "capacitor",
       "silence-glyph",
       "debuff-reducer"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Extra Spirit (Ekstra Büyü)",
+        "Healing Rite (AKTİF İyileştirme Ayini)",
+        "Extra Health (Ekstra Sağlık)",
+        "Mystic Expansion (GÜÇLENDİR Mistik Genişleme)"
+      ],
+      "coreItems": [
+        "Improved Spirit (Geliştirilmiş Büyü)",
+        "Healing Booster (İyileştirme Güçlendirici)",
+        "Superior Duration (Üstün Süre Uzatıcı)",
+        "Rescue Beam (AKTİF Kurtarma Işını)"
+      ],
+      "lateGame": [
+        "Boundless Spirit (Sınırsız Büyü)",
+        "Healing Tempo (İyileştirici Tempo)",
+        "Divine Barrier (AKTİF İlahi Bariyer)",
+        "Refresher (AKTİF Yenileyici)"
+      ]
+    }
   },
   {
     "id": "paradox",
@@ -1325,7 +1865,27 @@ export const characters = [
       "reactive-barrier",
       "ethereal-shift",
       "counterspell"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Extra Spirit (Ekstra Büyü)",
+        "Headshot Booster (Kafadan Vuruş Güçlendiricisi)",
+        "High-Velocity Rounds (Yüksek Hızlı Mermiler)",
+        "Extended Magazine (Genişletilmiş Şarjör)"
+      ],
+      "coreItems": [
+        "Improved Spirit (Geliştirilmiş Büyü)",
+        "Sharpshooter (Keskin Nişancı)",
+        "Warp Stone (Işınlanma Taşı)",
+        "Mystic Shot (Mistik Atış)"
+      ],
+      "lateGame": [
+        "Boundless Spirit (Sınırsız Büyü)",
+        "Crippling Headshot (Sakatlayan Kafadan Vuruş)",
+        "Ethereal Shift (Ruhani Değişim)",
+        "Glass Cannon (Kırılgan Kudret)"
+      ]
+    }
   },
   {
     "id": "pocket",
@@ -1374,7 +1934,27 @@ export const characters = [
       "silence-glyph",
       "slowing-hex",
       "spellbreaker"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Extra Spirit (Ekstra Büyü)",
+        "Mystic Burst (Mistik Patlama)",
+        "Extra Charge (Ekstra Şarj)",
+        "Extra Stamina (Ekstra Kuvvet)"
+      ],
+      "coreItems": [
+        "Improved Spirit (Geliştirilmiş Büyü)",
+        "Surge of Power (GÜÇLENDİR Güç Artışı)",
+        "Rapid Recharge (Hızlı Şarj)",
+        "Spirit Lifesteal (Büyü Can Çalması)"
+      ],
+      "lateGame": [
+        "Boundless Spirit (Sınırsız Büyü)",
+        "Escalating Exposure (Artan Hassasiyet)",
+        "Mystic Reverb (GÜÇLENDİR Mistik Titreşimler)",
+        "Echo Shard (GÜÇLENDİR Yankı Parçası)"
+      ]
+    }
   },
   {
     "id": "rat-king",
@@ -1420,7 +2000,27 @@ export const characters = [
       "torment-pulse",
       "ricochet",
       "debuff-reducer"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Extra Spirit (Ekstra Büyü)",
+        "Mystic Burst (Mistik Patlama)",
+        "Extra Charge (Ekstra Şarj)",
+        "Extra Health (Ekstra Sağlık)"
+      ],
+      "coreItems": [
+        "Improved Spirit (Geliştirilmiş Büyü)",
+        "Rapid Recharge (Hızlı Şarj)",
+        "Compress Cooldown (GÜÇLENDİR Kısa Dolum Süresi)",
+        "Spirit Lifesteal (Büyü Can Çalması)"
+      ],
+      "lateGame": [
+        "Boundless Spirit (Sınırsız Büyü)",
+        "Echo Shard (GÜÇLENDİR Yankı Parçası)",
+        "Escalating Exposure (Artan Hassasiyet)",
+        "Leech (Sülük)"
+      ]
+    }
   },
   {
     "id": "rem",
@@ -1466,7 +2066,27 @@ export const characters = [
       "reactive-barrier",
       "indomitable",
       "unstoppable"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Extra Spirit (Ekstra Büyü)",
+        "Healing Rite (AKTİF İyileştirme Ayini)",
+        "Extra Health (Ekstra Sağlık)",
+        "Mystic Expansion (GÜÇLENDİR Mistik Genişleme)"
+      ],
+      "coreItems": [
+        "Improved Spirit (Geliştirilmiş Büyü)",
+        "Superior Duration (Üstün Süre Uzatıcı)",
+        "Healing Booster (İyileştirme Güçlendirici)",
+        "Rescue Beam (AKTİF Kurtarma Işını)"
+      ],
+      "lateGame": [
+        "Boundless Spirit (Sınırsız Büyü)",
+        "Refresher (AKTİF Yenileyici)",
+        "Divine Barrier (AKTİF İlahi Bariyer)",
+        "Healing Tempo (İyileştirici Tempo)"
+      ]
+    }
   },
   {
     "id": "shiv",
@@ -1514,7 +2134,27 @@ export const characters = [
       "healbane",
       "toxic-bullets",
       "slowing-hex"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Extra Charge (Ekstra Şarj)",
+        "Extra Health (Ekstra Sağlık)",
+        "Close Quarters (Yakın Mesafe)",
+        "Extra Stamina (Ekstra Kuvvet)"
+      ],
+      "coreItems": [
+        "Decay (Çürüme)",
+        "Spirit Lifesteal (Büyü Can Çalması)",
+        "Fortitude (Metanet)",
+        "Enduring Speed (Kalıcı Hız)"
+      ],
+      "lateGame": [
+        "Colossus (AKTİF Dev)",
+        "Leech (Sülük)",
+        "Boundless Spirit (Sınırsız Büyü)",
+        "Unstoppable (Durdurulamaz)"
+      ]
+    }
   },
   {
     "id": "silver",
@@ -1560,7 +2200,27 @@ export const characters = [
       "slowing-hex",
       "healbane",
       "metal-skin"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Melee Lifesteal (Vampir Yumruklar)",
+        "Close Quarters (Yakın Mesafe)",
+        "Rapid Rounds (Seri Atış)",
+        "Extra Stamina (Ekstra Kuvvet)"
+      ],
+      "coreItems": [
+        "Lifestrike (İyileştiren Yumruk)",
+        "Berserker (Cinnetkâr)",
+        "Swift Striker (Tempolu Atış)",
+        "Enduring Speed (Kalıcı Hız)"
+      ],
+      "lateGame": [
+        "Crushing Fists (Ezici Yumruklar)",
+        "Siphon Bullets (Can Çalma Mermileri)",
+        "Unstoppable (Durdurulamaz)",
+        "Phantom Strike (AKTİF Hayalet Saldırı)"
+      ]
+    }
   },
   {
     "id": "solomon",
@@ -1606,7 +2266,27 @@ export const characters = [
       "warp-stone",
       "silence-glyph",
       "spellbreaker"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Extra Spirit (Ekstra Büyü)",
+        "Extra Charge (Ekstra Şarj)",
+        "Mystic Burst (Mistik Patlama)",
+        "Extra Health (Ekstra Sağlık)"
+      ],
+      "coreItems": [
+        "Improved Spirit (Geliştirilmiş Büyü)",
+        "Rapid Recharge (Hızlı Şarj)",
+        "Superior Duration (Üstün Süre Uzatıcı)",
+        "Compress Cooldown (GÜÇLENDİR Kısa Dolum Süresi)"
+      ],
+      "lateGame": [
+        "Boundless Spirit (Sınırsız Büyü)",
+        "Refresher (AKTİF Yenileyici)",
+        "Escalating Exposure (Artan Hassasiyet)",
+        "Ethereal Shift (Ruhani Değişim)"
+      ]
+    }
   },
   {
     "id": "doorman",
@@ -1652,7 +2332,27 @@ export const characters = [
       "silence-glyph",
       "slowing-hex",
       "reactive-barrier"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Extra Spirit (Ekstra Büyü)",
+        "Extra Charge (Ekstra Şarj)",
+        "Extra Health (Ekstra Sağlık)",
+        "Mystic Expansion (GÜÇLENDİR Mistik Genişleme)"
+      ],
+      "coreItems": [
+        "Improved Spirit (Geliştirilmiş Büyü)",
+        "Superior Duration (Üstün Süre Uzatıcı)",
+        "Compress Cooldown (GÜÇLENDİR Kısa Dolum Süresi)",
+        "Reactive Barrier (Reaktif Bariyer)"
+      ],
+      "lateGame": [
+        "Boundless Spirit (Sınırsız Büyü)",
+        "Refresher (AKTİF Yenileyici)",
+        "Unstoppable (Durdurulamaz)",
+        "Echo Shard (GÜÇLENDİR Yankı Parçası)"
+      ]
+    }
   },
   {
     "id": "victor",
@@ -1699,7 +2399,27 @@ export const characters = [
       "healbane",
       "toxic-bullets",
       "decay"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Extra Health (Ekstra Sağlık)",
+        "Extra Regen (Ekstra Yenilenme)",
+        "Extra Spirit (Ekstra Büyü)",
+        "Melee Lifesteal (Vampir Yumruklar)"
+      ],
+      "coreItems": [
+        "Improved Spirit (Geliştirilmiş Büyü)",
+        "Fortitude (Metanet)",
+        "Spirit Lifesteal (Büyü Can Çalması)",
+        "Spirit Resilience (Büyü Dayanıklılığı)"
+      ],
+      "lateGame": [
+        "Leech (Sülük)",
+        "Colossus (AKTİF Dev)",
+        "Healing Tempo (İyileştirici Tempo)",
+        "Unstoppable (Durdurulamaz)"
+      ]
+    }
   },
   {
     "id": "sinclair",
@@ -1743,7 +2463,27 @@ export const characters = [
       "debuff-reducer",
       "unstoppable",
       "silence-glyph"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Extra Spirit (Ekstra Büyü)",
+        "Mystic Burst (Mistik Patlama)",
+        "Extra Health (Ekstra Sağlık)",
+        "Extra Stamina (Ekstra Kuvvet)"
+      ],
+      "coreItems": [
+        "Improved Spirit (Geliştirilmiş Büyü)",
+        "Superior Duration (Üstün Süre Uzatıcı)",
+        "Compress Cooldown (GÜÇLENDİR Kısa Dolum Süresi)",
+        "Warp Stone (Işınlanma Taşı)"
+      ],
+      "lateGame": [
+        "Boundless Spirit (Sınırsız Büyü)",
+        "Refresher (AKTİF Yenileyici)",
+        "Ethereal Shift (Ruhani Değişim)",
+        "Escalating Exposure (Artan Hassasiyet)"
+      ]
+    }
   },
   {
     "id": "venator",
@@ -1793,7 +2533,27 @@ export const characters = [
       "metal-skin",
       "plated-armor",
       "dispel-magic"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Headshot Booster (Kafadan Vuruş Güçlendiricisi)",
+        "Extended Magazine (Genişletilmiş Şarjör)",
+        "High-Velocity Rounds (Yüksek Hızlı Mermiler)",
+        "Extra Health (Ekstra Sağlık)"
+      ],
+      "coreItems": [
+        "Sharpshooter (Keskin Nişancı)",
+        "Headhunter (Kelle Avcısı)",
+        "Toxic Bullets (Toksik Mermiler)",
+        "Long Range (Uzun Menzil)"
+      ],
+      "lateGame": [
+        "Crippling Headshot (Sakatlayan Kafadan Vuruş)",
+        "Glass Cannon (Kırılgan Kudret)",
+        "Lucky Shot (Şanslı Atış)",
+        "Plated Armor (Kaplamalı Zırh)"
+      ]
+    }
   },
   {
     "id": "violet",
@@ -1840,7 +2600,27 @@ export const characters = [
       "silence-glyph",
       "slowing-hex",
       "reactive-barrier"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Extra Spirit (Ekstra Büyü)",
+        "Mystic Burst (Mistik Patlama)",
+        "High-Velocity Rounds (Yüksek Hızlı Mermiler)",
+        "Extra Stamina (Ekstra Kuvvet)"
+      ],
+      "coreItems": [
+        "Improved Spirit (Geliştirilmiş Büyü)",
+        "Superior Duration (Üstün Süre Uzatıcı)",
+        "Compress Cooldown (GÜÇLENDİR Kısa Dolum Süresi)",
+        "Spirit Lifesteal (Büyü Can Çalması)"
+      ],
+      "lateGame": [
+        "Boundless Spirit (Sınırsız Büyü)",
+        "Escalating Exposure (Artan Hassasiyet)",
+        "Mystic Reverb (GÜÇLENDİR Mistik Titreşimler)",
+        "Ethereal Shift (Ruhani Değişim)"
+      ]
+    }
   },
   {
     "id": "viscous",
@@ -1886,7 +2666,27 @@ export const characters = [
       "silence-glyph",
       "healbane",
       "slowing-hex"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Extra Spirit (Ekstra Büyü)",
+        "Mystic Burst (Mistik Patlama)",
+        "Extra Health (Ekstra Sağlık)",
+        "Extra Stamina (Ekstra Kuvvet)"
+      ],
+      "coreItems": [
+        "Improved Spirit (Geliştirilmiş Büyü)",
+        "Surge of Power (GÜÇLENDİR Güç Artışı)",
+        "Spirit Lifesteal (Büyü Can Çalması)",
+        "Compress Cooldown (GÜÇLENDİR Kısa Dolum Süresi)"
+      ],
+      "lateGame": [
+        "Boundless Spirit (Sınırsız Büyü)",
+        "Refresher (AKTİF Yenileyici)",
+        "Leech (Sülük)",
+        "Echo Shard (GÜÇLENDİR Yankı Parçası)"
+      ]
+    }
   },
   {
     "id": "vyper",
@@ -1933,7 +2733,27 @@ export const characters = [
       "metal-skin",
       "return-fire",
       "juggernaut"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Rapid Rounds (Seri Atış)",
+        "Headshot Booster (Kafadan Vuruş Güçlendiricisi)",
+        "Extended Magazine (Genişletilmiş Şarjör)",
+        "Extra Stamina (Ekstra Kuvvet)"
+      ],
+      "coreItems": [
+        "Swift Striker (Tempolu Atış)",
+        "Toxic Bullets (Toksik Mermiler)",
+        "Kinetic Dash (Kinetik Atılma)",
+        "Headhunter (Kelle Avcısı)"
+      ],
+      "lateGame": [
+        "Ricochet (Mermi Sekmesi)",
+        "Crippling Headshot (Sakatlayan Kafadan Vuruş)",
+        "Frenzy (Savaş Çılgınlığı)",
+        "Siphon Bullets (Can Çalma Mermileri)"
+      ]
+    }
   },
   {
     "id": "warden",
@@ -1980,7 +2800,27 @@ export const characters = [
       "healbane",
       "toxic-bullets",
       "warp-stone"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Extra Health (Ekstra Sağlık)",
+        "Extra Spirit (Ekstra Büyü)",
+        "Extended Magazine (Genişletilmiş Şarjör)",
+        "Extra Regen (Ekstra Yenilenme)"
+      ],
+      "coreItems": [
+        "Improved Spirit (Geliştirilmiş Büyü)",
+        "Superior Duration (Üstün Süre Uzatıcı)",
+        "Fortitude (Metanet)",
+        "Slowing Hex (Yavaşlatma Büyüsü)"
+      ],
+      "lateGame": [
+        "Leech (Sülük)",
+        "Unstoppable (Durdurulamaz)",
+        "Siphon Bullets (Can Çalma Mermileri)",
+        "Colossus (AKTİF Dev)"
+      ]
+    }
   },
   {
     "id": "wraith",
@@ -2028,7 +2868,27 @@ export const characters = [
       "metal-skin",
       "return-fire",
       "reactive-barrier"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Rapid Rounds (Seri Atış)",
+        "Extended Magazine (Genişletilmiş Şarjör)",
+        "Headshot Booster (Kafadan Vuruş Güçlendiricisi)",
+        "Extra Stamina (Ekstra Kuvvet)"
+      ],
+      "coreItems": [
+        "Swift Striker (Tempolu Atış)",
+        "Toxic Bullets (Toksik Mermiler)",
+        "Hunter's Aura (Avcı Aurası)",
+        "Kinetic Dash (Kinetik Atılma)"
+      ],
+      "lateGame": [
+        "Ricochet (Mermi Sekmesi)",
+        "Frenzy (Savaş Çılgınlığı)",
+        "Siphon Bullets (Can Çalma Mermileri)",
+        "Ethereal Shift (Ruhani Değişim)"
+      ]
+    }
   },
   {
     "id": "yamato",
@@ -2072,7 +2932,27 @@ export const characters = [
       "silence-glyph",
       "healbane",
       "ethereal-shift"
-    ]
+    ],
+    "popularBuilds": {
+      "earlyGame": [
+        "Extra Spirit (Ekstra Büyü)",
+        "Mystic Burst (Mistik Patlama)",
+        "Extra Health (Ekstra Sağlık)",
+        "Close Quarters (Yakın Mesafe)"
+      ],
+      "coreItems": [
+        "Improved Spirit (Geliştirilmiş Büyü)",
+        "Spirit Lifesteal (Büyü Can Çalması)",
+        "Torment Pulse (Yayılan İşkence)",
+        "Enduring Speed (Kalıcı Hız)"
+      ],
+      "lateGame": [
+        "Boundless Spirit (Sınırsız Büyü)",
+        "Refresher (AKTİF Yenileyici)",
+        "Leech (Sülük)",
+        "Phantom Strike (AKTİF Hayalet Saldırı)"
+      ]
+    }
   }
 ];
 
