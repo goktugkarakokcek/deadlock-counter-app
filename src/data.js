@@ -1202,7 +1202,6 @@ export const itemsCatalog = {
     baseDesc:
       'Rakibin hareket hızını düşürür ve 3 saniye boyunca tüm hareket tabanlı yeteneklerini (Flight, Charge, Quantum Entanglement) kilitler.',
   },
-  // Silah (Turuncu) Eşyaları - $ 800 (Aşama I) Grubu
   'close-quarters': {
     id: 'close-quarters',
     name: 'Close Quarters (Yakın Mesafe)',
@@ -1294,7 +1293,6 @@ export const itemsCatalog = {
     baseDesc:
       'TBD (Needs Manual Entry) — Şifalı Atış eşyasının doğrulanmış iyileştirme ve bekleme süresi değerleri manuel veri girişi beklemektedir.',
   },
-  // Silah (Turuncu) Eşyaları - $ 1600 (Aşama II) Grubu
   'active-reload': {
     id: 'active-reload',
     name: 'Active Reload (Aktif Şarjör Değiştirme)',
@@ -1503,7 +1501,6 @@ export const itemsCatalog = {
     baseDesc:
       'TBD (Needs Manual Entry) — Zayıflatan Kafadan Vuruş eşyasının doğrulanmış mermi direnci kırma ve kafadan vuruş değerleri manuel veri girişi beklemektedir.',
   },
-  // Silah (Turuncu) Eşyaları - $ 3200 (Aşama III) Grubu
   'alchemical-fire': {
     id: 'alchemical-fire',
     name: 'Alchemical Fire (AKTİF Simya Alevi)',
@@ -1649,14 +1646,14 @@ export const itemsCatalog = {
   },
   'hunters-aura': {
     id: 'hunters-aura',
-    name: "Hunter's Aura (Avcı Aurası)",
+    name: 'Hunter\'s Aura (Avcı Aurası)',
     category: 'Weapon',
     cost: '$ 3200',
     tier: 'Aşama III',
     activation: 'Pasif (Aura)',
     image: '/assets/items/hunters-aura.png',
     imageAlt:
-      "Hunter's Aura (Avcı Aurası) eşya ikonu - $ 3200 (Aşama III) değerinde Silah (Turuncu) eşyası",
+      'Hunter\'s Aura (Avcı Aurası) eşya ikonu - $ 3200 (Aşama III) değerinde Silah (Turuncu) eşyası',
     baseDesc:
       'TBD (Needs Manual Entry) — Avcı Aurası eşyasının doğrulanmış yakındaki rakiplerin mermi direncini ve atış hızını düşürme değerleri manuel veri girişi beklemektedir.',
   },
@@ -1751,7 +1748,6 @@ export const itemsCatalog = {
     baseDesc:
       'TBD (Needs Manual Entry) — Ağırlıklı Atışlar eşyasının doğrulanmış silah hasarı ve pasif etki değerleri manuel veri girişi beklemektedir.',
   },
-  // Silah (Turuncu) Eşyaları - $ 6400 (Aşama IV) Grubu
   'armor-piercer': {
     id: 'armor-piercer',
     name: 'Armor Piercing Rounds (Zırh Delen)',
@@ -1894,6 +1890,2541 @@ export const itemsCatalog = {
       'Spiritual Overflow (Büyülü Coşkunluk) eşya ikonu - $ 6400 (Aşama IV) değerinde Silah (Turuncu) eşyası',
     baseDesc:
       'TBD (Needs Manual Entry) — Büyülü Coşkunluk eşyasının doğrulanmış mermi isabetiyle biriken büyü gücü (Spirit Power) ve dolum süresi azaltma değerleri manuel veri girişi beklemektedir.',
+  },
+  'extra-charge': {
+    id: 'extra-charge',
+    name: 'Extra Charge (Ekstra Şarj)',
+    category: 'Spirit',
+    cost: '$ 800',
+    tier: 'Aşama I',
+    activation: 'Pasif',
+    image: '/assets/items/extra-charge.png',
+    imageAlt:
+      'Extra Charge (Ekstra Şarj) eşya ikonu - $ 800 (Aşama I) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Ekstra Şarj eşyasının doğrulanmış ilave yetenek yükü (Bonus Ability Charge) ve dolum süresi değerleri manuel veri girişi beklemektedir.',
+  },
+  'extra-spirit': {
+    id: 'extra-spirit',
+    name: 'Extra Spirit (Ekstra Büyü)',
+    category: 'Spirit',
+    cost: '$ 800',
+    tier: 'Aşama I',
+    activation: 'Pasif',
+    image: '/assets/items/extra-spirit.png',
+    imageAlt:
+      'Extra Spirit (Ekstra Büyü) eşya ikonu - $ 800 (Aşama I) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Ekstra Büyü eşyasının doğrulanmış büyü gücü (Spirit Power) ve temel istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'golden-goose-egg': {
+    id: 'golden-goose-egg',
+    name: 'Golden Goose Egg (AKTİF Altın Kaz Yumurtası)',
+    category: 'Spirit',
+    cost: '$ 800',
+    tier: 'Aşama I',
+    activation: 'AKTİF',
+    image: '/assets/items/golden-goose-egg.png',
+    imageAlt:
+      'Golden Goose Egg (AKTİF Altın Kaz Yumurtası) eşya ikonu - $ 800 (Aşama I) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — AKTİF Altın Kaz Yumurtası eşyasının doğrulanmış aktif etki ve ruh/istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'mystic-burst': {
+    id: 'mystic-burst',
+    name: 'Mystic Burst (Mistik Patlama)',
+    category: 'Spirit',
+    cost: '$ 800',
+    tier: 'Aşama I',
+    activation: 'Pasif (Tetiklemeli)',
+    image: '/assets/items/mystic-burst.png',
+    imageAlt:
+      'Mystic Burst (Mistik Patlama) eşya ikonu - $ 800 (Aşama I) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Mistik Patlama eşyasının doğrulanmış yetenek hasarı eşiği ve ilave büyü hasarı değerleri manuel veri girişi beklemektedir.',
+  },
+  'mystic-expansion': {
+    id: 'mystic-expansion',
+    name: 'Mystic Expansion (GÜÇLENDİR Mistik Genişleme)',
+    category: 'Spirit',
+    cost: '$ 800',
+    tier: 'Aşama I',
+    activation: 'GÜÇLENDİR (Imbue)',
+    image: '/assets/items/mystic-expansion.png',
+    imageAlt:
+      'Mystic Expansion (GÜÇLENDİR Mistik Genişleme) eşya ikonu - $ 800 (Aşama I) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — GÜÇLENDİR Mistik Genişleme eşyasının doğrulanmış yetenek menzili ve etki alanı (Ability Range) değerleri manuel veri girişi beklemektedir.',
+  },
+  'mystic-regeneration': {
+    id: 'mystic-regeneration',
+    name: 'Mystic Regeneration (Mistik Yenilenme)',
+    category: 'Spirit',
+    cost: '$ 800',
+    tier: 'Aşama I',
+    activation: 'Pasif (Tetiklemeli)',
+    image: '/assets/items/mystic-regeneration.png',
+    imageAlt:
+      'Mystic Regeneration (Mistik Yenilenme) eşya ikonu - $ 800 (Aşama I) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Mistik Yenilenme eşyasının doğrulanmış büyü hasarı verildiğinde sağladığı can yenilemesi (Health Regen) değerleri manuel veri girişi beklemektedir.',
+  },
+  'rusted-barrel': {
+    id: 'rusted-barrel',
+    name: 'Rusted Barrel (AKTİF Paslı Namlu)',
+    category: 'Spirit',
+    cost: '$ 800',
+    tier: 'Aşama I',
+    activation: 'AKTİF (Hedefli)',
+    image: '/assets/items/rusted-barrel.png',
+    imageAlt:
+      'Rusted Barrel (AKTİF Paslı Namlu) eşya ikonu - $ 800 (Aşama I) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — AKTİF Paslı Namlu eşyasının doğrulanmış rakip atış hızı ve mermi direnci düşürme değerleri manuel veri girişi beklemektedir.',
+  },
+  'spirit-strike': {
+    id: 'spirit-strike',
+    name: 'Spirit Strike (Büyülü Yumruk)',
+    category: 'Spirit',
+    cost: '$ 800',
+    tier: 'Aşama I',
+    activation: 'Pasif (Tetiklemeli)',
+    image: '/assets/items/spirit-strike.png',
+    imageAlt:
+      'Spirit Strike (Büyülü Yumruk) eşya ikonu - $ 800 (Aşama I) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Büyülü Yumruk eşyasının doğrulanmış yakın dövüş (Melee) isabetinde verdiği büyü hasarı ve büyü direnci kırma değerleri manuel veri girişi beklemektedir.',
+  },
+  'ablative-coat': {
+    id: 'ablative-coat',
+    name: 'Ablative Coat',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/ablative-coat.png',
+    imageAlt:
+      'Ablative Coat eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Ablative Coat eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'adrenaline-rush': {
+    id: 'adrenaline-rush',
+    name: 'Adrenaline Rush',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/adrenaline-rush.png',
+    imageAlt:
+      'Adrenaline Rush eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Adrenaline Rush eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'aerial-assault': {
+    id: 'aerial-assault',
+    name: 'Aerial Assault',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/aerial-assault.png',
+    imageAlt:
+      'Aerial Assault eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Aerial Assault eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'ammo-scavenger': {
+    id: 'ammo-scavenger',
+    name: 'Ammo Scavenger',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/ammo-scavenger.png',
+    imageAlt:
+      'Ammo Scavenger eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Ammo Scavenger eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'arcane-eater': {
+    id: 'arcane-eater',
+    name: 'Arcane Eater',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/arcane-eater.png',
+    imageAlt:
+      'Arcane Eater eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Arcane Eater eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'arcane-medallion': {
+    id: 'arcane-medallion',
+    name: 'Arcane Medallion',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/arcane-medallion.png',
+    imageAlt:
+      'Arcane Medallion eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Arcane Medallion eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'arcane-surge': {
+    id: 'arcane-surge',
+    name: 'Arcane Surge (Gizemli Dalgalanma)',
+    category: 'Spirit',
+    cost: '$ 1600',
+    tier: 'Aşama II',
+    activation: 'Pasif',
+    image: '/assets/items/arcane-surge.png',
+    imageAlt:
+      'Arcane Surge (Gizemli Dalgalanma) eşya ikonu - $ 1600 (Aşama II) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Arcane Surge (Gizemli Dalgalanma) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  archmother: {
+    id: 'archmother',
+    name: 'Archmother',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/archmother.png',
+    imageAlt:
+      'Archmother eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Archmother eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'arctic-blast': {
+    id: 'arctic-blast',
+    name: 'Arctic Blast (AKTİF Kutup Patlaması)',
+    category: 'Spirit',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'AKTİF',
+    image: '/assets/items/arctic-blast.png',
+    imageAlt:
+      'Arctic Blast (AKTİF Kutup Patlaması) eşya ikonu - $ 6400 (Aşama IV) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Arctic Blast (AKTİF Kutup Patlaması) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'basic-fire-rate': {
+    id: 'basic-fire-rate',
+    name: 'Basic Fire Rate',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/basic-fire-rate.png',
+    imageAlt:
+      'Basic Fire Rate eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Basic Fire Rate eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'battle-vest': {
+    id: 'battle-vest',
+    name: 'Battle Vest (Savaş Yeleği)',
+    category: 'Vitality',
+    cost: '$ 1600',
+    tier: 'Aşama II',
+    activation: 'Pasif',
+    image: '/assets/items/battle-vest.png',
+    imageAlt:
+      'Battle Vest (Savaş Yeleği) eşya ikonu - $ 1600 (Aşama II) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Battle Vest (Savaş Yeleği) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'belt-fed-magazine': {
+    id: 'belt-fed-magazine',
+    name: 'Belt Fed Magazine',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/belt-fed-magazine.png',
+    imageAlt:
+      'Belt Fed Magazine eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Belt Fed Magazine eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'boundless-spirit': {
+    id: 'boundless-spirit',
+    name: 'Boundless Spirit (Sınırsız Büyü)',
+    category: 'Spirit',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'Pasif',
+    image: '/assets/items/boundless-spirit.png',
+    imageAlt:
+      'Boundless Spirit (Sınırsız Büyü) eşya ikonu - $ 6400 (Aşama IV) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Boundless Spirit (Sınırsız Büyü) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'bullet-armor': {
+    id: 'bullet-armor',
+    name: 'Bullet Armor',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/bullet-armor.png',
+    imageAlt:
+      'Bullet Armor eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Bullet Armor eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'bullet-deflector': {
+    id: 'bullet-deflector',
+    name: 'Bullet Deflector',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/bullet-deflector.png',
+    imageAlt:
+      'Bullet Deflector eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Bullet Deflector eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'bullet-lifesteal-item': {
+    id: 'bullet-lifesteal-item',
+    name: 'Bullet Lifesteal (Mermi Can Çalması)',
+    category: 'Vitality',
+    cost: '$ 1600',
+    tier: 'Aşama II',
+    activation: 'Pasif',
+    image: '/assets/items/bullet-lifesteal-item.png',
+    imageAlt:
+      'Bullet Lifesteal (Mermi Can Çalması) eşya ikonu - $ 1600 (Aşama II) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Bullet Lifesteal (Mermi Can Çalması) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'bullet-resilience': {
+    id: 'bullet-resilience',
+    name: 'Bullet Resilience (Mermi Dayanıklılığı)',
+    category: 'Vitality',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'Pasif',
+    image: '/assets/items/bullet-resilience.png',
+    imageAlt:
+      'Bullet Resilience (Mermi Dayanıklılığı) eşya ikonu - $ 3200 (Aşama III) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Bullet Resilience (Mermi Dayanıklılığı) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'bullet-resist-shredder': {
+    id: 'bullet-resist-shredder',
+    name: 'Bullet Resist Shredder (Mermi Direnci Kırıcı)',
+    category: 'Spirit',
+    cost: '$ 1600',
+    tier: 'Aşama II',
+    activation: 'Pasif',
+    image: '/assets/items/bullet-resist-shredder.png',
+    imageAlt:
+      'Bullet Resist Shredder (Mermi Direnci Kırıcı) eşya ikonu - $ 1600 (Aşama II) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Bullet Resist Shredder (Mermi Direnci Kırıcı) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'burst-fire-actuator': {
+    id: 'burst-fire-actuator',
+    name: 'Burst Fire Actuator',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/burst-fire-actuator.png',
+    imageAlt:
+      'Burst Fire Actuator eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Burst Fire Actuator eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'camouflage-suit': {
+    id: 'camouflage-suit',
+    name: 'Camouflage Suit',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/camouflage-suit.png',
+    imageAlt:
+      'Camouflage Suit eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Camouflage Suit eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'celestial-blessing': {
+    id: 'celestial-blessing',
+    name: 'Celestial Blessing',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/celestial-blessing.png',
+    imageAlt:
+      'Celestial Blessing eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Celestial Blessing eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'charge-mastery': {
+    id: 'charge-mastery',
+    name: 'Charge Mastery',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/charge-mastery.png',
+    imageAlt:
+      'Charge Mastery eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Charge Mastery eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'charmed-wraps': {
+    id: 'charmed-wraps',
+    name: 'Charmed Wraps',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/charmed-wraps.png',
+    imageAlt:
+      'Charmed Wraps eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Charmed Wraps eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'cheat-death': {
+    id: 'cheat-death',
+    name: 'Cheat Death (Kefen Yırtan)',
+    category: 'Vitality',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'Pasif (Tetiklemeli)',
+    image: '/assets/items/cheat-death.png',
+    imageAlt:
+      'Cheat Death (Kefen Yırtan) eşya ikonu - $ 6400 (Aşama IV) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Cheat Death (Kefen Yırtan) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  clarity: {
+    id: 'clarity',
+    name: 'Clarity',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/clarity.png',
+    imageAlt:
+      'Clarity eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Clarity eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'cloak-of-opportunity': {
+    id: 'cloak-of-opportunity',
+    name: 'Cloak Of Opportunity',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/cloak-of-opportunity.png',
+    imageAlt:
+      'Cloak Of Opportunity eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Cloak Of Opportunity eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'cloaking-device': {
+    id: 'cloaking-device',
+    name: 'Cloaking Device',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/cloaking-device.png',
+    imageAlt:
+      'Cloaking Device eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Cloaking Device eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'cold-front': {
+    id: 'cold-front',
+    name: 'Cold Front (AKTİF Soğuk Dalga)',
+    category: 'Spirit',
+    cost: '$ 1600',
+    tier: 'Aşama II',
+    activation: 'AKTİF',
+    image: '/assets/items/cold-front.png',
+    imageAlt:
+      'Cold Front (AKTİF Soğuk Dalga) eşya ikonu - $ 1600 (Aşama II) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Cold Front (AKTİF Soğuk Dalga) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  colossus: {
+    id: 'colossus',
+    name: 'Colossus (AKTİF Dev)',
+    category: 'Vitality',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'AKTİF',
+    image: '/assets/items/colossus.png',
+    imageAlt:
+      'Colossus (AKTİF Dev) eşya ikonu - $ 6400 (Aşama IV) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Colossus (AKTİF Dev) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'combo-breaker': {
+    id: 'combo-breaker',
+    name: 'Combo Breaker',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/combo-breaker.png',
+    imageAlt:
+      'Combo Breaker eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Combo Breaker eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'compress-cooldown': {
+    id: 'compress-cooldown',
+    name: 'Compress Cooldown (GÜÇLENDİR Kısa Dolum Süresi)',
+    category: 'Spirit',
+    cost: '$ 1600',
+    tier: 'Aşama II',
+    activation: 'GÜÇLENDİR (Imbue)',
+    image: '/assets/items/compress-cooldown.png',
+    imageAlt:
+      'Compress Cooldown (GÜÇLENDİR Kısa Dolum Süresi) eşya ikonu - $ 1600 (Aşama II) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Compress Cooldown (GÜÇLENDİR Kısa Dolum Süresi) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  counterspell: {
+    id: 'counterspell',
+    name: 'Counterspell (Karşı Büyü)',
+    category: 'Vitality',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'Pasif',
+    image: '/assets/items/counterspell.png',
+    imageAlt:
+      'Counterspell (Karşı Büyü) eşya ikonu - $ 3200 (Aşama III) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Counterspell (Karşı Büyü) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'creative-commons-attribution-sharealike': {
+    id: 'creative-commons-attribution-sharealike',
+    name: 'Creative Commons Attribution Sharealike',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/creative-commons-attribution-sharealike.png',
+    imageAlt:
+      'Creative Commons Attribution Sharealike eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Creative Commons Attribution Sharealike eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'cursed-relic': {
+    id: 'cursed-relic',
+    name: 'Cursed Relic (AKTİF Lanetli Yadigâr)',
+    category: 'Spirit',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'AKTİF (Hedefli)',
+    image: '/assets/items/cursed-relic.png',
+    imageAlt:
+      'Cursed Relic (AKTİF Lanetli Yadigâr) eşya ikonu - $ 6400 (Aşama IV) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Cursed Relic (AKTİF Lanetli Yadigâr) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'detention-rounds': {
+    id: 'detention-rounds',
+    name: 'Detention Rounds',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/detention-rounds.png',
+    imageAlt:
+      'Detention Rounds eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Detention Rounds eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'disarming-bullets': {
+    id: 'disarming-bullets',
+    name: 'Disarming Bullets',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/disarming-bullets.png',
+    imageAlt:
+      'Disarming Bullets eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Disarming Bullets eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'disarming-hex': {
+    id: 'disarming-hex',
+    name: 'Disarming Hex (AKTİF Etkisizleştirme Büyüsü)',
+    category: 'Spirit',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'AKTİF (Hedefli)',
+    image: '/assets/items/disarming-hex.png',
+    imageAlt:
+      'Disarming Hex (AKTİF Etkisizleştirme Büyüsü) eşya ikonu - $ 3200 (Aşama III) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Disarming Hex (AKTİF Etkisizleştirme Büyüsü) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'dispel-magic': {
+    id: 'dispel-magic',
+    name: 'Dispel Magic (AKTİF Etki Geçirme Büyüsü)',
+    category: 'Vitality',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'AKTİF',
+    image: '/assets/items/dispel-magic.png',
+    imageAlt:
+      'Dispel Magic (AKTİF Etki Geçirme Büyüsü) eşya ikonu - $ 3200 (Aşama III) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Dispel Magic (AKTİF Etki Geçirme Büyüsü) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'divine-barrier': {
+    id: 'divine-barrier',
+    name: 'Divine Barrier (AKTİF İlahi Bariyer)',
+    category: 'Vitality',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'AKTİF',
+    image: '/assets/items/divine-barrier.png',
+    imageAlt:
+      'Divine Barrier (AKTİF İlahi Bariyer) eşya ikonu - $ 6400 (Aşama IV) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Divine Barrier (AKTİF İlahi Bariyer) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'diviners-kevlar': {
+    id: 'diviners-kevlar',
+    name: 'Diviner\'s Kevlar (Kâhin Zırhı)',
+    category: 'Vitality',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'Pasif (Tetiklemeli)',
+    image: '/assets/items/diviners-kevlar.png',
+    imageAlt:
+      'Diviner\'s Kevlar (Kâhin Zırhı) eşya ikonu - $ 6400 (Aşama IV) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Diviner\'s Kevlar (Kâhin Zırhı) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'double-jump': {
+    id: 'double-jump',
+    name: 'Double Jump',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/double-jump.png',
+    imageAlt:
+      'Double Jump eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Double Jump eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'drain-will': {
+    id: 'drain-will',
+    name: 'Drain Will',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/drain-will.png',
+    imageAlt:
+      'Drain Will eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Drain Will eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'drum-magazine': {
+    id: 'drum-magazine',
+    name: 'Drum Magazine',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/drum-magazine.png',
+    imageAlt:
+      'Drum Magazine eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Drum Magazine eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'duration-extender': {
+    id: 'duration-extender',
+    name: 'Duration Extender (GÜÇLENDİR Süre Uzatıcı)',
+    category: 'Spirit',
+    cost: '$ 1600',
+    tier: 'Aşama II',
+    activation: 'GÜÇLENDİR (Imbue)',
+    image: '/assets/items/duration-extender.png',
+    imageAlt:
+      'Duration Extender (GÜÇLENDİR Süre Uzatıcı) eşya ikonu - $ 1600 (Aşama II) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Duration Extender (GÜÇLENDİR Süre Uzatıcı) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'echo-shard': {
+    id: 'echo-shard',
+    name: 'Echo Shard (GÜÇLENDİR Yankı Parçası)',
+    category: 'Spirit',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'AKTİF / GÜÇLENDİR',
+    image: '/assets/items/echo-shard.png',
+    imageAlt:
+      'Echo Shard (GÜÇLENDİR Yankı Parçası) eşya ikonu - $ 6400 (Aşama IV) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Echo Shard (GÜÇLENDİR Yankı Parçası) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'electric-slippers': {
+    id: 'electric-slippers',
+    name: 'Electric Slippers',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/electric-slippers.png',
+    imageAlt:
+      'Electric Slippers eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Electric Slippers eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'emp-bullets': {
+    id: 'emp-bullets',
+    name: 'EMP Bullets',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/emp-bullets.png',
+    imageAlt:
+      'EMP Bullets eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — EMP Bullets eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'emp-grenade': {
+    id: 'emp-grenade',
+    name: 'EMP Grenade',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/emp-grenade.png',
+    imageAlt:
+      'EMP Grenade eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — EMP Grenade eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'enchanters-emblem': {
+    id: 'enchanters-emblem',
+    name: 'Enchanter\'s Emblem (Büyücü Amblemi)',
+    category: 'Vitality',
+    cost: '$ 1600',
+    tier: 'Aşama II',
+    activation: 'Pasif',
+    image: '/assets/items/enchanters-emblem.png',
+    imageAlt:
+      'Enchanter\'s Emblem (Büyücü Amblemi) eşya ikonu - $ 1600 (Aşama II) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Enchanter\'s Emblem (Büyücü Amblemi) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'enduring-speed': {
+    id: 'enduring-speed',
+    name: 'Enduring Speed (Kalıcı Hız)',
+    category: 'Vitality',
+    cost: '$ 1600',
+    tier: 'Aşama II',
+    activation: 'Pasif',
+    image: '/assets/items/enduring-speed.png',
+    imageAlt:
+      'Enduring Speed (Kalıcı Hız) eşya ikonu - $ 1600 (Aşama II) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Enduring Speed (Kalıcı Hız) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'enduring-spirit': {
+    id: 'enduring-spirit',
+    name: 'Enduring Spirit',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/enduring-spirit.png',
+    imageAlt:
+      'Enduring Spirit eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Enduring Spirit eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'escalating-exposure': {
+    id: 'escalating-exposure',
+    name: 'Escalating Exposure (Artan Hassasiyet)',
+    category: 'Spirit',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'Pasif',
+    image: '/assets/items/escalating-exposure.png',
+    imageAlt:
+      'Escalating Exposure (Artan Hassasiyet) eşya ikonu - $ 6400 (Aşama IV) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Escalating Exposure (Artan Hassasiyet) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'eternal-gift': {
+    id: 'eternal-gift',
+    name: 'Eternal Gift',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/eternal-gift.png',
+    imageAlt:
+      'Eternal Gift eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Eternal Gift eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'extra-health': {
+    id: 'extra-health',
+    name: 'Extra Health (Ekstra Sağlık)',
+    category: 'Vitality',
+    cost: '$ 800',
+    tier: 'Aşama I',
+    activation: 'Pasif',
+    image: '/assets/items/extra-health.png',
+    imageAlt:
+      'Extra Health (Ekstra Sağlık) eşya ikonu - $ 800 (Aşama I) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Extra Health (Ekstra Sağlık) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'extra-regen': {
+    id: 'extra-regen',
+    name: 'Extra Regen (Ekstra Yenilenme)',
+    category: 'Vitality',
+    cost: '$ 800',
+    tier: 'Aşama I',
+    activation: 'Pasif',
+    image: '/assets/items/extra-regen.png',
+    imageAlt:
+      'Extra Regen (Ekstra Yenilenme) eşya ikonu - $ 800 (Aşama I) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Extra Regen (Ekstra Yenilenme) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'extra-stamina': {
+    id: 'extra-stamina',
+    name: 'Extra Stamina (Ekstra Kuvvet)',
+    category: 'Vitality',
+    cost: '$ 800',
+    tier: 'Aşama I',
+    activation: 'Pasif',
+    image: '/assets/items/extra-stamina.png',
+    imageAlt:
+      'Extra Stamina (Ekstra Kuvvet) eşya ikonu - $ 800 (Aşama I) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Extra Stamina (Ekstra Kuvvet) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'fast-reload': {
+    id: 'fast-reload',
+    name: 'Fast Reload',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/fast-reload.png',
+    imageAlt:
+      'Fast Reload eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Fast Reload eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'fire-rate-aura': {
+    id: 'fire-rate-aura',
+    name: 'Fire Rate Aura',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/fire-rate-aura.png',
+    imageAlt:
+      'Fire Rate Aura eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Fire Rate Aura eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'fire-rate-item': {
+    id: 'fire-rate-item',
+    name: 'Fire Rate Item',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/fire-rate-item.png',
+    imageAlt:
+      'Fire Rate Item eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Fire Rate Item eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'focus-lens': {
+    id: 'focus-lens',
+    name: 'Focus Lens (AKTİF Odaklı Mercek)',
+    category: 'Spirit',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'AKTİF (Hedefli)',
+    image: '/assets/items/focus-lens.png',
+    imageAlt:
+      'Focus Lens (AKTİF Odaklı Mercek) eşya ikonu - $ 6400 (Aşama IV) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Focus Lens (AKTİF Odaklı Mercek) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  fortitude: {
+    id: 'fortitude',
+    name: 'Fortitude (Metanet)',
+    category: 'Vitality',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'Pasif',
+    image: '/assets/items/fortitude.png',
+    imageAlt:
+      'Fortitude (Metanet) eşya ikonu - $ 3200 (Aşama III) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Fortitude (Metanet) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'frostbite-charm': {
+    id: 'frostbite-charm',
+    name: 'Frostbite Charm',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/frostbite-charm.png',
+    imageAlt:
+      'Frostbite Charm eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Frostbite Charm eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'full-spectrum': {
+    id: 'full-spectrum',
+    name: 'Full Spectrum',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/full-spectrum.png',
+    imageAlt:
+      'Full Spectrum eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Full Spectrum eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'fury-trance': {
+    id: 'fury-trance',
+    name: 'Fury Trance (AKTİF Öfke Transı)',
+    category: 'Vitality',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'AKTİF',
+    image: '/assets/items/fury-trance.png',
+    imageAlt:
+      'Fury Trance (AKTİF Öfke Transı) eşya ikonu - $ 3200 (Aşama III) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Fury Trance (AKTİF Öfke Transı) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'galvanic-storm': {
+    id: 'galvanic-storm',
+    name: 'Galvanic Storm',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/galvanic-storm.png',
+    imageAlt:
+      'Galvanic Storm eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Galvanic Storm eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'greater-expansion': {
+    id: 'greater-expansion',
+    name: 'Greater Expansion (Büyük Genişleme)',
+    category: 'Spirit',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'GÜÇLENDİR (Imbue)',
+    image: '/assets/items/greater-expansion.png',
+    imageAlt:
+      'Greater Expansion (Büyük Genişleme) eşya ikonu - $ 3200 (Aşama III) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Greater Expansion (Büyük Genişleme) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  grit: {
+    id: 'grit',
+    name: 'Grit (AKTİF Azim)',
+    category: 'Vitality',
+    cost: '$ 800',
+    tier: 'Aşama I',
+    activation: 'AKTİF',
+    image: '/assets/items/grit.png',
+    imageAlt:
+      'Grit (AKTİF Azim) eşya ikonu - $ 800 (Aşama I) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Grit (AKTİF Azim) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'guardian-ward': {
+    id: 'guardian-ward',
+    name: 'Guardian Ward (AKTİF Koruyucu Bariyer)',
+    category: 'Vitality',
+    cost: '$ 1600',
+    tier: 'Aşama II',
+    activation: 'AKTİF',
+    image: '/assets/items/guardian-ward.png',
+    imageAlt:
+      'Guardian Ward (AKTİF Koruyucu Bariyer) eşya ikonu - $ 1600 (Aşama II) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Guardian Ward (AKTİF Koruyucu Bariyer) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'haunting-shot': {
+    id: 'haunting-shot',
+    name: 'Haunting Shot',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/haunting-shot.png',
+    imageAlt:
+      'Haunting Shot eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Haunting Shot eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'healing-aura': {
+    id: 'healing-aura',
+    name: 'Healing Aura',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/healing-aura.png',
+    imageAlt:
+      'Healing Aura eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Healing Aura eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'healing-booster': {
+    id: 'healing-booster',
+    name: 'Healing Booster (İyileştirme Güçlendirici)',
+    category: 'Vitality',
+    cost: '$ 1600',
+    tier: 'Aşama II',
+    activation: 'Pasif',
+    image: '/assets/items/healing-booster.png',
+    imageAlt:
+      'Healing Booster (İyileştirme Güçlendirici) eşya ikonu - $ 1600 (Aşama II) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Healing Booster (İyileştirme Güçlendirici) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'healing-nova': {
+    id: 'healing-nova',
+    name: 'Healing Nova (AKTİF İyileştirme Dalgası)',
+    category: 'Vitality',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'AKTİF',
+    image: '/assets/items/healing-nova.png',
+    imageAlt:
+      'Healing Nova (AKTİF İyileştirme Dalgası) eşya ikonu - $ 3200 (Aşama III) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Healing Nova (AKTİF İyileştirme Dalgası) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'healing-rite': {
+    id: 'healing-rite',
+    name: 'Healing Rite (AKTİF İyileştirme Ayini)',
+    category: 'Vitality',
+    cost: '$ 800',
+    tier: 'Aşama I',
+    activation: 'AKTİF',
+    image: '/assets/items/healing-rite.png',
+    imageAlt:
+      'Healing Rite (AKTİF İyileştirme Ayini) eşya ikonu - $ 800 (Aşama I) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Healing Rite (AKTİF İyileştirme Ayini) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'healing-tempo': {
+    id: 'healing-tempo',
+    name: 'Healing Tempo (İyileştirici Tempo)',
+    category: 'Vitality',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'Pasif',
+    image: '/assets/items/healing-tempo.png',
+    imageAlt:
+      'Healing Tempo (İyileştirici Tempo) eşya ikonu - $ 6400 (Aşama IV) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Healing Tempo (İyileştirici Tempo) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'health-regen': {
+    id: 'health-regen',
+    name: 'Health Regen',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/health-regen.png',
+    imageAlt:
+      'Health Regen eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Health Regen eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  health: {
+    id: 'health',
+    name: 'Health',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/health.png',
+    imageAlt:
+      'Health eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Health eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'height-advantage': {
+    id: 'height-advantage',
+    name: 'Height Advantage',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/height-advantage.png',
+    imageAlt:
+      'Height Advantage eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Height Advantage eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'high-impact-armor': {
+    id: 'high-impact-armor',
+    name: 'High Impact Armor',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/high-impact-armor.png',
+    imageAlt:
+      'High Impact Armor eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — High Impact Armor eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  holliday: {
+    id: 'holliday',
+    name: 'Holliday',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/holliday.png',
+    imageAlt:
+      'Holliday eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Holliday eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'hyper-charge': {
+    id: 'hyper-charge',
+    name: 'Hyper Charge',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/hyper-charge.png',
+    imageAlt:
+      'Hyper Charge eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Hyper Charge eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'imbued-ability': {
+    id: 'imbued-ability',
+    name: 'Imbued Ability',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/imbued-ability.png',
+    imageAlt:
+      'Imbued Ability eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Imbued Ability eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'improved-fire-rate': {
+    id: 'improved-fire-rate',
+    name: 'Improved Fire Rate',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/improved-fire-rate.png',
+    imageAlt:
+      'Improved Fire Rate eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Improved Fire Rate eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'improved-spirit': {
+    id: 'improved-spirit',
+    name: 'Improved Spirit (Geliştirilmiş Büyü)',
+    category: 'Spirit',
+    cost: '$ 1600',
+    tier: 'Aşama II',
+    activation: 'Pasif',
+    image: '/assets/items/improved-spirit.png',
+    imageAlt:
+      'Improved Spirit (Geliştirilmiş Büyü) eşya ikonu - $ 1600 (Aşama II) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Improved Spirit (Geliştirilmiş Büyü) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  indomitable: {
+    id: 'indomitable',
+    name: 'Indomitable (Boyun Eğmez)',
+    category: 'Vitality',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'Pasif',
+    image: '/assets/items/indomitable.png',
+    imageAlt:
+      'Indomitable (Boyun Eğmez) eşya ikonu - $ 6400 (Aşama IV) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Indomitable (Boyun Eğmez) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'infinite-rounds': {
+    id: 'infinite-rounds',
+    name: 'Infinite Rounds',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/infinite-rounds.png',
+    imageAlt:
+      'Infinite Rounds eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Infinite Rounds eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  infuser: {
+    id: 'infuser',
+    name: 'Infuser (AKTİF Aşılayıcı)',
+    category: 'Vitality',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'AKTİF',
+    image: '/assets/items/infuser.png',
+    imageAlt:
+      'Infuser (AKTİF Aşılayıcı) eşya ikonu - $ 6400 (Aşama IV) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Infuser (AKTİF Aşılayıcı) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  inhibitor: {
+    id: 'inhibitor',
+    name: 'Inhibitor (Köstek)',
+    category: 'Vitality',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'Pasif (Mermi Etkisi)',
+    image: '/assets/items/inhibitor.png',
+    imageAlt:
+      'Inhibitor (Köstek) eşya ikonu - $ 6400 (Aşama IV) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Inhibitor (Köstek) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'item-shop': {
+    id: 'item-shop',
+    name: 'Item Shop',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/item-shop.png',
+    imageAlt:
+      'Item Shop eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Item Shop eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  ivy: {
+    id: 'ivy',
+    name: 'Ivy',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/ivy.png',
+    imageAlt:
+      'Ivy eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Ivy eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  juggernaut: {
+    id: 'juggernaut',
+    name: 'Juggernaut (Yıkıcı Güç)',
+    category: 'Vitality',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'Pasif',
+    image: '/assets/items/juggernaut.png',
+    imageAlt:
+      'Juggernaut (Yıkıcı Güç) eşya ikonu - $ 6400 (Aşama IV) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Juggernaut (Yıkıcı Güç) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'leaked-pre-release-spirit-shop': {
+    id: 'leaked-pre-release-spirit-shop',
+    name: 'Leaked Pre Release Spirit Shop',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/leaked-pre-release-spirit-shop.png',
+    imageAlt:
+      'Leaked Pre Release Spirit Shop eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Leaked Pre Release Spirit Shop eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'leaked-pre-release-weapon-shop': {
+    id: 'leaked-pre-release-weapon-shop',
+    name: 'Leaked Pre Release Weapon Shop',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/leaked-pre-release-weapon-shop.png',
+    imageAlt:
+      'Leaked Pre Release Weapon Shop eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Leaked Pre Release Weapon Shop eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  leech: {
+    id: 'leech',
+    name: 'Leech (Sülük)',
+    category: 'Vitality',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'Pasif',
+    image: '/assets/items/leech.png',
+    imageAlt:
+      'Leech (Sülük) eşya ikonu - $ 6400 (Aşama IV) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Leech (Sülük) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  lifestrike: {
+    id: 'lifestrike',
+    name: 'Lifestrike (İyileştiren Yumruk)',
+    category: 'Vitality',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'Pasif (Tetiklemeli)',
+    image: '/assets/items/lifestrike.png',
+    imageAlt:
+      'Lifestrike (İyileştiren Yumruk) eşya ikonu - $ 3200 (Aşama III) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Lifestrike (İyileştiren Yumruk) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'lightning-scroll': {
+    id: 'lightning-scroll',
+    name: 'Lightning Scroll (Yıldırım Parşömeni)',
+    category: 'Spirit',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'Pasif',
+    image: '/assets/items/lightning-scroll.png',
+    imageAlt:
+      'Lightning Scroll (Yıldırım Parşömeni) eşya ikonu - $ 6400 (Aşama IV) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Lightning Scroll (Yıldırım Parşömeni) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'magic-carpet': {
+    id: 'magic-carpet',
+    name: 'Magic Carpet (AKTİF Sihirli Halı)',
+    category: 'Spirit',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'AKTİF',
+    image: '/assets/items/magic-carpet.png',
+    imageAlt:
+      'Magic Carpet (AKTİF Sihirli Halı) eşya ikonu - $ 6400 (Aşama IV) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Magic Carpet (AKTİF Sihirli Halı) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'magitech-rounds': {
+    id: 'magitech-rounds',
+    name: 'Magitech Rounds',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/magitech-rounds.png',
+    imageAlt:
+      'Magitech Rounds eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Magitech Rounds eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'majestic-leap': {
+    id: 'majestic-leap',
+    name: 'Majestic Leap (AKTİF Görkemli Sıçrama)',
+    category: 'Vitality',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'AKTİF',
+    image: '/assets/items/majestic-leap.png',
+    imageAlt:
+      'Majestic Leap (AKTİF Görkemli Sıçrama) eşya ikonu - $ 3200 (Aşama III) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Majestic Leap (AKTİF Görkemli Sıçrama) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'melee-knockdown': {
+    id: 'melee-knockdown',
+    name: 'Melee Knockdown',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/melee-knockdown.png',
+    imageAlt:
+      'Melee Knockdown eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Melee Knockdown eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'melee-lifesteal': {
+    id: 'melee-lifesteal',
+    name: 'Melee Lifesteal (Vampir Yumruklar)',
+    category: 'Vitality',
+    cost: '$ 800',
+    tier: 'Aşama I',
+    activation: 'Pasif (Tetiklemeli)',
+    image: '/assets/items/melee-lifesteal.png',
+    imageAlt:
+      'Melee Lifesteal (Vampir Yumruklar) eşya ikonu - $ 800 (Aşama I) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Melee Lifesteal (Vampir Yumruklar) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'mercurial-magnum': {
+    id: 'mercurial-magnum',
+    name: 'Mercurial Magnum (GÜÇLENDİR Merkür Magnum)',
+    category: 'Spirit',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'GÜÇLENDİR (Imbue)',
+    image: '/assets/items/mercurial-magnum.png',
+    imageAlt:
+      'Mercurial Magnum (GÜÇLENDİR Merkür Magnum) eşya ikonu - $ 6400 (Aşama IV) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Mercurial Magnum (GÜÇLENDİR Merkür Magnum) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'mo-krill': {
+    id: 'mo-krill',
+    name: 'Mo Krill',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/mo-krill.png',
+    imageAlt:
+      'Mo Krill eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Mo Krill eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'mystic-conduit': {
+    id: 'mystic-conduit',
+    name: 'Mystic Conduit',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/mystic-conduit.png',
+    imageAlt:
+      'Mystic Conduit eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Mystic Conduit eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'mystic-regereneration': {
+    id: 'mystic-regereneration',
+    name: 'Mystic Regeneration (Mistik Yenilenme)',
+    category: 'Spirit',
+    cost: '$ 800',
+    tier: 'Aşama I',
+    activation: 'Pasif (Tetiklemeli)',
+    image: '/assets/items/mystic-regereneration.png',
+    imageAlt:
+      'Mystic Regeneration (Mistik Yenilenme) eşya ikonu - $ 800 (Aşama I) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Mystic Regeneration (Mistik Yenilenme) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'mystic-reverb': {
+    id: 'mystic-reverb',
+    name: 'Mystic Reverb (GÜÇLENDİR Mistik Titreşimler)',
+    category: 'Spirit',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'GÜÇLENDİR (Imbue)',
+    image: '/assets/items/mystic-reverb.png',
+    imageAlt:
+      'Mystic Reverb (GÜÇLENDİR Mistik Titreşimler) eşya ikonu - $ 6400 (Aşama IV) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Mystic Reverb (GÜÇLENDİR Mistik Titreşimler) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'mystic-slow': {
+    id: 'mystic-slow',
+    name: 'Mystic Slow (Mistik Yavaşlatma)',
+    category: 'Spirit',
+    cost: '$ 1600',
+    tier: 'Aşama II',
+    activation: 'Pasif',
+    image: '/assets/items/mystic-slow.png',
+    imageAlt:
+      'Mystic Slow (Mistik Yavaşlatma) eşya ikonu - $ 1600 (Aşama II) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Mystic Slow (Mistik Yavaşlatma) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'mystic-vulnerability': {
+    id: 'mystic-vulnerability',
+    name: 'Mystic Vulnerability (Mistik Hassasiyet)',
+    category: 'Spirit',
+    cost: '$ 1600',
+    tier: 'Aşama II',
+    activation: 'Pasif',
+    image: '/assets/items/mystic-vulnerability.png',
+    imageAlt:
+      'Mystic Vulnerability (Mistik Hassasiyet) eşya ikonu - $ 1600 (Aşama II) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Mystic Vulnerability (Mistik Hassasiyet) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'mystical-piano': {
+    id: 'mystical-piano',
+    name: 'Mystical Piano',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/mystical-piano.png',
+    imageAlt:
+      'Mystical Piano eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Mystical Piano eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'neon-prime-shop': {
+    id: 'neon-prime-shop',
+    name: 'Neon Prime Shop',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/neon-prime-shop.png',
+    imageAlt:
+      'Neon Prime Shop eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Neon Prime Shop eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'nullification-burst': {
+    id: 'nullification-burst',
+    name: 'Nullification Burst',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/nullification-burst.png',
+    imageAlt:
+      'Nullification Burst eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Nullification Burst eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'old-item-shop-ui-before-the-shop-rework': {
+    id: 'old-item-shop-ui-before-the-shop-rework',
+    name: 'Old Item Shop UI Before The Shop Rework',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/old-item-shop-ui-before-the-shop-rework.png',
+    imageAlt:
+      'Old Item Shop UI Before The Shop Rework eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Old Item Shop UI Before The Shop Rework eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'omni-spirit': {
+    id: 'omni-spirit',
+    name: 'Omni Spirit',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/omni-spirit.png',
+    imageAlt:
+      'Omni Spirit eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Omni Spirit eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'omnicharge-signet': {
+    id: 'omnicharge-signet',
+    name: 'Omnicharge Signet',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/omnicharge-signet.png',
+    imageAlt:
+      'Omnicharge Signet eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Omnicharge Signet eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'overdrive-clip': {
+    id: 'overdrive-clip',
+    name: 'Overdrive Clip',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/overdrive-clip.png',
+    imageAlt:
+      'Overdrive Clip eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Overdrive Clip eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  overdrive: {
+    id: 'overdrive',
+    name: 'Overdrive',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/overdrive.png',
+    imageAlt:
+      'Overdrive eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Overdrive eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'phantom-strike': {
+    id: 'phantom-strike',
+    name: 'Phantom Strike (AKTİF Hayalet Saldırı)',
+    category: 'Vitality',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'AKTİF (Hedefli)',
+    image: '/assets/items/phantom-strike.png',
+    imageAlt:
+      'Phantom Strike (AKTİF Hayalet Saldırı) eşya ikonu - $ 6400 (Aşama IV) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Phantom Strike (AKTİF Hayalet Saldırı) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'plated-armor': {
+    id: 'plated-armor',
+    name: 'Plated Armor (Kaplamalı Zırh)',
+    category: 'Vitality',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'Pasif',
+    image: '/assets/items/plated-armor.png',
+    imageAlt:
+      'Plated Armor (Kaplamalı Zırh) eşya ikonu - $ 6400 (Aşama IV) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Plated Armor (Kaplamalı Zırh) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'predator-precision': {
+    id: 'predator-precision',
+    name: 'Predator Precision',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/predator-precision.png',
+    imageAlt:
+      'Predator Precision eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Predator Precision eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'prism-blast': {
+    id: 'prism-blast',
+    name: 'Prism Blast',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/prism-blast.png',
+    imageAlt:
+      'Prism Blast eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Prism Blast eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'quantum-chimaera': {
+    id: 'quantum-chimaera',
+    name: 'Quantum Chimaera',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/quantum-chimaera.png',
+    imageAlt:
+      'Quantum Chimaera eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Quantum Chimaera eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  quarantine: {
+    id: 'quarantine',
+    name: 'Quarantine',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/quarantine.png',
+    imageAlt:
+      'Quarantine eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Quarantine eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'quicksilver-reload': {
+    id: 'quicksilver-reload',
+    name: 'Quicksilver Reload (GÜÇLENDİR Hızlı Şarjör Değiştirme)',
+    category: 'Spirit',
+    cost: '$ 1600',
+    tier: 'Aşama II',
+    activation: 'GÜÇLENDİR (Imbue)',
+    image: '/assets/items/quicksilver-reload.png',
+    imageAlt:
+      'Quicksilver Reload (GÜÇLENDİR Hızlı Şarjör Değiştirme) eşya ikonu - $ 1600 (Aşama II) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Quicksilver Reload (GÜÇLENDİR Hızlı Şarjör Değiştirme) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'radiant-regeneration': {
+    id: 'radiant-regeneration',
+    name: 'Radiant Regeneration (Parlak Yenilenme)',
+    category: 'Spirit',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'Pasif',
+    image: '/assets/items/radiant-regeneration.png',
+    imageAlt:
+      'Radiant Regeneration (Parlak Yenilenme) eşya ikonu - $ 3200 (Aşama III) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Radiant Regeneration (Parlak Yenilenme) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'rapid-recharge': {
+    id: 'rapid-recharge',
+    name: 'Rapid Recharge (Hızlı Şarj)',
+    category: 'Spirit',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'Pasif',
+    image: '/assets/items/rapid-recharge.png',
+    imageAlt:
+      'Rapid Recharge (Hızlı Şarj) eşya ikonu - $ 3200 (Aşama III) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Rapid Recharge (Hızlı Şarj) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  rebuttal: {
+    id: 'rebuttal',
+    name: 'Rebuttal (Karşı Saldırı)',
+    category: 'Vitality',
+    cost: '$ 800',
+    tier: 'Aşama I',
+    activation: 'Pasif',
+    image: '/assets/items/rebuttal.png',
+    imageAlt:
+      'Rebuttal (Karşı Saldırı) eşya ikonu - $ 800 (Aşama I) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Rebuttal (Karşı Saldırı) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  refresher: {
+    id: 'refresher',
+    name: 'Refresher (AKTİF Yenileyici)',
+    category: 'Spirit',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'AKTİF',
+    image: '/assets/items/refresher.png',
+    imageAlt:
+      'Refresher (AKTİF Yenileyici) eşya ikonu - $ 6400 (Aşama IV) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Refresher (AKTİF Yenileyici) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'regenerative-armor': {
+    id: 'regenerative-armor',
+    name: 'Regenerative Armor',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/regenerative-armor.png',
+    imageAlt:
+      'Regenerative Armor eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Regenerative Armor eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'reloader-huge-clip': {
+    id: 'reloader-huge-clip',
+    name: 'Reloader Huge Clip',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/reloader-huge-clip.png',
+    imageAlt:
+      'Reloader Huge Clip eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Reloader Huge Clip eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'rescue-beam': {
+    id: 'rescue-beam',
+    name: 'Rescue Beam (AKTİF Kurtarma Işını)',
+    category: 'Vitality',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'AKTİF (Hedefli)',
+    image: '/assets/items/rescue-beam.png',
+    imageAlt:
+      'Rescue Beam (AKTİF Kurtarma Işını) eşya ikonu - $ 3200 (Aşama III) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Rescue Beam (AKTİF Kurtarma Işını) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  rescue: {
+    id: 'rescue',
+    name: 'Rescue',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/rescue.png',
+    imageAlt:
+      'Rescue eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Rescue eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'restorative-locket': {
+    id: 'restorative-locket',
+    name: 'Restorative Locket (AKTİF Şifalı Madalyon)',
+    category: 'Vitality',
+    cost: '$ 1600',
+    tier: 'Aşama II',
+    activation: 'AKTİF',
+    image: '/assets/items/restorative-locket.png',
+    imageAlt:
+      'Restorative Locket (AKTİF Şifalı Madalyon) eşya ikonu - $ 1600 (Aşama II) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Restorative Locket (AKTİF Şifalı Madalyon) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'return-fire': {
+    id: 'return-fire',
+    name: 'Return Fire (AKTİF İade-i Ateş)',
+    category: 'Vitality',
+    cost: '$ 1600',
+    tier: 'Aşama II',
+    activation: 'AKTİF',
+    image: '/assets/items/return-fire.png',
+    imageAlt:
+      'Return Fire (AKTİF İade-i Ateş) eşya ikonu - $ 1600 (Aşama II) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Return Fire (AKTİF İade-i Ateş) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'runed-gauntlets': {
+    id: 'runed-gauntlets',
+    name: 'Runed Gauntlets',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/runed-gauntlets.png',
+    imageAlt:
+      'Runed Gauntlets eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Runed Gauntlets eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  scourge: {
+    id: 'scourge',
+    name: 'Scourge (AKTİF Bela)',
+    category: 'Spirit',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'AKTİF',
+    image: '/assets/items/scourge.png',
+    imageAlt:
+      'Scourge (AKTİF Bela) eşya ikonu - $ 6400 (Aşama IV) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Scourge (AKTİF Bela) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'seraphim-wings': {
+    id: 'seraphim-wings',
+    name: 'Seraphim Wings',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/seraphim-wings.png',
+    imageAlt:
+      'Seraphim Wings eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Seraphim Wings eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  seven: {
+    id: 'seven',
+    name: 'Seven',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/seven.png',
+    imageAlt:
+      'Seven eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Seven eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'shadow-strike': {
+    id: 'shadow-strike',
+    name: 'Shadow Strike',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/shadow-strike.png',
+    imageAlt:
+      'Shadow Strike eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Shadow Strike eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'shield-rush': {
+    id: 'shield-rush',
+    name: 'Shield Rush',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/shield-rush.png',
+    imageAlt:
+      'Shield Rush eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Shield Rush eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'shrink-ray': {
+    id: 'shrink-ray',
+    name: 'Shrink Ray',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/shrink-ray.png',
+    imageAlt:
+      'Shrink Ray eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Shrink Ray eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'silence-wave': {
+    id: 'silence-wave',
+    name: 'Silence Wave (AKTİF Susturma Dalgası)',
+    category: 'Spirit',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'AKTİF (Atış)',
+    image: '/assets/items/silence-wave.png',
+    imageAlt:
+      'Silence Wave (AKTİF Susturma Dalgası) eşya ikonu - $ 3200 (Aşama III) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Silence Wave (AKTİF Susturma Dalgası) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'siphon-bullets': {
+    id: 'siphon-bullets',
+    name: 'Siphon Bullets (Can Çalma Mermileri)',
+    category: 'Vitality',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'Pasif (Mermi Etkisi)',
+    image: '/assets/items/siphon-bullets.png',
+    imageAlt:
+      'Siphon Bullets (Can Çalma Mermileri) eşya ikonu - $ 6400 (Aşama IV) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Siphon Bullets (Can Çalma Mermileri) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'slowing-spirit': {
+    id: 'slowing-spirit',
+    name: 'Slowing Spirit',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/slowing-spirit.png',
+    imageAlt:
+      'Slowing Spirit eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Slowing Spirit eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  smoke: {
+    id: 'smoke',
+    name: 'Smoke',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/smoke.png',
+    imageAlt:
+      'Smoke eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Smoke eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  snowball: {
+    id: 'snowball',
+    name: 'Snowball',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/snowball.png',
+    imageAlt:
+      'Snowball eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Snowball eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'soul-disruptor': {
+    id: 'soul-disruptor',
+    name: 'Soul Disruptor',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/soul-disruptor.png',
+    imageAlt:
+      'Soul Disruptor eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Soul Disruptor eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'soul-explosion': {
+    id: 'soul-explosion',
+    name: 'Soul Explosion',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/soul-explosion.png',
+    imageAlt:
+      'Soul Explosion eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Soul Explosion eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'soul-rebirth': {
+    id: 'soul-rebirth',
+    name: 'Soul Rebirth',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/soul-rebirth.png',
+    imageAlt:
+      'Soul Rebirth eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Soul Rebirth eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  spellbreaker: {
+    id: 'spellbreaker',
+    name: 'Spellbreaker (Büyü Bozan)',
+    category: 'Vitality',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'Pasif',
+    image: '/assets/items/spellbreaker.png',
+    imageAlt:
+      'Spellbreaker (Büyü Bozan) eşya ikonu - $ 6400 (Aşama IV) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Spellbreaker (Büyü Bozan) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  spellslinger: {
+    id: 'spellslinger',
+    name: 'Spellslinger (Büyü Silahşoru)',
+    category: 'Weapon',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'Pasif',
+    image: '/assets/items/spellslinger.png',
+    imageAlt:
+      'Spellslinger (Büyü Silahşoru) eşya ikonu - $ 6400 (Aşama IV) değerinde Silah (Turuncu) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Spellslinger (Büyü Silahşoru) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'spirit-armor': {
+    id: 'spirit-armor',
+    name: 'Spirit Armor',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/spirit-armor.png',
+    imageAlt:
+      'Spirit Armor eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Spirit Armor eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'spirit-barrier-pulse': {
+    id: 'spirit-barrier-pulse',
+    name: 'Spirit Barrier Pulse',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/spirit-barrier-pulse.png',
+    imageAlt:
+      'Spirit Barrier Pulse eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Spirit Barrier Pulse eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'spirit-burn': {
+    id: 'spirit-burn',
+    name: 'Spirit Burn (Yakıcı Büyü)',
+    category: 'Spirit',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'Pasif',
+    image: '/assets/items/spirit-burn.png',
+    imageAlt:
+      'Spirit Burn (Yakıcı Büyü) eşya ikonu - $ 6400 (Aşama IV) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Spirit Burn (Yakıcı Büyü) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'spirit-damage': {
+    id: 'spirit-damage',
+    name: 'Spirit Damage',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/spirit-damage.png',
+    imageAlt:
+      'Spirit Damage eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Spirit Damage eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'spirit-lifesteal-item': {
+    id: 'spirit-lifesteal-item',
+    name: 'Spirit Lifesteal (Büyü Can Çalması)',
+    category: 'Vitality',
+    cost: '$ 1600',
+    tier: 'Aşama II',
+    activation: 'Pasif',
+    image: '/assets/items/spirit-lifesteal-item.png',
+    imageAlt:
+      'Spirit Lifesteal (Büyü Can Çalması) eşya ikonu - $ 1600 (Aşama II) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Spirit Lifesteal (Büyü Can Çalması) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'spirit-power': {
+    id: 'spirit-power',
+    name: 'Spirit Power',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/spirit-power.png',
+    imageAlt:
+      'Spirit Power eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Spirit Power eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'spirit-resilience': {
+    id: 'spirit-resilience',
+    name: 'Spirit Resilience (Büyü Dayanıklılığı)',
+    category: 'Vitality',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'Pasif',
+    image: '/assets/items/spirit-resilience.png',
+    imageAlt:
+      'Spirit Resilience (Büyü Dayanıklılığı) eşya ikonu - $ 3200 (Aşama III) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Spirit Resilience (Büyü Dayanıklılığı) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'spirit-sap': {
+    id: 'spirit-sap',
+    name: 'Spirit Sap (AKTİF Büyü Zayıflatma)',
+    category: 'Spirit',
+    cost: '$ 1600',
+    tier: 'Aşama II',
+    activation: 'AKTİF (Hedefli)',
+    image: '/assets/items/spirit-sap.png',
+    imageAlt:
+      'Spirit Sap (AKTİF Büyü Zayıflatma) eşya ikonu - $ 1600 (Aşama II) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Spirit Sap (AKTİF Büyü Zayıflatma) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'spirit-shielding': {
+    id: 'spirit-shielding',
+    name: 'Spirit Shielding (Büyü Kalkanı)',
+    category: 'Vitality',
+    cost: '$ 1600',
+    tier: 'Aşama II',
+    activation: 'Pasif (Tetiklemeli)',
+    image: '/assets/items/spirit-shielding.png',
+    imageAlt:
+      'Spirit Shielding (Büyü Kalkanı) eşya ikonu - $ 1600 (Aşama II) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Spirit Shielding (Büyü Kalkanı) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'spirit-shop': {
+    id: 'spirit-shop',
+    name: 'Spirit Shop',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/spirit-shop.png',
+    imageAlt:
+      'Spirit Shop eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Spirit Shop eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'spirit-snatch': {
+    id: 'spirit-snatch',
+    name: 'Spirit Snatch (Büyü Kapma)',
+    category: 'Spirit',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'Pasif (Tetiklemeli)',
+    image: '/assets/items/spirit-snatch.png',
+    imageAlt:
+      'Spirit Snatch (Büyü Kapma) eşya ikonu - $ 3200 (Aşama III) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Spirit Snatch (Büyü Kapma) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'sprint-boots': {
+    id: 'sprint-boots',
+    name: 'Sprint Boots (Hızlı Koşma Botları)',
+    category: 'Vitality',
+    cost: '$ 800',
+    tier: 'Aşama I',
+    activation: 'Pasif',
+    image: '/assets/items/sprint-boots.png',
+    imageAlt:
+      'Sprint Boots (Hızlı Koşma Botları) eşya ikonu - $ 800 (Aşama I) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Sprint Boots (Hızlı Koşma Botları) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  stabilizer: {
+    id: 'stabilizer',
+    name: 'Stabilizer',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/stabilizer.png',
+    imageAlt:
+      'Stabilizer eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Stabilizer eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'stabilizing-tripod': {
+    id: 'stabilizing-tripod',
+    name: 'Stabilizing Tripod',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/stabilizing-tripod.png',
+    imageAlt:
+      'Stabilizing Tripod eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Stabilizing Tripod eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'stamina-mastery': {
+    id: 'stamina-mastery',
+    name: 'Stamina Mastery (Kuvvet Ustalığı)',
+    category: 'Vitality',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'Pasif',
+    image: '/assets/items/stamina-mastery.png',
+    imageAlt:
+      'Stamina Mastery (Kuvvet Ustalığı) eşya ikonu - $ 3200 (Aşama III) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Stamina Mastery (Kuvvet Ustalığı) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  star: {
+    id: 'star',
+    name: 'Star',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/star.png',
+    imageAlt:
+      'Star eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Star eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'stasis-bomb': {
+    id: 'stasis-bomb',
+    name: 'Stasis Bomb',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/stasis-bomb.png',
+    imageAlt:
+      'Stasis Bomb eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Stasis Bomb eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'superior-duration': {
+    id: 'superior-duration',
+    name: 'Superior Duration (Üstün Süre Uzatıcı)',
+    category: 'Spirit',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'GÜÇLENDİR (Imbue)',
+    image: '/assets/items/superior-duration.png',
+    imageAlt:
+      'Superior Duration (Üstün Süre Uzatıcı) eşya ikonu - $ 3200 (Aşama III) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Superior Duration (Üstün Süre Uzatıcı) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  suppressor: {
+    id: 'suppressor',
+    name: 'Suppressor (Baskılayıcı)',
+    category: 'Spirit',
+    cost: '$ 1600',
+    tier: 'Aşama II',
+    activation: 'Pasif',
+    image: '/assets/items/suppressor.png',
+    imageAlt:
+      'Suppressor (Baskılayıcı) eşya ikonu - $ 1600 (Aşama II) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Suppressor (Baskılayıcı) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'surge-of-power': {
+    id: 'surge-of-power',
+    name: 'Surge of Power (GÜÇLENDİR Güç Artışı)',
+    category: 'Spirit',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'GÜÇLENDİR (Imbue)',
+    image: '/assets/items/surge-of-power.png',
+    imageAlt:
+      'Surge of Power (GÜÇLENDİR Güç Artışı) eşya ikonu - $ 3200 (Aşama III) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Surge of Power (GÜÇLENDİR Güç Artışı) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  tankbuster: {
+    id: 'tankbuster',
+    name: 'Tankbuster (Tank Patlatan)',
+    category: 'Spirit',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'Pasif (Tetiklemeli)',
+    image: '/assets/items/tankbuster.png',
+    imageAlt:
+      'Tankbuster (Tank Patlatan) eşya ikonu - $ 3200 (Aşama III) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Tankbuster (Tank Patlatan) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'tech-defender': {
+    id: 'tech-defender',
+    name: 'Tech Defender',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/tech-defender.png',
+    imageAlt:
+      'Tech Defender eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Tech Defender eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'torment-pulse': {
+    id: 'torment-pulse',
+    name: 'Torment Pulse (Yayılan İşkence)',
+    category: 'Spirit',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'Pasif',
+    image: '/assets/items/torment-pulse.png',
+    imageAlt:
+      'Torment Pulse (Yayılan İşkence) eşya ikonu - $ 3200 (Aşama III) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Torment Pulse (Yayılan İşkence) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  toughness: {
+    id: 'toughness',
+    name: 'Toughness',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/toughness.png',
+    imageAlt:
+      'Toughness eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Toughness eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'trophy-collector': {
+    id: 'trophy-collector',
+    name: 'Trophy Collector (Ganimet Avcısı)',
+    category: 'Vitality',
+    cost: '$ 1600',
+    tier: 'Aşama II',
+    activation: 'Pasif',
+    image: '/assets/items/trophy-collector.png',
+    imageAlt:
+      'Trophy Collector (Ganimet Avcısı) eşya ikonu - $ 1600 (Aşama II) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Trophy Collector (Ganimet Avcısı) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'unstable-concoction': {
+    id: 'unstable-concoction',
+    name: 'Unstable Concoction',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/unstable-concoction.png',
+    imageAlt:
+      'Unstable Concoction eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Unstable Concoction eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'vacuum-web': {
+    id: 'vacuum-web',
+    name: 'Vacuum Web',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/vacuum-web.png',
+    imageAlt:
+      'Vacuum Web eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Vacuum Web eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'vampiric-burst': {
+    id: 'vampiric-burst',
+    name: 'Vampiric Burst (AKTİF Vampir Coşkusu)',
+    category: 'Vitality',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'AKTİF',
+    image: '/assets/items/vampiric-burst.png',
+    imageAlt:
+      'Vampiric Burst (AKTİF Vampir Coşkusu) eşya ikonu - $ 6400 (Aşama IV) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Vampiric Burst (AKTİF Vampir Coşkusu) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'veil-walker': {
+    id: 'veil-walker',
+    name: 'Veil Walker (Kozmik Seyahat)',
+    category: 'Vitality',
+    cost: '$ 3200',
+    tier: 'Aşama III',
+    activation: 'Pasif (Tetiklemeli)',
+    image: '/assets/items/veil-walker.png',
+    imageAlt:
+      'Veil Walker (Kozmik Seyahat) eşya ikonu - $ 3200 (Aşama III) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Veil Walker (Kozmik Seyahat) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'vortex-web': {
+    id: 'vortex-web',
+    name: 'Vortex Web (AKTİF Girdap Ağı)',
+    category: 'Spirit',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'AKTİF',
+    image: '/assets/items/vortex-web.png',
+    imageAlt:
+      'Vortex Web (AKTİF Girdap Ağı) eşya ikonu - $ 6400 (Aşama IV) değerinde Büyü (Mor) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Vortex Web (AKTİF Girdap Ağı) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  vyper: {
+    id: 'vyper',
+    name: 'Vyper',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/vyper.png',
+    imageAlt:
+      'Vyper eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Vyper eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'weapon-damage': {
+    id: 'weapon-damage',
+    name: 'Weapon Damage',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/weapon-damage.png',
+    imageAlt:
+      'Weapon Damage eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Weapon Damage eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'weapon-eater': {
+    id: 'weapon-eater',
+    name: 'Weapon Eater',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/weapon-eater.png',
+    imageAlt:
+      'Weapon Eater eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Weapon Eater eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'weapon-jammer': {
+    id: 'weapon-jammer',
+    name: 'Weapon Jammer',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/weapon-jammer.png',
+    imageAlt:
+      'Weapon Jammer eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Weapon Jammer eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  'weapon-shielding': {
+    id: 'weapon-shielding',
+    name: 'Weapon Shielding (Silah Kalkanı)',
+    category: 'Vitality',
+    cost: '$ 1600',
+    tier: 'Aşama II',
+    activation: 'Pasif (Tetiklemeli)',
+    image: '/assets/items/weapon-shielding.png',
+    imageAlt:
+      'Weapon Shielding (Silah Kalkanı) eşya ikonu - $ 1600 (Aşama II) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Weapon Shielding (Silah Kalkanı) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'weapon-shop': {
+    id: 'weapon-shop',
+    name: 'Weapon Shop',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/weapon-shop.png',
+    imageAlt:
+      'Weapon Shop eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Weapon Shop eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
+  },
+  witchmail: {
+    id: 'witchmail',
+    name: 'Witchmail (Cadı Zırhı)',
+    category: 'Vitality',
+    cost: '$ 6400',
+    tier: 'Aşama IV',
+    activation: 'Pasif',
+    image: '/assets/items/witchmail.png',
+    imageAlt:
+      'Witchmail (Cadı Zırhı) eşya ikonu - $ 6400 (Aşama IV) değerinde Can (Yeşil) eşyası',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Witchmail (Cadı Zırhı) eşyasının doğrulanmış istatistik ve etki değerleri manuel veri girişi beklemektedir.',
+  },
+  'zip-line-mastery': {
+    id: 'zip-line-mastery',
+    name: 'Zip Line Mastery',
+    category: 'TBD',
+    cost: 'TBD',
+    tier: 'TBD',
+    activation: 'TBD',
+    image: '/assets/items/zip-line-mastery.png',
+    imageAlt:
+      'Zip Line Mastery eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)',
+    baseDesc:
+      'TBD (Needs Manual Entry) — Zip Line Mastery eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.',
   },
 };
 
