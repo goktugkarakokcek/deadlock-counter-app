@@ -17,1721 +17,2065 @@ export const appMetaInfo = {
 
 export const characters = [
   {
-    id: 'abrams',
-    name: 'Abrams',
-    title: 'Okült Dedektif & Ön Saf Tankı',
-    role: 'Ön Saflar / Yakın Mesafe (Yakın Dövüşçü)',
-    difficulty: 'Orta',
-    image: '/assets/characters/abrams.png',
-    imageAlt:
-      'Abrams karakter portresi - Ağır paltolu, boynuzlu ve elinde mistik el yazması taşıyan yakın mesafe tank karakteri',
-    shortBio:
-      'Yüksek can yenilemesi (Infernal Resilience), yıkıcı omuz darbesi (Shoulder Charge) ve ağır yakın dövüş yumruklarıyla koridoru domine eden dayanıklı bir ön saf savaşçısı.',
-    stats: {
-      survive: 95,
-      damage: 75,
-      mobility: 60,
-      control: 80,
+    "id": "abrams",
+    "name": "Abrams",
+    "title": "Okült Dedektif & Ön Saf Tankı",
+    "role": "Ön Saflar / Yakın Mesafe (Yakın Dövüşçü)",
+    "difficulty": "Orta",
+    "image": "/assets/characters/abrams.png",
+    "imageAlt": "Abrams karakter portresi - Ağır paltolu, boynuzlu ve elinde mistik el yazması taşıyan yakın mesafe tank karakteri",
+    "shortBio": "Yüksek can yenilemesi (Infernal Resilience), yıkıcı omuz darbesi (Shoulder Charge) ve ağır yakın dövüş yumruklarıyla koridoru domine eden dayanıklı bir ön saf savaşçısı.",
+    "stats": {
+      "survive": 95,
+      "damage": 75,
+      "mobility": 60,
+      "control": 80
     },
-    abilities: [
-      'Siphon Life (Can Çalma Haresi: 4 sn boyunca yakındaki rakiplerden can çeker, zamanla büyü hasarı verir ve verilen hasarın bir kısmı kadar iyileştirir)',
-      'Shoulder Charge (Omuz Darbesi: İleri doğru hücum ederek çarptığı rakipleri sürükler; bir kahramanı duvara çarptırmak Sersemletme / Stun uygular)',
-      'Infernal Resilience (Cehennem Dayanıklılığı - Pasif: İlave savunma nitelikleri kazandırır ve alınan hasarın bir kısmını zamanla can yenilenmesi olarak geri verir)',
-      'Seismic Impact (Sismik Darbe - Ulti: Gökyüzüne sıçrayıp hedeflenen alana hızla çarparak geniş alanda hasar ve sersemletme uygular)',
+    "abilities": [
+      "Siphon Life (Can Çalma Haresi: 4 sn boyunca yakındaki rakiplerden can çeker, zamanla büyü hasarı verir ve verilen hasarın bir kısmı kadar iyileştirir)",
+      "Shoulder Charge (Omuz Darbesi: İleri doğru hücum ederek çarptığı rakipleri sürükler; bir kahramanı duvara çarptırmak Sersemletme / Stun uygular)",
+      "Infernal Resilience (Cehennem Dayanıklılığı - Pasif: İlave savunma nitelikleri kazandırır ve alınan hasarın bir kısmını zamanla can yenilenmesi olarak geri verir)",
+      "Seismic Impact (Sismik Darbe - Ulti: Gökyüzüne sıçrayıp hedeflenen alana hızla çarparak geniş alanda hasar ve sersemletme uygular)"
     ],
-    counters: [
-      'Pocket / Calico (Shoulder Charge duvara çarptırma sersemletmesi ve Infernal Resilience pasifiyle yakın mesafe patlama hasarını sönümler)',
-      'Haze / Vyper (Yüksek taban dayanıklılığı ve Siphon Life can emmesiyle yakın mesafe mermi taşıyıcılarını ezer)',
-      'Lash (Lash Ground Strike ile yere indiği anda Shoulder Charge ile onu duvara çiviler)',
-      'Billy (Uzayan yakın dövüş takaslarında Siphon Life + Infernal Resilience ile üstünlük kurar)',
+    "counters": [
+      "Pocket",
+      "Calico",
+      "Haze",
+      "Vyper",
+      "Lash",
+      "Billy"
     ],
-    counteredBy: [
-      'Vindicta / Grey Talon (Flight ve Rain of Arrows ile Abrams’ın Siphon Life ve Shoulder Charge menzilinin tamamen dışında kalırlar)',
-      'Lady Geist (Düşük canda Soul Exchange basarak Abrams’ın devasa can havuzunu tek tuşla kendi lehine çevirir)',
-      'Venator (Consecrating Grenade iyileşme azaltması ve Gutshot geri savurmasıyla Abrams’ın yaklaşmasını cezalandırır)',
-      'Mo & Krill (Sand Blast ile yakın dövüş/mermi isabetini kör eder ve Combo ile Siphon Life süresince kilitler)',
-      'Taktiksel Counter Eşyalar: Healbane, Toxic Bullets, Decay (Siphon Life ve Infernal Resilience iyileşmesini kırar) | Rebuttal, Metal Skin (Ağır yakın dövüş yumruklarını engeller)',
+    "counteredBy": [
+      "Vindicta",
+      "Grey Talon",
+      "Lady Geist",
+      "Venator",
+      "Mo & Krill",
+      "Healbane (Şifakıran)",
+      "Toxic Bullets (Toksik Mermiler)",
+      "Decay (Çürüme)",
+      "Rebuttal (Karşı Saldırı)",
+      "Metal Skin (Metal Deri)"
     ],
-    counterItems: [
-      'healbane',
-      'toxic-bullets',
-      'decay',
-    ],
+    "counterItems": [
+      "healbane",
+      "toxic-bullets",
+      "decay"
+    ]
   },
   {
-    id: 'vindicta',
-    name: 'Vindicta',
-    title: 'Keskin Nişancı Hayalet',
-    role: 'Uzun Mesafe Nişancı (Keskin Nişancı)',
-    difficulty: 'Yüksek',
-    image: '/assets/characters/vindicta.png',
-    imageAlt:
-      'Vindicta karakter portresi - Uzun namlulu dürbünlü tüfeğiyle havadan nişan alan keskin nişancı karakter',
-    shortBio:
-      'Flight yeteneğiyle gökyüzüne yükselip güvenli mesafeden rakiplerini avlayan, Stake ile hedefleri yere sabitleyen ve Assassinate ile düşük canlı hedefleri infaz eden nişancı.',
-    stats: {
-      survive: 40,
-      damage: 95,
-      mobility: 75,
-      control: 65,
+    "id": "vindicta",
+    "name": "Vindicta",
+    "title": "Keskin Nişancı Hayalet",
+    "role": "Uzun Mesafe Nişancı (Keskin Nişancı)",
+    "difficulty": "Yüksek",
+    "image": "/assets/characters/vindicta.png",
+    "imageAlt": "Vindicta karakter portresi - Uzun namlulu dürbünlü tüfeğiyle havadan nişan alan keskin nişancı karakter",
+    "shortBio": "Flight yeteneğiyle gökyüzüne yükselip güvenli mesafeden rakiplerini avlayan, Stake ile hedefleri yere sabitleyen ve Assassinate ile düşük canlı hedefleri infaz eden nişancı.",
+    "stats": {
+      "survive": 40,
+      "damage": 95,
+      "mobility": 75,
+      "control": 65
     },
-    abilities: [
-      'Stake (Sabitleme Kazığı: Düştüğü noktadaki rakipleri bağlayan bir kazık fırlatır; yakalanan rakiplerin hareketi kazığın bağ mesafesiyle kısıtlanır)',
-      'Flight (Uçuş: Havaya sıçrayarak uçmanızı sağlar; uçuş süresince silahınız ilave büyü hasarı verir ve eşya menziliniz artar)',
-      'Crow Familiar (Zırh Kıran Kuzgun: İsabet eden hedefe darbe hasarı verir, Mermi Direncini düşürür ve mevcut canına oranla Kanama hasarı uygular)',
-      'Assassinate (Suikast Atışı - Ulti: Dürbünle uzun menzilli güçlü bir atış yapar; canı %50\'nin altındaki yaralı hedeflere devasa bonus hasar ve infaz ruhu kazandırır)',
+    "abilities": [
+      "Stake (Sabitleme Kazığı: Düştüğü noktadaki rakipleri bağlayan bir kazık fırlatır; yakalanan rakiplerin hareketi kazığın bağ mesafesiyle kısıtlanır)",
+      "Flight (Uçuş: Havaya sıçrayarak uçmanızı sağlar; uçuş süresince silahınız ilave büyü hasarı verir ve eşya menziliniz artar)",
+      "Crow Familiar (Zırh Kıran Kuzgun: İsabet eden hedefe darbe hasarı verir, Mermi Direncini düşürür ve mevcut canına oranla Kanama hasarı uygular)",
+      "Assassinate (Suikast Atışı - Ulti: Dürbünle uzun menzilli güçlü bir atış yapar; canı %50'nin altındaki yaralı hedeflere devasa bonus hasar ve infaz ruhu kazandırır)"
     ],
-    counters: [
-      'Abrams / Victor / Billy (Flight uçuş yüksekliği sayesinde yakın dövüş tanklarına dokunulmaz kalır ve uzaktan eritir)',
-      'Seven (Storm Cloud sırasında havada sabit kalan Seven’ı Assassinate dürbün atışıyla kolayca infaz eder)',
-      'McGinnis / Solomon (Sabit kurulumların ve satranç taşlarının menzili dışından keskin nişancı baskısı kurar)',
-      'Lady Geist (Soul Exchange menziline girmeden düşük canlı Geist’i Assassinate ile uzaktan bitirir)',
+    "counters": [
+      "Abrams",
+      "Victor",
+      "Billy",
+      "Seven",
+      "McGinnis",
+      "Solomon",
+      "Lady Geist"
     ],
-    counteredBy: [
-      'Lash (Grapple ile gökyüzündeki Vindicta’nın yanına fırlayıp Ground Strike + Death Slam ile yere çakar)',
-      'Bebop (Flight sırasında havada yavaş hareket eden Vindicta’yı Hook ile takımının ortasına çeker)',
-      'Paradox (Kinetic Carbine ile havada dondurup Paradoxical Swap ile Vindicta’yı yere indirir)',
-      'Silver / Drifter (Yere indiği anda Mauling Leap veya Stalker’s Mark ile üzerine atılıp kaçış şansı bırakmaz)',
-      'Taktiksel Counter Eşyalar: Knockdown, Phantom Strike (Flight uçuşunu iptal edip yere serer) | Metal Skin, Plated Armor, Ethereal Shift (Flight mermilerini ve Assassinate infazını engeller)',
+    "counteredBy": [
+      "Lash",
+      "Bebop",
+      "Paradox",
+      "Silver",
+      "Drifter",
+      "Knockdown (Nakavt)",
+      "Phantom Strike (AKTİF Hayalet Saldırı)",
+      "Metal Skin (Metal Deri)",
+      "Plated Armor (Kaplamalı Zırh)",
+      "Ethereal Shift (Ruhani Değişim)"
     ],
-    counterItems: [
-      'knockdown',
-      'phantom-strike',
-      'metal-skin',
-    ],
+    "counterItems": [
+      "knockdown",
+      "phantom-strike",
+      "metal-skin"
+    ]
   },
   {
-    id: 'dynamo',
-    name: 'Dynamo',
-    title: 'Kuantum Astrofizikçisi',
-    role: 'Savaş Başlatıcı & Destek (Savaş Başlatıcı)',
-    difficulty: 'Orta',
-    image: '/assets/characters/dynamo.png',
-    imageAlt:
-      'Dynamo karakter portresi - Kuantum çekim enerjisiyle çalışan küresel mekanik gövdeli profesör karakteri',
-    shortBio:
-      'Quantum Entanglement ile takım arkadaşlarını ölümcül yeteneklerden kurtaran, Kinetic Pulse ile koridoru kontrol eden ve Singularity ile takım savaşlarını tek başına kazanan uzman.',
-    stats: {
-      survive: 75,
-      damage: 60,
-      mobility: 65,
-      control: 100,
+    "id": "dynamo",
+    "name": "Dynamo",
+    "title": "Kuantum Astrofizikçisi",
+    "role": "Savaş Başlatıcı & Destek (Savaş Başlatıcı)",
+    "difficulty": "Orta",
+    "image": "/assets/characters/dynamo.png",
+    "imageAlt": "Dynamo karakter portresi - Kuantum çekim enerjisiyle çalışan küresel mekanik gövdeli profesör karakteri",
+    "shortBio": "Quantum Entanglement ile takım arkadaşlarını ölümcül yeteneklerden kurtaran, Kinetic Pulse ile koridoru kontrol eden ve Singularity ile takım savaşlarını tek başına kazanan uzman.",
+    "stats": {
+      "survive": 75,
+      "damage": 60,
+      "mobility": 65,
+      "control": 100
     },
-    abilities: [
-      'Kinetic Pulse (Kinetik Dalga: Zemin boyunca ilerleyen bir enerji dalgası göndererek rakiplere büyü hasarı verir ve onları havaya savurur / Knockup)',
-      'Quantum Entanglement (Kuantum Dolanıklığı: Kısa süreliğine hedef alınamaz hale gelerek hedef konuma ışınlanır, kuvvet yeniler ve müttefikleri de kurtarabilir)',
-      'Rejuvenating Aurora (Yenileyici Aurora: Kanalize olarak kendinize ve yakındaki dost birimlere sürekli alan iyileştirmesi sağlar)',
-      'Singularity (Tekillik - Ulti: Yakındaki tüm rakipleri merkeze çeken, zamanla hasar veren ve hareketsiz bırakan bir kara delik oluşturur)',
+    "abilities": [
+      "Kinetic Pulse (Kinetik Dalga: Zemin boyunca ilerleyen bir enerji dalgası göndererek rakiplere büyü hasarı verir ve onları havaya savurur / Knockup)",
+      "Quantum Entanglement (Kuantum Dolanıklığı: Kısa süreliğine hedef alınamaz hale gelerek hedef konuma ışınlanır, kuvvet yeniler ve müttefikleri de kurtarabilir)",
+      "Rejuvenating Aurora (Yenileyici Aurora: Kanalize olarak kendinize ve yakındaki dost birimlere sürekli alan iyileştirmesi sağlar)",
+      "Singularity (Tekillik - Ulti: Yakındaki tüm rakipleri merkeze çeken, zamanla hasar veren ve hareketsiz bırakan bir kara delik oluşturur)"
     ],
-    counters: [
-      'Haze / Rem / Seven (Singularity kara deliği ile kanalize ultileri keser; Quantum Entanglement ile takımını uyku ve sersemletmelerden kurtarır)',
-      'Bebop / Holliday (Hook veya Spirit Lasso ile yakalanan takım arkadaşını Quantum Entanglement ile boyut dışına çıkarır)',
-      'Lash / Doorman (Death Slam veya Hotel Guest pusu girişimlerini Quantum Entanglement ile boşa çıkarır)',
+    "counters": [
+      "Haze",
+      "Rem",
+      "Seven",
+      "Bebop",
+      "Holliday",
+      "Lash",
+      "Doorman"
     ],
-    counteredBy: [
-      'Vindicta / Grey Talon (Singularity ve Kinetic Pulse menziline hiç girmeden uzaktan Dynamo’yu dürter)',
-      'Sinclair (Audience Participation ile Dynamo’nun kendi Singularity ultisini kopyalayıp takımına karşı kullanır)',
-      'Infernus / Mina (Büyük gövdesinde Afterburn ve Rake hasarını kolayca biriktirir)',
-      'Wraith / Silence Wave kullananlar (Quantum Entanglement ve Singularity basamadan Dynamo’yu susturur)',
-      'Taktiksel Counter Eşyalar: Silence Wave, Cursed Relic (Singularity ve Quantum Entanglement kullanımını kilitler) | Unstoppable (Singularity çekiminden korur) | Healbane (Rejuvenating Aurora iyileşmesini kırar)',
+    "counteredBy": [
+      "Vindicta",
+      "Grey Talon",
+      "Sinclair",
+      "Infernus",
+      "Mina",
+      "Wraith",
+      "Silence Wave (Susturma Dalgası)",
+      "Cursed Relic (AKTİF Lanetli Yadigâr)",
+      "Unstoppable (Durdurulamaz)",
+      "Healbane (Şifakıran)"
     ],
-    counterItems: [
-      'silence-glyph',
-      'unstoppable',
-      'healbane',
-    ],
+    "counterItems": [
+      "silence-glyph",
+      "unstoppable",
+      "healbane"
+    ]
   },
   {
-    id: 'seven',
-    name: 'Seven',
-    title: 'Yüksek Voltajlı Kaçak',
-    role: 'Alan Hasarı & Koridor İtici (Alan Etkili Büyü)',
-    difficulty: 'Düşük - Orta',
-    image: '/assets/characters/seven.png',
-    imageAlt:
-      'Seven karakter portresi - Elektrik akımları saçan metal kubbe başlıklı yüksek Spirit hasarı uzmanı',
-    shortBio:
-      'Lightning Ball ve Power Surge ile koridorları saniyeler içinde temizleyen, Static Charge ile hedefleri sersemleten ve Storm Cloud ultisiyle geniş bölgeleri elektriğe boğan taşıyıcı.',
-    stats: {
-      survive: 55,
-      damage: 95,
-      mobility: 60,
-      control: 70,
+    "id": "seven",
+    "name": "Seven",
+    "title": "Yüksek Voltajlı Kaçak",
+    "role": "Alan Hasarı & Koridor İtici (Alan Etkili Büyü)",
+    "difficulty": "Düşük - Orta",
+    "image": "/assets/characters/seven.png",
+    "imageAlt": "Seven karakter portresi - Elektrik akımları saçan metal kubbe başlıklı yüksek Spirit hasarı uzmanı",
+    "shortBio": "Lightning Ball ve Power Surge ile koridorları saniyeler içinde temizleyen, Static Charge ile hedefleri sersemleten ve Storm Cloud ultisiyle geniş bölgeleri elektriğe boğan taşıyıcı.",
+    "stats": {
+      "survive": 55,
+      "damage": 95,
+      "mobility": 60,
+      "control": 70
     },
-    abilities: [
-      'Lightning Ball (Yıldırım Küresi: Düz bir hatta ilerleyen elektrik küresi fırlatır; yarıçapındaki tüm hedeflere alan hasarı verir ve yavaşlatır)',
-      'Static Charge (Statik Şarj: Hedef rakip kahramana gecikmeli bir elektrik yükü bırakır; kısa süre sonra patlayarak alandaki rakipleri sersemletir)',
-      'Power Surge (Güç Dalgalanması: Silahınızı elektrikle yükleyerek mermilerinizin yakındaki rakiplere zincirleme şok hasarı sıçratmasını sağlar)',
-      'Storm Cloud (Fırtına Bulutu - Ulti: Havada sabitlenerek çevrenizde genişleyen devasa bir yıldırım fırtınası oluşturur ve görüşteki tüm rakiplere sürekli büyü hasarı verir)',
+    "abilities": [
+      "Lightning Ball (Yıldırım Küresi: Düz bir hatta ilerleyen elektrik küresi fırlatır; yarıçapındaki tüm hedeflere alan hasarı verir ve yavaşlatır)",
+      "Static Charge (Statik Şarj: Hedef rakip kahramana gecikmeli bir elektrik yükü bırakır; kısa süre sonra patlayarak alandaki rakipleri sersemletir)",
+      "Power Surge (Güç Dalgalanması: Silahınızı elektrikle yükleyerek mermilerinizin yakındaki rakiplere zincirleme şok hasarı sıçratmasını sağlar)",
+      "Storm Cloud (Fırtına Bulutu - Ulti: Havada sabitlenerek çevrenizde genişleyen devasa bir yıldırım fırtınası oluşturur ve görüşteki tüm rakiplere sürekli büyü hasarı verir)"
     ],
-    counters: [
-      'McGinnis / Graves / Rat King (Lightning Ball ve Power Surge zincirleme elektriğiyle taretleri, hortlakları ve sıçan sürülerini saniyeler içinde temizler)',
-      'Warden / Solomon (Yüksek hareket hızı ve alan hasarıyla sabit bölge kontrolcülerini uzaktan eritir)',
-      'Mo & Krill (Yakın mesafeye girmek zorunda olan tankları Static Charge sersemletmesiyle cezalandırır)',
+    "counters": [
+      "McGinnis",
+      "Graves",
+      "Rat King",
+      "Warden",
+      "Solomon",
+      "Mo & Krill"
     ],
-    counteredBy: [
-      'Vindicta / Grey Talon (Storm Cloud açtığında havada sabit kalan Seven’ı Assassinate veya Guided Owl ile vurur)',
-      'Bebop / Paradox (Storm Cloud kanalizesini Hook veya Paradoxical Swap ile anında bozar)',
-      'Yamato / Apollo (Shadow Transformation veya Riposte ile Static Charge sersemletmesini savuşturup Seven’a yapışır)',
-      'Sinclair (Storm Cloud ultisini Audience Participation ile kopyalar)',
-      'Taktiksel Counter Eşyalar: Knockdown (Storm Cloud ultisini havadan yere çakar) | Spirit Resilience, Spellbreaker (Power Surge ve Storm Cloud elektrik hasarını azaltır)',
+    "counteredBy": [
+      "Vindicta",
+      "Grey Talon",
+      "Bebop",
+      "Paradox",
+      "Yamato",
+      "Apollo",
+      "Sinclair",
+      "Knockdown (Nakavt)",
+      "Spirit Resilience (Büyü Dayanıklılığı)",
+      "Spellbreaker (Büyü Bozan)"
     ],
-    counterItems: [
-      'knockdown',
-      'spirit-resilience',
-      'spellbreaker',
-    ],
+    "counterItems": [
+      "knockdown",
+      "spirit-resilience",
+      "spellbreaker"
+    ]
   },
   {
-    id: 'apollo',
-    name: 'Apollo',
-    title: 'Okült Eskrimci & Işık Düellocusu',
-    role: 'Çevik Eskrimci & Savuşturma Düellocusu (Fencer Skirmisher)',
-    difficulty: 'Yüksek',
-    image: '/assets/characters/apollo.png',
-    imageAlt:
-      'Apollo karakter portresi - Deadlock oynanabilir kahraman görseli',
-    shortBio:
-      'Disengaging Sigil ile geriye sıçrayıp alan yavaşlatması vuran, Riposte ile gelen saldırıyı savuşturup dokunulmaz olan ve Flawless Advance hamleleriyle rakipleri delen eskrim ustası.',
-    stats: {
-      survive: 60,
-      damage: 90,
-      mobility: 90,
-      control: 55,
+    "id": "apollo",
+    "name": "Apollo",
+    "title": "Okült Eskrimci & Işık Düellocusu",
+    "role": "Çevik Eskrimci & Savuşturma Düellocusu (Fencer Skirmisher)",
+    "difficulty": "Yüksek",
+    "image": "/assets/characters/apollo.png",
+    "imageAlt": "Apollo karakter portresi - Deadlock oynanabilir kahraman görseli",
+    "shortBio": "Disengaging Sigil ile geriye sıçrayıp alan yavaşlatması vuran, Riposte ile gelen saldırıyı savuşturup dokunulmaz olan ve Flawless Advance hamleleriyle rakipleri delen eskrim ustası.",
+    "stats": {
+      "survive": 60,
+      "damage": 90,
+      "mobility": 90,
+      "control": 55
     },
-    abilities: [
-      'Disengaging Sigil (Geri Çekilme Mührü: Önünüze bir mühür küresi çizip geriye doğru sıçrarsınız; küre patlayarak alandaki rakiplere büyü hasarı verir ve yavaşlatır)',
-      'Riposte (Eskrim Savuşturması: Gelen ilk saldırıyı savuşturmaya hazırlanır; başarılı savuşturmada kısa süreliğine dokunulmaz olur ve karşı hamleyle rakibi deler)',
-      'Flawless Advance (Kusursuz İlerleyiş: İstediğiniz yönde seri eskrim hamleleri yaparak önünüzdeki rakiplere delici darbeler indirirsiniz)',
-      'Itani Lo Sahn (Işık Düellosu - Ulti: Hedef doğrultuda ışık hızında kesikler atarak rakiplerin içinden geçer ve ağır patlayıcı hasar uygular)',
+    "abilities": [
+      "Disengaging Sigil (Geri Çekilme Mührü: Önünüze bir mühür küresi çizip geriye doğru sıçrarsınız; küre patlayarak alandaki rakiplere büyü hasarı verir ve yavaşlatır)",
+      "Riposte (Eskrim Savuşturması: Gelen ilk saldırıyı savuşturmaya hazırlanır; başarılı savuşturmada kısa süreliğine dokunulmaz olur ve karşı hamleyle rakibi deler)",
+      "Flawless Advance (Kusursuz İlerleyiş: İstediğiniz yönde seri eskrim hamleleri yaparak önünüzdeki rakiplere delici darbeler indirirsiniz)",
+      "Itani Lo Sahn (Işık Düellosu - Ulti: Hedef doğrultuda ışık hızında kesikler atarak rakiplerin içinden geçer ve ağır patlayıcı hasar uygular)"
     ],
-    counters: [
-      'Abrams / Billy / Silver (Yakın dövüş ve düz saldırılarını Riposte ile savuşturup dokunulmazlık kazanarak karşı darbeyle cezalandırır)',
-      'McGinnis / Grey Talon (Flawless Advance seri hamleleriyle mesafeyi kapatır ve Disengaging Sigil ile geri çekilir)',
-      'Bebop (Hook sonrası gelen Uppercut/Bomba darbesini Riposte ile savuşturur)',
+    "counters": [
+      "Abrams",
+      "Billy",
+      "Silver",
+      "McGinnis",
+      "Grey Talon",
+      "Bebop"
     ],
-    counteredBy: [
-      'Mo & Krill / Dynamo (Alan etkili ve bastırma odaklı kitle kontrol yetenekleriyle Flawless Advance ve Disengaging Sigil hareketliliğini kilitler)',
-      'Infernus / Pocket (Tekil darbe yerine zamana yayılan yanma ve zehir hasarıyla Riposte savuşturmasını aşar)',
-      'Warden / Violet (Binding Word ve Still Life alan dondurmasıyla Apollo’nun eskrim hamlelerini durdurur)',
-      'Taktiksel Counter Eşyalar: Slowing Hex, Silence Wave (Flawless Advance, Riposte ve Disengaging Sigil kullanımını tamamen kilitler) | Return Fire, Metal Skin (Delici hamlelerini engeller)',
+    "counteredBy": [
+      "Mo & Krill",
+      "Dynamo",
+      "Infernus",
+      "Pocket",
+      "Warden",
+      "Violet",
+      "Slowing Hex (Yavaşlatma Büyüsü)",
+      "Silence Wave (Susturma Dalgası)",
+      "Return Fire (AKTİF İade-i Ateş)",
+      "Metal Skin (Metal Deri)"
     ],
-    counterItems: [
-      'slowing-hex',
-      'silence-glyph',
-      'metal-skin',
-    ],
+    "counterItems": [
+      "slowing-hex",
+      "silence-glyph",
+      "metal-skin"
+    ]
   },
   {
-    id: 'baba',
-    name: 'Baba',
-    title: 'Folklor Cadısı & İplik Büyücüsü',
-    role: 'Menzilli Kontrol & Zayıflatma Büyücüsü (Control / Zone Mage)',
-    difficulty: 'Orta - Yüksek',
-    image: '/assets/characters/baba.png',
-    imageAlt:
-      'Baba karakter portresi - Deadlock oynanabilir kahraman görseli',
-    shortBio:
-      'Threadsap ile nişangahı takip eden patlayıcı büyü iplikleri ören, Granny Long Legs ile bankının bacaklarını uzatarak yüksek zıplama ve direnç kazanan folklor büyücüsü.',
-    stats: {
-      survive: 55,
-      damage: 85,
-      mobility: 75,
-      control: 85,
+    "id": "baba",
+    "name": "Baba",
+    "title": "Folklor Cadısı & İplik Büyücüsü",
+    "role": "Menzilli Kontrol & Zayıflatma Büyücüsü (Control / Zone Mage)",
+    "difficulty": "Orta - Yüksek",
+    "image": "/assets/characters/baba.png",
+    "imageAlt": "Baba karakter portresi - Deadlock oynanabilir kahraman görseli",
+    "shortBio": "Threadsap ile nişangahı takip eden patlayıcı büyü iplikleri ören, Granny Long Legs ile bankının bacaklarını uzatarak yüksek zıplama ve direnç kazanan folklor büyücüsü.",
+    "stats": {
+      "survive": 55,
+      "damage": 85,
+      "mobility": 75,
+      "control": 85
     },
-    abilities: [
-      'Threadsap (Ömür İpliği: Nişangahınızı takip eden pürüzlü bir büyü ipliği örer; hat boyunca patlayarak büyü hasarı verir ve rakiplerden güç çalar)',
-      'Granny Long Legs (Uzun Bacaklı Bank: Oturduğunuz bankın bacakları uzayarak size Hareket Hızı, yüksek zıplama, Zayıflatma Direnci ve Yakın Dövüş Direnci kazandırır)',
-      'Feed The Birds (Kuşları Besle: Hedef alana gagalı kuş sürüleri çağırarak rakipleri yavaşlatır ve zamanla büyü hasarı verir)',
-      'Witching Hour (Cadı Saati - Ulti: Geniş bir folklor laneti alanı açarak içerideki rakiplerin görüşünü, hızını ve dirençlerini kırar)',
+    "abilities": [
+      "Threadsap (Ömür İpliği: Nişangahınızı takip eden pürüzlü bir büyü ipliği örer; hat boyunca patlayarak büyü hasarı verir ve rakiplerden güç çalar)",
+      "Granny Long Legs (Uzun Bacaklı Bank: Oturduğunuz bankın bacakları uzayarak size Hareket Hızı, yüksek zıplama, Zayıflatma Direnci ve Yakın Dövüş Direnci kazandırır)",
+      "Feed The Birds (Kuşları Besle: Hedef alana gagalı kuş sürüleri çağırarak rakipleri yavaşlatır ve zamanla büyü hasarı verir)",
+      "Witching Hour (Cadı Saati - Ulti: Geniş bir folklor laneti alanı açarak içerideki rakiplerin görüşünü, hızını ve dirençlerini kırar)"
     ],
-    counters: [
-      'Abrams / Billy / Shiv (Granny Long Legs ile kazandığı yüksek zıplama, hareket hızı ve Yakın Dövüş Direnci sayesinde yakın dövüşçülerden kolayca kaçar)',
-      'McGinnis / Solomon (Threadsap iplik patlamaları ve Feed The Birds alan baskısıyla sabit hedefleri uzaktan eritir)',
+    "counters": [
+      "Abrams",
+      "Billy",
+      "Shiv",
+      "McGinnis",
+      "Solomon"
     ],
-    counteredBy: [
-      'Vindicta / Grey Talon (Granny Long Legs ile yükselen Baba’yı açık görüş hattında uzun menzilden avlar)',
-      'Lash / Calico (Yüksek hava ve gölge mobilitesiyle Threadsap hattından sıyrılıp Baba’ya tek kombo vurur)',
-      'Viscous / Nurse Harrow (Zayıflatma temizleme ve sülük etkileriyle Baba’nın güçlendirmelerini eritir)',
-      'Taktiksel Counter Eşyalar: Slowing Hex, Knockdown (Granny Long Legs hareket ve zıplama avantajını bitirir) | Spellbreaker, Spirit Resilience (Threadsap büyü patlamasını sönümler)',
+    "counteredBy": [
+      "Vindicta",
+      "Grey Talon",
+      "Lash",
+      "Calico",
+      "Viscous",
+      "Nurse Harrow",
+      "Slowing Hex (Yavaşlatma Büyüsü)",
+      "Knockdown (Nakavt)",
+      "Spellbreaker (Büyü Bozan)",
+      "Spirit Resilience (Büyü Dayanıklılığı)"
     ],
-    counterItems: [
-      'slowing-hex',
-      'knockdown',
-      'spellbreaker',
-    ],
+    "counterItems": [
+      "slowing-hex",
+      "knockdown",
+      "spellbreaker"
+    ]
   },
   {
-    id: 'bebop',
-    name: 'Bebop',
-    title: 'Hurda Golem & Kanca Uzmanı',
-    role: 'Yakalayıcı / Patlayıcı Hasar (Pick & Burst)',
-    difficulty: 'Orta',
-    image: '/assets/characters/bebop.png',
-    imageAlt:
-      'Bebop karakter portresi - Deadlock oynanabilir kahraman görseli',
-    shortBio:
-      'Uzun menzilli Hook yeteneğiyle rakipleri takımının arasına çeken, Sticky Bomb yükleriyle patlayıcı büyü hasarı biriktiren ve Hyper Beam ile koridoru eriten mekanik dövüşçü.',
-    stats: {
-      survive: 75,
-      damage: 85,
-      mobility: 50,
-      control: 85,
+    "id": "bebop",
+    "name": "Bebop",
+    "title": "Hurda Golem & Kanca Uzmanı",
+    "role": "Yakalayıcı / Patlayıcı Hasar (Pick & Burst)",
+    "difficulty": "Orta",
+    "image": "/assets/characters/bebop.png",
+    "imageAlt": "Bebop karakter portresi - Deadlock oynanabilir kahraman görseli",
+    "shortBio": "Uzun menzilli Hook yeteneğiyle rakipleri takımının arasına çeken, Sticky Bomb yükleriyle patlayıcı büyü hasarı biriktiren ve Hyper Beam ile koridoru eriten mekanik dövüşçü.",
+    "stats": {
+      "survive": 75,
+      "damage": 85,
+      "mobility": 50,
+      "control": 85
     },
-    abilities: [
-      'Exploding Uppercut (Patlayıcı Aparkat: Yakındaki rakiplere yakın dövüş hasarı verip onları uzağa savurur; düştükleri noktada alan büyü hasarı oluşur)',
-      'Sticky Bomb (Yapışkan Bomba: Hedefe gecikmeli patlayan bir bomba yapıştırarak yakındaki rakiplere büyü hasarı verir; isabet ve skor başına kalıcı hasar yükü biriktirir)',
-      'Hook (Uzun Menzilli Kanca: İleri doğru mekanik bir kanca fırlatarak isabet ettiği ilk kahramanı doğrudan yanınıza çeker)',
-      'Hyper Beam (Hiper Lazer - Ulti: Devasa bir enerji lazeri kanalize ederek hattaki tüm rakiplere yüksek büyü hasarı ve ağır hareket/atılma yavaşlatması uygular)',
+    "abilities": [
+      "Exploding Uppercut (Patlayıcı Aparkat: Yakındaki rakiplere yakın dövüş hasarı verip onları uzağa savurur; düştükleri noktada alan büyü hasarı oluşur)",
+      "Sticky Bomb (Yapışkan Bomba: Hedefe gecikmeli patlayan bir bomba yapıştırarak yakındaki rakiplere büyü hasarı verir; isabet ve skor başına kalıcı hasar yükü biriktirir)",
+      "Hook (Uzun Menzilli Kanca: İleri doğru mekanik bir kanca fırlatarak isabet ettiği ilk kahramanı doğrudan yanınıza çeker)",
+      "Hyper Beam (Hiper Lazer - Ulti: Devasa bir enerji lazeri kanalize ederek hattaki tüm rakiplere yüksek büyü hasarı ve ağır hareket/atılma yavaşlatması uygular)"
     ],
-    counters: [
-      'Vindicta / Grey Talon / Celeste (Havada yavaş süzülen nişancıları Hook ile çekip Sticky Bomb + Uppercut kombosuyla tekler)',
-      'McGinnis / Solomon / Venator (Kalkan ve taret arkasında sabit duran karakterleri 30m Hook ile takımının ortasına çeker)',
-      'Seven (Storm Cloud açan Seven’ı kancayla yakalayıp ultisini bozar)',
+    "counters": [
+      "Vindicta",
+      "Grey Talon",
+      "Celeste",
+      "McGinnis",
+      "Solomon",
+      "Venator",
+      "Seven"
     ],
-    counteredBy: [
-      'Pocket / Mina / Calico (Enchanter’s Satchel, Sanguine Retreat ve Return to Shadows ile Sticky Bomb patlama anında hedef alınamaz olurlar)',
-      'Dynamo / Viscous (Quantum Entanglement ve The Cube ile kancalanan müttefiki Sticky Bomb hasarından %100 kurtarır)',
-      'Graves / Rat King (Çağrılan Ghoul ve Rat Swarm birimleriyle Bebop’un Hook hattını bloklar)',
-      'Taktiksel Counter Eşyalar: Dispel Magic, Ethereal Shift, Divine Barrier (Üzerinize yapışan Sticky Bomb’u siler veya patlamasını boşa çıkarır) | Reactive Barrier (Hook yakalamasında kalkan açar)',
+    "counteredBy": [
+      "Pocket",
+      "Mina",
+      "Calico",
+      "Dynamo",
+      "Viscous",
+      "Graves",
+      "Rat King",
+      "Dispel Magic (AKTİF Etki Geçirme Büyüsü)",
+      "Ethereal Shift (Ruhani Değişim)",
+      "Divine Barrier (AKTİF İlahi Bariyer)",
+      "Reactive Barrier (Reaktif Bariyer)"
     ],
-    counterItems: [
-      'ethereal-shift',
-      'reactive-barrier',
-      'dispel-magic',
-    ],
+    "counterItems": [
+      "ethereal-shift",
+      "reactive-barrier",
+      "dispel-magic"
+    ]
   },
   {
-    id: 'billy',
-    name: 'Billy',
-    title: 'Asi Keçi Punk & Sopa Kavgacısı',
-    role: 'Ön Saf Yakın Dövüşçü & Hava Savurucu (Melee Brawler / Initiator)',
-    difficulty: 'Orta',
-    image: '/assets/characters/billy.png',
-    imageAlt:
-      'Billy karakter portresi - Deadlock oynanabilir kahraman görseli',
-    shortBio:
-      'Bashdown ile sopasını yere vurarak havadaki ve yerdeki rakipleri aşağı çeken, Rising Ram ile kafa üstü hücum edip hedefleri havaya savuran ve Chain Gang ile rakipleri zincirleyen kavgacı.',
-    stats: {
-      survive: 85,
-      damage: 80,
-      mobility: 75,
-      control: 75,
+    "id": "billy",
+    "name": "Billy",
+    "title": "Asi Keçi Punk & Sopa Kavgacısı",
+    "role": "Ön Saf Yakın Dövüşçü & Hava Savurucu (Melee Brawler / Initiator)",
+    "difficulty": "Orta",
+    "image": "/assets/characters/billy.png",
+    "imageAlt": "Billy karakter portresi - Deadlock oynanabilir kahraman görseli",
+    "shortBio": "Bashdown ile sopasını yere vurarak havadaki ve yerdeki rakipleri aşağı çeken, Rising Ram ile kafa üstü hücum edip hedefleri havaya savuran ve Chain Gang ile rakipleri zincirleyen kavgacı.",
+    "stats": {
+      "survive": 85,
+      "damage": 80,
+      "mobility": 75,
+      "control": 75
     },
-    abilities: [
-      'Bashdown (Sopa Darbesi: Sopanızı hızla yere vurarak havadaki ve yerdeki rakipleri aşağı çeker, yakın dövüş hasarı ve şok dalgası oluşturur)',
-      'Rising Ram (Koç Toslaması: Kafa üstü rakibe hücum ederek onu kendinizle birlikte havaya savurursunuz; isabet halinde bekleme süresi %50 azalır)',
-      'Blasted (Asi Öfke - Pasif: Yakın dövüş ve yetenek isabetleri öfke biriktirerek mermi/büyü kalkanlarını kırma ve dayanıklılık kazandırır)',
-      'Chain Gang (Zincir Çetesi - Ulti: Yakındaki rakipleri zincirleyerek kaçmalarını engeller ve alan içinde yıkıcı kargaşa hasarı vurur)',
+    "abilities": [
+      "Bashdown (Sopa Darbesi: Sopanızı hızla yere vurarak havadaki ve yerdeki rakipleri aşağı çeker, yakın dövüş hasarı ve şok dalgası oluşturur)",
+      "Rising Ram (Koç Toslaması: Kafa üstü rakibe hücum ederek onu kendinizle birlikte havaya savurursunuz; isabet halinde bekleme süresi %50 azalır)",
+      "Blasted (Asi Öfke - Pasif: Yakın dövüş ve yetenek isabetleri öfke biriktirerek mermi/büyü kalkanlarını kırma ve dayanıklılık kazandırır)",
+      "Chain Gang (Zincir Çetesi - Ulti: Yakındaki rakipleri zincirleyerek kaçmalarını engeller ve alan içinde yıkıcı kargaşa hasarı vurur)"
     ],
-    counters: [
-      'Vindicta / Lash / Celeste (Bashdown darbesiyle havadaki rakipleri doğrudan yere çekip şok dalgasıyla cezalandırır)',
-      'Kelvin / Paige / Viscous (Blasted pasifi ve agresif yakın dövüş kombolarıyla kalkan odaklı savunmaları hızla kırar)',
-      'McGinnis / Grey Talon (Rising Ram ile mesafeyi kapatıp Chain Gang zinciriyle kaçışlarını engeller)',
+    "counters": [
+      "Vindicta",
+      "Lash",
+      "Celeste",
+      "Kelvin",
+      "Paige",
+      "Viscous",
+      "McGinnis",
+      "Grey Talon"
     ],
-    counteredBy: [
-      'Apollo / Mirage (Rising Ram ve Bashdown yakın dövüş darbelerini Riposte veya Dust Devil ile savuşturup karşı hasar vurur)',
-      'Lady Geist / Victor (Yakın mesafeye giren Billy’yi Soul Exchange veya Pain Battery elektrik deşarjıyla eritir)',
-      'Mo & Krill / Warden (Billy içeri daldığında Combo veya Binding Word ile onu kilitler)',
-      'Taktiksel Counter Eşyalar: Rebuttal, Metal Skin (Bashdown ve sopa yakın dövüş hasarını savuşturur/engeller) | Healbane, Toxic Bullets (Yakın dövüş can yenilemesini kırar)',
+    "counteredBy": [
+      "Apollo",
+      "Mirage",
+      "Lady Geist",
+      "Victor",
+      "Mo & Krill",
+      "Warden",
+      "Rebuttal (Karşı Saldırı)",
+      "Metal Skin (Metal Deri)",
+      "Healbane (Şifakıran)",
+      "Toxic Bullets (Toksik Mermiler)"
     ],
-    counterItems: [
-      'metal-skin',
-      'healbane',
-      'toxic-bullets',
-    ],
+    "counterItems": [
+      "metal-skin",
+      "healbane",
+      "toxic-bullets"
+    ]
   },
   {
-    id: 'calico',
-    name: 'Calico',
-    title: 'Gölgelerin Suikastçısı',
-    role: 'Yakın Mesafe Suikastçı / Sızma (Assassin)',
-    difficulty: 'Yüksek',
-    image: '/assets/characters/calico.png',
-    imageAlt:
-      'Calico karakter portresi - Deadlock oynanabilir kahraman görseli',
-    shortBio:
-      'Ava ile kedi formuna bürünerek haritada hızla rotasyon atan, Leaping Slash ve Gloom Bombs ile arka saflardaki kırılgan hedefleri avlayıp gölgelere karışan suikastçı.',
-    stats: {
-      survive: 60,
-      damage: 85,
-      mobility: 95,
-      control: 55,
+    "id": "calico",
+    "name": "Calico",
+    "title": "Gölgelerin Suikastçısı",
+    "role": "Yakın Mesafe Suikastçı / Sızma (Assassin)",
+    "difficulty": "Yüksek",
+    "image": "/assets/characters/calico.png",
+    "imageAlt": "Calico karakter portresi - Deadlock oynanabilir kahraman görseli",
+    "shortBio": "Ava ile kedi formuna bürünerek haritada hızla rotasyon atan, Leaping Slash ve Gloom Bombs ile arka saflardaki kırılgan hedefleri avlayıp gölgelere karışan suikastçı.",
+    "stats": {
+      "survive": 60,
+      "damage": 85,
+      "mobility": 95,
+      "control": 55
     },
-    abilities: [
-      'Gloom Bombs (Kasvet Bombaları: Gecikmeli patlayan bir bomba kümesi fırlatarak büyü hasarı verir; birden fazla bombayla vurulan hedefler ilave hasar alır)',
-      'Leaping Slash (Sıçrayan Kesik: İleri doğru atılarak dairesel bir alanda tüm rakipleri biçer; en az bir kahramana isabet ederse kendinizi iyileştirirsiniz)',
-      'Ava (Kedi Formu: Gölgelere bürünerek Ava formuna geçersiniz; zamanla artan hareket hızı kazanır ve mini haritada görünmez olursunuz)',
-      'Return to Shadows (Gölgelere Dönüş - Ulti: Anında gölgeye dönüşerek hedef alınamaz olur, hareket hızı kazanır ve çevrenize sürekli büyü hasarı verirsiniz)',
+    "abilities": [
+      "Gloom Bombs (Kasvet Bombaları: Gecikmeli patlayan bir bomba kümesi fırlatarak büyü hasarı verir; birden fazla bombayla vurulan hedefler ilave hasar alır)",
+      "Leaping Slash (Sıçrayan Kesik: İleri doğru atılarak dairesel bir alanda tüm rakipleri biçer; en az bir kahramana isabet ederse kendinizi iyileştirirsiniz)",
+      "Ava (Kedi Formu: Gölgelere bürünerek Ava formuna geçersiniz; zamanla artan hareket hızı kazanır ve mini haritada görünmez olursunuz)",
+      "Return to Shadows (Gölgelere Dönüş - Ulti: Anında gölgeye dönüşerek hedef alınamaz olur, hareket hızı kazanır ve çevrenize sürekli büyü hasarı verirsiniz)"
     ],
-    counters: [
-      'Grey Talon / Vindicta / Venator (Ava kedi formuyla mini haritada görünmeden arka saflara sızıp Gloom Bombs + Leaping Slash ile nişancıları avlar)',
-      'Pocket / Lady Geist (Kaçış yetenekleri bekleme süresine giren büyücüleri yüksek hareket hızıyla yakalar)',
+    "counters": [
+      "Grey Talon",
+      "Vindicta",
+      "Venator",
+      "Pocket",
+      "Lady Geist"
     ],
-    counteredBy: [
-      'Abrams / Mo & Krill / Victor (Yakın mesafeye Leaping Slash ile giren Calico’yu yüksek zırh ve sersemletmeyle cezalandırır)',
-      'Silver / Drifter (Bloodscent pasifleriyle Ava formundaki veya kaçmaya çalışan Calico’nun izini sürer)',
-      'Warden / Rem (Binding Word ve Naptime alan uyutmasıyla Calico’nun suikast temposunu keser)',
-      'Taktiksel Counter Eşyalar: Slowing Hex, Silence Wave (Ava ve Return to Shadows kaçışını kilitler) | Reactive Barrier, Spellbreaker (Gloom Bombs patlama hasarını sönümler)',
+    "counteredBy": [
+      "Abrams",
+      "Mo & Krill",
+      "Victor",
+      "Silver",
+      "Drifter",
+      "Warden",
+      "Rem",
+      "Slowing Hex (Yavaşlatma Büyüsü)",
+      "Silence Wave (Susturma Dalgası)",
+      "Reactive Barrier (Reaktif Bariyer)",
+      "Spellbreaker (Büyü Bozan)"
     ],
-    counterItems: [
-      'slowing-hex',
-      'silence-glyph',
-      'reactive-barrier',
-    ],
+    "counterItems": [
+      "slowing-hex",
+      "silence-glyph",
+      "reactive-barrier"
+    ]
   },
   {
-    id: 'celeste',
-    name: 'Celeste',
-    title: 'Prizmatik Işık İllüzyonisti',
-    role: 'Karşı-Saldırı Büyücüsü & Kalkan Desteği (Counter-Burst / Prism Mage)',
-    difficulty: 'Orta - Yüksek',
-    image: '/assets/characters/celeste.png',
-    imageAlt:
-      'Celeste karakter portresi - Deadlock oynanabilir kahraman görseli',
-    shortBio:
-      'Light Eater ile saldıran rakiplere büyü hasarı yansıtan, Dazzling Trick prizma bariyeri kırıldığında yakındaki rakipleri susturan ve Radiant Daggers ile yavaşlatan ışık büyücüsü.',
-    stats: {
-      survive: 55,
-      damage: 75,
-      mobility: 85,
-      control: 75,
+    "id": "celeste",
+    "name": "Celeste",
+    "title": "Prizmatik Işık İllüzyonisti",
+    "role": "Karşı-Saldırı Büyücüsü & Kalkan Desteği (Counter-Burst / Prism Mage)",
+    "difficulty": "Orta - Yüksek",
+    "image": "/assets/characters/celeste.png",
+    "imageAlt": "Celeste karakter portresi - Deadlock oynanabilir kahraman görseli",
+    "shortBio": "Light Eater ile saldıran rakiplere büyü hasarı yansıtan, Dazzling Trick prizma bariyeri kırıldığında yakındaki rakipleri susturan ve Radiant Daggers ile yavaşlatan ışık büyücüsü.",
+    "stats": {
+      "survive": 55,
+      "damage": 75,
+      "mobility": 85,
+      "control": 75
     },
-    abilities: [
-      'Light Eater (Işık Yiyen: Önünüzdeki koni alanına parlak bir ışık patlaması gönderir; isabet alan rakipler saldırdıklarında ilave büyü hasarı alırlar)',
-      'Dazzling Trick (Göz Alıcı Prizma: Kendinizi koruyucu bir prizma bariyeriyle sararsınız; bariyer kırılırsa yakındaki rakipleri Susturur / Silence ve hasar verir)',
-      'Radiant Daggers (Parlak Hançerler: Havada süzülürken hedefe ışık hançerleri fırlatarak büyü hasarı ve hareket yavaşlatması uygular)',
-      'Shining Wonder (Kozmik Gösteri - Ulti: Geniş alanda prizmatik ışık dalgaları yayarak müttefikleri korur ve rakipleri kör edip hasar verir)',
+    "abilities": [
+      "Light Eater (Işık Yiyen: Önünüzdeki koni alanına parlak bir ışık patlaması gönderir; isabet alan rakipler saldırdıklarında ilave büyü hasarı alırlar)",
+      "Dazzling Trick (Göz Alıcı Prizma: Kendinizi koruyucu bir prizma bariyeriyle sararsınız; bariyer kırılırsa yakındaki rakipleri Susturur / Silence ve hasar verir)",
+      "Radiant Daggers (Parlak Hançerler: Havada süzülürken hedefe ışık hançerleri fırlatarak büyü hasarı ve hareket yavaşlatması uygular)",
+      "Shining Wonder (Kozmik Gösteri - Ulti: Geniş alanda prizmatik ışık dalgaları yayarak müttefikleri korur ve rakipleri kör edip hasar verir)"
     ],
-    counters: [
-      'Haze / Vyper / Wraith (Yüksek atış hızlı karakterler Light Eater etkisindeyken her saldırıda kendi kendilerine büyü hasarı vurur)',
-      'Lash / Abrams / Billy (Yakın mesafede Dazzling Trick prizma bariyerini kırdıkları anda otomatik Susturma / Silence ve patlama hasarı yerler)',
+    "counters": [
+      "Haze",
+      "Vyper",
+      "Wraith",
+      "Lash",
+      "Abrams",
+      "Billy"
     ],
-    counteredBy: [
-      'Vindicta / Grey Talon (Dazzling Trick susturma menziline hiç girmeden uzaktan prizmayı kırıp Celeste’i avlar)',
-      'Capacitor / Nurse Harrow (Leech Therapy ve Capacitor ile Dazzling Trick bariyerini patlatmadan süresini eritir veya siler)',
-      'Bebop / Paradox (Celeste’i uzaktan kanca veya Swap ile takımının ortasına çeker)',
-      'Taktiksel Counter Eşyalar: Capacitor (Dazzling Trick prizma kalkanını anında siler) | Silence Wave (Dazzling Trick açmasını engeller) | Spirit Resilience, Spellbreaker (Light Eater hasarını azaltır)',
+    "counteredBy": [
+      "Vindicta",
+      "Grey Talon",
+      "Capacitor (AKTİF Kondansatör)",
+      "Nurse Harrow",
+      "Bebop",
+      "Paradox",
+      "Silence Wave (Susturma Dalgası)",
+      "Spirit Resilience (Büyü Dayanıklılığı)",
+      "Spellbreaker (Büyü Bozan)"
     ],
-    counterItems: [
-      'capacitor',
-      'silence-glyph',
-      'spellbreaker',
-    ],
+    "counterItems": [
+      "capacitor",
+      "silence-glyph",
+      "spellbreaker"
+    ]
   },
   {
-    id: 'deadman-danny',
-    name: 'Deadman Danny',
-    title: 'Jetpack’li Hava Dalışçısı & Yakıt Bombacısı',
-    role: 'Hava Dalışçısı & Yakalayıcı Savaşçı (Aerial Dive / Grappler Brawler)',
-    difficulty: 'Orta',
-    image: '/assets/characters/deadman-danny.png',
-    imageAlt:
-      'Deadman Danny karakter portresi - Deadlock oynanabilir kahraman görseli',
-    shortBio:
-      'Strix Salvo ile zemine büyü füzeleri diken, Chimera Mk1 jetpack’iyle uçup aşırı ısınarak rakiplerin tepesine patlayıcı dalış yapan, Jettison Fuel ile mermi direnci eritip jetpack’ini soğutan ve Close The Deal ile rakibini yakalayıp gökyüzünden yere çakan hava savaşçısı.',
-    stats: {
-      survive: 70,
-      damage: 90,
-      mobility: 85,
-      control: 75,
+    "id": "deadman-danny",
+    "name": "Deadman Danny",
+    "title": "Jetpack’li Hava Dalışçısı & Yakıt Bombacısı",
+    "role": "Hava Dalışçısı & Yakalayıcı Savaşçı (Aerial Dive / Grappler Brawler)",
+    "difficulty": "Orta",
+    "image": "/assets/characters/deadman-danny.png",
+    "imageAlt": "Deadman Danny karakter portresi - Deadlock oynanabilir kahraman görseli",
+    "shortBio": "Strix Salvo ile zemine büyü füzeleri diken, Chimera Mk1 jetpack’iyle uçup aşırı ısınarak rakiplerin tepesine patlayıcı dalış yapan, Jettison Fuel ile mermi direnci eritip jetpack’ini soğutan ve Close The Deal ile rakibini yakalayıp gökyüzünden yere çakan hava savaşçısı.",
+    "stats": {
+      "survive": 70,
+      "damage": 90,
+      "mobility": 85,
+      "control": 75
     },
-    abilities: [
-      'Strix Salvo (Strix Yaylımı: Bir hat boyunca zemine saplanan büyü füzeleri ateşler; füzeler gecikmeli olarak veya rakipler yaklaştığında patlar)',
-      'Chimera Mk1 (Jetpack Dalışı: Zıplamaya basılı tutarak uçmanızı sağlar; jetpack aşırı ısındığında veya tekrar basıldığında yere çakılarak alan hasarı verir, ıskalarsanız kendinizi sersemletir)',
-      'Jettison Fuel (Yakıt Tahliyesi: Yakıt püskürterek silah hasarı verir, Mermi Direncini kırar ve jetpack ısısını düşürür; sonunda büyü hasarı vurup sizi geriye savuran bir patlama yaratır)',
-      'Close The Deal (İşi Bağla - Ulti: Bir rakibi yakalayıp gökyüzüne çıkarır ve hızla yere çakarak sersemletir; düşüş ve çarpma büyü hasarı verir, canı %50’nin altındaki hedeflere yüksek bonus hasar vurur)',
+    "abilities": [
+      "Strix Salvo (Strix Yaylımı: Bir hat boyunca zemine saplanan büyü füzeleri ateşler; füzeler gecikmeli olarak veya rakipler yaklaştığında patlar)",
+      "Chimera Mk1 (Jetpack Dalışı: Zıplamaya basılı tutarak uçmanızı sağlar; jetpack aşırı ısındığında veya tekrar basıldığında yere çakılarak alan hasarı verir, ıskalarsanız kendinizi sersemletir)",
+      "Jettison Fuel (Yakıt Tahliyesi: Yakıt püskürterek silah hasarı verir, Mermi Direncini kırar ve jetpack ısısını düşürür; sonunda büyü hasarı vurup sizi geriye savuran bir patlama yaratır)",
+      "Close The Deal (İşi Bağla - Ulti: Bir rakibi yakalayıp gökyüzüne çıkarır ve hızla yere çakarak sersemletir; düşüş ve çarpma büyü hasarı verir, canı %50’nin altındaki hedeflere yüksek bonus hasar vurur)"
     ],
-    counters: [
-      'McGinnis / Grey Talon / Vindicta (Chimera Mk1 jetpack uçuşuyla siperleri aşıp tepelerine dalış yapar ve Close The Deal ile yakalayıp yere çakar)',
-      'Abrams / Warden / Billy (Jettison Fuel ile mermi dirençlerini -%15/-%25 eritip geri tepme patlamasıyla mesafeyi açar; canları %50’nin altına indiğinde Close The Deal ile +%75 bonus hasarla infaz eder)',
-      'Seven / Bebop / Dynamo (Sabit odaklanan veya hantal hedefleri Strix Salvo füze hattı ve Chimera Mk1 dalış patlamasıyla cezalandırır)',
+    "counters": [
+      "McGinnis",
+      "Grey Talon",
+      "Vindicta",
+      "Abrams",
+      "Warden",
+      "Billy",
+      "Seven",
+      "Bebop",
+      "Dynamo"
     ],
-    counteredBy: [
-      'Kelvin / Mirage / Holiday (Chimera Mk1 uçuşu sırasında havadayken yavaşlatmalardan ve kitle kontrolden tam etkilendiği için dondurucu ışın, kasırga veya kementle uçuşunu felç ederler)',
-      'Pocket / Mina / Wraith (Chimera Mk1 yere dalış yaptığında anlık kaçış yetenekleriyle patlama alanından çıkarak Danny’nin ıskalayıp kendini 1.3sn sersemletmesini ve %10 Maksimum Can öz hasar almasını sağlarlar)',
-      'Yamato / Ivy / Viscous (Close The Deal yakalama ultisini durdurulamaz form, Stone Form veya The Cube ile boşa çıkarırlar)',
-      'Taktiksel Counter Eşyalar: Knockdown, Slowing Hex (Chimera Mk1 uçuşunu havadayken yavaşlatır veya yere çakar) | Counterspell, Ethereal Shift, Reactive Barrier (Close The Deal yakalamasını ve Chimera Mk1 dalış darbesini savuşturur) | Debuff Remover (Jettison Fuel mermi direnci kırma ve işaret etkisini temizler)',
+    "counteredBy": [
+      "Kelvin",
+      "Mirage",
+      "Holliday",
+      "Pocket",
+      "Mina",
+      "Wraith",
+      "Yamato",
+      "Ivy",
+      "Viscous",
+      "Knockdown (Nakavt)",
+      "Slowing Hex (Yavaşlatma Büyüsü)",
+      "Counterspell (Karşı Büyü)",
+      "Ethereal Shift (Ruhani Değişim)",
+      "Reactive Barrier (Reaktif Bariyer)",
+      "Dispel Magic (AKTİF Etki Geçirme Büyüsü)"
     ],
-    counterItems: [
-      'knockdown',
-      'slowing-hex',
-      'counterspell',
-      'reactive-barrier',
-    ],
+    "counterItems": [
+      "knockdown",
+      "slowing-hex",
+      "counterspell",
+      "reactive-barrier"
+    ]
   },
   {
-    id: 'drifter',
-    name: 'Drifter',
-    title: 'Göçebe Kan Avcısı',
-    role: 'Yakın Mesafe Pençe & İzole Hedef Suikastçısı (Stalker / Bleed Assassin)',
-    difficulty: 'Yüksek',
-    image: '/assets/characters/drifter.png',
-    imageAlt:
-      'Drifter karakter portresi - Deadlock oynanabilir kahraman görseli',
-    shortBio:
-      'Rend ile koni alanında pençe savurup yakın mesafede bonus yakın dövüş hasarı vuran, Bloodscent ile yalnız hedefleri avlayan ve Eternal Night ile görüş karartan suikastçı.',
-    stats: {
-      survive: 65,
-      damage: 95,
-      mobility: 90,
-      control: 60,
+    "id": "drifter",
+    "name": "Drifter",
+    "title": "Göçebe Kan Avcısı",
+    "role": "Yakın Mesafe Pençe & İzole Hedef Suikastçısı (Stalker / Bleed Assassin)",
+    "difficulty": "Yüksek",
+    "image": "/assets/characters/drifter.png",
+    "imageAlt": "Drifter karakter portresi - Deadlock oynanabilir kahraman görseli",
+    "shortBio": "Rend ile koni alanında pençe savurup yakın mesafede bonus yakın dövüş hasarı vuran, Bloodscent ile yalnız hedefleri avlayan ve Eternal Night ile görüş karartan suikastçı.",
+    "stats": {
+      "survive": 65,
+      "damage": 95,
+      "mobility": 90,
+      "control": 60
     },
-    abilities: [
-      'Rend (Parçalayan Pençe: Önünüzdeki koni alanına pençe savurarak büyü hasarı verirsiniz; hedef yakın mesafedeyse ilave yakın dövüş hasarı vurur)',
-      'Stalker\'s Mark (Avcı İşareti: Hedefe kanama izi bırakır ve işaretli hedefin arkasına/yanına hızla atılmanızı sağlar)',
-      'Bloodscent (Kan Kokusu - Pasif: Takımından ayrı düşmüş yalnız / izole hedefleri tespit eder ve onlara karşı yüksek bonus hasar kazandırır)',
-      'Eternal Night (Ebedi Gece - Ulti: Rakip görüşünü karartarak av moduna geçer; yüksek hareket ve saldırı hızıyla yalnız hedefleri pusuya düşürür)',
+    "abilities": [
+      "Rend (Parçalayan Pençe: Önünüzdeki koni alanına pençe savurarak büyü hasarı verirsiniz; hedef yakın mesafedeyse ilave yakın dövüş hasarı vurur)",
+      "Stalker's Mark (Avcı İşareti: Hedefe kanama izi bırakır ve işaretli hedefin arkasına/yanına hızla atılmanızı sağlar)",
+      "Bloodscent (Kan Kokusu - Pasif: Takımından ayrı düşmüş yalnız / izole hedefleri tespit eder ve onlara karşı yüksek bonus hasar kazandırır)",
+      "Eternal Night (Ebedi Gece - Ulti: Rakip görüşünü karartarak av moduna geçer; yüksek hareket ve saldırı hızıyla yalnız hedefleri pusuya düşürür)"
     ],
-    counters: [
-      'Wraith / Vindicta / Grey Talon (Yan koridorlarda yalnız yakaladığı nişancılara Stalker’s Mark ile yapışıp Rend yakın mesafe bonusuyla tekler)',
-      'Pocket / Paige (Düşük zırhlı büyücüleri Eternal Night karanlığında pusuya düşürür)',
+    "counters": [
+      "Wraith",
+      "Vindicta",
+      "Grey Talon",
+      "Pocket",
+      "Paige"
     ],
-    counteredBy: [
-      'Dynamo / Viscous / Rem (Takım arkadaşlarıyla birlikte gezerek Bloodscent yalnız hedef pasifini kapatır ve kitle kontrolle Drifter’ı durdurur)',
-      'Abrams / Victor / Billy (Rend için yakın mesafeye girmek zorunda olan Drifter’ı yakın dövüşte ve elektrik/can emme takasında ezer)',
-      'Karşı Eşyalar: Slowing Hex, Silence Wave (Stalker’s Mark atılmasını kilitler) | Rebuttal, Metal Skin (Rend yakın dövüş ve mermi hasarını bloklar) | Healbane (Kan çalmasını kırar)',
+    "counteredBy": [
+      "Dynamo",
+      "Viscous",
+      "Rem",
+      "Abrams",
+      "Victor",
+      "Billy",
+      "Slowing Hex (Yavaşlatma Büyüsü)",
+      "Silence Wave (Susturma Dalgası)",
+      "Rebuttal (Karşı Saldırı)",
+      "Metal Skin (Metal Deri)",
+      "Healbane (Şifakıran)"
     ],
-    counterItems: [
-      'slowing-hex',
-      'metal-skin',
-      'healbane',
-    ],
+    "counterItems": [
+      "slowing-hex",
+      "metal-skin",
+      "healbane"
+    ]
   },
   {
-    id: 'grey-talon',
-    name: 'Grey Talon',
-    title: 'Kadim Okçu & Ruh Avcısı',
-    role: 'Uzun Menzilli Nişancı / Büyü Okçusu (Artillery Marksman)',
-    difficulty: 'Orta - Yüksek',
-    image: '/assets/characters/grey-talon.png',
-    imageAlt:
-      'Grey Talon karakter portresi - Deadlock oynanabilir kahraman görseli',
-    shortBio:
-      'Charged Shot ve Rain of Arrows ile uzak mesafeden yüksek patlayıcı hasar vuran, Immobilizing Trap ile yaklaşanları kilitleyen ve Guided Owl ile haritanın her yerinden infaz gerçekleştiren okçu.',
-    stats: {
-      survive: 40,
-      damage: 95,
-      mobility: 70,
-      control: 70,
+    "id": "grey-talon",
+    "name": "Grey Talon",
+    "title": "Kadim Okçu & Ruh Avcısı",
+    "role": "Uzun Menzilli Nişancı / Büyü Okçusu (Artillery Marksman)",
+    "difficulty": "Orta - Yüksek",
+    "image": "/assets/characters/grey-talon.png",
+    "imageAlt": "Grey Talon karakter portresi - Deadlock oynanabilir kahraman görseli",
+    "shortBio": "Charged Shot ve Rain of Arrows ile uzak mesafeden yüksek patlayıcı hasar vuran, Immobilizing Trap ile yaklaşanları kilitleyen ve Guided Owl ile haritanın her yerinden infaz gerçekleştiren okçu.",
+    "stats": {
+      "survive": 40,
+      "damage": 95,
+      "mobility": 70,
+      "control": 70
     },
-    abilities: [
-      'Charged Shot (Şarjlı Ok: Rakiplerin içinden delip geçen yüksek büyü hasarlı güçlü bir ok şarj edip ateşlersiniz)',
-      'Rain of Arrows (Ok Yağmuru: Sizi havaya fırlatarak süzülmenizi sağlar; havadayken ilave Silah Hasarı ve çoklu ok / Multishot kazanırsınız)',
-      'Spirit Snare (Ruh Kapanı: Zemine gecikmeli aktifleşen bir tuzak kurar; tetiklendiğinde alandaki rakipleri Bağlar / Tether ve yavaşlatır)',
-      'Guided Owl (Güdümlü Baykuş - Ulti: Haritanın her yerine uçurabildiğiniz ruhani bir baykuş gönderir; çarpma anında alan hasarı, sersemletme ve düşük canlı hedeflere infaz uygular)',
+    "abilities": [
+      "Charged Shot (Şarjlı Ok: Rakiplerin içinden delip geçen yüksek büyü hasarlı güçlü bir ok şarj edip ateşlersiniz)",
+      "Rain of Arrows (Ok Yağmuru: Sizi havaya fırlatarak süzülmenizi sağlar; havadayken ilave Silah Hasarı ve çoklu ok / Multishot kazanırsınız)",
+      "Spirit Snare (Ruh Kapanı: Zemine gecikmeli aktifleşen bir tuzak kurar; tetiklendiğinde alandaki rakipleri Bağlar / Tether ve yavaşlatır)",
+      "Guided Owl (Güdümlü Baykuş - Ulti: Haritanın her yerine uçurabildiğiniz ruhani bir baykuş gönderir; çarpma anında alan hasarı, sersemletme ve düşük canlı hedeflere infaz uygular)"
     ],
-    counters: [
-      'Abrams / Victor / Graves (Spirit Snare tuzağı ve Rain of Arrows uçuşuyla hantal tankları kendisine yaklaştırmadan Charged Shot ile eritir)',
-      'Seven / McGinnis (Sabit ulti ve taret kurulumlarını Guided Owl ve Charged Shot ile uzaktan cezalandırır)',
+    "counters": [
+      "Abrams",
+      "Victor",
+      "Graves",
+      "Seven",
+      "McGinnis"
     ],
-    counteredBy: [
-      'Lash / Calico / Drifter (Yüksek mobiliteyle arka saflara sızıp düşük canlı Grey Talon’u saniyeler içinde düşürür)',
-      'Pocket / Violet (Flying Cloak ve Abstract Landscape faz kaymasıyla Charged Shot oklarından sıyrılıp dibine girer)',
-      'Bebop (Rain of Arrows sırasında havada süzülen Grey Talon’u Hook ile çeker)',
-      'Taktiksel Counter Eşyalar: Knockdown (Rain of Arrows uçuşunu yere çakar) | Spellbreaker, Spirit Shielding (Charged Shot ve Guided Owl yüksek büyü patlamasını sönümler)',
+    "counteredBy": [
+      "Lash",
+      "Calico",
+      "Drifter",
+      "Pocket",
+      "Violet",
+      "Bebop",
+      "Knockdown (Nakavt)",
+      "Spellbreaker (Büyü Bozan)",
+      "Spirit Shielding (Büyü Kalkanı)"
     ],
-    counterItems: [
-      'knockdown',
-      'spellbreaker',
-      'spirit-shielding',
-    ],
+    "counterItems": [
+      "knockdown",
+      "spellbreaker",
+      "spirit-shielding"
+    ]
   },
   {
-    id: 'graves',
-    name: 'Graves',
-    title: 'Ölüler Kavanozu & Hortlak Efendisi',
-    role: 'Nekromantik Çağırıcı & Koridor Kontrol Tankı (Summoner / Zone Tank)',
-    difficulty: 'Orta',
-    image: '/assets/characters/graves.png',
-    imageAlt:
-      'Graves karakter portresi - Deadlock oynanabilir kahraman görseli',
-    shortBio:
-      'Jar of Dead ile ölen birimlerin ruhunu toplayıp kuru kafa ruhları çağıran, Grasping Hands ile yerden eller ve Hortlak (Ghoul) çıkaran nekromantik bölge tankı.',
-    stats: {
-      survive: 90,
-      damage: 70,
-      mobility: 40,
-      control: 85,
+    "id": "graves",
+    "name": "Graves",
+    "title": "Ölüler Kavanozu & Hortlak Efendisi",
+    "role": "Nekromantik Çağırıcı & Koridor Kontrol Tankı (Summoner / Zone Tank)",
+    "difficulty": "Orta",
+    "image": "/assets/characters/graves.png",
+    "imageAlt": "Graves karakter portresi - Deadlock oynanabilir kahraman görseli",
+    "shortBio": "Jar of Dead ile ölen birimlerin ruhunu toplayıp kuru kafa ruhları çağıran, Grasping Hands ile yerden eller ve Hortlak (Ghoul) çıkaran nekromantik bölge tankı.",
+    "stats": {
+      "survive": 90,
+      "damage": 70,
+      "mobility": 40,
+      "control": 85
     },
-    abilities: [
-      'Jar of Dead (Ölüler Kavanozu: Yakında ölen birimlerin ruhunu kavanozda biriktirir; fırlatıldığında rakiplere saldıran kuru kafa ruhları çağırır)',
-      'Grasping Hands (Kavrayan Eller: Zeminden bir hat boyunca uzanan eller ve bir Hortlak / Ghoul çıkarır; yarıktan geçen rakipler hasar alır ve yavaşlar)',
-      'Essence Steal (Öz Çalma: Rakiplerden yaşam özü çekerek kendinize ve çağırdığınız hortlaklara dayanıklılık kazandırır)',
-      'Borrowed Decree (Ödünç Ferman - Ulti: Geniş bir mezarlık alanı oluşturarak hortlak ordusu çağırır ve içerideki rakiplerin iyileşmesini/hızını emer)',
+    "abilities": [
+      "Jar of Dead (Ölüler Kavanozu: Yakında ölen birimlerin ruhunu kavanozda biriktirir; fırlatıldığında rakiplere saldıran kuru kafa ruhları çağırır)",
+      "Grasping Hands (Kavrayan Eller: Zeminden bir hat boyunca uzanan eller ve bir Hortlak / Ghoul çıkarır; yarıktan geçen rakipler hasar alır ve yavaşlar)",
+      "Essence Steal (Öz Çalma: Rakiplerden yaşam özü çekerek kendinize ve çağırdığınız hortlaklara dayanıklılık kazandırır)",
+      "Borrowed Decree (Ödünç Ferman - Ulti: Geniş bir mezarlık alanı oluşturarak hortlak ordusu çağırır ve içerideki rakiplerin iyileşmesini/hızını emer)"
     ],
-    counters: [
-      'Bebop / Paradox / Venator (Çağrılan Ghoul ve Deadhead birimleriyle tekli hedef kanca ve tuzakları bloklar)',
-      'Haze / Wraith (Tekli hedef taşıyıcıların dikkatini ve mermilerini hortlak sürüleriyle dağıtır)',
+    "counters": [
+      "Bebop",
+      "Paradox",
+      "Venator",
+      "Haze",
+      "Wraith"
     ],
-    counteredBy: [
-      'Seven / Infernus / Lady Geist (Geniş alan hasarıyla hem Graves’i hem de Jar of Dead / Grasping Hands hortlaklarını saniyeler içinde eritir)',
-      'Vindicta / Grey Talon (Grasping Hands zemin yarıklarının üzerinden uçarak Graves’i uzaktan avlar)',
-      'Taktiksel Counter Eşyalar: Healbane, Decay, Toxic Bullets (Essence Steal ve Borrowed Decree can yenilemesini kırar) | Torment Pulse, Ricochet (Hortlak birimlerini otomatik temizler)',
+    "counteredBy": [
+      "Seven",
+      "Infernus",
+      "Lady Geist",
+      "Vindicta",
+      "Grey Talon",
+      "Healbane (Şifakıran)",
+      "Decay (Çürüme)",
+      "Toxic Bullets (Toksik Mermiler)",
+      "Torment Pulse (Yayılan İşkence)",
+      "Ricochet (Mermi Sekmesi)"
     ],
-    counterItems: [
-      'decay',
-      'healbane',
-      'ricochet',
-    ],
+    "counterItems": [
+      "decay",
+      "healbane",
+      "ricochet"
+    ]
   },
   {
-    id: 'holliday',
-    name: 'Holliday',
-    title: 'Keskin Nişancı Şerif',
-    role: 'Kafatası Avcısı & Kitle Kontrol (Pick / Marksman)',
-    difficulty: 'Yüksek',
-    image: '/assets/characters/holliday.png',
-    imageAlt:
-      'Holliday karakter portresi - Deadlock oynanabilir kahraman görseli',
-    shortBio:
-      'Crackshot ile garantili kafadan vuruş hasarı çıkaran, Powder Keg varilleriyle alan patlatan ve Bounce Pad + Spirit Lasso kombosuyla rakipleri kementleyip kaçıran keskin nişancı.',
-    stats: {
-      survive: 50,
-      damage: 90,
-      mobility: 80,
-      control: 85,
+    "id": "holliday",
+    "name": "Holliday",
+    "title": "Keskin Nişancı Şerif",
+    "role": "Kafatası Avcısı & Kitle Kontrol (Pick / Marksman)",
+    "difficulty": "Yüksek",
+    "image": "/assets/characters/holliday.png",
+    "imageAlt": "Holliday karakter portresi - Deadlock oynanabilir kahraman görseli",
+    "shortBio": "Crackshot ile garantili kafadan vuruş hasarı çıkaran, Powder Keg varilleriyle alan patlatan ve Bounce Pad + Spirit Lasso kombosuyla rakipleri kementleyip kaçıran keskin nişancı.",
+    "stats": {
+      "survive": 50,
+      "damage": 90,
+      "mobility": 80,
+      "control": 85
     },
-    abilities: [
-      'Powder Keg (Barut Fıçısı: Gecikmeli veya ateş edildiğinde patlayan bir barut fıçısı fırlatır; rakipleri havaya savurur ve yüksek büyü hasarı verir)',
-      'Bounce Pad (Zıplama Pedi: Zemine kahramanları havaya fırlatan bir ped bırakır; pedi kullanarak yere indiğinizde çevredeki rakiplere patlama hasarı verirsiniz)',
-      'Crackshot (Keskin Atış - Pasif: Bekleme süresi dolduğunda yapacağınız kafadan vuruş / Headshot yüksek ilave büyü hasarı verir ve hedefi yavaşlatır)',
-      'Spirit Lasso (Ruh Kementi - Ulti: Bir rakip kahramanı kementle yakalayıp sersemletir ve süre boyunca arkanızdan sürüklemenizi sağlar)',
+    "abilities": [
+      "Powder Keg (Barut Fıçısı: Gecikmeli veya ateş edildiğinde patlayan bir barut fıçısı fırlatır; rakipleri havaya savurur ve yüksek büyü hasarı verir)",
+      "Bounce Pad (Zıplama Pedi: Zemine kahramanları havaya fırlatan bir ped bırakır; pedi kullanarak yere indiğinizde çevredeki rakiplere patlama hasarı verirsiniz)",
+      "Crackshot (Keskin Atış - Pasif: Bekleme süresi dolduğunda yapacağınız kafadan vuruş / Headshot yüksek ilave büyü hasarı verir ve hedefi yavaşlatır)",
+      "Spirit Lasso (Ruh Kementi - Ulti: Bir rakip kahramanı kementle yakalayıp sersemletir ve süre boyunca arkanızdan sürüklemenizi sağlar)"
     ],
-    counters: [
-      'Haze / Vyper / Calico (Bounce Pad ile üzerine atlayıp Spirit Lasso ile yakalayarak mobil suikastçıları takımının ortasına sürükler)',
-      'Infernus / Wraith (Kaçış yeteneklerini Spirit Lasso ile kesip Powder Keg + Crackshot kombosuyla eritir)',
+    "counters": [
+      "Haze",
+      "Vyper",
+      "Calico",
+      "Infernus",
+      "Wraith"
     ],
-    counteredBy: [
-      'Dynamo / Viscous / Rem (Quantum Entanglement, The Cube ve Tag Along ile kementlenen takım arkadaşını korur ve kurtarır)',
-      'Abrams / Victor (Yüksek can havuzu ve zırhla Crackshot ve Powder Keg patlamasına dayanır)',
-      'Taktiksel Counter Eşyalar: Reactive Barrier, Indomitable, Unstoppable (Spirit Lasso ve Powder Keg savurmasını karşılar) | Plated Armor, Metal Skin (Crackshot kafadan vuruş hasarını engeller)',
+    "counteredBy": [
+      "Dynamo",
+      "Viscous",
+      "Rem",
+      "Abrams",
+      "Victor",
+      "Reactive Barrier (Reaktif Bariyer)",
+      "Indomitable (Boyun Eğmez)",
+      "Unstoppable (Durdurulamaz)",
+      "Plated Armor (Kaplamalı Zırh)",
+      "Metal Skin (Metal Deri)"
     ],
-    counterItems: [
-      'reactive-barrier',
-      'indomitable',
-      'metal-skin',
-    ],
+    "counterItems": [
+      "reactive-barrier",
+      "indomitable",
+      "metal-skin"
+    ]
   },
   {
-    id: 'infernus',
-    name: 'Infernus',
-    title: 'Alevli Barmen & Zamanla Hasar Uzmanı',
-    role: 'Sürekli Hasar & Can Çalma Taşıyıcısı (DoT Skirmisher)',
-    difficulty: 'Orta',
-    image: '/assets/characters/infernus.png',
-    imageAlt:
-      'Infernus karakter portresi - Deadlock oynanabilir kahraman görseli',
-    shortBio:
-      'Afterburn pasifiyle mermileriyle rakipleri ateşe veren, Catalyst ile aldığı tüm hasarı artıran, Flame Dash ile koridorları yakan ve Concussive Combustion ile alan sersemletmesi vuran taşıyıcı.',
-    stats: {
-      survive: 70,
-      damage: 90,
-      mobility: 80,
-      control: 70,
+    "id": "infernus",
+    "name": "Infernus",
+    "title": "Alevli Barmen & Zamanla Hasar Uzmanı",
+    "role": "Sürekli Hasar & Can Çalma Taşıyıcısı (DoT Skirmisher)",
+    "difficulty": "Orta",
+    "image": "/assets/characters/infernus.png",
+    "imageAlt": "Infernus karakter portresi - Deadlock oynanabilir kahraman görseli",
+    "shortBio": "Afterburn pasifiyle mermileriyle rakipleri ateşe veren, Catalyst ile aldığı tüm hasarı artıran, Flame Dash ile koridorları yakan ve Concussive Combustion ile alan sersemletmesi vuran taşıyıcı.",
+    "stats": {
+      "survive": 70,
+      "damage": 90,
+      "mobility": 80,
+      "control": 70
     },
-    abilities: [
-      'Napalm / Catalyst (Katalizör: Önünüzdeki alana yanıcı bir karışım püskürterek büyü hasarı verir, yavaşlatır ve hedefin sizden aldığı tüm hasarı artırır)',
-      'Flame Dash (Alevli Atılma: Yavaşlatma direnci kazanarak ileri doğru koşar ve arkanızda rakipleri zamanla yakan alevli bir iz bırakırsınız)',
-      'Afterburn (Ardıl Yanma - Pasif: Mermileriniz rakiplerde yanma yükü biriktirir; dolduğunda hedefi ateşe vererek zamanla yüksek büyü hasarı vurur)',
-      'Concussive Combustion (Sarsıcı Patlama - Ulti: Kısa bir yüklemenin ardından çevrenizde patlayarak yakındaki tüm rakipleri Sersemletir / Stun ve ateşe verir)',
+    "abilities": [
+      "Napalm / Catalyst (Katalizör: Önünüzdeki alana yanıcı bir karışım püskürterek büyü hasarı verir, yavaşlatır ve hedefin sizden aldığı tüm hasarı artırır)",
+      "Flame Dash (Alevli Atılma: Yavaşlatma direnci kazanarak ileri doğru koşar ve arkanızda rakipleri zamanla yakan alevli bir iz bırakırsınız)",
+      "Afterburn (Ardıl Yanma - Pasif: Mermileriniz rakiplerde yanma yükü biriktirir; dolduğunda hedefi ateşe vererek zamanla yüksek büyü hasarı vurur)",
+      "Concussive Combustion (Sarsıcı Patlama - Ulti: Kısa bir yüklemenin ardından çevrenizde patlayarak yakındaki tüm rakipleri Sersemletir / Stun ve ateşe verir)"
     ],
-    counters: [
-      'Abrams / Mo & Krill / Graves / Rat King (Napalm hasar artışı ve Afterburn sürekli yanmasıyla yüksek canlı tankları ve sürü birimlerini eritir)',
-      'Kelvin / Solomon (Flame Dash yavaşlatma direnciyle buz ve satranç engellerinden sıyrılıp alanı ateşe verir)',
+    "counters": [
+      "Abrams",
+      "Mo & Krill",
+      "Graves",
+      "Rat King",
+      "Kelvin",
+      "Solomon"
     ],
-    counteredBy: [
-      'Viscous / Pocket (The Cube ve Enchanter’s Satchel ile Afterburn ve Napalm yüklerini tamamen sıfırlar)',
-      'Vindicta / Grey Talon (Flame Dash ve Concussive Combustion menzilinin dışından Infernus’u dürter)',
-      'Wraith / Holliday (Telekinesis ve Spirit Lasso ile Infernus’un Flame Dash kaçışını kilitler)',
-      'Taktiksel Counter Eşyalar: Dispel Magic, Debuff Reducer (Afterburn ve Napalm yanma süresini temizler/kısaltır) | Healbane, Toxic Bullets (Yüksek Büyü Can Çalmasını keser)',
+    "counteredBy": [
+      "Viscous",
+      "Pocket",
+      "Vindicta",
+      "Grey Talon",
+      "Wraith",
+      "Holliday",
+      "Dispel Magic (AKTİF Etki Geçirme Büyüsü)",
+      "Debuff Reducer (Zayıflatma Azaltıcı)",
+      "Healbane (Şifakıran)",
+      "Toxic Bullets (Toksik Mermiler)"
     ],
-    counterItems: [
-      'debuff-reducer',
-      'dispel-magic',
-      'healbane',
-    ],
+    "counterItems": [
+      "debuff-reducer",
+      "dispel-magic",
+      "healbane"
+    ]
   },
   {
-    id: 'ivy',
-    name: 'Ivy',
-    title: 'İspanyol Harlem’in Koruyucu Gargoyle’u',
-    role: 'Destek / Alan Kontrolü & Kurtarıcı (Support / Disrupter)',
-    difficulty: 'Orta',
-    image: '/assets/characters/ivy.png',
-    imageAlt:
-      'Ivy karakter portresi - Deadlock oynanabilir kahraman görseli',
-    shortBio:
-      'Watcher’s Covenant ile müttefikine bağlanıp atış hızı ve can çalma paylaşan, Kudzu Bomb ile bölgeleri kapatan, Stone Form ile sersemletip iyileşen ve Air Drop ile takım arkadaşlarını taşıyan destek.',
-    stats: {
-      survive: 75,
-      damage: 65,
-      mobility: 85,
-      control: 80,
+    "id": "ivy",
+    "name": "Ivy",
+    "title": "İspanyol Harlem’in Koruyucu Gargoyle’u",
+    "role": "Destek / Alan Kontrolü & Kurtarıcı (Support / Disrupter)",
+    "difficulty": "Orta",
+    "image": "/assets/characters/ivy.png",
+    "imageAlt": "Ivy karakter portresi - Deadlock oynanabilir kahraman görseli",
+    "shortBio": "Watcher’s Covenant ile müttefikine bağlanıp atış hızı ve can çalma paylaşan, Kudzu Bomb ile bölgeleri kapatan, Stone Form ile sersemletip iyileşen ve Air Drop ile takım arkadaşlarını taşıyan destek.",
+    "stats": {
+      "survive": 75,
+      "damage": 65,
+      "mobility": 85,
+      "control": 80
     },
-    abilities: [
-      'Entangling Thorns / Kudzu Bomb (Dikenli Sarmaşık Bombası: Hedef alana zamanla büyü hasarı veren ve içindeki rakipleri yavaşlatan boğucu dikenler çağırır)',
-      'Kudzu Connection / Watcher\'s Covenant (Gözcü Ahdi: Yakındaki bir müttefike bağlanarak her ikinize de Atış Hızı, Mermi Can Çalması ve hareket bonusu sağlar)',
-      'Stone Form (Taş Formu: Geçici olarak dokunulmaz bir taşa dönüşüp yere çarpar; kendinizi iyileştirir ve yakındaki rakipleri Sersemletir / Stun)',
-      'Air Drop (Hava İkmal Uçuşu - Ulti: Bir müttefiki veya bombanızı alarak gökyüzüne yükselir; hedef noktaya bomba bırakıp rakipleri yavaşlatır ve kalkan sağlarsınız)',
+    "abilities": [
+      "Entangling Thorns / Kudzu Bomb (Dikenli Sarmaşık Bombası: Hedef alana zamanla büyü hasarı veren ve içindeki rakipleri yavaşlatan boğucu dikenler çağırır)",
+      "Kudzu Connection / Watcher's Covenant (Gözcü Ahdi: Yakındaki bir müttefike bağlanarak her ikinize de Atış Hızı, Mermi Can Çalması ve hareket bonusu sağlar)",
+      "Stone Form (Taş Formu: Geçici olarak dokunulmaz bir taşa dönüşüp yere çarpar; kendinizi iyileştirir ve yakındaki rakipleri Sersemletir / Stun)",
+      "Air Drop (Hava İkmal Uçuşu - Ulti: Bir müttefiki veya bombanızı alarak gökyüzüne yükselir; hedef noktaya bomba bırakıp rakipleri yavaşlatır ve kalkan sağlarsınız)"
     ],
-    counters: [
-      'Bebop / Lash (Stone Form dokunulmazlığı ve sersemletmesiyle Sticky Bomb ve Ground Strike kombolarını boşa çıkarır)',
-      'McGinnis / Solomon / Graves (Entangling Thorns dikenli alanıyla sabit kurulumları ve dar geçişleri eritir)',
+    "counters": [
+      "Bebop",
+      "Lash",
+      "McGinnis",
+      "Solomon",
+      "Graves"
     ],
-    counteredBy: [
-      'Vindicta / Grey Talon (Air Drop sırasında uçan Ivy’yi gökyüzünde kolayca avlar)',
-      'Infernus / Seven (Kudzu Connection ile birbirine yakın duran Ivy ve müttefikini zincirleme alan hasarıyla yakar)',
-      'Silence Wave kullanan suikastçılar (Stone Form basamadan Ivy’yi düşürür)',
-      'Taktiksel Counter Eşyalar: Knockdown (Air Drop uçuşunu yere çakar) | Healbane, Toxic Bullets (Kudzu Connection can çalma bağını kırar) | Silence Wave (Stone Form kullanımını kilitler)',
+    "counteredBy": [
+      "Vindicta",
+      "Grey Talon",
+      "Infernus",
+      "Seven",
+      "Silence Wave (Susturma Dalgası)",
+      "Knockdown (Nakavt)",
+      "Healbane (Şifakıran)",
+      "Toxic Bullets (Toksik Mermiler)"
     ],
-    counterItems: [
-      'knockdown',
-      'healbane',
-      'silence-glyph',
-    ],
+    "counterItems": [
+      "knockdown",
+      "healbane",
+      "silence-glyph"
+    ]
   },
   {
-    id: 'kelvin',
-    name: 'Kelvin',
-    title: 'Kutup Kaşifi & Buz Kontrol Uzmanı',
-    role: 'Yavaşlatma / Alan Kontrolü & Destek (Control / Support)',
-    difficulty: 'Orta',
-    image: '/assets/characters/kelvin.png',
-    imageAlt:
-      'Kelvin karakter portresi - Deadlock oynanabilir kahraman görseli',
-    shortBio:
-      'Arctic Beam ile rakiplerin hareket ve atış hızını donduran, Ice Path ile gökyüzünde buz yolları açan ve Frozen Shelter kubbesiyle savaş alanını ikiye bölen kontrol uzmanı.',
-    stats: {
-      survive: 80,
-      damage: 70,
-      mobility: 75,
-      control: 90,
+    "id": "kelvin",
+    "name": "Kelvin",
+    "title": "Kutup Kaşifi & Buz Kontrol Uzmanı",
+    "role": "Yavaşlatma / Alan Kontrolü & Destek (Control / Support)",
+    "difficulty": "Orta",
+    "image": "/assets/characters/kelvin.png",
+    "imageAlt": "Kelvin karakter portresi - Deadlock oynanabilir kahraman görseli",
+    "shortBio": "Arctic Beam ile rakiplerin hareket ve atış hızını donduran, Ice Path ile gökyüzünde buz yolları açan ve Frozen Shelter kubbesiyle savaş alanını ikiye bölen kontrol uzmanı.",
+    "stats": {
+      "survive": 80,
+      "damage": 70,
+      "mobility": 75,
+      "control": 90
     },
-    abilities: [
-      'Frost Grenade (Buz Bombası: Patladığında dost birimleri iyileştiren, rakiplere ise büyü hasarı ve hareket yavaşlatması uygulayan dondurucu bir bomba fırlatır)',
-      'Ice Path (Buz Yolu: Gökyüzünde ve zeminde size ve müttefiklerinize hareket hızı sağlayan, yavaşlatma direnci veren yüzen bir buz patikası oluşturur)',
-      'Arctic Beam (Kutup Işını: Önünüze dondurucu bir enerji ışını tutarak hedeflere hasar verir ve zamanla hareket/atış hızlarını ağır şekilde düşürür)',
-      'Frozen Shelter (Donmuş Sığınak - Ulti: Çevrenizi geçilmez bir buz kubbesiyle kapatır; içerideki müttefikleri hızla iyileştirirken rakipleri yavaşlatır)',
+    "abilities": [
+      "Frost Grenade (Buz Bombası: Patladığında dost birimleri iyileştiren, rakiplere ise büyü hasarı ve hareket yavaşlatması uygulayan dondurucu bir bomba fırlatır)",
+      "Ice Path (Buz Yolu: Gökyüzünde ve zeminde size ve müttefiklerinize hareket hızı sağlayan, yavaşlatma direnci veren yüzen bir buz patikası oluşturur)",
+      "Arctic Beam (Kutup Işını: Önünüze dondurucu bir enerji ışını tutarak hedeflere hasar verir ve zamanla hareket/atış hızlarını ağır şekilde düşürür)",
+      "Frozen Shelter (Donmuş Sığınak - Ulti: Çevrenizi geçilmez bir buz kubbesiyle kapatır; içerideki müttefikleri hızla iyileştirirken rakipleri yavaşlatır)"
     ],
-    counters: [
-      'Haze / Vyper / Wraith / Silver (Arctic Beam ile hem hareket hem atış hızlarını dondurarak mermi ve yakın dövüş DPS taşıyıcılarını felç eder)',
-      'Drifter / Calico (Frozen Shelter buz kubbesiyle suikastçıların hedef aldığı müttefikleri korur ve iyileştirir)',
+    "counters": [
+      "Haze",
+      "Vyper",
+      "Wraith",
+      "Silver",
+      "Drifter",
+      "Calico"
     ],
-    counteredBy: [
-      'Yamato (Shadow Transformation ile Arctic Beam yavaşlatmasını tamamen yok sayar)',
-      'Doorman (Frozen Shelter kubbesinin içine veya dışına Doorway portalı açarak Kelvin’in ultisini boşa çıkarır)',
-      'Abrams / Billy (Frozen Shelter kubbesinin içinde Kelvin ile kapalı kaldığında yakın dövüşte üstünlük kurar)',
-      'Taktiksel Counter Eşyalar: Enduring Speed, Unstoppable (Arctic Beam ve Frost Grenade yavaşlatmalarını azaltır/engeller) | Healbane, Decay (Frost Grenade ve Frozen Shelter iyileştirmesini kırar)',
+    "counteredBy": [
+      "Yamato",
+      "Doorman",
+      "Abrams",
+      "Billy",
+      "Enduring Speed (Kalıcı Hız)",
+      "Unstoppable (Durdurulamaz)",
+      "Healbane (Şifakıran)",
+      "Decay (Çürüme)"
     ],
-    counterItems: [
-      'enduring-speed',
-      'unstoppable',
-      'healbane',
-    ],
+    "counterItems": [
+      "enduring-speed",
+      "unstoppable",
+      "healbane"
+    ]
   },
   {
-    id: 'haze',
-    name: 'Haze',
-    title: 'Sandman Suikastçısı',
-    role: 'Gizli Suikastçı & Hızlı Mermi Taşıyıcısı (Stealth Carry)',
-    difficulty: 'Orta',
-    image: '/assets/characters/haze.png',
-    imageAlt:
-      'Haze karakter portresi - Deadlock oynanabilir kahraman görseli',
-    shortBio:
-      'Smoke Bomb ile görünmez olup arka saflara sızan, Sleep Dagger ile hedefini uyutan, Fixation yükleriyle mermi hasarını katlayan ve Bullet Dance ultisiyle çevresindeki herkesi tarayan suikastçı.',
-    stats: {
-      survive: 45,
-      damage: 95,
-      mobility: 80,
-      control: 60,
+    "id": "haze",
+    "name": "Haze",
+    "title": "Sandman Suikastçısı",
+    "role": "Gizli Suikastçı & Hızlı Mermi Taşıyıcısı (Stealth Carry)",
+    "difficulty": "Orta",
+    "image": "/assets/characters/haze.png",
+    "imageAlt": "Haze karakter portresi - Deadlock oynanabilir kahraman görseli",
+    "shortBio": "Smoke Bomb ile görünmez olup arka saflara sızan, Sleep Dagger ile hedefini uyutan, Fixation yükleriyle mermi hasarını katlayan ve Bullet Dance ultisiyle çevresindeki herkesi tarayan suikastçı.",
+    "stats": {
+      "survive": 45,
+      "damage": 95,
+      "mobility": 80,
+      "control": 60
     },
-    abilities: [
-      'Sleep Dagger (Uyku Hançeri: Hedefe hasar veren ve onu kısa süreliğine Uyutan / Sleep bir hançer fırlatır; uyuyan hedef hasar aldığında uyanır)',
-      'Smoke Bomb (Sis Bombası: Gözden kaybolarak Görünmez / Invisible olur ve koşu hızı kazanırsınız; ateş etmek görünmezliği bozar)',
-      'Fixation (Saplantı - Pasif: Aynı hedefe ateş ettikçe o hedef üzerindeki mermi hasarınız yük biriktirerek artar; kafadan vuruşlar 3 yük birden verir)',
-      'Bullet Dance (Mermi Dansı - Ulti: Yüksek atış hızı ve mermi kaçınması kazanarak çevrenizdeki tüm rakiplere otomatik ve ölümcül yaylım ateşi açarsınız)',
+    "abilities": [
+      "Sleep Dagger (Uyku Hançeri: Hedefe hasar veren ve onu kısa süreliğine Uyutan / Sleep bir hançer fırlatır; uyuyan hedef hasar aldığında uyanır)",
+      "Smoke Bomb (Sis Bombası: Gözden kaybolarak Görünmez / Invisible olur ve koşu hızı kazanırsınız; ateş etmek görünmezliği bozar)",
+      "Fixation (Saplantı - Pasif: Aynı hedefe ateş ettikçe o hedef üzerindeki mermi hasarınız yük biriktirerek artar; kafadan vuruşlar 3 yük birden verir)",
+      "Bullet Dance (Mermi Dansı - Ulti: Yüksek atış hızı ve mermi kaçınması kazanarak çevrenizdeki tüm rakiplere otomatik ve ölümcül yaylım ateşi açarsınız)"
     ],
-    counters: [
-      'Vindicta / Grey Talon / Paige (Smoke Bomb ile görünmez yaklaşıp Sleep Dagger + Fixation ile kırılgan arka safları saniyeler içinde eritir)',
-      'Pocket / Violet (Sleep Dagger isabet ettiğinde kaçış yeteneklerini kullanamadan yüksek atış hızıyla düşürür)',
+    "counters": [
+      "Vindicta",
+      "Grey Talon",
+      "Paige",
+      "Pocket",
+      "Violet"
     ],
-    counteredBy: [
-      'Mo & Krill / Abrams / Warden (Yüksek zırh, Sand Blast silahsızlandırması ve kitle kontrolle Haze’in Bullet Dance ultisini anında bitirir)',
-      'Celeste (Light Eater ve Dazzling Trick prizma bariyeriyle Haze’in yüksek atış hızını kendi aleyhine çevirip susturur)',
-      'Silver (Bloodscent pasifiyle Smoke Bomb görünmezliğini takip edip ortaya çıkarır)',
-      'Taktiksel Counter Eşyalar: Metal Skin, Return Fire, Plated Armor, Juggernaut (Fixation ve Bullet Dance mermi yağmurunu tamamen engeller ve kendisine yansıtır)',
+    "counteredBy": [
+      "Mo & Krill",
+      "Abrams",
+      "Warden",
+      "Celeste",
+      "Silver",
+      "Metal Skin (Metal Deri)",
+      "Return Fire (AKTİF İade-i Ateş)",
+      "Plated Armor (Kaplamalı Zırh)",
+      "Juggernaut (Yıkıcı Güç)"
     ],
-    counterItems: [
-      'metal-skin',
-      'return-fire',
-      'plated-armor',
-    ],
+    "counterItems": [
+      "metal-skin",
+      "return-fire",
+      "plated-armor"
+    ]
   },
   {
-    id: 'lady-geist',
-    name: 'Lady Geist',
-    title: 'Kan Düşesi & Ruh Emen Aristokrat',
-    role: 'Alan Dürtme & Can Takası Uzmanı (Burst / Drain Tank)',
-    difficulty: 'Orta',
-    image: '/assets/characters/lady-geist.png',
-    imageAlt:
-      'Lady Geist karakter portresi - Deadlock oynanabilir kahraman görseli',
-    shortBio:
-      'Essence Bomb ve Malice ile koridorları geniş alan hasarıyla baskılayan, Life Drain ile can emen ve canı azaldığında Soul Exchange ultisiyle rakibin can yüzdesini kendisiyle değiştiren büyücü.',
-    stats: {
-      survive: 75,
-      damage: 85,
-      mobility: 45,
-      control: 60,
+    "id": "lady-geist",
+    "name": "Lady Geist",
+    "title": "Kan Düşesi & Ruh Emen Aristokrat",
+    "role": "Alan Dürtme & Can Takası Uzmanı (Burst / Drain Tank)",
+    "difficulty": "Orta",
+    "image": "/assets/characters/lady-geist.png",
+    "imageAlt": "Lady Geist karakter portresi - Deadlock oynanabilir kahraman görseli",
+    "shortBio": "Essence Bomb ve Malice ile koridorları geniş alan hasarıyla baskılayan, Life Drain ile can emen ve canı azaldığında Soul Exchange ultisiyle rakibin can yüzdesini kendisiyle değiştiren büyücü.",
+    "stats": {
+      "survive": 75,
+      "damage": 85,
+      "mobility": 45,
+      "control": 60
     },
-    abilities: [
-      'Essence Bomb (Öz Bombası: Kendi canınızın bir kısmını feda ederek kısa süre sonra patlayan ve yüksek alan büyü hasarı veren bir bomba fırlatırsınız)',
-      'Life Drain (Can Emen Bağ: Hedef rakiple aranızda zamanla onun canını emip sizi iyileştiren bir bağ kurar; görüş hattı korunmalıdır)',
-      'Malice (Kötülük Bıçakları: Kendi canınızdan harcayarak kan bıçakları fırlatırsınız; isabet eden rakipler yavaşlar ve sizden aldıkları hasar katlanarak artar)',
-      'Soul Exchange (Ruh Takası - Ulti: Yakın mesafedeki bir rakip kahramanla mevcut can yüzdelerinizi anında takas edersiniz)',
+    "abilities": [
+      "Essence Bomb (Öz Bombası: Kendi canınızın bir kısmını feda ederek kısa süre sonra patlayan ve yüksek alan büyü hasarı veren bir bomba fırlatırsınız)",
+      "Life Drain (Can Emen Bağ: Hedef rakiple aranızda zamanla onun canını emip sizi iyileştiren bir bağ kurar; görüş hattı korunmalıdır)",
+      "Malice (Kötülük Bıçakları: Kendi canınızdan harcayarak kan bıçakları fırlatırsınız; isabet eden rakipler yavaşlar ve sizden aldıkları hasar katlanarak artar)",
+      "Soul Exchange (Ruh Takası - Ulti: Yakın mesafedeki bir rakip kahramanla mevcut can yüzdelerinizi anında takas edersiniz)"
     ],
-    counters: [
-      'Abrams / Mo & Krill / Victor / Billy (Yakın mesafeye giren yüksek canlı tanklara karşı düşük canda Soul Exchange basarak can havuzlarını anında çalar)',
-      'McGinnis / Graves / Solomon (Essence Bomb geniş alan patlamasıyla sabit taret, hortlak ve satranç kurulumlarını uzaktan yıkar)',
+    "counters": [
+      "Abrams",
+      "Mo & Krill",
+      "Victor",
+      "Billy",
+      "McGinnis",
+      "Graves",
+      "Solomon"
     ],
-    counteredBy: [
-      'Vindicta / Grey Talon / Deadman Danny (Soul Exchange’in kısa menziline hiç girmeden düşük canlı Lady Geist’i uzaktan infaz eder)',
-      'Silence Wave / Focus Lens kullanan suikastçılar (Canı azaldığında Soul Exchange basmasını engelleyip anında düşürür)',
-      'Taktiksel Counter Eşyalar: Silence Wave, Focus Lens (Soul Exchange ultisini kilitler) | Healbane, Toxic Bullets (Life Drain can emmesini kırar) | Spellbreaker (Essence Bomb hasarını azaltır)',
+    "counteredBy": [
+      "Vindicta",
+      "Grey Talon",
+      "Deadman Danny",
+      "Silence Wave (Susturma Dalgası)",
+      "Focus Lens (AKTİF Odaklı Mercek)",
+      "Healbane (Şifakıran)",
+      "Toxic Bullets (Toksik Mermiler)",
+      "Spellbreaker (Büyü Bozan)"
     ],
-    counterItems: [
-      'silence-glyph',
-      'healbane',
-      'spellbreaker',
-    ],
+    "counterItems": [
+      "silence-glyph",
+      "healbane",
+      "spellbreaker"
+    ]
   },
   {
-    id: 'lash',
-    name: 'Lash',
-    title: 'Gökyüzünün Kibirli Dövüşçüsü',
-    role: 'Hava Suikastçısı & Savaş Başlatıcı (Aerial Diver / Initiator)',
-    difficulty: 'Yüksek',
-    image: '/assets/characters/lash.png',
-    imageAlt:
-      'Lash karakter portresi - Deadlock oynanabilir kahraman görseli',
-    shortBio:
-      'Grapple ile gökyüzüne fırlayıp Ground Strike ile rakiplerin tepesine inerek yüksek patlayıcı hasar vuran ve Death Slam ultisiyle tüm rakip takımı yakalayıp fırlatan mobil dövüşçü.',
-    stats: {
-      survive: 65,
-      damage: 85,
-      mobility: 95,
-      control: 85,
+    "id": "lash",
+    "name": "Lash",
+    "title": "Gökyüzünün Kibirli Dövüşçüsü",
+    "role": "Hava Suikastçısı & Savaş Başlatıcı (Aerial Diver / Initiator)",
+    "difficulty": "Yüksek",
+    "image": "/assets/characters/lash.png",
+    "imageAlt": "Lash karakter portresi - Deadlock oynanabilir kahraman görseli",
+    "shortBio": "Grapple ile gökyüzüne fırlayıp Ground Strike ile rakiplerin tepesine inerek yüksek patlayıcı hasar vuran ve Death Slam ultisiyle tüm rakip takımı yakalayıp fırlatan mobil dövüşçü.",
+    "stats": {
+      "survive": 65,
+      "damage": 85,
+      "mobility": 95,
+      "control": 85
     },
-    abilities: [
-      'Ground Strike (Zemin Darbesi: Havadan hızla yere çarparak önünüzdeki koni alanındaki rakiplere yüksek hasar verir; düşüş yüksekliği arttıkça hasar katlanır)',
-      'Grapple (Kanca Sıçraması: Bir hedefe veya noktaya kanca atarak kendinizi hızla gökyüzüne ve ileriye fırlatırsınız; hava aksiyonlarını sıfırlar)',
-      'Flog (Can Çalan Kırbaç: Kırbacınızla önünüzdeki rakiplere vurarak büyü hasarı verir, yavaşlatır ve verilen hasara göre kendinizi iyileştirirsiniz)',
-      'Death Slam (Ölüm Çarpışı - Ulti: Havadayken altınızdaki rakiplere kırbaçlar bağlayarak hepsini havaya çeker ve seçtiğiniz yöne doğru yere çakarsınız)',
+    "abilities": [
+      "Ground Strike (Zemin Darbesi: Havadan hızla yere çarparak önünüzdeki koni alanındaki rakiplere yüksek hasar verir; düşüş yüksekliği arttıkça hasar katlanır)",
+      "Grapple (Kanca Sıçraması: Bir hedefe veya noktaya kanca atarak kendinizi hızla gökyüzüne ve ileriye fırlatırsınız; hava aksiyonlarını sıfırlar)",
+      "Flog (Can Çalan Kırbaç: Kırbacınızla önünüzdeki rakiplere vurarak büyü hasarı verir, yavaşlatır ve verilen hasara göre kendinizi iyileştirirsiniz)",
+      "Death Slam (Ölüm Çarpışı - Ulti: Havadayken altınızdaki rakiplere kırbaçlar bağlayarak hepsini havaya çeker ve seçtiğiniz yöne doğru yere çakarsınız)"
     ],
-    counters: [
-      'Vindicta / Grey Talon / Venator (Grapple ile çatıların üzerinden uçup Ground Strike + Flog ile hareketsiz nişancıları tek komboyla düşürür)',
-      'McGinnis / Paige / Solomon (Sabit savunma hatlarının üzerinden atlayıp Death Slam ile arka safları takımının önüne fırlatır)',
+    "counters": [
+      "Vindicta",
+      "Grey Talon",
+      "Venator",
+      "McGinnis",
+      "Paige",
+      "Solomon"
     ],
-    counteredBy: [
-      'Billy (Bashdown darbesiyle havadaki Lash’ı yere çeker ve şok dalgasıyla cezalandırır)',
-      'Dynamo / Viscous / Ivy (Quantum Entanglement, The Cube ve Stone Form ile Death Slam ve Ground Strike kombosunu boşa çıkarır)',
-      'Celeste (Dazzling Trick bariyeriyle Lash’ın iniş hasarını soğurup onu susturur)',
-      'Taktiksel Counter Eşyalar: Slowing Hex, Silence Wave, Knockdown (Grapple ve hava hareketliliğini tamamen kilitler) | Ethereal Shift, Counterspell (Death Slam ultisini savuşturur)',
+    "counteredBy": [
+      "Billy",
+      "Dynamo",
+      "Viscous",
+      "Ivy",
+      "Celeste",
+      "Slowing Hex (Yavaşlatma Büyüsü)",
+      "Silence Wave (Susturma Dalgası)",
+      "Knockdown (Nakavt)",
+      "Ethereal Shift (Ruhani Değişim)",
+      "Counterspell (Karşı Büyü)"
     ],
-    counterItems: [
-      'slowing-hex',
-      'silence-glyph',
-      'ethereal-shift',
-    ],
+    "counterItems": [
+      "slowing-hex",
+      "silence-glyph",
+      "ethereal-shift"
+    ]
   },
   {
-    id: 'mcginnis',
-    name: 'McGinnis',
-    title: 'Fairfax Endüstrisi Baş Mühendisi',
-    role: 'Bölge Kontrolü / Kuşatma & Destek (Zone Control / Engineer)',
-    difficulty: 'Düşük - Orta',
-    image: '/assets/characters/mcginnis.png',
-    imageAlt:
-      'McGinnis karakter portresi - Deadlock oynanabilir kahraman görseli',
-    shortBio:
-      'Mini Turret taretleriyle bölgeleri koruyan, Medicinal Specter ile takımını iyileştiren, Spectral Wall ile kaçış yollarını kapatan ve Heavy Barrage ile roket yağdıran mühendis.',
-    stats: {
-      survive: 70,
-      damage: 80,
-      mobility: 35,
-      control: 75,
+    "id": "mcginnis",
+    "name": "McGinnis",
+    "title": "Fairfax Endüstrisi Baş Mühendisi",
+    "role": "Bölge Kontrolü / Kuşatma & Destek (Zone Control / Engineer)",
+    "difficulty": "Düşük - Orta",
+    "image": "/assets/characters/mcginnis.png",
+    "imageAlt": "McGinnis karakter portresi - Deadlock oynanabilir kahraman görseli",
+    "shortBio": "Mini Turret taretleriyle bölgeleri koruyan, Medicinal Specter ile takımını iyileştiren, Spectral Wall ile kaçış yollarını kapatan ve Heavy Barrage ile roket yağdıran mühendis.",
+    "stats": {
+      "survive": 70,
+      "damage": 80,
+      "mobility": 35,
+      "control": 75
     },
-    abilities: [
-      'Mini Turret (Mini Taret: Yakındaki rakiplere otomatik ateş eden, büyü hasarı ve yavaşlatma uygulayan otonom bir taret kurar)',
-      'Medicinal Specter (Şifacı Tayf: Belirlenen alandaki tüm dost birimleri sürekli iyileştiren bir iyileştirme ruhu çağırır)',
-      'Spectral Wall (Hayalet Duvar: Zemini ikiye bölen geçilmez bir duvar örerek rakiplerin yolunu keser, hasar verir ve yavaşlatır)',
-      'Heavy Barrage (Ağır Yaylım - Ulti: Hedef bölgeye kesintisiz bir topçu roketi yağmuru başlatarak yüksek alan büyü hasarı vurur)',
+    "abilities": [
+      "Mini Turret (Mini Taret: Yakındaki rakiplere otomatik ateş eden, büyü hasarı ve yavaşlatma uygulayan otonom bir taret kurar)",
+      "Medicinal Specter (Şifacı Tayf: Belirlenen alandaki tüm dost birimleri sürekli iyileştiren bir iyileştirme ruhu çağırır)",
+      "Spectral Wall (Hayalet Duvar: Zemini ikiye bölen geçilmez bir duvar örerek rakiplerin yolunu keser, hasar verir ve yavaşlatır)",
+      "Heavy Barrage (Ağır Yaylım - Ulti: Hedef bölgeye kesintisiz bir topçu roketi yağmuru başlatarak yüksek alan büyü hasarı vurur)"
     ],
-    counters: [
-      'Haze / Drifter / Calico (Mini Turret odaklı bölge kontrolü ve Medicinal Specter iyileştirmesiyle tekli hedef suikastçılarına geçit vermez)',
-      'Warden / Shiv / Abrams (Spectral Wall ile düz koşu ve atılma yollarını kapatıp Heavy Barrage ile uzaktan eritir)',
+    "counters": [
+      "Haze",
+      "Drifter",
+      "Calico",
+      "Warden",
+      "Shiv",
+      "Abrams"
     ],
-    counteredBy: [
-      'Seven / Lady Geist / Deadman Danny (Lightning Ball, Essence Bomb ve Strix Salvo alan patlamalarıyla taretleri ve Medicinal Specter alanını saniyeler içinde yok eder)',
-      'Doorman (Spectral Wall engelinin arkasına Doorway portalı açarak McGinnis’in savunmasını tamamen aşar)',
-      'Bebop / Paradox (Sabit duran McGinnis’i Hook veya Swap ile taretlerinin yanından çeker)',
-      'Taktiksel Counter Eşyalar: Monster Rounds, Ricochet (Taretleri hızla temizler) | Healbane, Decay (Medicinal Specter iyileştirmesini kırar) | Warp Stone (Spectral Wall engelini aşar)',
+    "counteredBy": [
+      "Seven",
+      "Lady Geist",
+      "Deadman Danny",
+      "Doorman",
+      "Bebop",
+      "Paradox",
+      "Monster Rounds (Anticanavar Mermileri)",
+      "Ricochet (Mermi Sekmesi)",
+      "Healbane (Şifakıran)",
+      "Decay (Çürüme)",
+      "Warp Stone (Işınlanma Taşı)"
     ],
-    counterItems: [
-      'healbane',
-      'warp-stone',
-      'ricochet',
-    ],
+    "counterItems": [
+      "healbane",
+      "warp-stone",
+      "ricochet"
+    ]
   },
   {
-    id: 'mina',
-    name: 'Mina',
-    title: 'Şemsiye Suikastçısı & Vampir Aristokrat',
-    role: 'Yakın-Orta Mesafe Büyü Suikastçısı & Can Çalma (Vampiric Skirmisher)',
-    difficulty: 'Orta - Yüksek',
-    image: '/assets/characters/mina.png',
-    imageAlt:
-      'Mina karakter portresi - Deadlock oynanabilir kahraman görseli',
-    shortBio:
-      'Rake ile şemsiyesini savurup eksik cana göre büyü hasarı vuran ve iyileşen, Sanguine Retreat ile dokunulmaz olup uçan ve Nox Nostra ile alanı susturan vampir.',
-    stats: {
-      survive: 70,
-      damage: 90,
-      mobility: 85,
-      control: 65,
+    "id": "mina",
+    "name": "Mina",
+    "title": "Şemsiye Suikastçısı & Vampir Aristokrat",
+    "role": "Yakın-Orta Mesafe Büyü Suikastçısı & Can Çalma (Vampiric Skirmisher)",
+    "difficulty": "Orta - Yüksek",
+    "image": "/assets/characters/mina.png",
+    "imageAlt": "Mina karakter portresi - Deadlock oynanabilir kahraman görseli",
+    "shortBio": "Rake ile şemsiyesini savurup eksik cana göre büyü hasarı vuran ve iyileşen, Sanguine Retreat ile dokunulmaz olup uçan ve Nox Nostra ile alanı susturan vampir.",
+    "stats": {
+      "survive": 70,
+      "damage": 90,
+      "mobility": 85,
+      "control": 65
     },
-    abilities: [
-      'Rake (Şemsiye Darbesi: Şemsiyenizle pençe atarak hedefin eksik canına göre artan büyü hasarı verir ve vurulan her hedeften can yenilersiniz)',
-      'Sanguine Retreat (Kanlı Çekilme: Kısa süreliğine yarasa sürüsüne dağılarak hedef alınamaz olur ve seçilen konuma uçarsınız; tekrar kullanılabilir)',
-      'Love Bites (Vampir Isırığı - Pasif: Mermi ve yetenek isabetleri hedefte kanama biriktirerek büyü can çalması ve hareket hızı kazandırır)',
-      'Nox Nostra (Gece Ziyafeti - Ulti: Geniş alanda karanlık yarasa fırtınası çağırarak rakipleri susturur, hasar verir ve yüksek miktarda can emer)',
+    "abilities": [
+      "Rake (Şemsiye Darbesi: Şemsiyenizle pençe atarak hedefin eksik canına göre artan büyü hasarı verir ve vurulan her hedeften can yenilersiniz)",
+      "Sanguine Retreat (Kanlı Çekilme: Kısa süreliğine yarasa sürüsüne dağılarak hedef alınamaz olur ve seçilen konuma uçarsınız; tekrar kullanılabilir)",
+      "Love Bites (Vampir Isırığı - Pasif: Mermi ve yetenek isabetleri hedefte kanama biriktirerek büyü can çalması ve hareket hızı kazandırır)",
+      "Nox Nostra (Gece Ziyafeti - Ulti: Geniş alanda karanlık yarasa fırtınası çağırarak rakipleri susturur, hasar verir ve yüksek miktarda can emer)"
     ],
-    counters: [
-      'Abrams / Victor / Billy (Yüksek canlı ön saflara karşı Rake eksik can hasarı ve Love Bites iyileşmesiyle uzayan takasları kazanır)',
-      'Bebop / Lash (Sanguine Retreat dokunulmaz uçuşuyla Hook ve Ground Strike kombolarından hasarsız sıyrılır)',
+    "counters": [
+      "Abrams",
+      "Victor",
+      "Billy",
+      "Bebop",
+      "Lash"
     ],
-    counteredBy: [
-      'Vindicta / Grey Talon (Rake’in 10m kısa menziline hiç girmeden uzaktan Mina’yı eritir)',
-      'Wraith / Mo & Krill (Telekinesis ve Combo ile Sanguine Retreat kullanamadan Mina’yı kilitler)',
-      'Nurse Harrow (Leech Therapy ve anti-heal etkileriyle Mina’nın iyileşmesini ve güçlendirme sürelerini eritir)',
-      'Taktiksel Counter Eşyalar: Healbane, Toxic Bullets, Decay (Rake ve Love Bites can yenilemesini ağır şekilde keser) | Silence Wave, Slowing Hex (Sanguine Retreat kaçışını kilitler)',
+    "counteredBy": [
+      "Vindicta",
+      "Grey Talon",
+      "Wraith",
+      "Mo & Krill",
+      "Nurse Harrow",
+      "Healbane (Şifakıran)",
+      "Toxic Bullets (Toksik Mermiler)",
+      "Decay (Çürüme)",
+      "Silence Wave (Susturma Dalgası)",
+      "Slowing Hex (Yavaşlatma Büyüsü)"
     ],
-    counterItems: [
-      'healbane',
-      'silence-glyph',
-      'toxic-bullets',
-    ],
+    "counterItems": [
+      "healbane",
+      "silence-glyph",
+      "toxic-bullets"
+    ]
   },
   {
-    id: 'mirage',
-    name: 'Mirage',
-    title: 'Cinlerin Koruması & Kum Muhafızı',
-    role: 'Koridor Düellocusu & Küresel Destek (Duelist / Global Roamer)',
-    difficulty: 'Orta',
-    image: '/assets/characters/mirage.png',
-    imageAlt:
-      'Mirage karakter portresi - Deadlock oynanabilir kahraman görseli',
-    shortBio:
-      'Tornado ile rakipleri havaya kaldırıp mermilerden kaçınan, Fire Scarabs ile can çalan, Djinn’s Mark ile biriken patlayıcı hasar vuran ve Traveler ile haritanın her yerine ışınlanan muhafız.',
-    stats: {
-      survive: 65,
-      damage: 80,
-      mobility: 85,
-      control: 75,
+    "id": "mirage",
+    "name": "Mirage",
+    "title": "Cinlerin Koruması & Kum Muhafızı",
+    "role": "Koridor Düellocusu & Küresel Destek (Duelist / Global Roamer)",
+    "difficulty": "Orta",
+    "image": "/assets/characters/mirage.png",
+    "imageAlt": "Mirage karakter portresi - Deadlock oynanabilir kahraman görseli",
+    "shortBio": "Tornado ile rakipleri havaya kaldırıp mermilerden kaçınan, Fire Scarabs ile can çalan, Djinn’s Mark ile biriken patlayıcı hasar vuran ve Traveler ile haritanın her yerine ışınlanan muhafız.",
+    "stats": {
+      "survive": 65,
+      "damage": 80,
+      "mobility": 85,
+      "control": 75
     },
-    abilities: [
-      'Fire Scarabs (Ateş Böcekleri: Rakibe ateş böcekleri musallat ederek maksimum canını çalar, sizi iyileştirir ve hedefin verdiği hasarı azaltır)',
-      'Dust Devil / Tornado (Kum Hortumu: İleri doğru ilerleyen bir hortuma dönüşerek çarptığınız rakipleri havaya savurur ve sonrasında Mermi Kaçınması kazanırsınız)',
-      'Djinn\'s Mark (Cin Damgası - Pasif: Mermileriniz hedefte çarpan biriktirir; süre bittiğinde veya tetiklendiğinde biriken yük kadar patlayıcı büyü hasarı vurur)',
-      'Traveler (Gezgin - Ulti: Haritadaki herhangi bir dost kahramanın veya görünür rakip kahramanın yanına kanalize olarak ışınlanmanızı sağlar)',
+    "abilities": [
+      "Fire Scarabs (Ateş Böcekleri: Rakibe ateş böcekleri musallat ederek maksimum canını çalar, sizi iyileştirir ve hedefin verdiği hasarı azaltır)",
+      "Dust Devil / Tornado (Kum Hortumu: İleri doğru ilerleyen bir hortuma dönüşerek çarptığınız rakipleri havaya savurur ve sonrasında Mermi Kaçınması kazanırsınız)",
+      "Djinn's Mark (Cin Damgası - Pasif: Mermileriniz hedefte çarpan biriktirir; süre bittiğinde veya tetiklendiğinde biriken yük kadar patlayıcı büyü hasarı vurur)",
+      "Traveler (Gezgin - Ulti: Haritadaki herhangi bir dost kahramanın veya görünür rakip kahramanın yanına kanalize olarak ışınlanmanızı sağlar)"
     ],
-    counters: [
-      'Abrams / Billy / Haze (Dust Devil / Tornado ile yakın mesafe hücumlarının içinden geçip rakipleri havaya kaldırır ve Mermi Kaçınması kazanır)',
-      'Wraith / Drifter (Yan koridorlarda saldırıya uğrayan müttefikinin yanına Traveler ultisiyle küresel olarak ışınlanıp sayı üstünlüğü kurar)',
+    "counters": [
+      "Abrams",
+      "Billy",
+      "Haze",
+      "Wraith",
+      "Drifter"
     ],
-    counteredBy: [
-      'Pocket / Viscous / Nurse Harrow (Djinn’s Mark ve Fire Scarabs zayıflatmalarını arındırma yetenekleriyle patlamadan siler)',
-      'Dynamo / Kelvin (Dust Devil bittiği anda Mirage’ı alan kontrolüyle yakalar)',
-      'Taktiksel Counter Eşyalar: Dispel Magic, Debuff Reducer (Djinn’s Mark yüklerini ve Fire Scarabs etkisini temizler) | Slowing Hex, Silence Wave (Dust Devil kaçışını kilitler)',
+    "counteredBy": [
+      "Pocket",
+      "Viscous",
+      "Nurse Harrow",
+      "Dynamo",
+      "Kelvin",
+      "Dispel Magic (AKTİF Etki Geçirme Büyüsü)",
+      "Debuff Reducer (Zayıflatma Azaltıcı)",
+      "Slowing Hex (Yavaşlatma Büyüsü)",
+      "Silence Wave (Susturma Dalgası)"
     ],
-    counterItems: [
-      'debuff-reducer',
-      'slowing-hex',
-      'silence-glyph',
-    ],
+    "counterItems": [
+      "debuff-reducer",
+      "slowing-hex",
+      "silence-glyph"
+    ]
   },
   {
-    id: 'mo-and-krill',
-    name: 'Mo & Krill',
-    title: 'Yeraltı İkilisi & Kitle Kontrol Tankı',
-    role: 'Ön Saf Tank / Tekli Hedef Kilitleyici (Disabler Tank)',
-    difficulty: 'Düşük - Orta',
-    image: '/assets/characters/mo-and-krill.png',
-    imageAlt:
-      'Mo & Krill karakter portresi - Deadlock oynanabilir kahraman görseli',
-    shortBio:
-      'Scorn ile çevresinden can emen, Burrow ile yeraltından hızla yaklaşıp havaya savuran, Sand Blast ile rakipleri silahsızlandıran ve Combo ultisiyle hedefi uzun süre yere mıhlayan ikili.',
-    stats: {
-      survive: 95,
-      damage: 65,
-      mobility: 70,
-      control: 95,
+    "id": "mo-and-krill",
+    "name": "Mo & Krill",
+    "title": "Yeraltı İkilisi & Kitle Kontrol Tankı",
+    "role": "Ön Saf Tank / Tekli Hedef Kilitleyici (Disabler Tank)",
+    "difficulty": "Düşük - Orta",
+    "image": "/assets/characters/mo-and-krill.png",
+    "imageAlt": "Mo & Krill karakter portresi - Deadlock oynanabilir kahraman görseli",
+    "shortBio": "Scorn ile çevresinden can emen, Burrow ile yeraltından hızla yaklaşıp havaya savuran, Sand Blast ile rakipleri silahsızlandıran ve Combo ultisiyle hedefi uzun süre yere mıhlayan ikili.",
+    "stats": {
+      "survive": 95,
+      "damage": 65,
+      "mobility": 70,
+      "control": 95
     },
-    abilities: [
-      'Scorn (Küçümseme: Yakındaki rakiplere alan hasarı verir ve verilen hasara oranla kendinizi iyileştirirsiniz; kahramanlara karşı iyileştirme çok daha güçlüdür)',
-      'Burrow (Yeraltı Kazısı: Yeraltına girerek hızlanır, mermi ve büyü zırhı kazanırsınız; yüzeye çıkarken rakipleri havaya savurup hasar verirsiniz)',
-      'Sand Blast (Kum Püskürtme: Önünüzdeki rakiplere kum fırlatarak görüşlerini kısıtlar ve onları geçici olarak Silahsızlandırırsınız / Disarm)',
-      'Combo (İkili Kıskaç - Ulti: Hedef rakip kahramanı olduğu yere mıhlayarak uzun süre Sersemletir / Suppress, sürekli hasar verir ve öldürürseniz kalıcı can kazandırır)',
+    "abilities": [
+      "Scorn (Küçümseme: Yakındaki rakiplere alan hasarı verir ve verilen hasara oranla kendinizi iyileştirirsiniz; kahramanlara karşı iyileştirme çok daha güçlüdür)",
+      "Burrow (Yeraltı Kazısı: Yeraltına girerek hızlanır, mermi ve büyü zırhı kazanırsınız; yüzeye çıkarken rakipleri havaya savurup hasar verirsiniz)",
+      "Sand Blast (Kum Püskürtme: Önünüzdeki rakiplere kum fırlatarak görüşlerini kısıtlar ve onları geçici olarak Silahsızlandırırsınız / Disarm)",
+      "Combo (İkili Kıskaç - Ulti: Hedef rakip kahramanı olduğu yere mıhlayarak uzun süre Sersemletir / Suppress, sürekli hasar verir ve öldürürseniz kalıcı can kazandırır)"
     ],
-    counters: [
-      'Haze / Vyper / Wraith (Sand Blast ile mermi taşıyıcılarını Silahsızlandırır / Disarm ve Combo ultisiyle hareketlerini tamamen kilitler)',
-      'Pocket / Calico / Violet / Mina (Yüksek mobiliteye sahip suikastçıları Burrow + Combo ile yere mıhlayarak kaçış yeteneklerini kullandırttırmaz)',
+    "counters": [
+      "Haze",
+      "Vyper",
+      "Wraith",
+      "Pocket",
+      "Calico",
+      "Violet",
+      "Mina"
     ],
-    counteredBy: [
-      'Lady Geist (Combo biter bitmez düşük canda Soul Exchange basarak Mo & Krill’in devasa canını çalar)',
-      'Vindicta / Grey Talon / Venator (Uzak mesafeden ve tuzaklarla Mo & Krill’i kendisine yaklaştırmadan eritir)',
-      'Infernus (Büyük gövdesinde Napalm ve Afterburn yanmasını hızla biriktirir)',
-      'Taktiksel Counter Eşyalar: Reactive Barrier, Indomitable, Unstoppable (Burrow ve Combo kitle kontrolüne karşı korur) | Toxic Bullets, Healbane, Decay (Scorn iyileşmesini ve yüksek canını eritir)',
+    "counteredBy": [
+      "Lady Geist",
+      "Vindicta",
+      "Grey Talon",
+      "Venator",
+      "Infernus",
+      "Reactive Barrier (Reaktif Bariyer)",
+      "Indomitable (Boyun Eğmez)",
+      "Unstoppable (Durdurulamaz)",
+      "Toxic Bullets (Toksik Mermiler)",
+      "Healbane (Şifakıran)",
+      "Decay (Çürüme)"
     ],
-    counterItems: [
-      'toxic-bullets',
-      'decay',
-      'reactive-barrier',
-    ],
+    "counterItems": [
+      "toxic-bullets",
+      "decay",
+      "reactive-barrier"
+    ]
   },
   {
-    id: 'nurse-harrow',
-    name: 'Nurse Harrow',
-    title: 'Sülük Terapisti & Kimyasal Destek',
-    role: 'Güçlendirme Eritici & Hız Desteği (Debuff / Stim Support)',
-    difficulty: 'Orta',
-    image: '/assets/characters/nurse-harrow.png',
-    imageAlt:
-      'Nurse Harrow karakter portresi - Deadlock oynanabilir kahraman görseli',
-    shortBio:
-      'Leech Therapy ile rakiplere sülük yapıştırıp güçlendirme sürelerini eriten, Wretched Vapors ile müttefiklerine ani hız patlaması sağlayan biyokimya uzmanı.',
-    stats: {
-      survive: 65,
-      damage: 70,
-      mobility: 60,
-      control: 80,
+    "id": "nurse-harrow",
+    "name": "Nurse Harrow",
+    "title": "Sülük Terapisti & Kimyasal Destek",
+    "role": "Güçlendirme Eritici & Hız Desteği (Debuff / Stim Support)",
+    "difficulty": "Orta",
+    "image": "/assets/characters/nurse-harrow.png",
+    "imageAlt": "Nurse Harrow karakter portresi - Deadlock oynanabilir kahraman görseli",
+    "shortBio": "Leech Therapy ile rakiplere sülük yapıştırıp güçlendirme sürelerini eriten, Wretched Vapors ile müttefiklerine ani hız patlaması sağlayan biyokimya uzmanı.",
+    "stats": {
+      "survive": 65,
+      "damage": 70,
+      "mobility": 60,
+      "control": 80
     },
-    abilities: [
-      'Leech Therapy (Sülük Tedavisi: Rakiplere yapışarak zamanla büyü hasarı veren, iyileşmelerini emen ve güçlendirme sürelerini eriten bir sülük kavanozu fırlatır)',
-      'Wretched Vapors (Sefil Buharlar: Kendinize veya bir müttefike geçici olarak yüksek hız, atış hızı ve kalkan veren kimyasal bir şişe kırarsınız)',
-      'Malpractice (Tıbbi İhmal: Hedef alana zehirli gaz yayarak rakiplerin mermi/büyü dirençlerini ve hareket hızlarını düşürür)',
-      'Code Blue (Mavi Kod - Ulti: Geniş çaplı biyokimyasal karantina alanı açarak müttefikleri hızla iyileştirir ve rakipleri ağır şekilde zayıflatır)',
+    "abilities": [
+      "Leech Therapy (Sülük Tedavisi: Rakiplere yapışarak zamanla büyü hasarı veren, iyileşmelerini emen ve güçlendirme sürelerini eriten bir sülük kavanozu fırlatır)",
+      "Wretched Vapors (Sefil Buharlar: Kendinize veya bir müttefike geçici olarak yüksek hız, atış hızı ve kalkan veren kimyasal bir şişe kırarsınız)",
+      "Malpractice (Tıbbi İhmal: Hedef alana zehirli gaz yayarak rakiplerin mermi/büyü dirençlerini ve hareket hızlarını düşürür)",
+      "Code Blue (Mavi Kod - Ulti: Geniş çaplı biyokimyasal karantina alanı açarak müttefikleri hızla iyileştirir ve rakipleri ağır şekilde zayıflatır)"
     ],
-    counters: [
-      'Victor / Abrams / Shiv / Silver (Leech Therapy ile can yenileme ve güçlendirme sürelerini eriterek ön saf savaşçılarını zayıflatır)',
-      'Celeste / Paige / Warden (Kalkan ve süreli buff kullanan karakterlerin etki sürelerini sülüklerle kısaltır)',
+    "counters": [
+      "Victor",
+      "Abrams",
+      "Shiv",
+      "Silver",
+      "Celeste",
+      "Paige",
+      "Warden"
     ],
-    counteredBy: [
-      'Viscous / Pocket (The Cube ve Enchanter’s Satchel ile yapışan sülükleri anında temizler)',
-      'Vindicta / Grey Talon (Leech Therapy’nin 6.5m kısa menziline girmeden Harrow’u uzaktan avlar)',
-      'Lash / Drifter (Wretched Vapors hızı bittiği anda yaşanan yavaşlama / Crash penceresinde Harrow’u yakalar)',
-      'Taktiksel Counter Eşyalar: Dispel Magic, Debuff Reducer (Leech Therapy sülüklerini ve Malpractice zayıflatmasını temizler) | Silence Wave (Code Blue ve destek şişelerini kilitler)',
+    "counteredBy": [
+      "Viscous",
+      "Pocket",
+      "Vindicta",
+      "Grey Talon",
+      "Lash",
+      "Drifter",
+      "Dispel Magic (AKTİF Etki Geçirme Büyüsü)",
+      "Debuff Reducer (Zayıflatma Azaltıcı)",
+      "Silence Wave (Susturma Dalgası)"
     ],
-    counterItems: [
-      'dispel-magic',
-      'debuff-reducer',
-      'silence-glyph',
-    ],
+    "counterItems": [
+      "dispel-magic",
+      "debuff-reducer",
+      "silence-glyph"
+    ]
   },
   {
-    id: 'paige',
-    name: 'Paige',
-    title: 'Mistik Kütüphaneci & Ejderha Öykücüsü',
-    role: 'Bariyer Desteği & Alan Kontrol Büyücüsü (Conjurer / Support Mage)',
-    difficulty: 'Orta',
-    image: '/assets/characters/paige.png',
-    imageAlt:
-      'Paige karakter portresi - Deadlock oynanabilir kahraman görseli',
-    shortBio:
-      'Bookwyrm ile yakıcı iz bırakan öykü ejderhası çağıran, Plot Armor ile müttefiklerine kalkan veren ve Captivating Read ile rakipleri yere sabitleyen kütüphaneci.',
-    stats: {
-      survive: 60,
-      damage: 80,
-      mobility: 60,
-      control: 85,
+    "id": "paige",
+    "name": "Paige",
+    "title": "Mistik Kütüphaneci & Ejderha Öykücüsü",
+    "role": "Bariyer Desteği & Alan Kontrol Büyücüsü (Conjurer / Support Mage)",
+    "difficulty": "Orta",
+    "image": "/assets/characters/paige.png",
+    "imageAlt": "Paige karakter portresi - Deadlock oynanabilir kahraman görseli",
+    "shortBio": "Bookwyrm ile yakıcı iz bırakan öykü ejderhası çağıran, Plot Armor ile müttefiklerine kalkan veren ve Captivating Read ile rakipleri yere sabitleyen kütüphaneci.",
+    "stats": {
+      "survive": 60,
+      "damage": 80,
+      "mobility": 60,
+      "control": 85
     },
-    abilities: [
-      'Bookwyrm / Conjure Dragon (Öykü Ejderhası: Hedef konumda belirip ileri doğru uçan, büyü hasarı veren ve arkasında yakıcı bir iz bırakan ejderha çağırır)',
-      'Plot Armor / Defend and Fight (Öykü Zırhı: Kendinize veya bir müttefike koruyucu kağıt bariyer ve ilave atış hızı/hareket hızı kazandırır)',
-      'Captivating Read (Sürükleyici Okuma: Hedef alandaki rakipleri öykü sayfalarına hapsederek kısa süreliğine yere Sabitler / Immobilize)',
-      'Rallying Charge (Destansı Bölüm - Ulti: Geniş bir hat boyunca süvari öyküsü çağırarak müttefikleri güçlendirir ve rakipleri sersemletip savurur)',
+    "abilities": [
+      "Bookwyrm / Conjure Dragon (Öykü Ejderhası: Hedef konumda belirip ileri doğru uçan, büyü hasarı veren ve arkasında yakıcı bir iz bırakan ejderha çağırır)",
+      "Plot Armor / Defend and Fight (Öykü Zırhı: Kendinize veya bir müttefike koruyucu kağıt bariyer ve ilave atış hızı/hareket hızı kazandırır)",
+      "Captivating Read (Sürükleyici Okuma: Hedef alandaki rakipleri öykü sayfalarına hapsederek kısa süreliğine yere Sabitler / Immobilize)",
+      "Rallying Charge (Destansı Bölüm - Ulti: Geniş bir hat boyunca süvari öyküsü çağırarak müttefikleri güçlendirir ve rakipleri sersemletip savurur)"
     ],
-    counters: [
-      'Abrams / Shiv / Billy (Captivating Read sabitlemesi ve Bookwyrm yakıcı hattıyla düz koşan yakın dövüşçüleri durdurur)',
-      'Haze / Drifter (Plot Armor kalkanı ve Rallying Charge ile suikast hedefi olan müttefiklerini korur)',
+    "counters": [
+      "Abrams",
+      "Shiv",
+      "Billy",
+      "Haze",
+      "Drifter"
     ],
-    counteredBy: [
-      'Lash / Calico / Pocket (Bookwyrm ve Captivating Read zemin alanlarının üzerinden uçarak doğrudan Paige’in üzerine iner)',
-      'Vindicta / Grey Talon (Uzun menzilden Paige’i dürterek savunmada kalmaya zorlar)',
-      'Taktiksel Counter Eşyalar: Capacitor (Plot Armor bariyerlerini anında siler) | Silence Wave (Kalkan ve sabitleme büyülerini kilitler) | Debuff Reducer (Captivating Read sabitlemesini kısaltır)',
+    "counteredBy": [
+      "Lash",
+      "Calico",
+      "Pocket",
+      "Vindicta",
+      "Grey Talon",
+      "Capacitor (AKTİF Kondansatör)",
+      "Silence Wave (Susturma Dalgası)",
+      "Debuff Reducer (Zayıflatma Azaltıcı)"
     ],
-    counterItems: [
-      'capacitor',
-      'silence-glyph',
-      'debuff-reducer',
-    ],
+    "counterItems": [
+      "capacitor",
+      "silence-glyph",
+      "debuff-reducer"
+    ]
   },
   {
-    id: 'paradox',
-    name: 'Paradox',
-    title: 'Zaman Hırsızı & Pozisyon Manipülatörü',
-    role: 'Yakalayıcı & Taktiksel Suikastçı (Pick / Utility Carry)',
-    difficulty: 'Yüksek',
-    image: '/assets/characters/paradox.png',
-    imageAlt:
-      'Paradox karakter portresi - Deadlock oynanabilir kahraman görseli',
-    shortBio:
-      'Kinetic Carbine ile zamanı durduran atışlar yapan, Time Wall ile tüm mermileri bloklayan ve Paradoxical Swap ultisiyle rakibin yerini kendi takımıyla değiştiren keskin nişancı.',
-    stats: {
-      survive: 55,
-      damage: 80,
-      mobility: 75,
-      control: 85,
+    "id": "paradox",
+    "name": "Paradox",
+    "title": "Zaman Hırsızı & Pozisyon Manipülatörü",
+    "role": "Yakalayıcı & Taktiksel Suikastçı (Pick / Utility Carry)",
+    "difficulty": "Yüksek",
+    "image": "/assets/characters/paradox.png",
+    "imageAlt": "Paradox karakter portresi - Deadlock oynanabilir kahraman görseli",
+    "shortBio": "Kinetic Carbine ile zamanı durduran atışlar yapan, Time Wall ile tüm mermileri bloklayan ve Paradoxical Swap ultisiyle rakibin yerini kendi takımıyla değiştiren keskin nişancı.",
+    "stats": {
+      "survive": 55,
+      "damage": 80,
+      "mobility": 75,
+      "control": 85
     },
-    abilities: [
-      'Pulse Grenade (Darbe Bombası: Düştüğü yerde genişleyen darbeler yayan bir bomba fırlatır; her darbe büyü hasarı verir, yavaşlatır ve hasar çarpanı biriktirir)',
-      'Time Wall (Zaman Duvarı: İçinden geçen tüm düşman mermilerini ve atışlarını tamamen durduran bir zaman perdesi kurar; duvara değen rakipler zaman kaybı hasarı alır)',
-      'Kinetic Carbine (Kinetik Karabina: Hareket ettikçe şarj olan bir atış yükler; ateşlendiğinde yüksek hasar verir ve hedefi zaman içinde kısa süreliğine dondurur)',
-      'Paradoxical Swap (Paradoksal Takas - Ulti: Bir mermi ateşleyerek isabet eden rakip kahramanla kendi konumunuzu anında değiştirirsiniz)',
+    "abilities": [
+      "Pulse Grenade (Darbe Bombası: Düştüğü yerde genişleyen darbeler yayan bir bomba fırlatır; her darbe büyü hasarı verir, yavaşlatır ve hasar çarpanı biriktirir)",
+      "Time Wall (Zaman Duvarı: İçinden geçen tüm düşman mermilerini ve atışlarını tamamen durduran bir zaman perdesi kurar; duvara değen rakipler zaman kaybı hasarı alır)",
+      "Kinetic Carbine (Kinetik Karabina: Hareket ettikçe şarj olan bir atış yükler; ateşlendiğinde yüksek hasar verir ve hedefi zaman içinde kısa süreliğine dondurur)",
+      "Paradoxical Swap (Paradoksal Takas - Ulti: Bir mermi ateşleyerek isabet eden rakip kahramanla kendi konumunuzu anında değiştirirsiniz)"
     ],
-    counters: [
-      'Vindicta / Grey Talon / Venator (Uzakta konumlanan nişancıları Kinetic Carbine ile dondurup Paradoxical Swap ile takımının ortasına çeker)',
-      'McGinnis / Bebop / Deadman Danny (Time Wall ile tüm mermileri, roketleri ve kancaları tamamen durdurur)',
+    "counters": [
+      "Vindicta",
+      "Grey Talon",
+      "Venator",
+      "McGinnis",
+      "Bebop",
+      "Deadman Danny"
     ],
-    counteredBy: [
-      'Abrams / Victor / Billy (Paradoxical Swap ile rakip takımın ortasına çekildiklerinde bundan avantaj sağlayan yakın mesafe tankları)',
-      'Pocket / Mina / Violet (Dokunulmazlık ve faz kaymasıyla Kinetic Carbine ve Swap mermisinden kaçınır)',
-      'Taktiksel Counter Eşyalar: Ethereal Shift, Counterspell (Paradoxical Swap ve Carbine kombosunu boşa çıkarır) | Reactive Barrier (Kinetic Carbine dondurmasında otomatik kalkan açar)',
+    "counteredBy": [
+      "Abrams",
+      "Victor",
+      "Billy",
+      "Pocket",
+      "Mina",
+      "Violet",
+      "Ethereal Shift (Ruhani Değişim)",
+      "Counterspell (Karşı Büyü)",
+      "Reactive Barrier (Reaktif Bariyer)"
     ],
-    counterItems: [
-      'reactive-barrier',
-      'ethereal-shift',
-      'counterspell',
-    ],
+    "counterItems": [
+      "reactive-barrier",
+      "ethereal-shift",
+      "counterspell"
+    ]
   },
   {
-    id: 'pocket',
-    name: 'Pocket',
-    title: 'Sürgün Mirasçı & Büyü Suikastçısı',
-    role: 'Mobil Büyü Patlaması / Kaçış Uzmanı (Burst Mage)',
-    difficulty: 'Yüksek',
-    image: '/assets/characters/pocket.png',
-    imageAlt:
-      'Pocket karakter portresi - Deadlock oynanabilir kahraman görseli',
-    shortBio:
-      'Barrage ile hasar çarpanı biriktiren, Flying Cloak ile ışınlanan, Enchanter’s Satchel çantasına girerek dokunulmaz olan ve Affliction ultisiyle tüm rakip takıma iyileşme kıran zehir yayan büyücü.',
-    stats: {
-      survive: 65,
-      damage: 90,
-      mobility: 90,
-      control: 55,
+    "id": "pocket",
+    "name": "Pocket",
+    "title": "Sürgün Mirasçı & Büyü Suikastçısı",
+    "role": "Mobil Büyü Patlaması / Kaçış Uzmanı (Burst Mage)",
+    "difficulty": "Yüksek",
+    "image": "/assets/characters/pocket.png",
+    "imageAlt": "Pocket karakter portresi - Deadlock oynanabilir kahraman görseli",
+    "shortBio": "Barrage ile hasar çarpanı biriktiren, Flying Cloak ile ışınlanan, Enchanter’s Satchel çantasına girerek dokunulmaz olan ve Affliction ultisiyle tüm rakip takıma iyileşme kıran zehir yayan büyücü.",
+    "stats": {
+      "survive": 65,
+      "damage": 90,
+      "mobility": 90,
+      "control": 55
     },
-    abilities: [
-      'Barrage (Yaylım Ateşi: Havaya yükselerek patlayıcı büyü mermileri yağdırır; her isabet rakipleri yavaşlatır ve verdiğiniz tüm hasarı katlayan yük biriktirir)',
-      'Flying Cloak (Uçan Pelerin: İleri doğru hareket eden ve rakiplere hasar veren canlı bir pelerin gönderir; tekrar basarak pelerinin olduğu yere ışınlanabilirsiniz)',
-      'Enchanter\'s Satchel (Büyücünün Çantası: 1.5 saniyeliğine çantanızın içine saklanarak tamamen dokunulmaz olursunuz; süre bitiminde çevredeki rakiplere büyü hasarı verir)',
-      'Affliction (Izdırap - Ulti: Yakındaki tüm rakiplere zamanla ağır büyü hasarı veren ve iyileşmelerini düşüren ölümcül olmayan bir zehir yayar)',
+    "abilities": [
+      "Barrage (Yaylım Ateşi: Havaya yükselerek patlayıcı büyü mermileri yağdırır; her isabet rakipleri yavaşlatır ve verdiğiniz tüm hasarı katlayan yük biriktirir)",
+      "Flying Cloak (Uçan Pelerin: İleri doğru hareket eden ve rakiplere hasar veren canlı bir pelerin gönderir; tekrar basarak pelerinin olduğu yere ışınlanabilirsiniz)",
+      "Enchanter's Satchel (Büyücünün Çantası: 1.5 saniyeliğine çantanızın içine saklanarak tamamen dokunulmaz olursunuz; süre bitiminde çevredeki rakiplere büyü hasarı verir)",
+      "Affliction (Izdırap - Ulti: Yakındaki tüm rakiplere zamanla ağır büyü hasarı veren ve iyileşmelerini düşüren ölümcül olmayan bir zehir yayar)"
     ],
-    counters: [
-      'Bebop / Lash / Paradox (Enchanter’s Satchel çantasına girerek patlayıcı komboları ve kancaları %100 boşa çıkarır)',
-      'Abrams / Kelvin / Victor / Paige (Affliction ultisiyle tüm rakip takıma ağır büyü hasarı ve iyileşme azaltma yayar)',
-      'Grey Talon / Vindicta (Flying Cloak ile arka saflara sızıp Barrage çarpanıyla nişancıları eritir)',
+    "counters": [
+      "Bebop",
+      "Lash",
+      "Paradox",
+      "Abrams",
+      "Kelvin",
+      "Victor",
+      "Paige",
+      "Grey Talon",
+      "Vindicta"
     ],
-    counteredBy: [
-      'Mo & Krill / Wraith (Pocket çantadan çıktığı saniye Combo veya Telekinesis ile onu yere mıhlar)',
-      'Solomon / Celeste (Susturma etkileriyle Pocket’ın Flying Cloak ve Enchanter’s Satchel kullanmasını engeller)',
-      'Taktiksel Counter Eşyalar: Silence Wave, Slowing Hex (Flying Cloak ve Satchel kaçışını kilitler) | Dispel Magic, Divine Barrier, Spellbreaker (Affliction ve Barrage büyü hasarını temizler/azaltır)',
+    "counteredBy": [
+      "Mo & Krill",
+      "Wraith",
+      "Solomon",
+      "Celeste",
+      "Silence Wave (Susturma Dalgası)",
+      "Slowing Hex (Yavaşlatma Büyüsü)",
+      "Dispel Magic (AKTİF Etki Geçirme Büyüsü)",
+      "Divine Barrier (AKTİF İlahi Bariyer)",
+      "Spellbreaker (Büyü Bozan)"
     ],
-    counterItems: [
-      'silence-glyph',
-      'slowing-hex',
-      'spellbreaker',
-    ],
+    "counterItems": [
+      "silence-glyph",
+      "slowing-hex",
+      "spellbreaker"
+    ]
   },
   {
-    id: 'rat-king',
-    name: 'Rat King',
-    title: 'Hurda Bombacısı & Sıçan Sürüsü Kralı',
-    role: 'Sürü Çağırıcı & Zırh Eritici (Swarm / Armor Shredder)',
-    difficulty: 'Orta',
-    image: '/assets/characters/rat-king.png',
-    imageAlt:
-      'Rat King karakter portresi - Deadlock oynanabilir kahraman görseli',
-    shortBio:
-      'Scrap Grenade ile çoklu patlayan hurda bombası fırlatan, Rat Swarm ile rakiplerin üzerine sıçan sürüsü salarak mermi dirençlerini kıran ve Rule, Ratannia! ile cepheyi ezen kral.',
-    stats: {
-      survive: 70,
-      damage: 80,
-      mobility: 75,
-      control: 65,
+    "id": "rat-king",
+    "name": "Rat King",
+    "title": "Hurda Bombacısı & Sıçan Sürüsü Kralı",
+    "role": "Sürü Çağırıcı & Zırh Eritici (Swarm / Armor Shredder)",
+    "difficulty": "Orta",
+    "image": "/assets/characters/rat-king.png",
+    "imageAlt": "Rat King karakter portresi - Deadlock oynanabilir kahraman görseli",
+    "shortBio": "Scrap Grenade ile çoklu patlayan hurda bombası fırlatan, Rat Swarm ile rakiplerin üzerine sıçan sürüsü salarak mermi dirençlerini kıran ve Rule, Ratannia! ile cepheyi ezen kral.",
+    "stats": {
+      "survive": 70,
+      "damage": 80,
+      "mobility": 75,
+      "control": 65
     },
-    abilities: [
-      'Scrap Grenade (Hurda Bombası: Birden fazla kez patlayarak mermi hasarı ve yavaşlatma uygulayan bir hurda bombası fırlatır)',
-      'Rat Swarm (Sıçan Sürüsü: Rakiplerin üzerine atılarak zamanla büyü hasarı veren ve Mermi Dirençlerini düşüren bir sıçan sürüsü çağırır)',
-      'Sewer Scurry (Lağım Koşusu: Kısa süreliğine alçalarak hareket hızı ve mermi kaçınması kazanır, engellerin altından hızla sıyrılır)',
-      'Rule, Ratannia! (Hükmet Ratannia! - Ulti: Devasa bir kemirgen dalgası çağırarak koridoru ve çevredeki rakipleri ezip geçer)',
+    "abilities": [
+      "Scrap Grenade (Hurda Bombası: Birden fazla kez patlayarak mermi hasarı ve yavaşlatma uygulayan bir hurda bombası fırlatır)",
+      "Rat Swarm (Sıçan Sürüsü: Rakiplerin üzerine atılarak zamanla büyü hasarı veren ve Mermi Dirençlerini düşüren bir sıçan sürüsü çağırır)",
+      "Sewer Scurry (Lağım Koşusu: Kısa süreliğine alçalarak hareket hızı ve mermi kaçınması kazanır, engellerin altından hızla sıyrılır)",
+      "Rule, Ratannia! (Hükmet Ratannia! - Ulti: Devasa bir kemirgen dalgası çağırarak koridoru ve çevredeki rakipleri ezip geçer)"
     ],
-    counters: [
-      'McGinnis / Solomon / Lady Geist (50m menzilli Rat Swarm sürüsüyle sabit karakterleri bunaltır ve mermi dirençlerini eritir)',
-      'Bebop / Venator (Sıçan sürüleriyle kanca ve tuzak hatlarını bozar)',
+    "counters": [
+      "McGinnis",
+      "Solomon",
+      "Lady Geist",
+      "Bebop",
+      "Venator"
     ],
-    counteredBy: [
-      'Seven / Infernus / Dynamo (Geniş alan etkili elektrik ve alev hasarıyla Rat Swarm sürülerini saniyesinde temizler)',
-      'Vindicta / Grey Talon (Havada uçarak yerdeki sıçan sürülerinden ve hurda bombalarından tamamen korunur)',
-      'Taktiksel Counter Eşyalar: Torment Pulse, Tesla Bullets, Ricochet (Üzerinize atlayan sıçan sürülerini otomatik temizler) | Debuff Reducer, Dispel Magic (Rat Swarm zırh kırmasını siler)',
+    "counteredBy": [
+      "Seven",
+      "Infernus",
+      "Dynamo",
+      "Vindicta",
+      "Grey Talon",
+      "Torment Pulse (Yayılan İşkence)",
+      "Tesla Bullets (Tesla Mermileri)",
+      "Ricochet (Mermi Sekmesi)",
+      "Debuff Reducer (Zayıflatma Azaltıcı)",
+      "Dispel Magic (AKTİF Etki Geçirme Büyüsü)"
     ],
-    counterItems: [
-      'torment-pulse',
-      'ricochet',
-      'debuff-reducer',
-    ],
+    "counterItems": [
+      "torment-pulse",
+      "ricochet",
+      "debuff-reducer"
+    ]
   },
   {
-    id: 'rem',
-    name: 'Rem',
-    title: 'Yastık Savaşçısı & Uyku Perisi',
-    role: 'Kurtarıcı Destek & Uyku Kontrolcüsü (Sleep / Peel Support)',
-    difficulty: 'Yüksek',
-    image: '/assets/characters/rem.png',
-    imageAlt:
-      'Rem karakter portresi - Deadlock oynanabilir kahraman görseli',
-    shortBio:
-      'Pillow Toss ile rakipleri uzağa savurup bekleme sürelerini azaltan, Tag Along ile müttefiklerine sıçrayıp kalkan veren ve Naptime ile rakipleri uyutan destek.',
-    stats: {
-      survive: 55,
-      damage: 75,
-      mobility: 85,
-      control: 95,
+    "id": "rem",
+    "name": "Rem",
+    "title": "Yastık Savaşçısı & Uyku Perisi",
+    "role": "Kurtarıcı Destek & Uyku Kontrolcüsü (Sleep / Peel Support)",
+    "difficulty": "Yüksek",
+    "image": "/assets/characters/rem.png",
+    "imageAlt": "Rem karakter portresi - Deadlock oynanabilir kahraman görseli",
+    "shortBio": "Pillow Toss ile rakipleri uzağa savurup bekleme sürelerini azaltan, Tag Along ile müttefiklerine sıçrayıp kalkan veren ve Naptime ile rakipleri uyutan destek.",
+    "stats": {
+      "survive": 55,
+      "damage": 75,
+      "mobility": 85,
+      "control": 95
     },
-    abilities: [
-      'Pillow Toss (Yastık Fırlatma: Güvenilir yastığınızı fırlatarak büyü hasarı ve güçlü geri savurma uygular; isabet halinde diğer yeteneklerinizin bekleme süresi azalır)',
-      'Tag Along (Uyku Arkadaşı: Dost bir kahramanın yanına sıçrayarak hem ona hem kendinize koruyucu kalkan ve dinlenme yenilenmesi sağlarsınız)',
-      'Lil Helpers (Küçük Yardımcılar: Hedef bölgeye rakipleri rahatsız eden, yavaşlatan ve görüş sağlayan rüya perileri gönderir)',
-      'Naptime (Uyku Vakti - Ulti: Geniş alana uyku tozu serperek rakipleri derin Uykuya / Sleep daldırır ve uyandırıldıklarında ağır kâbus hasarı vurur)',
+    "abilities": [
+      "Pillow Toss (Yastık Fırlatma: Güvenilir yastığınızı fırlatarak büyü hasarı ve güçlü geri savurma uygular; isabet halinde diğer yeteneklerinizin bekleme süresi azalır)",
+      "Tag Along (Uyku Arkadaşı: Dost bir kahramanın yanına sıçrayarak hem ona hem kendinize koruyucu kalkan ve dinlenme yenilenmesi sağlarsınız)",
+      "Lil Helpers (Küçük Yardımcılar: Hedef bölgeye rakipleri rahatsız eden, yavaşlatan ve görüş sağlayan rüya perileri gönderir)",
+      "Naptime (Uyku Vakti - Ulti: Geniş alana uyku tozu serperek rakipleri derin Uykuya / Sleep daldırır ve uyandırıldıklarında ağır kâbus hasarı vurur)"
     ],
-    counters: [
-      'Abrams / Billy / Drifter / Silver (Pillow Toss ağır geri savurması ve Naptime uyutmasıyla müttefiklerinin üzerine atlayan yakın dövüşçüleri uzaklaştırır)',
-      'Haze / Seven (Kanalize ultileri Naptime uyku kontrolüyle keser ve Tag Along ile hedefi korur)',
+    "counters": [
+      "Abrams",
+      "Billy",
+      "Drifter",
+      "Silver",
+      "Haze",
+      "Seven"
     ],
-    counteredBy: [
-      'Viscous / Dynamo (Uyutulan takım arkadaşlarını The Cube veya Quantum Entanglement ile koruma altına alır)',
-      'Vindicta / Grey Talon (Pillow Toss’un 5m kısa menziline girmeden Rem’i uzaktan avlar)',
-      'Yamato (Shadow Transformation ile uyku ve geri savurma etkilerini yok sayar)',
-      'Taktiksel Counter Eşyalar: Reactive Barrier, Indomitable, Unstoppable (Naptime uyku etkisinde otomatik kalkan verir veya temizler) | Silence Wave (Tag Along kaçışını kilitler)',
+    "counteredBy": [
+      "Viscous",
+      "Dynamo",
+      "Vindicta",
+      "Grey Talon",
+      "Yamato",
+      "Reactive Barrier (Reaktif Bariyer)",
+      "Indomitable (Boyun Eğmez)",
+      "Unstoppable (Durdurulamaz)",
+      "Silence Wave (Susturma Dalgası)"
     ],
-    counterItems: [
-      'reactive-barrier',
-      'indomitable',
-      'unstoppable',
-    ],
+    "counterItems": [
+      "reactive-barrier",
+      "indomitable",
+      "unstoppable"
+    ]
   },
   {
-    id: 'shiv',
-    name: 'Shiv',
-    title: 'Bıçak Sırtı Kabadayı',
-    role: 'Yakın Mesafe İnfazcı & Gecikmeli Hasar Tankı (Brawler / Executioner)',
-    difficulty: 'Orta - Yüksek',
-    image: '/assets/characters/shiv.png',
-    imageAlt:
-      'Shiv karakter portresi - Deadlock oynanabilir kahraman görseli',
-    shortBio:
-      'Serrated Knives ile kanama biriktiren, Slice and Dice ile rakiplerin içinden geçen, Bloodletting ile aldığı ani hasarı zamana yayan ve Killing Blow ile düşük canlı rakipleri anında infaz eden dövüşçü.',
-    stats: {
-      survive: 85,
-      damage: 90,
-      mobility: 75,
-      control: 45,
+    "id": "shiv",
+    "name": "Shiv",
+    "title": "Bıçak Sırtı Kabadayı",
+    "role": "Yakın Mesafe İnfazcı & Gecikmeli Hasar Tankı (Brawler / Executioner)",
+    "difficulty": "Orta - Yüksek",
+    "image": "/assets/characters/shiv.png",
+    "imageAlt": "Shiv karakter portresi - Deadlock oynanabilir kahraman görseli",
+    "shortBio": "Serrated Knives ile kanama biriktiren, Slice and Dice ile rakiplerin içinden geçen, Bloodletting ile aldığı ani hasarı zamana yayan ve Killing Blow ile düşük canlı rakipleri anında infaz eden dövüşçü.",
+    "stats": {
+      "survive": 85,
+      "damage": 90,
+      "mobility": 75,
+      "control": 45
     },
-    abilities: [
-      'Serrated Knives (Tırtıklı Bıçaklar: Rakibe kanama açan bir bıçak fırlatır; her ilave isabet kanama yükünü artırır ve süresini yeniler)',
-      'Slice and Dice (Biç ve Doğra: İleri doğru atılarak yolunuzdaki tüm rakiplere hasar verirsiniz; Öfke / Rage doluyken bir gölge kopyası aynı kesiği tekrarlar)',
-      'Bloodletting (Kan Akıtma: Alınan ani hasarın önemli bir kısmını anında yemek yerine zamana yayar; aktif edildiğinde gecikmiş hasarın bir kısmını tamamen siler)',
-      'Killing Blow (Ölümcül Darbe - Ulti: Öfke kazanmanızı sağlar ve canı infaz eşiğinin altındaki bir rakip kahramanın üzerine atılarak onu anında infaz eder)',
+    "abilities": [
+      "Serrated Knives (Tırtıklı Bıçaklar: Rakibe kanama açan bir bıçak fırlatır; her ilave isabet kanama yükünü artırır ve süresini yeniler)",
+      "Slice and Dice (Biç ve Doğra: İleri doğru atılarak yolunuzdaki tüm rakiplere hasar verirsiniz; Öfke / Rage doluyken bir gölge kopyası aynı kesiği tekrarlar)",
+      "Bloodletting (Kan Akıtma: Alınan ani hasarın önemli bir kısmını anında yemek yerine zamana yayar; aktif edildiğinde gecikmiş hasarın bir kısmını tamamen siler)",
+      "Killing Blow (Ölümcül Darbe - Ulti: Öfke kazanmanızı sağlar ve canı infaz eşiğinin altındaki bir rakip kahramanın üzerine atılarak onu anında infaz eder)"
     ],
-    counters: [
-      'Pocket / Calico / Mina (Bloodletting sayesinde ani patlama hasarından tek yemez ve Killing Blow ile düşük canlı suikastçıları anında infaz eder)',
-      'McGinnis / Graves / Kelvin (Uzayan çatışmalarda Serrated Knives ve Rage biriktirerek tüm savunma hatlarını biçer)',
+    "counters": [
+      "Pocket",
+      "Calico",
+      "Mina",
+      "McGinnis",
+      "Graves",
+      "Kelvin"
     ],
-    counteredBy: [
-      'Lady Geist (Canı Killing Blow eşiğine indiğinde Soul Exchange basarak Shiv’i kendi infaz menziline sokar)',
-      'Vindicta / Grey Talon (Uçuş ve mesafe kontrolüyle Shiv’in Slice and Dice menziline girmesine izin vermez)',
-      'Mo & Krill / Warden (Kitle kontrol ve iyileşme kırma ile Shiv’i infaz yapamadan düşürür)',
-      'Taktiksel Counter Eşyalar: Healbane, Toxic Bullets, Decay (Shiv’in Lifesteal ile hayatta kalmasını engeller) | Ethereal Shift, Cheat Death (Killing Blow infazını boşa çıkarır) | Slowing Hex (Slice and Dice ve Killing Blow atılmasını kilitler)',
+    "counteredBy": [
+      "Lady Geist",
+      "Vindicta",
+      "Grey Talon",
+      "Mo & Krill",
+      "Warden",
+      "Healbane (Şifakıran)",
+      "Toxic Bullets (Toksik Mermiler)",
+      "Decay (Çürüme)",
+      "Ethereal Shift (Ruhani Değişim)",
+      "Cheat Death (Kefen Yırtan)",
+      "Slowing Hex (Yavaşlatma Büyüsü)"
     ],
-    counterItems: [
-      'healbane',
-      'toxic-bullets',
-      'slowing-hex',
-    ],
+    "counterItems": [
+      "healbane",
+      "toxic-bullets",
+      "slowing-hex"
+    ]
   },
   {
-    id: 'silver',
-    name: 'Silver',
-    title: 'Kurtadam Dönüşümcüsü & Yakın Mesafe Avcısı',
-    role: 'Atılgan Dövüşçü & Görünmezlik Avcısı (Lycan Brawler / Tracker)',
-    difficulty: 'Orta - Yüksek',
-    image: '/assets/characters/silver.png',
-    imageAlt:
-      'Silver karakter portresi - Deadlock oynanabilir kahraman görseli',
-    shortBio:
-      'Boot Kick ile rakipleri tekmeleyip sersemleten, Mauling Leap ve Go For The Throat ile yaralı hedeflerin boğazına atılan ve Lycan Curse ile kurtadam formuna dönüşen avcı.',
-    stats: {
-      survive: 80,
-      damage: 85,
-      mobility: 85,
-      control: 65,
+    "id": "silver",
+    "name": "Silver",
+    "title": "Kurtadam Dönüşümcüsü & Yakın Mesafe Avcısı",
+    "role": "Atılgan Dövüşçü & Görünmezlik Avcısı (Lycan Brawler / Tracker)",
+    "difficulty": "Orta - Yüksek",
+    "image": "/assets/characters/silver.png",
+    "imageAlt": "Silver karakter portresi - Deadlock oynanabilir kahraman görseli",
+    "shortBio": "Boot Kick ile rakipleri tekmeleyip sersemleten, Mauling Leap ve Go For The Throat ile yaralı hedeflerin boğazına atılan ve Lycan Curse ile kurtadam formuna dönüşen avcı.",
+    "stats": {
+      "survive": 80,
+      "damage": 85,
+      "mobility": 85,
+      "control": 65
     },
-    abilities: [
-      'Boot Kick (Çizme Tekmesi: Yakındaki rakibe sert bir tekme savurarak geri iter, sersemletir ve üzerine gümüş saçma ateşler)',
-      'Go For The Throat (Boğaza Saldır: Yaralı veya kanayan hedefin üzerine atılarak yüksek yakın dövüş hasarı verir ve can çalar)',
-      'Mauling Leap (Vahşi Sıçrama: İleri doğru sıçrayarak pençe darbesi indirir ve rakiplerin hareket hızını düşürür)',
-      'Lycan Curse (Kurtadam Laneti - Ulti: Vahşi kurtadam formuna dönüşerek yüksek hareket hızı, can yenilemesi ve ölümcül yakın dövüş saldırıları kazanır)',
+    "abilities": [
+      "Boot Kick (Çizme Tekmesi: Yakındaki rakibe sert bir tekme savurarak geri iter, sersemletir ve üzerine gümüş saçma ateşler)",
+      "Go For The Throat (Boğaza Saldır: Yaralı veya kanayan hedefin üzerine atılarak yüksek yakın dövüş hasarı verir ve can çalar)",
+      "Mauling Leap (Vahşi Sıçrama: İleri doğru sıçrayarak pençe darbesi indirir ve rakiplerin hareket hızını düşürür)",
+      "Lycan Curse (Kurtadam Laneti - Ulti: Vahşi kurtadam formuna dönüşerek yüksek hareket hızı, can yenilemesi ve ölümcül yakın dövüş saldırıları kazanır)"
     ],
-    counters: [
-      'Haze / Calico / Grey Talon (Mauling Leap ve Lycan Curse hızıyla kırılgan nişancılara yapışıp Boot Kick + Go For The Throat ile bitirir)',
-      'Pocket / Violet (Yakaladığı hedefleri Boot Kick sersemletmesiyle kaçış basamadan düşürür)',
+    "counters": [
+      "Haze",
+      "Calico",
+      "Grey Talon",
+      "Pocket",
+      "Violet"
     ],
-    counteredBy: [
-      'Apollo / Abrams (Yakın dövüş odaklı Lycan Curse ve Go For The Throat saldırılarını Riposte veya Parry ile savuşturup cezalandırır)',
-      'Kelvin / Rem (Arctic Beam dondurması ve Pillow Toss geri savurmasıyla kurtadam formunun yaklaşmasını engeller)',
-      'Mo & Krill (Sand Blast ve Combo ile kurtadam formundaki Silver’ı tamamen kilitler)',
-      'Taktiksel Counter Eşyalar: Slowing Hex (Mauling Leap ve Go For The Throat atılmalarını kilitler) | Healbane, Toxic Bullets (Lycan Curse can çalmasını kırar) | Rebuttal, Metal Skin (Pençe ve tekme hasarını engeller)',
+    "counteredBy": [
+      "Apollo",
+      "Abrams",
+      "Kelvin",
+      "Rem",
+      "Mo & Krill",
+      "Slowing Hex (Yavaşlatma Büyüsü)",
+      "Healbane (Şifakıran)",
+      "Toxic Bullets (Toksik Mermiler)",
+      "Rebuttal (Karşı Saldırı)",
+      "Metal Skin (Metal Deri)"
     ],
-    counterItems: [
-      'slowing-hex',
-      'healbane',
-      'metal-skin',
-    ],
+    "counterItems": [
+      "slowing-hex",
+      "healbane",
+      "metal-skin"
+    ]
   },
   {
-    id: 'solomon',
-    name: 'Solomon',
-    title: 'Büyükusta Satranç Taktisyeni',
-    role: 'Taktiksel Bölge Kontrolcüsü & Konum Manipülatörü (Chess Tactician / Zone Mage)',
-    difficulty: 'Orta',
-    image: '/assets/characters/solomon.png',
-    imageAlt:
-      'Solomon karakter portresi - Deadlock oynanabilir kahraman görseli',
-    shortBio:
-      'Setup Bishop ile sahaya kalıcı Fil yerleştiren, Kingside Knight ile L şeklinde sıçrayan At darbesi vuran ve Develop Queen ile Vezir çağırarak savaş alanını yöneten büyükusta.',
-    stats: {
-      survive: 90,
-      damage: 70,
-      mobility: 50,
-      control: 85,
+    "id": "solomon",
+    "name": "Solomon",
+    "title": "Büyükusta Satranç Taktisyeni",
+    "role": "Taktiksel Bölge Kontrolcüsü & Konum Manipülatörü (Chess Tactician / Zone Mage)",
+    "difficulty": "Orta",
+    "image": "/assets/characters/solomon.png",
+    "imageAlt": "Solomon karakter portresi - Deadlock oynanabilir kahraman görseli",
+    "shortBio": "Setup Bishop ile sahaya kalıcı Fil yerleştiren, Kingside Knight ile L şeklinde sıçrayan At darbesi vuran ve Develop Queen ile Vezir çağırarak savaş alanını yöneten büyükusta.",
+    "stats": {
+      "survive": 90,
+      "damage": 70,
+      "mobility": 50,
+      "control": 85
     },
-    abilities: [
-      'Setup Bishop (Fil Konumlandır: Seçilen noktaya kalıcı bir satranç Fili yerleştirir; Fil hareket ettirildiğinde yolundaki rakiplere büyü hasarı ve yavaşlatma uygular)',
-      'Kingside Knight (Şah Kanadı Atı: L şeklinde sıçrayan bir At darbesi göndererek hedef alandaki rakipleri havaya savurur ve kalkan kazandırır)',
-      'Castling Bulwark (Rok Kalesi: Yerleştirdiğiniz taşla yer değiştirerek veya aranızda koruyucu bir hat kurarak büyü direnci kazanırsınız)',
-      'Develop Queen (Veziri Geliştir - Ulti: Savaş alanına güçlü bir Vezir çağırarak tüm satranç taşlarınızı harekete geçirir ve geniş alanı mühürler)',
+    "abilities": [
+      "Setup Bishop (Fil Konumlandır: Seçilen noktaya kalıcı bir satranç Fili yerleştirir; Fil hareket ettirildiğinde yolundaki rakiplere büyü hasarı ve yavaşlatma uygular)",
+      "Kingside Knight (Şah Kanadı Atı: L şeklinde sıçrayan bir At darbesi göndererek hedef alandaki rakipleri havaya savurur ve kalkan kazandırır)",
+      "Castling Bulwark (Rok Kalesi: Yerleştirdiğiniz taşla yer değiştirerek veya aranızda koruyucu bir hat kurarak büyü direnci kazanırsınız)",
+      "Develop Queen (Veziri Geliştir - Ulti: Savaş alanına güçlü bir Vezir çağırarak tüm satranç taşlarınızı harekete geçirir ve geniş alanı mühürler)"
     ],
-    counters: [
-      'McGinnis / Graves / Warden (Setup Bishop ve Develop Queen satranç taşlarıyla sabit koridorları ve dar geçitleri tamamen domine eder)',
-      'Abrams / Victor (Yaklaşmaya çalışan hantal tankları Setup Bishop yavaşlatması ve Kingside Knight savurmasıyla uzakta tutar)',
+    "counters": [
+      "McGinnis",
+      "Graves",
+      "Warden",
+      "Abrams",
+      "Victor"
     ],
-    counteredBy: [
-      'Lash / Calico / Pocket (Satranç taşlarının konuşlandığı bölgenin üzerinden uçarak doğrudan Solomon’un kendisine suikast düzenler)',
-      'Seven / Lady Geist (Geniş alan hasarıyla Solomon’un yerleştirdiği taşların etrafında durmasını cezalandırır)',
-      'Doorman (Doorway portallarıyla Solomon’un satranç dizilimini ve koridor kontrolünü baypas eder)',
-      'Taktiksel Counter Eşyalar: Warp Stone (Develop Queen ve satranç taşı kıskacından anında çıkarır) | Silence Wave, Slowing Hex (Taş hareket ettirme ve Castling kaçışını kilitler) | Spellbreaker (Büyü hasarını azaltır)',
+    "counteredBy": [
+      "Lash",
+      "Calico",
+      "Pocket",
+      "Seven",
+      "Lady Geist",
+      "Doorman",
+      "Warp Stone (Işınlanma Taşı)",
+      "Silence Wave (Susturma Dalgası)",
+      "Slowing Hex (Yavaşlatma Büyüsü)",
+      "Spellbreaker (Büyü Bozan)"
     ],
-    counterItems: [
-      'warp-stone',
-      'silence-glyph',
-      'spellbreaker',
-    ],
+    "counterItems": [
+      "warp-stone",
+      "silence-glyph",
+      "spellbreaker"
+    ]
   },
   {
-    id: 'doorman',
-    name: 'Doorman',
-    title: 'Boyutsal Otel Kapıcısı',
-    role: 'Portal Manipülatörü & Konum Bozucu (Portal / Displacement Support)',
-    difficulty: 'Yüksek',
-    image: '/assets/characters/doorman.png',
-    imageAlt:
-      'Doorman karakter portresi - Deadlock oynanabilir kahraman görseli',
-    shortBio:
-      'Call Bell ile gecikmeli patlayan zil fırlatan, Doorway ile duvarlar arasında iki yönlü portal açan, Luggage Cart ile rakipleri sürükleyen ve Hotel Guest ile başka boyuta sürgün eden uzman.',
-    stats: {
-      survive: 75,
-      damage: 70,
-      mobility: 90,
-      control: 90,
+    "id": "doorman",
+    "name": "Doorman",
+    "title": "Boyutsal Otel Kapıcısı",
+    "role": "Portal Manipülatörü & Konum Bozucu (Portal / Displacement Support)",
+    "difficulty": "Yüksek",
+    "image": "/assets/characters/doorman.png",
+    "imageAlt": "Doorman karakter portresi - Deadlock oynanabilir kahraman görseli",
+    "shortBio": "Call Bell ile gecikmeli patlayan zil fırlatan, Doorway ile duvarlar arasında iki yönlü portal açan, Luggage Cart ile rakipleri sürükleyen ve Hotel Guest ile başka boyuta sürgün eden uzman.",
+    "stats": {
+      "survive": 75,
+      "damage": 70,
+      "mobility": 90,
+      "control": 90
     },
-    abilities: [
-      'Call Bell (Resepsiyon Zili: Çarpma anında büyü hasarı veren bir zil fırlatır; kısa bir gecikmenin ardından çınlayarak patlar ve rakipleri yavaşlatır)',
-      'Doorway (Boyut Kapısı: İki duvar veya yüzey arasında hem müttefiklerin hem de mermilerin içinden geçebileceği iki yönlü bir portal kapısı açar)',
-      'Luggage Cart (Bavul Arabası: İleri doğru hızla giden bir otel bavul arabası sürerek çarptığı rakipleri sürükler ve duvara çarptırır)',
-      'Hotel Guest (Otel Misafiri - Ulti: Hedef rakip kahramanı geçici olarak boyutsal otel odasına sürgün eder; süre bitiminde yüksek hasarla geri döner)',
+    "abilities": [
+      "Call Bell (Resepsiyon Zili: Çarpma anında büyü hasarı veren bir zil fırlatır; kısa bir gecikmenin ardından çınlayarak patlar ve rakipleri yavaşlatır)",
+      "Doorway (Boyut Kapısı: İki duvar veya yüzey arasında hem müttefiklerin hem de mermilerin içinden geçebileceği iki yönlü bir portal kapısı açar)",
+      "Luggage Cart (Bavul Arabası: İleri doğru hızla giden bir otel bavul arabası sürerek çarptığı rakipleri sürükler ve duvara çarptırır)",
+      "Hotel Guest (Otel Misafiri - Ulti: Hedef rakip kahramanı geçici olarak boyutsal otel odasına sürgün eder; süre bitiminde yüksek hasarla geri döner)"
     ],
-    counters: [
-      'McGinnis / Kelvin / Solomon (Spectral Wall, Frozen Shelter ve satranç dizilimlerinin arkasına Doorway portalı açarak tüm engelleri işlevsiz bırakır)',
-      'Abrams / Victor / Haze (Üzerine gelen tehlikeli hedefleri Hotel Guest ile boyutsal otele sürgün ederek takım savaşından düşürür)',
+    "counters": [
+      "McGinnis",
+      "Kelvin",
+      "Solomon",
+      "Abrams",
+      "Victor",
+      "Haze"
     ],
-    counteredBy: [
-      'Dynamo / Seven / Infernus (Doorway portal çıkışlarına ve Hotel Guest dönüş noktasına Singularity, Static Charge veya Napalm bırakarak pusu kurar)',
-      'Wraith / Pocket (Silence Wave ve Slowing Hex ile Doorman’ın Doorway açıp kaçmasını engeller)',
-      'Taktiksel Counter Eşyalar: Silence Wave, Slowing Hex (Doorway portalı ve Luggage Cart kullanımını kilitler) | Reactive Barrier, Ethereal Shift (Hotel Guest ve Luggage Cart kombosunu savuşturur)',
+    "counteredBy": [
+      "Dynamo",
+      "Seven",
+      "Infernus",
+      "Wraith",
+      "Pocket",
+      "Silence Wave (Susturma Dalgası)",
+      "Slowing Hex (Yavaşlatma Büyüsü)",
+      "Reactive Barrier (Reaktif Bariyer)",
+      "Ethereal Shift (Ruhani Değişim)"
     ],
-    counterItems: [
-      'silence-glyph',
-      'slowing-hex',
-      'reactive-barrier',
-    ],
+    "counterItems": [
+      "silence-glyph",
+      "slowing-hex",
+      "reactive-barrier"
+    ]
   },
   {
-    id: 'victor',
-    name: 'Victor',
-    title: 'Acı Bataryalı Reanimasyon Devi',
-    role: 'Hasar Yansıtan Ön Saf Juggernaut (Pain Battery / Reanimator Tank)',
-    difficulty: 'Düşük - Orta',
-    image: '/assets/characters/victor.png',
-    imageAlt:
-      'Victor karakter portresi - Deadlock oynanabilir kahraman görseli',
-    shortBio:
-      'Aldığı her hasarla Pain Battery bataryasını doldurup çoklu elektrik şoku ateşleyen, Jumpstart ile kendi canını yakıp yüksek yenilenme/hız kazanan ve ölümden dönen dev.',
-    stats: {
-      survive: 100,
-      damage: 75,
-      mobility: 45,
-      control: 75,
+    "id": "victor",
+    "name": "Victor",
+    "title": "Acı Bataryalı Reanimasyon Devi",
+    "role": "Hasar Yansıtan Ön Saf Juggernaut (Pain Battery / Reanimator Tank)",
+    "difficulty": "Düşük - Orta",
+    "image": "/assets/characters/victor.png",
+    "imageAlt": "Victor karakter portresi - Deadlock oynanabilir kahraman görseli",
+    "shortBio": "Aldığı her hasarla Pain Battery bataryasını doldurup çoklu elektrik şoku ateşleyen, Jumpstart ile kendi canını yakıp yüksek yenilenme/hız kazanan ve ölümden dönen dev.",
+    "stats": {
+      "survive": 100,
+      "damage": 75,
+      "mobility": 45,
+      "control": 75
     },
-    abilities: [
-      'Pain Battery (Acı Bataryası: Alınan her hasar pasif olarak bataryanızı doldurur; dolduğunda aktif edilerek yakındaki rakiplere çoklu elektrik şoku ateşler)',
-      'Jumpstart (Şok Başlangıç: Kendinize bir miktar büyü hasarı vererek yüksek voltaj yüklenirsiniz; ardından hızla azalan yüksek Can Yenilenmesi ve Hareket Hızı kazanırsınız)',
-      'Aura of Suffering (Izdırap Aurası: Çevrenizdeki rakiplere sürekli elektrik hasarı veren ve büyü dirençlerini eriten bir alan açar)',
-      'Shocking Reanimation (Şok Edici Yeniden Canlanma - Ulti: Ölümcül hasar aldığınızda elektrik patlamasıyla yeniden ayağa kalkarak savaşa devam edersiniz)',
+    "abilities": [
+      "Pain Battery (Acı Bataryası: Alınan her hasar pasif olarak bataryanızı doldurur; dolduğunda aktif edilerek yakındaki rakiplere çoklu elektrik şoku ateşler)",
+      "Jumpstart (Şok Başlangıç: Kendinize bir miktar büyü hasarı vererek yüksek voltaj yüklenirsiniz; ardından hızla azalan yüksek Can Yenilenmesi ve Hareket Hızı kazanırsınız)",
+      "Aura of Suffering (Izdırap Aurası: Çevrenizdeki rakiplere sürekli elektrik hasarı veren ve büyü dirençlerini eriten bir alan açar)",
+      "Shocking Reanimation (Şok Edici Yeniden Canlanma - Ulti: Ölümcül hasar aldığınızda elektrik patlamasıyla yeniden ayağa kalkarak savaşa devam edersiniz)"
     ],
-    counters: [
-      'Haze / Vyper / Rat King (Sürekli küçük hasar vuran karakterler Victor’un Pain Battery bataryasını saniyeler içinde doldurarak kendi kendilerini elektrikle çarptırır)',
-      'Lash / Calico / Bebop (Ani patlama hasarından Shocking Reanimation ile geri dönüp yakın mesafede karşı kombo vurur)',
+    "counters": [
+      "Haze",
+      "Vyper",
+      "Rat King",
+      "Lash",
+      "Calico",
+      "Bebop"
     ],
-    counteredBy: [
-      'Vindicta / Grey Talon (Pain Battery’nin 28m menziline dikkat ederek uçuş yüksekliğinden Victor’u iki kez eritir)',
-      'Lady Geist (Jumpstart ile kendi canını azaltan veya yüksek canla gezen Victor’a karşı Soul Exchange ve Life Drain ile üstünlük kurar)',
-      'Nurse Harrow / Venator (Yüksek can yenilemesini Leech Therapy ve Consecrating Grenade ile keser)',
-      'Taktiksel Counter Eşyalar: Healbane, Toxic Bullets, Decay (Jumpstart ve Shocking Reanimation can yenilemesini ağır şekilde kırar) | Spirit Resilience, Spellbreaker (Pain Battery elektrik şokunu azaltır)',
+    "counteredBy": [
+      "Vindicta",
+      "Grey Talon",
+      "Lady Geist",
+      "Nurse Harrow",
+      "Venator",
+      "Healbane (Şifakıran)",
+      "Toxic Bullets (Toksik Mermiler)",
+      "Decay (Çürüme)",
+      "Spirit Resilience (Büyü Dayanıklılığı)",
+      "Spellbreaker (Büyü Bozan)"
     ],
-    counterItems: [
-      'healbane',
-      'toxic-bullets',
-      'decay',
-    ],
+    "counterItems": [
+      "healbane",
+      "toxic-bullets",
+      "decay"
+    ]
   },
   {
-    id: 'sinclair',
-    name: 'Sinclair',
-    title: 'Muhteşem İllüzyonist Çift',
-    role: 'Kontrol Büyücüsü & Ulti Kopyalayıcı (Control / Trickster Mage)',
-    difficulty: 'Yüksek',
-    image: '/assets/characters/sinclair.png',
-    imageAlt:
-      'Sinclair karakter portresi - Deadlock oynanabilir kahraman görseli',
-    shortBio:
-      'Vexing Bolt ve Spectral Assistant ile uzaktan büyü hasarı vuran, Rabbit Hex ile rakipleri savunmasız tavşana dönüştüren ve Audience Participation ile rakip ultilerini kopyalayan sihirbaz.',
-    stats: {
-      survive: 50,
-      damage: 85,
-      mobility: 65,
-      control: 90,
+    "id": "sinclair",
+    "name": "Sinclair",
+    "title": "Muhteşem İllüzyonist Çift",
+    "role": "Kontrol Büyücüsü & Ulti Kopyalayıcı (Control / Trickster Mage)",
+    "difficulty": "Yüksek",
+    "image": "/assets/characters/sinclair.png",
+    "imageAlt": "Sinclair karakter portresi - Deadlock oynanabilir kahraman görseli",
+    "shortBio": "Vexing Bolt ve Spectral Assistant ile uzaktan büyü hasarı vuran, Rabbit Hex ile rakipleri savunmasız tavşana dönüştüren ve Audience Participation ile rakip ultilerini kopyalayan sihirbaz.",
+    "stats": {
+      "survive": 50,
+      "damage": 85,
+      "mobility": 65,
+      "control": 90
     },
-    abilities: [
-      'Vexing Bolt (Şaşırtıcı Ok: Uçuş sırasında yönünü yeniden hedefleyebildiğiniz, seyahat mesafesine göre hasarı artan bir büyü oku ateşler)',
-      'Spectral Assistant (Hayalet Asistan: Seçilen noktaya sizinle birlikte ateş eden bir illüzyon asistan gönderir; tekrar basarak asistanla yer değiştirebilirsiniz)',
-      'Rabbit Hex (Tavşan Büyüsü: Hedef alandaki rakipleri kısa süreliğine savunmasız bir tavşana dönüştürür; hareket ederler ancak saldırı yapamaz ve fazladan hasar alırlar)',
-      'Audience Participation (Seyirci Katılımı - Ulti: Hedef rakip kahramanın ulti yeteneğini kopyalayarak kısa süre içinde bizzat kullanmanızı sağlar)',
+    "abilities": [
+      "Vexing Bolt (Şaşırtıcı Ok: Uçuş sırasında yönünü yeniden hedefleyebildiğiniz, seyahat mesafesine göre hasarı artan bir büyü oku ateşler)",
+      "Spectral Assistant (Hayalet Asistan: Seçilen noktaya sizinle birlikte ateş eden bir illüzyon asistan gönderir; tekrar basarak asistanla yer değiştirebilirsiniz)",
+      "Rabbit Hex (Tavşan Büyüsü: Hedef alandaki rakipleri kısa süreliğine savunmasız bir tavşana dönüştürür; hareket ederler ancak saldırı yapamaz ve fazladan hasar alırlar)",
+      "Audience Participation (Seyirci Katılımı - Ulti: Hedef rakip kahramanın ulti yeteneğini kopyalayarak kısa süre içinde bizzat kullanmanızı sağlar)"
     ],
-    counters: [
-      'Dynamo / Lash / Seven / Kelvin (Güçlü takım savaşı ultilerine sahip karakterlerin ultilerini Audience Participation ile kopyalayıp kendi takımlarını vurur)',
-      'Haze / Yamato / Silver (Yakın mesafeye giren taşıyıcıları Rabbit Hex ile savunmasız tavşana çevirerek anında düşürür)',
+    "counters": [
+      "Dynamo",
+      "Lash",
+      "Seven",
+      "Kelvin",
+      "Haze",
+      "Yamato",
+      "Silver"
     ],
-    counteredBy: [
-      'Vindicta / Grey Talon (Audience Participation’ın 20m kopyalama menziline hiç girmeden uzaktan Sinclair’i avlar)',
-      'Unstoppable / Indomitable kullanan ön saflar (Rabbit Hex tavşan polimorfunu tamamen yok sayar)',
-      'Taktiksel Counter Eşyalar: Debuff Reducer, Indomitable, Unstoppable (Rabbit Hex polimorfunu engeller) | Silence Wave (Spectral Assistant yer değiştirmesini ve ulti kopyalamasını kilitler)',
+    "counteredBy": [
+      "Vindicta",
+      "Grey Talon",
+      "Unstoppable (Durdurulamaz)",
+      "Indomitable (Boyun Eğmez)",
+      "Debuff Reducer (Zayıflatma Azaltıcı)",
+      "Silence Wave (Susturma Dalgası)"
     ],
-    counterItems: [
-      'debuff-reducer',
-      'unstoppable',
-      'silence-glyph',
-    ],
+    "counterItems": [
+      "debuff-reducer",
+      "unstoppable",
+      "silence-glyph"
+    ]
   },
   {
-    id: 'venator',
-    name: 'Venator',
-    title: 'Engizisyon Avcısı & Kutsanmış Arbaletçi',
-    role: 'Anti-Heal Bombacısı & Tuzakçı Nişancı (Inquisitor / Anti-Tank Marksman)',
-    difficulty: 'Orta - Yüksek',
-    image: '/assets/characters/venator.png',
-    imageAlt:
-      'Venator karakter portresi - Deadlock oynanabilir kahraman görseli',
-    shortBio:
-      'Consecrating Grenade ile seken ve rakipleri ateşe verip iyileşmelerini kıran bomba atan, Gutshot ile yakın hedefleri geri savuran ve Ira Domini ile zırh delen avcı.',
-    stats: {
-      survive: 55,
-      damage: 90,
-      mobility: 60,
-      control: 75,
+    "id": "venator",
+    "name": "Venator",
+    "title": "Engizisyon Avcısı & Kutsanmış Arbaletçi",
+    "role": "Anti-Heal Bombacısı & Tuzakçı Nişancı (Inquisitor / Anti-Tank Marksman)",
+    "difficulty": "Orta - Yüksek",
+    "image": "/assets/characters/venator.png",
+    "imageAlt": "Venator karakter portresi - Deadlock oynanabilir kahraman görseli",
+    "shortBio": "Consecrating Grenade ile seken ve rakipleri ateşe verip iyileşmelerini kıran bomba atan, Gutshot ile yakın hedefleri geri savuran ve Ira Domini ile zırh delen avcı.",
+    "stats": {
+      "survive": 55,
+      "damage": 90,
+      "mobility": 60,
+      "control": 75
     },
-    abilities: [
-      'Consecrating Grenade (Kutsanmış Bomba: Patlamadan önce seken bir bomba fırlatarak silah hasarı verir ve rakipleri ateşe vererek iyileşmelerini azaltır)',
-      'Gutshot (Karın Atışı: Yakın ve orta mesafede rakibi geri savuran ve kanama açan ağır bir saçma/kazık ateşler)',
-      'Hex-Lined Snap Trap (Büyülü Çelik Kapan: Zemine rakipleri olduğu yere sabitleyen ve büyü/mermi direncini kıran bir av kapanı kurar)',
-      'Ira Domini (İlahi Gazap - Ulti: Ağır arbaletini yükleyerek kalkanları ve zırhı delip geçen yıkıcı kazıklar ateşler)',
+    "abilities": [
+      "Consecrating Grenade (Kutsanmış Bomba: Patlamadan önce seken bir bomba fırlatarak silah hasarı verir ve rakipleri ateşe vererek iyileşmelerini azaltır)",
+      "Gutshot (Karın Atışı: Yakın ve orta mesafede rakibi geri savuran ve kanama açan ağır bir saçma/kazık ateşler)",
+      "Hex-Lined Snap Trap (Büyülü Çelik Kapan: Zemine rakipleri olduğu yere sabitleyen ve büyü/mermi direncini kıran bir av kapanı kurar)",
+      "Ira Domini (İlahi Gazap - Ulti: Ağır arbaletini yükleyerek kalkanları ve zırhı delip geçen yıkıcı kazıklar ateşler)"
     ],
-    counters: [
-      'Abrams / Victor / Mo & Krill / Shiv (Consecrating Grenade yanması ve Gutshot geri savurmasıyla üzerine koşan can yenilemeli tankları eritir)',
-      'Drifter / Silver / Billy (Yakın mesafeye giren dövüşçüleri Hex-Lined Snap Trap kapanına kıstırıp Gutshot ile uzaklaştırır)',
+    "counters": [
+      "Abrams",
+      "Victor",
+      "Mo & Krill",
+      "Shiv",
+      "Drifter",
+      "Silver",
+      "Billy"
     ],
-    counteredBy: [
-      'Vindicta / Grey Talon (Gutshot’un 10m kısa menzilinin çok dışından ve havadan Venator’u avlar)',
-      'Pocket / Violet / Mina (Dokunulmazlık ve faz kaymasıyla Consecrating Grenade ve kapanlardan sıyrılıp Venator’u düşürür)',
-      'Bebop / Paradox (Düşük hareketliliğe sahip Venator’u kanca veya Swap ile yakalar)',
-      'Taktiksel Counter Eşyalar: Metal Skin, Plated Armor, Return Fire (Gutshot ve Ira Domini ağır silah hasarını engeller) | Dispel Magic, Debuff Reducer (Consecrating Grenade yanmasını ve kapanı temizler)',
+    "counteredBy": [
+      "Vindicta",
+      "Grey Talon",
+      "Pocket",
+      "Violet",
+      "Mina",
+      "Bebop",
+      "Paradox",
+      "Metal Skin (Metal Deri)",
+      "Plated Armor (Kaplamalı Zırh)",
+      "Return Fire (AKTİF İade-i Ateş)",
+      "Dispel Magic (AKTİF Etki Geçirme Büyüsü)",
+      "Debuff Reducer (Zayıflatma Azaltıcı)"
     ],
-    counterItems: [
-      'metal-skin',
-      'plated-armor',
-      'dispel-magic',
-    ],
+    "counterItems": [
+      "metal-skin",
+      "plated-armor",
+      "dispel-magic"
+    ]
   },
   {
-    id: 'violet',
-    name: 'Violet',
-    title: 'Canlı Mürekkep & Sürrealist Ressam',
-    role: 'Yönlendirilebilir Mermi & Alan Dondurma Büyücüsü (Ink Mage / Control Carry)',
-    difficulty: 'Yüksek',
-    image: '/assets/characters/violet.png',
-    imageAlt:
-      'Violet karakter portresi - Deadlock oynanabilir kahraman görseli',
-    shortBio:
-      'Living Ink ile sonraki 3 mermisini canlandırıp havada fareyle yönlendiren, Still Life ile rakipleri tablo gibi donduran ve Abstract Landscape ile boya üzerinde kayan ressam.',
-    stats: {
-      survive: 55,
-      damage: 90,
-      mobility: 95,
-      control: 55,
+    "id": "violet",
+    "name": "Violet",
+    "title": "Canlı Mürekkep & Sürrealist Ressam",
+    "role": "Yönlendirilebilir Mermi & Alan Dondurma Büyücüsü (Ink Mage / Control Carry)",
+    "difficulty": "Yüksek",
+    "image": "/assets/characters/violet.png",
+    "imageAlt": "Violet karakter portresi - Deadlock oynanabilir kahraman görseli",
+    "shortBio": "Living Ink ile sonraki 3 mermisini canlandırıp havada fareyle yönlendiren, Still Life ile rakipleri tablo gibi donduran ve Abstract Landscape ile boya üzerinde kayan ressam.",
+    "stats": {
+      "survive": 55,
+      "damage": 90,
+      "mobility": 95,
+      "control": 55
     },
-    abilities: [
-      'Living Ink (Canlı Mürekkep: Sonraki 3 merminizi canlandırarak uçuş sırasında fare imlecinizle yönlendirmenizi ve büyü hasarı vurmanızı sağlar)',
-      'Still Life (Natürmort: Hedef alandaki rakipleri kısa süreliğine tablo gibi dondurarak hareketsiz bırakır)',
-      'Abstract Landscape (Soyut Manzara: Zeminde boya izi bırakarak ileri doğru faz kayması yapar ve hareket hızı kazanır)',
-      'Masterpiece (Başyapıt - Ulti: Geniş bir alanı boya fırtınasıyla kaplayarak içerideki rakiplere yüksek alan büyü hasarı ve yavaşlatma uygular)',
+    "abilities": [
+      "Living Ink (Canlı Mürekkep: Sonraki 3 merminizi canlandırarak uçuş sırasında fare imlecinizle yönlendirmenizi ve büyü hasarı vurmanızı sağlar)",
+      "Still Life (Natürmort: Hedef alandaki rakipleri kısa süreliğine tablo gibi dondurarak hareketsiz bırakır)",
+      "Abstract Landscape (Soyut Manzara: Zeminde boya izi bırakarak ileri doğru faz kayması yapar ve hareket hızı kazanır)",
+      "Masterpiece (Başyapıt - Ulti: Geniş bir alanı boya fırtınasıyla kaplayarak içerideki rakiplere yüksek alan büyü hasarı ve yavaşlatma uygular)"
     ],
-    counters: [
-      'Vindicta / Grey Talon / McGinnis (Siper arkasında veya havada duran hedefleri Living Ink yönlendirilebilir mermileriyle köşelerden vurur)',
-      'Abrams / Billy / Silver (Üzerine atılan yakın dövüşçüleri Still Life ile tablo gibi dondurup Abstract Landscape ile mesafeyi açar)',
+    "counters": [
+      "Vindicta",
+      "Grey Talon",
+      "McGinnis",
+      "Abrams",
+      "Billy",
+      "Silver"
     ],
-    counteredBy: [
-      'Mo & Krill / Wraith (Abstract Landscape’in kısa kaçışını Burrow + Combo veya Telekinesis ile yakalayıp kilitler)',
-      'Pocket / Viscous (Still Life dondurmasını ve Masterpiece alan hasarını Enchanter’s Satchel ve The Cube ile boşa çıkarır)',
-      'Calico / Haze (Görünmezlikle yaklaşarak Violet’i Living Ink mermilerini yönlendirirken gafil avlar)',
-      'Taktiksel Counter Eşyalar: Silence Wave, Slowing Hex (Abstract Landscape kaçışını ve Still Life kullanımını kilitler) | Reactive Barrier, Unstoppable (Still Life dondurmasına karşı korur)',
+    "counteredBy": [
+      "Mo & Krill",
+      "Wraith",
+      "Pocket",
+      "Viscous",
+      "Calico",
+      "Haze",
+      "Silence Wave (Susturma Dalgası)",
+      "Slowing Hex (Yavaşlatma Büyüsü)",
+      "Reactive Barrier (Reaktif Bariyer)",
+      "Unstoppable (Durdurulamaz)"
     ],
-    counterItems: [
-      'silence-glyph',
-      'slowing-hex',
-      'reactive-barrier',
-    ],
+    "counterItems": [
+      "silence-glyph",
+      "slowing-hex",
+      "reactive-barrier"
+    ]
   },
   {
-    id: 'viscous',
-    name: 'Viscous',
-    title: 'Derinlerin Psişik Jölesi',
-    role: 'Kurtarıcı Destek & Alan Bozucu (Disrupter / Peel Support)',
-    difficulty: 'Yüksek',
-    image: '/assets/characters/viscous.png',
-    imageAlt:
-      'Viscous karakter portresi - Deadlock oynanabilir kahraman görseli',
-    shortBio:
-      'Splatter ile alan hasarı vuran, The Cube ile kendisini veya müttefikini dokunulmaz bir iyileşme küpüne alan, Puddle Punch ile rakipleri yumruklayıp savuran ve Goo Ball ile haritada yuvarlanan uzman.',
-    stats: {
-      survive: 85,
-      damage: 70,
-      mobility: 85,
-      control: 85,
+    "id": "viscous",
+    "name": "Viscous",
+    "title": "Derinlerin Psişik Jölesi",
+    "role": "Kurtarıcı Destek & Alan Bozucu (Disrupter / Peel Support)",
+    "difficulty": "Yüksek",
+    "image": "/assets/characters/viscous.png",
+    "imageAlt": "Viscous karakter portresi - Deadlock oynanabilir kahraman görseli",
+    "shortBio": "Splatter ile alan hasarı vuran, The Cube ile kendisini veya müttefikini dokunulmaz bir iyileşme küpüne alan, Puddle Punch ile rakipleri yumruklayıp savuran ve Goo Ball ile haritada yuvarlanan uzman.",
+    "stats": {
+      "survive": 85,
+      "damage": 70,
+      "mobility": 85,
+      "control": 85
     },
-    abilities: [
-      'Splatter (Sıçratma: Duvarlardan seken ve geçtiği yerlerde rakipleri yavaşlatan jöle birikintileri bırakan büyük bir jöle topu fırlatır)',
-      'The Cube (İyileştirme Küpü: Kendinizi veya bir müttefiki 4 saniyeliğine tüm hasarlara karşı dokunulmaz kılan, zayıflatmaları temizleyen ve hızla iyileştiren bir küpe alır)',
-      'Puddle Punch (Birikinti Yumruğu: Herhangi bir yüzeyden dev bir jöle yumruğu çıkararak rakipleri havaya ve uzağa savurur; Hafif Yakın Dövüş sayılır)',
-      'Goo Ball (Dev Jöle Topu - Ulti: Yüksek hızda yuvarlanan, duvarlardan seken ve çarptığı rakipleri sersemletip ezen dev bir jöle topuna dönüşürsünüz)',
+    "abilities": [
+      "Splatter (Sıçratma: Duvarlardan seken ve geçtiği yerlerde rakipleri yavaşlatan jöle birikintileri bırakan büyük bir jöle topu fırlatır)",
+      "The Cube (İyileştirme Küpü: Kendinizi veya bir müttefiki 4 saniyeliğine tüm hasarlara karşı dokunulmaz kılan, zayıflatmaları temizleyen ve hızla iyileştiren bir küpe alır)",
+      "Puddle Punch (Birikinti Yumruğu: Herhangi bir yüzeyden dev bir jöle yumruğu çıkararak rakipleri havaya ve uzağa savurur; Hafif Yakın Dövüş sayılır)",
+      "Goo Ball (Dev Jöle Topu - Ulti: Yüksek hızda yuvarlanan, duvarlardan seken ve çarptığı rakipleri sersemletip ezen dev bir jöle topuna dönüşürsünüz)"
     ],
-    counters: [
-      'Bebop / Infernus / Pocket / Nurse Harrow (The Cube ile müttefiklerinin üzerindeki Sticky Bomb, Afterburn, Affliction ve Leech Therapy etkilerini tamamen temizler)',
-      'Abrams / Billy / Silver (Puddle Punch ile yakın dövüşçüleri uzağa yumruklar ve kitle kontrole yakalanan müttefikini The Cube içine alır)',
+    "counters": [
+      "Bebop",
+      "Infernus",
+      "Pocket",
+      "Nurse Harrow",
+      "Abrams",
+      "Billy",
+      "Silver"
     ],
-    counteredBy: [
-      'Dynamo / Mo & Krill (Goo Ball ile yuvarlanan Viscous’u Singularity veya Combo ile durdurur)',
-      'Vindicta / Violet (The Cube bittiği saniye çıkış noktasına Stake veya Still Life bırakarak hedefi cezalandırır)',
-      'Taktiksel Counter Eşyalar: Silence Wave, Slowing Hex (The Cube ve Goo Ball kullanımını engeller) | Healbane, Toxic Bullets (The Cube can yenilemesini kırar)',
+    "counteredBy": [
+      "Dynamo",
+      "Mo & Krill",
+      "Vindicta",
+      "Violet",
+      "Silence Wave (Susturma Dalgası)",
+      "Slowing Hex (Yavaşlatma Büyüsü)",
+      "Healbane (Şifakıran)",
+      "Toxic Bullets (Toksik Mermiler)"
     ],
-    counterItems: [
-      'silence-glyph',
-      'healbane',
-      'slowing-hex',
-    ],
+    "counterItems": [
+      "silence-glyph",
+      "healbane",
+      "slowing-hex"
+    ]
   },
   {
-    id: 'vyper',
-    name: 'Vyper',
-    title: 'Zehirli Sürüngen Haydut',
-    role: 'Kayarak Çatışan Yakın Mesafe DPS (Slide Marksman / Skirmisher)',
-    difficulty: 'Orta - Yüksek',
-    image: '/assets/characters/vyper.png',
-    imageAlt:
-      'Vyper karakter portresi - Deadlock oynanabilir kahraman görseli',
-    shortBio:
-      'Slither pasifiyle neredeyse sonsuz kayma (Slide) mesafesine ve kayarken sınırsız cephaneye sahip olan, Lethal Venom ile zehirleyen ve Petrifying Bola ile hedefleri taşlaştıran nişancı.',
-    stats: {
-      survive: 55,
-      damage: 90,
-      mobility: 90,
-      control: 70,
+    "id": "vyper",
+    "name": "Vyper",
+    "title": "Zehirli Sürüngen Haydut",
+    "role": "Kayarak Çatışan Yakın Mesafe DPS (Slide Marksman / Skirmisher)",
+    "difficulty": "Orta - Yüksek",
+    "image": "/assets/characters/vyper.png",
+    "imageAlt": "Vyper karakter portresi - Deadlock oynanabilir kahraman görseli",
+    "shortBio": "Slither pasifiyle neredeyse sonsuz kayma (Slide) mesafesine ve kayarken sınırsız cephaneye sahip olan, Lethal Venom ile zehirleyen ve Petrifying Bola ile hedefleri taşlaştıran nişancı.",
+    "stats": {
+      "survive": 55,
+      "damage": 90,
+      "mobility": 90,
+      "control": 70
     },
-    abilities: [
-      'Screwjab Dagger (Burgu Hançeri: Büyü hasarı ve yavaşlatma uygulayan bir hançer fırlatır; aynı hedefe art arda isabet eden her hançer hasarı ve yavaşlatmayı katlar)',
-      'Lethal Venom (Ölümcül Zehir: Hedefe gecikmeli tetiklenen ölümcül bir zehir enjekte eder; patladığında hedefin eksik canına oranla yüksek büyü hasarı vurur)',
-      'Slither (Sürünme - Pasif: Kayma / Slide mesafenizi ve hızınızı büyük ölçüde artırır; kayarken silahınız cephane tüketmez ve sınırsız mermiyle ateş eder)',
-      'Petrifying Bola (Taşlaştıran Bola - Ulti: Patladığında alandaki rakipleri Taşlaştıran / Petrify bir bola fırlatır; taşlaşan hedefler sersemler ancak dış hasara bağışık olur)',
+    "abilities": [
+      "Screwjab Dagger (Burgu Hançeri: Büyü hasarı ve yavaşlatma uygulayan bir hançer fırlatır; aynı hedefe art arda isabet eden her hançer hasarı ve yavaşlatmayı katlar)",
+      "Lethal Venom (Ölümcül Zehir: Hedefe gecikmeli tetiklenen ölümcül bir zehir enjekte eder; patladığında hedefin eksik canına oranla yüksek büyü hasarı vurur)",
+      "Slither (Sürünme - Pasif: Kayma / Slide mesafenizi ve hızınızı büyük ölçüde artırır; kayarken silahınız cephane tüketmez ve sınırsız mermiyle ateş eder)",
+      "Petrifying Bola (Taşlaştıran Bola - Ulti: Patladığında alandaki rakipleri Taşlaştıran / Petrify bir bola fırlatır; taşlaşan hedefler sersemler ancak dış hasara bağışık olur)"
     ],
-    counters: [
-      'Abrams / Mo & Krill / Graves (Slither pasifiyle kayarken sınırsız mermi ateşleyerek büyük gövdeli tankları eritir ve Lethal Venom eksik can hasarıyla bitirir)',
-      'Seven / Dynamo / McGinnis (Petrifying Bola ile kanalize ultileri ve sabit hedefleri taşlaştırarak anında durdurur)',
+    "counters": [
+      "Abrams",
+      "Mo & Krill",
+      "Graves",
+      "Seven",
+      "Dynamo",
+      "McGinnis"
     ],
-    counteredBy: [
-      'Kelvin / Warden / Rem (Hareket ve kayma hızını kıran ağır yavaşlatma ve geri savurmalarla Vyper’ın Slither pasifini işlevsiz bırakır)',
-      'Celeste / Victor (Yüksek atış hızlı mermileri Light Eater ve Pain Battery’yi tetikleyerek Vyper’ın kendisine patlar)',
-      'Taktiksel Counter Eşyalar: Metal Skin, Return Fire, Plated Armor, Juggernaut (Kayarken attığı sınırsız mermileri engeller ve atış hızını düşürür) | Dispel Magic (Lethal Venom zehirini patlamadan siler)',
+    "counteredBy": [
+      "Kelvin",
+      "Warden",
+      "Rem",
+      "Celeste",
+      "Victor",
+      "Metal Skin (Metal Deri)",
+      "Return Fire (AKTİF İade-i Ateş)",
+      "Plated Armor (Kaplamalı Zırh)",
+      "Juggernaut (Yıkıcı Güç)",
+      "Dispel Magic (AKTİF Etki Geçirme Büyüsü)"
     ],
-    counterItems: [
-      'metal-skin',
-      'return-fire',
-      'juggernaut',
-    ],
+    "counterItems": [
+      "metal-skin",
+      "return-fire",
+      "juggernaut"
+    ]
   },
   {
-    id: 'warden',
-    name: 'Warden',
-    title: 'Yorulmak Bilmez Simya Muhafızı',
-    role: 'Ön Saf Dövüşçü & Anti-Mobilite (Juggernaut / Anti-Mobility)',
-    difficulty: 'Düşük - Orta',
-    image: '/assets/characters/warden.png',
-    imageAlt:
-      'Warden karakter portresi - Deadlock oynanabilir kahraman görseli',
-    shortBio:
-      'Alchemical Flask ile rakiplerin kuvvetini (Stamina) azaltan, Willpower ile kalkan ve hız kazanan, Binding Word ile kaçamayanları kafese alan ve Last Stand ultisiyle çevresindekilerden can emen savaşçı.',
-    stats: {
-      survive: 85,
-      damage: 80,
-      mobility: 65,
-      control: 80,
+    "id": "warden",
+    "name": "Warden",
+    "title": "Yorulmak Bilmez Simya Muhafızı",
+    "role": "Ön Saf Dövüşçü & Anti-Mobilite (Juggernaut / Anti-Mobility)",
+    "difficulty": "Düşük - Orta",
+    "image": "/assets/characters/warden.png",
+    "imageAlt": "Warden karakter portresi - Deadlock oynanabilir kahraman görseli",
+    "shortBio": "Alchemical Flask ile rakiplerin kuvvetini (Stamina) azaltan, Willpower ile kalkan ve hız kazanan, Binding Word ile kaçamayanları kafese alan ve Last Stand ultisiyle çevresindekilerden can emen savaşçı.",
+    "stats": {
+      "survive": 85,
+      "damage": 80,
+      "mobility": 65,
+      "control": 80
     },
-    abilities: [
-      'Alchemical Flask (Simya Şişesi: İsabet ettiği rakiplere hasar veren, Silah Hasarlarını, Hareket Hızlarını ve Kuvvetlerini / Stamina azaltan bir şişe fırlatır)',
-      'Willpower (İrade Gücü: Size koruyucu bir Büyü Kalkanı / Spirit Shield ve geçici Hareket Hızı kazandırır)',
-      'Binding Word (Bağlayıcı Söz: Bir rakip kahramanı lanetler; hedef 2.5 saniye içinde işaretli çemberden çıkamazsa yüksek hasar alır ve olduğu yere Hapsedilir / Immobilize)',
-      'Last Stand (Son Direniş - Ulti: Kısa bir hazırlığın ardından çevrenizde nabız gibi atan bir dalga yayarak rakiplere ağır büyü hasarı verir ve verdiğiniz hasar kadar iyileşirsiniz)',
+    "abilities": [
+      "Alchemical Flask (Simya Şişesi: İsabet ettiği rakiplere hasar veren, Silah Hasarlarını, Hareket Hızlarını ve Kuvvetlerini / Stamina azaltan bir şişe fırlatır)",
+      "Willpower (İrade Gücü: Size koruyucu bir Büyü Kalkanı / Spirit Shield ve geçici Hareket Hızı kazandırır)",
+      "Binding Word (Bağlayıcı Söz: Bir rakip kahramanı lanetler; hedef 2.5 saniye içinde işaretli çemberden çıkamazsa yüksek hasar alır ve olduğu yere Hapsedilir / Immobilize)",
+      "Last Stand (Son Direniş - Ulti: Kısa bir hazırlığın ardından çevrenizde nabız gibi atan bir dalga yayarak rakiplere ağır büyü hasarı verir ve verdiğiniz hasar kadar iyileşirsiniz)"
     ],
-    counters: [
-      'Haze / Vyper / Calico / Apollo (Alchemical Flask ile kuvvet ve hızlarını düşürerek mobil karakterleri Binding Word kafesine hapseder)',
-      'Abrams / Billy (Yakın mesafede Last Stand ultisiyle yüksek miktarda can emerek ön saf takasını kazanır)',
+    "counters": [
+      "Haze",
+      "Vyper",
+      "Calico",
+      "Apollo",
+      "Abrams",
+      "Billy"
     ],
-    counteredBy: [
-      'Vindicta / Grey Talon (Binding Word menzilinin dışından ve havadan Warden’ı kolayca dürter)',
-      'Doorman / Pocket / Viscous (Binding Word çemberinden Doorway portalı, Flying Cloak veya The Cube ile kolayca kurtulur)',
-      'Taktiksel Counter Eşyalar: Healbane, Toxic Bullets, Decay (Last Stand ultisinin devasa can çalmasını kırar) | Warp Stone, Debuff Reducer (Binding Word kafesinden çıkmayı sağlar)',
+    "counteredBy": [
+      "Vindicta",
+      "Grey Talon",
+      "Doorman",
+      "Pocket",
+      "Viscous",
+      "Healbane (Şifakıran)",
+      "Toxic Bullets (Toksik Mermiler)",
+      "Decay (Çürüme)",
+      "Warp Stone (Işınlanma Taşı)",
+      "Debuff Reducer (Zayıflatma Azaltıcı)"
     ],
-    counterItems: [
-      'healbane',
-      'toxic-bullets',
-      'warp-stone',
-    ],
+    "counterItems": [
+      "healbane",
+      "toxic-bullets",
+      "warp-stone"
+    ]
   },
   {
-    id: 'wraith',
-    name: 'Wraith',
-    title: 'Telekinetik Kumarbaz',
-    role: 'Tekli Hedef Taşıyıcı & Ayrık İtici (Split Pusher / Carry)',
-    difficulty: 'Orta',
-    image: '/assets/characters/wraith.png',
-    imageAlt:
-      'Wraith karakter portresi - Deadlock oynanabilir kahraman görseli',
-    shortBio:
-      'Full Auto ve Card Trick ile yüksek tekli hedef hasarı çıkaran, Project Mind ile duvarların ve çatıların üzerine ışınlanan ve Telekinesis ultisiyle hedefi havaya kaldırıp susturan taşıyıcı.',
-    stats: {
-      survive: 55,
-      damage: 90,
-      mobility: 80,
-      control: 75,
+    "id": "wraith",
+    "name": "Wraith",
+    "title": "Telekinetik Kumarbaz",
+    "role": "Tekli Hedef Taşıyıcı & Ayrık İtici (Split Pusher / Carry)",
+    "difficulty": "Orta",
+    "image": "/assets/characters/wraith.png",
+    "imageAlt": "Wraith karakter portresi - Deadlock oynanabilir kahraman görseli",
+    "shortBio": "Full Auto ve Card Trick ile yüksek tekli hedef hasarı çıkaran, Project Mind ile duvarların ve çatıların üzerine ışınlanan ve Telekinesis ultisiyle hedefi havaya kaldırıp susturan taşıyıcı.",
+    "stats": {
+      "survive": 55,
+      "damage": 90,
+      "mobility": 80,
+      "control": 75
     },
-    abilities: [
-      'Card Trick (Kart Numarası: Mermi isabetlerinizle iskambil kartları biriktirirsiniz; fırlatılan her kart hedef noktasında patlayarak yüksek büyü hasarı verir)',
-      'Project Mind (Zihin Projeksiyonu: Hedeflenen konuma anında ışınlanmanızı ve kısa süreliğine koruyucu bir Bariyer kazanmanızı sağlar)',
-      'Full Auto (Tam Otomatik: Size ve yakındaki müttefiklerinize geçici olarak yüksek Atış Hızı ve mermi başına ilave büyü hasarı kazandırır)',
-      'Telekinesis (Telekinezi - Ulti: Hedef rakip kahramanı havaya kaldırarak kısa süreliğine Sersemletir ve yere indiğinde Susturma / Silence uygular)',
+    "abilities": [
+      "Card Trick (Kart Numarası: Mermi isabetlerinizle iskambil kartları biriktirirsiniz; fırlatılan her kart hedef noktasında patlayarak yüksek büyü hasarı verir)",
+      "Project Mind (Zihin Projeksiyonu: Hedeflenen konuma anında ışınlanmanızı ve kısa süreliğine koruyucu bir Bariyer kazanmanızı sağlar)",
+      "Full Auto (Tam Otomatik: Size ve yakındaki müttefiklerinize geçici olarak yüksek Atış Hızı ve mermi başına ilave büyü hasarı kazandırır)",
+      "Telekinesis (Telekinezi - Ulti: Hedef rakip kahramanı havaya kaldırarak kısa süreliğine Sersemletir ve yere indiğinde Susturma / Silence uygular)"
     ],
-    counters: [
-      'Pocket / Infernus / Mina / Violet (Telekinesis nokta atışı kaldırma ve susturma ultisiyle kaçış odaklı büyücüleri havada kilitleyip Full Auto + Card Trick ile eritir)',
-      'McGinnis / Solomon (Project Mind ışınlanmasıyla yan koridorları hızla itip sabit kurulumları cezalandırır)',
+    "counters": [
+      "Pocket",
+      "Infernus",
+      "Mina",
+      "Violet",
+      "McGinnis",
+      "Solomon"
     ],
-    counteredBy: [
-      'Mo & Krill / Abrams (Yakın mesafede yüksek zırh ve kitle kontrolle Wraith’i Project Mind kullanamadan düşürür)',
-      'Dynamo / Viscous / Rem (Telekinesis ile yakalanan müttefiki Quantum Entanglement, The Cube veya Tag Along ile kurtarır)',
-      'Taktiksel Counter Eşyalar: Metal Skin, Return Fire, Plated Armor (Full Auto mermi yağmurunu engeller) | Reactive Barrier, Ethereal Shift, Counterspell (Telekinesis ultisini karşılar)',
+    "counteredBy": [
+      "Mo & Krill",
+      "Abrams",
+      "Dynamo",
+      "Viscous",
+      "Rem",
+      "Metal Skin (Metal Deri)",
+      "Return Fire (AKTİF İade-i Ateş)",
+      "Plated Armor (Kaplamalı Zırh)",
+      "Reactive Barrier (Reaktif Bariyer)",
+      "Ethereal Shift (Ruhani Değişim)",
+      "Counterspell (Karşı Büyü)"
     ],
-    counterItems: [
-      'metal-skin',
-      'return-fire',
-      'reactive-barrier',
-    ],
+    "counterItems": [
+      "metal-skin",
+      "return-fire",
+      "reactive-barrier"
+    ]
   },
   {
-    id: 'yamato',
-    name: 'Yamato',
-    title: 'Yedinci Ay’ın Kılıç Ustası',
-    role: 'Yakın Mesafe Büyü/Kılıç Suikastçısı (Melee / Burst Duelist)',
-    difficulty: 'Yüksek',
-    image: '/assets/characters/yamato.png',
-    imageAlt:
-      'Yamato karakter portresi - Deadlock oynanabilir kahraman görseli',
-    shortBio:
-      'Power Slash ile yüksek patlayıcı büyü darbesi vuran, Flying Strike ile hedeflere yapışan, Crimson Slash ile iyileşen ve Shadow Transformation ultisiyle kitle kontrole bağışık ve ölümsüz olan düellocu.',
-    stats: {
-      survive: 80,
-      damage: 90,
-      mobility: 85,
-      control: 50,
+    "id": "yamato",
+    "name": "Yamato",
+    "title": "Yedinci Ay’ın Kılıç Ustası",
+    "role": "Yakın Mesafe Büyü/Kılıç Suikastçısı (Melee / Burst Duelist)",
+    "difficulty": "Yüksek",
+    "image": "/assets/characters/yamato.png",
+    "imageAlt": "Yamato karakter portresi - Deadlock oynanabilir kahraman görseli",
+    "shortBio": "Power Slash ile yüksek patlayıcı büyü darbesi vuran, Flying Strike ile hedeflere yapışan, Crimson Slash ile iyileşen ve Shadow Transformation ultisiyle kitle kontrole bağışık ve ölümsüz olan düellocu.",
+    "stats": {
+      "survive": 80,
+      "damage": 90,
+      "mobility": 85,
+      "control": 50
     },
-    abilities: [
-      'Power Slash (Güçlü Kesik: 1.4 saniye boyunca güç toplayarak kanalize olur ve ardından önünüzdeki rakiplere yüksek büyü hasarlı tam şarjlı bir kılıç darbesi indirirsiniz)',
-      'Flying Slash / Strike (Uçan Darbe: Hedefe doğru bir kanca/ip fırlatarak kendinizi doğrudan rakibin yanına çeker, hasar verir ve yavaşlatırsınız)',
-      'Crimson Slash (Kızıl Kesik: Önünüzdeki rakipleri biçerek hasar verir, Atış Hızlarını düşürür ve bir kahramana isabet ederse yüzdesel olarak can yenilersiniz)',
-      'Shadow Transformation (Gölge Dönüşümü - Ulti: Gölge ruhunuzla birleşerek yetenek bekleme sürelerinizi sıfırlar, kitle kontrole bağışık ve süre boyunca Ölümsüz olursunuz)',
+    "abilities": [
+      "Power Slash (Güçlü Kesik: 1.4 saniye boyunca güç toplayarak kanalize olur ve ardından önünüzdeki rakiplere yüksek büyü hasarlı tam şarjlı bir kılıç darbesi indirirsiniz)",
+      "Flying Slash / Strike (Uçan Darbe: Hedefe doğru bir kanca/ip fırlatarak kendinizi doğrudan rakibin yanına çeker, hasar verir ve yavaşlatırsınız)",
+      "Crimson Slash (Kızıl Kesik: Önünüzdeki rakipleri biçerek hasar verir, Atış Hızlarını düşürür ve bir kahramana isabet ederse yüzdesel olarak can yenilersiniz)",
+      "Shadow Transformation (Gölge Dönüşümü - Ulti: Gölge ruhunuzla birleşerek yetenek bekleme sürelerinizi sıfırlar, kitle kontrole bağışık ve süre boyunca Ölümsüz olursunuz)"
     ],
-    counters: [
-      'Grey Talon / Vindicta / Deadman Danny (Flying Slash ile kaçan nişancılara yapışır ve Power Slash ile ağır patlama hasarı vurur)',
-      'Kelvin / Seven / Rem (Shadow Transformation ile tüm yavaşlatma, uyku ve sersemletmeleri yok sayarak arka safları yarar)',
+    "counters": [
+      "Grey Talon",
+      "Vindicta",
+      "Deadman Danny",
+      "Kelvin",
+      "Seven",
+      "Rem"
     ],
-    counteredBy: [
-      'Silence Wave / Cursed Relic kullanan karakterler (Canı azaldığında Shadow Transformation basmasını engelleyip anında düşürür)',
-      'Abrams / Mo & Krill (Gölge formu biter bitmez yüksek kitle kontrolle Yamato’yu kilitler)',
-      'Taktiksel Counter Eşyalar: Silence Wave, Cursed Relic (Shadow Transformation ultisini açmasını engeller) | Healbane, Toxic Bullets (Crimson Slash iyileşmesini kırar) | Ethereal Shift (Power Slash darbesini savuşturur)',
+    "counteredBy": [
+      "Silence Wave (Susturma Dalgası)",
+      "Cursed Relic (AKTİF Lanetli Yadigâr)",
+      "Abrams",
+      "Mo & Krill",
+      "Healbane (Şifakıran)",
+      "Toxic Bullets (Toksik Mermiler)",
+      "Ethereal Shift (Ruhani Değişim)"
     ],
-    counterItems: [
-      'silence-glyph',
-      'healbane',
-      'ethereal-shift',
-    ],
-  },
+    "counterItems": [
+      "silence-glyph",
+      "healbane",
+      "ethereal-shift"
+    ]
+  }
 ];
 
 export const itemsCatalog = {
@@ -6253,9 +6597,11 @@ export const getPendingMatchup = (playerHero, enemyHero) => {
       midGame: `Orta oyunda ${enemyHero.name} karşısında önerilen ilk counter eşyasını tamamladıktan sonra yan koridor ve Urn savaşlarında ${playerHero.abilities[2]} ile tempo kurun.`,
       lateGame: `Takım savaşlarında ${enemyHero.name} karakterinin ${enemyHero.abilities[3]} ultisini takip edin ve kendi ${playerHero.abilities[3]} ultinizi en yüksek etki anı için saklayın.`,
       counterTips: [
-        ...enemyHero.counteredBy.slice(0, 3),
+        `${enemyHero.name} karşısında kadro avantajı sağlayan karakterler: ${enemyHero.counteredBy.filter((x) => characters.some((c) => c.name === x)).join(', ')}.`,
+        `${enemyHero.name} yetenek setini doğrudan kıran taktiksel counter eşyalar: ${enemyHero.counteredBy.filter((x) => !characters.some((c) => c.name === x)).join(', ')}.`,
+        `${playerHero.name} oynarken ${enemyHero.name} karakterinin ${enemyHero.abilities[0].split(' (')[0]} ve ${enemyHero.abilities[3].split(' (')[0]} bekleme sürelerini takip ederek takasa girin.`,
       ],
-      winCondition: `${enemyHero.name} karakterinin zayıf olduğu mekanikleri (${enemyHero.counteredBy[enemyHero.counteredBy.length - 1]}) hedefleyerek takım savaşlarında onu etkisiz bırakmak.`,
+      winCondition: `${enemyHero.name} karşısında ${enemyHero.counteredBy.slice(-2).join(' ve ')} odaklı counter stratejisiyle takım savaşlarında onu etkisiz bırakmak.`,
     },
   };
 };
