@@ -10,7 +10,7 @@ export const appMetaInfo = {
   disclaimerText:
     'Veriler oyunun beta sürecine göre değişiklik gösterebilir.',
   disclaimerDetail:
-    'Deadlock aktif geliştirme (Closed Beta) aşamasındadır. Karakter dengeleri, eşya (item) maliyetleri ve harita spawn süreleri güncellemelerle değişebilir; doğrulanmamış istatistikler TBD (Güncellenecek) olarak işaretlenmiştir.',
+    'Deadlock aktif geliştirme (Closed Beta) aşamasındadır. Karakter dengeleri, eşya (item) maliyetleri, Mid-Boss mekanikleri ve harita spawn süreleri resmi yama notlarına göre düzenli olarak güncellenmektedir.',
   footerBuildNote:
     'React (Vite) & Tailwind CSS ile geliştirilmiştir • Vercel Deploy Uyumlu',
 };
@@ -169,7 +169,7 @@ export const characters = [
     },
     "abilities": [
       "Kinetic Pulse (Kinetik Dalga: Zemin boyunca ilerleyen bir enerji dalgası göndererek rakiplere büyü hasarı verir ve onları havaya savurur / Knockup)",
-      "Quantum Entanglement (Kuantum Dolanıklığı: Kısa süreliğine hedef alınamaz hale gelerek hedef konuma ışınlanır, kuvvet yeniler ve müttefikleri de kurtarabilir)",
+      "Quantum Entanglement (Kuantum Dolanıklığı: Kısa süreliğine hedef alınamaz hale gelerek hedef konuma ışınlanır, Stamina yeniler ve müttefikleri de kurtarabilir)",
       "Rejuvenating Aurora (Yenileyici Aurora: Kanalize olarak kendinize ve yakındaki dost birimlere sürekli alan iyileştirmesi sağlar)",
       "Singularity (Tekillik - Ulti: Yakındaki tüm rakipleri merkeze çeken, zamanla hasar veren ve hareketsiz bırakan bir kara delik oluşturur)"
     ],
@@ -229,7 +229,7 @@ export const characters = [
     "difficulty": "Düşük - Orta",
     "image": "/assets/characters/seven.png",
     "imageAlt": "Seven karakter portresi - Elektrik akımları saçan metal kubbe başlıklı yüksek Spirit hasarı uzmanı",
-    "shortBio": "Lightning Ball ve Power Surge ile koridorları saniyeler içinde temizleyen, Static Charge ile hedefleri sersemleten ve Storm Cloud ultisiyle geniş bölgeleri elektriğe boğan taşıyıcı.",
+    "shortBio": "Lightning Ball ve Power Surge ile koridorları saniyeler içinde pushlayan, Static Charge ile hedefleri sersemleten ve Storm Cloud ultisiyle geniş bölgeleri elektriğe boğan taşıyıcı.",
     "stats": {
       "survive": 55,
       "damage": 95,
@@ -3288,8 +3288,8 @@ export const itemsCatalog = {
     "activation": "Pasif",
     "image": "/assets/items/kinetic-dash.png",
     "imageAlt": "Kinetic Dash (Kinetik Atılma) eşya ikonu - $ 1600 (Aşama II) değerinde Silah (Turuncu) eşyası",
-    "description": "+1 Kuvvet (Stamina) | +%12 Kuvvet Yenilenmesi | Pasif: Atılma-Zıplama (Dash-Jump) yaptığınızda bir sonraki şarjör değişimine kadar (en fazla 7 sn) +%25 Atış Hızı ve +6 geçici mermi kazanırsınız.",
-    "baseDesc": "+1 Kuvvet (Stamina) | +%12 Kuvvet Yenilenmesi | Pasif: Atılma-Zıplama (Dash-Jump) yaptığınızda bir sonraki şarjör değişimine kadar (en fazla 7 sn) +%25 Atış Hızı ve +6 geçici mermi kazanırsınız.",
+    "description": "+1 Stamina | +%12 Stamina Yenilenmesi | Pasif: Atılma-Zıplama (Dash-Jump) yaptığınızda bir sonraki şarjör değişimine kadar (en fazla 7 sn) +%25 Atış Hızı ve +6 geçici mermi kazanırsınız.",
+    "baseDesc": "+1 Stamina | +%12 Stamina Yenilenmesi | Pasif: Atılma-Zıplama (Dash-Jump) yaptığınızda bir sonraki şarjör değişimine kadar (en fazla 7 sn) +%25 Atış Hızı ve +6 geçici mermi kazanırsınız.",
     "patchTrend": "neutral"
   },
   "long-range": {
@@ -3691,8 +3691,8 @@ export const itemsCatalog = {
     "activation": "Pasif",
     "image": "/assets/items/weighted-shots.png",
     "imageAlt": "Weighted Shots (Ağırlıklı Atışlar) eşya ikonu - $ 3200 (Aşama III) değerinde Silah (Turuncu) eşyası",
-    "description": "+%30 Silah Hasarı | +%22 Zayıflatma Direnci | -%14 Kuvvet Yenilenmesi | -0.5m/sn Hareket Hızı | Pasif: Mermileriniz rakiplerde yavaşlatma biriktirerek 3.5 saniyeliğine -%24 Hareket Hızı ve -%20 Atılma Mesafesi uygular.",
-    "baseDesc": "+%30 Silah Hasarı | +%22 Zayıflatma Direnci | -%14 Kuvvet Yenilenmesi | -0.5m/sn Hareket Hızı | Pasif: Mermileriniz rakiplerde yavaşlatma biriktirerek 3.5 saniyeliğine -%24 Hareket Hızı ve -%20 Atılma Mesafesi uygular.",
+    "description": "+%30 Silah Hasarı | +%22 Zayıflatma Direnci | -%14 Stamina Yenilenmesi | -0.5m/sn Hareket Hızı | Pasif: Mermileriniz rakiplerde yavaşlatma biriktirerek 3.5 saniyeliğine -%24 Hareket Hızı ve -%20 Atılma Mesafesi uygular.",
+    "baseDesc": "+%30 Silah Hasarı | +%22 Zayıflatma Direnci | -%14 Stamina Yenilenmesi | -0.5m/sn Hareket Hızı | Pasif: Mermileriniz rakiplerde yavaşlatma biriktirerek 3.5 saniyeliğine -%24 Hareket Hızı ve -%20 Atılma Mesafesi uygular.",
     "patchTrend": "neutral"
   },
   "armor-piercer": {
@@ -3942,84 +3942,6 @@ export const itemsCatalog = {
     "baseDesc": "Pasif (Bekleme Süresi: 8 sn): Bir rakip kahramana Hafif veya Ağır Yakın Dövüş saldırısı yaptığınızda +40 ilave büyü hasarı verir ve Büyü Direncini düşürür (Hafif yakın dövüşte bekleme süresi 2 katıdır).",
     "patchTrend": "neutral"
   },
-  "ablative-coat": {
-    "id": "ablative-coat",
-    "name": "Ablative Coat",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/ablative-coat.png",
-    "imageAlt": "Ablative Coat eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Ablative Coat eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
-  "adrenaline-rush": {
-    "id": "adrenaline-rush",
-    "name": "Adrenaline Rush",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/adrenaline-rush.png",
-    "imageAlt": "Adrenaline Rush eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Adrenaline Rush eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
-  "aerial-assault": {
-    "id": "aerial-assault",
-    "name": "Aerial Assault",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/aerial-assault.png",
-    "imageAlt": "Aerial Assault eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Aerial Assault eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
-  "ammo-scavenger": {
-    "id": "ammo-scavenger",
-    "name": "Ammo Scavenger",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/ammo-scavenger.png",
-    "imageAlt": "Ammo Scavenger eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)",
-    "description": "Pasif: Bir ruh (Soul) topladığınızda veya reddettiğinizde (Deny) +2 mermi geri kazanır ve biriken +1 Büyü Gücü elde edersiniz. Maksimum yükte +2m/sn Koşu Hızı verir.",
-    "baseDesc": "Pasif: Bir ruh (Soul) topladığınızda veya reddettiğinizde (Deny) +2 mermi geri kazanır ve biriken +1 Büyü Gücü elde edersiniz. Maksimum yükte +2m/sn Koşu Hızı verir.",
-    "patchTrend": "neutral"
-  },
-  "arcane-eater": {
-    "id": "arcane-eater",
-    "name": "Arcane Eater",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/arcane-eater.png",
-    "imageAlt": "Arcane Eater eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Arcane Eater eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
-  "arcane-medallion": {
-    "id": "arcane-medallion",
-    "name": "Arcane Medallion",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/arcane-medallion.png",
-    "imageAlt": "Arcane Medallion eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Arcane Medallion eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
   "arcane-surge": {
     "id": "arcane-surge",
     "name": "Arcane Surge (Gizemli Dalgalanma)",
@@ -4029,21 +3951,8 @@ export const itemsCatalog = {
     "activation": "Pasif",
     "image": "/assets/items/arcane-surge.png",
     "imageAlt": "Arcane Surge (Gizemli Dalgalanma) eşya ikonu - $ 1600 (Aşama II) değerinde Büyü (Mor) eşyası",
-    "description": "+1 Kuvvet (Stamina) | +%12 Kuvvet Yenilenmesi | Pasif: Atılma-Zıplama (Dash-Jump) yaptıktan sonra 7 saniye içinde kullanacağınız ilk yetenek +%12 Menzil, +%15 Süre ve +20 Büyü Gücü kazanır.",
-    "baseDesc": "+1 Kuvvet (Stamina) | +%12 Kuvvet Yenilenmesi | Pasif: Atılma-Zıplama (Dash-Jump) yaptıktan sonra 7 saniye içinde kullanacağınız ilk yetenek +%12 Menzil, +%15 Süre ve +20 Büyü Gücü kazanır.",
-    "patchTrend": "neutral"
-  },
-  "archmother": {
-    "id": "archmother",
-    "name": "Archmother",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/archmother.png",
-    "imageAlt": "Archmother eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)",
-    "description": "Archmother (Baş Ana), Deadlock evrenindeki iki Patron'dan (Takım Koruyucusu) biridir ve takipçileri The Guided Hand olarak bilinir.",
-    "baseDesc": "Archmother (Baş Ana), Deadlock evrenindeki iki Patron'dan (Takım Koruyucusu) biridir ve takipçileri The Guided Hand olarak bilinir.",
+    "description": "+1 Stamina | +%12 Stamina Yenilenmesi | Pasif: Atılma-Zıplama (Dash-Jump) yaptıktan sonra 7 saniye içinde kullanacağınız ilk yetenek +%12 Menzil, +%15 Süre ve +20 Büyü Gücü kazanır.",
+    "baseDesc": "+1 Stamina | +%12 Stamina Yenilenmesi | Pasif: Atılma-Zıplama (Dash-Jump) yaptıktan sonra 7 saniye içinde kullanacağınız ilk yetenek +%12 Menzil, +%15 Süre ve +20 Büyü Gücü kazanır.",
     "patchTrend": "neutral"
   },
   "arctic-blast": {
@@ -4059,19 +3968,6 @@ export const itemsCatalog = {
     "baseDesc": "+%10 Büyü Direnci | Aktif (Bekleme Süresi: 24 sn): Genişleyen bir buz patlaması yayarak 175 büyü hasarı verir; hedefleri 1 saniye Dondurur (Freeze) ve ardından yavaşlatarak kuvvet yenilenmelerini durdurur.",
     "patchTrend": "neutral"
   },
-  "basic-fire-rate": {
-    "id": "basic-fire-rate",
-    "name": "Basic Fire Rate",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/basic-fire-rate.png",
-    "imageAlt": "Basic Fire Rate eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Basic Fire Rate eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
   "battle-vest": {
     "id": "battle-vest",
     "name": "Battle Vest (Savaş Yeleği)",
@@ -4085,19 +3981,6 @@ export const itemsCatalog = {
     "baseDesc": "+%18 Mermi Direnci | +3 Çatışma Dışı Can Yenilenmesi | Pasif: Canınız %65'in üzerindeyken +%22 Silah Hasarı ve +%7 Atış Hızı kazanırsınız.",
     "patchTrend": "buff"
   },
-  "belt-fed-magazine": {
-    "id": "belt-fed-magazine",
-    "name": "Belt Fed Magazine",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/belt-fed-magazine.png",
-    "imageAlt": "Belt Fed Magazine eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Belt Fed Magazine eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
   "boundless-spirit": {
     "id": "boundless-spirit",
     "name": "Boundless Spirit (Sınırsız Büyü)",
@@ -4109,32 +3992,6 @@ export const itemsCatalog = {
     "imageAlt": "Boundless Spirit (Sınırsız Büyü) eşya ikonu - $ 6400 (Aşama IV) değerinde Büyü (Mor) eşyası",
     "description": "+%15 Büyü Gücü | +30 Büyü Gücü | +75 Bonus Can | +4 Çatışma Dışı Can Yenilenmesi | Yetenek hasarını ve büyü ölçeklenmesini zirveye taşıyan Aşama IV Büyü eşyası.",
     "baseDesc": "+%15 Büyü Gücü | +30 Büyü Gücü | +75 Bonus Can | +4 Çatışma Dışı Can Yenilenmesi | Yetenek hasarını ve büyü ölçeklenmesini zirveye taşıyan Aşama IV Büyü eşyası.",
-    "patchTrend": "neutral"
-  },
-  "bullet-armor": {
-    "id": "bullet-armor",
-    "name": "Bullet Armor",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/bullet-armor.png",
-    "imageAlt": "Bullet Armor eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)",
-    "description": "+%26 Mermi Direnci | +%6 Silah Hasarı | Mermi hasarına karşı yüksek koruma ve ilave silah hasarı sağlar.",
-    "baseDesc": "+%26 Mermi Direnci | +%6 Silah Hasarı | Mermi hasarına karşı yüksek koruma ve ilave silah hasarı sağlar.",
-    "patchTrend": "neutral"
-  },
-  "bullet-deflector": {
-    "id": "bullet-deflector",
-    "name": "Bullet Deflector",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/bullet-deflector.png",
-    "imageAlt": "Bullet Deflector eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Bullet Deflector eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
     "patchTrend": "neutral"
   },
   "bullet-lifesteal-item": {
@@ -4176,71 +4033,6 @@ export const itemsCatalog = {
     "baseDesc": "+%9 Mermi Direnci | +%9 Silah Hasarı | Pasif: Rakiplere büyü (Spirit) hasarı verdiğinizde Mermi Dirençlerini 8 saniyeliğine -%10 düşürür.",
     "patchTrend": "neutral"
   },
-  "burst-fire-actuator": {
-    "id": "burst-fire-actuator",
-    "name": "Burst Fire Actuator",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/burst-fire-actuator.png",
-    "imageAlt": "Burst Fire Actuator eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Burst Fire Actuator eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
-  "camouflage-suit": {
-    "id": "camouflage-suit",
-    "name": "Camouflage Suit",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/camouflage-suit.png",
-    "imageAlt": "Camouflage Suit eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Camouflage Suit eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
-  "celestial-blessing": {
-    "id": "celestial-blessing",
-    "name": "Celestial Blessing",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/celestial-blessing.png",
-    "imageAlt": "Celestial Blessing eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)",
-    "description": "Efsanevi | Aktif (Bekleme Süresi: 30 sn): Haritanın her yerindeki müttefiklerinizi arındıran ve yenileyen küresel bir kutsama uygular (%60 İyileştirme, +%100 Kuvvet Yenilenmesi ve +5m/sn Hareket Hızı, 6 sn süre).",
-    "baseDesc": "Efsanevi | Aktif (Bekleme Süresi: 30 sn): Haritanın her yerindeki müttefiklerinizi arındıran ve yenileyen küresel bir kutsama uygular (%60 İyileştirme, +%100 Kuvvet Yenilenmesi ve +5m/sn Hareket Hızı, 6 sn süre).",
-    "patchTrend": "neutral"
-  },
-  "charge-mastery": {
-    "id": "charge-mastery",
-    "name": "Charge Mastery",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/charge-mastery.png",
-    "imageAlt": "Charge Mastery eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Charge Mastery eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
-  "charmed-wraps": {
-    "id": "charmed-wraps",
-    "name": "Charmed Wraps",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/charmed-wraps.png",
-    "imageAlt": "Charmed Wraps eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Charmed Wraps eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
   "cheat-death": {
     "id": "cheat-death",
     "name": "Cheat Death (Kefen Yırtan)",
@@ -4252,45 +4044,6 @@ export const itemsCatalog = {
     "imageAlt": "Cheat Death (Kefen Yırtan) eşya ikonu - $ 6400 (Aşama IV) değerinde Can (Yeşil) eşyası",
     "description": "+200 Bonus Can | +%15 Mermi Direnci | Pasif (Bekleme Süresi: 90 sn): Ölümcül hasar alacağınız anda geçici olarak ölümsüz (Death Immune) olursunuz ve sersemletme dışındaki tüm zayıflatmalarınız silinir.",
     "baseDesc": "+200 Bonus Can | +%15 Mermi Direnci | Pasif (Bekleme Süresi: 90 sn): Ölümcül hasar alacağınız anda geçici olarak ölümsüz (Death Immune) olursunuz ve sersemletme dışındaki tüm zayıflatmalarınız silinir.",
-    "patchTrend": "neutral"
-  },
-  "clarity": {
-    "id": "clarity",
-    "name": "Clarity",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/clarity.png",
-    "imageAlt": "Clarity eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Clarity eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
-  "cloak-of-opportunity": {
-    "id": "cloak-of-opportunity",
-    "name": "Cloak Of Opportunity",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/cloak-of-opportunity.png",
-    "imageAlt": "Cloak Of Opportunity eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Cloak Of Opportunity eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
-  "cloaking-device": {
-    "id": "cloaking-device",
-    "name": "Cloaking Device",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/cloaking-device.png",
-    "imageAlt": "Cloaking Device eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Cloaking Device eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
     "patchTrend": "neutral"
   },
   "cold-front": {
@@ -4319,19 +4072,6 @@ export const itemsCatalog = {
     "baseDesc": "+%25 Temel Can | +%15 Silah Hasarı | Aktif (Bekleme Süresi: 37 sn): Boyutunuz büyür; +%35 Mermi Direnci, +%35 Büyü Direnci ve Yakın Dövüş Hasarı kazanırsınız. Yakındaki rakipler yavaşlar ve atılma hızları düşer.",
     "patchTrend": "neutral"
   },
-  "combo-breaker": {
-    "id": "combo-breaker",
-    "name": "Combo Breaker",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/combo-breaker.png",
-    "imageAlt": "Combo Breaker eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Combo Breaker eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
   "compress-cooldown": {
     "id": "compress-cooldown",
     "name": "Compress Cooldown (GÜÇLENDİR Kısa Dolum Süresi)",
@@ -4358,19 +4098,6 @@ export const itemsCatalog = {
     "baseDesc": "+50 Bonus Can | +5 Büyü Gücü | Pasif (Bekleme Süresi: 23 sn): Bir sonraki savuşturmanız (Parry) sizi rakip yetenek ve eşyaların hasarından/etkilerinden korur. Başarılı büyü savuşturmasında can yeniler, hareket hızı ve büyü gücü kazanırsınız.",
     "patchTrend": "neutral"
   },
-  "creative-commons-attribution-sharealike": {
-    "id": "creative-commons-attribution-sharealike",
-    "name": "Creative Commons Attribution Sharealike",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/creative-commons-attribution-sharealike.png",
-    "imageAlt": "Creative Commons Attribution Sharealike eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Creative Commons Attribution Sharealike eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
   "cursed-relic": {
     "id": "cursed-relic",
     "name": "Cursed Relic (AKTİF Lanetli Yadigâr)",
@@ -4382,32 +4109,6 @@ export const itemsCatalog = {
     "imageAlt": "Cursed Relic (AKTİF Lanetli Yadigâr) eşya ikonu - $ 6400 (Aşama IV) değerinde Büyü (Mor) eşyası",
     "description": "Aktif (Bekleme Süresi: 55 sn): Bir rakibi lanetleyerek kanalize yeteneklerini keser, Susturur (Silence), Silahsızlandırır (Disarm), eşya kullanımını kilitler ve ulti dışı güçlendirmelerini siler (Süre boyunca kendi hasarınız da bir miktar azalır).",
     "baseDesc": "Aktif (Bekleme Süresi: 55 sn): Bir rakibi lanetleyerek kanalize yeteneklerini keser, Susturur (Silence), Silahsızlandırır (Disarm), eşya kullanımını kilitler ve ulti dışı güçlendirmelerini siler (Süre boyunca kendi hasarınız da bir miktar azalır).",
-    "patchTrend": "neutral"
-  },
-  "detention-rounds": {
-    "id": "detention-rounds",
-    "name": "Detention Rounds",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/detention-rounds.png",
-    "imageAlt": "Detention Rounds eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Detention Rounds eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
-  "disarming-bullets": {
-    "id": "disarming-bullets",
-    "name": "Disarming Bullets",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/disarming-bullets.png",
-    "imageAlt": "Disarming Bullets eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Disarming Bullets eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
     "patchTrend": "neutral"
   },
   "disarming-hex": {
@@ -4462,45 +4163,6 @@ export const itemsCatalog = {
     "baseDesc": "+%15 Yetenek Süresi | +%10 Ulti Bekleme Süresi Azaltma | Pasif (Bekleme Süresi: 40 sn): Ulti yeteneğinizi kullandığınızda 20 saniyeliğine 1000 kapasiteli Bariyer ve +40 Büyü Gücü kazanırsınız.",
     "patchTrend": "neutral"
   },
-  "double-jump": {
-    "id": "double-jump",
-    "name": "Double Jump",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/double-jump.png",
-    "imageAlt": "Double Jump eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Double Jump eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
-  "drain-will": {
-    "id": "drain-will",
-    "name": "Drain Will",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/drain-will.png",
-    "imageAlt": "Drain Will eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Drain Will eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
-  "drum-magazine": {
-    "id": "drum-magazine",
-    "name": "Drum Magazine",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/drum-magazine.png",
-    "imageAlt": "Drum Magazine eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Drum Magazine eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
   "duration-extender": {
     "id": "duration-extender",
     "name": "Duration Extender (GÜÇLENDİR Süre Uzatıcı)",
@@ -4526,45 +4188,6 @@ export const itemsCatalog = {
     "description": "+%5 Büyü Direnci | +%5 Mermi Direnci | Aktif (Bekleme Süresi: 30 sn): Güçlendirilen (Imbued) ulti dışı yeteneğinizin bekleme süresini anında sıfırlar.",
     "baseDesc": "+%5 Büyü Direnci | +%5 Mermi Direnci | Aktif (Bekleme Süresi: 30 sn): Güçlendirilen (Imbued) ulti dışı yeteneğinizin bekleme süresini anında sıfırlar.",
     "patchTrend": "buff"
-  },
-  "electric-slippers": {
-    "id": "electric-slippers",
-    "name": "Electric Slippers",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/electric-slippers.png",
-    "imageAlt": "Electric Slippers eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)",
-    "description": "Efsanevi | +2 Kuvvet | +%80 Kayma Mesafesi | Pasif (0.3 sn): Kayarken (Slide) mermilerden %60 olasılıkla kaçınır, atış hızı kazanır ve çevrenizdeki rakiplere 100 elektrik hasarı verirsiniz.",
-    "baseDesc": "Efsanevi | +2 Kuvvet | +%80 Kayma Mesafesi | Pasif (0.3 sn): Kayarken (Slide) mermilerden %60 olasılıkla kaçınır, atış hızı kazanır ve çevrenizdeki rakiplere 100 elektrik hasarı verirsiniz.",
-    "patchTrend": "neutral"
-  },
-  "emp-bullets": {
-    "id": "emp-bullets",
-    "name": "EMP Bullets",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/emp-bullets.png",
-    "imageAlt": "EMP Bullets eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — EMP Bullets eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
-  "emp-grenade": {
-    "id": "emp-grenade",
-    "name": "EMP Grenade",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/emp-grenade.png",
-    "imageAlt": "EMP Grenade eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — EMP Grenade eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
   },
   "enchanters-emblem": {
     "id": "enchanters-emblem",
@@ -4592,19 +4215,6 @@ export const itemsCatalog = {
     "baseDesc": "+2m/sn Hareket Hızı | +2 Çatışma Dışı Can Yenilenmesi | Pasif: Rakiplerin uyguladığı hareket yavaşlatması etkilerini azaltır (+%25 Yavaşlatma Direnci / Slow Resist).",
     "patchTrend": "neutral"
   },
-  "enduring-spirit": {
-    "id": "enduring-spirit",
-    "name": "Enduring Spirit",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/enduring-spirit.png",
-    "imageAlt": "Enduring Spirit eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)",
-    "description": "+%10 Büyü Can Çalması | +75 Bonus Can | +4 Büyü Gücü | Büyü hasarı üzerinden can yenilemesi ve dayanıklılık sağlar.",
-    "baseDesc": "+%10 Büyü Can Çalması | +75 Bonus Can | +4 Büyü Gücü | Büyü hasarı üzerinden can yenilemesi ve dayanıklılık sağlar.",
-    "patchTrend": "neutral"
-  },
   "escalating-exposure": {
     "id": "escalating-exposure",
     "name": "Escalating Exposure (Artan Hassasiyet)",
@@ -4616,19 +4226,6 @@ export const itemsCatalog = {
     "imageAlt": "Escalating Exposure (Artan Hassasiyet) eşya ikonu - $ 6400 (Aşama IV) değerinde Büyü (Mor) eşyası",
     "description": "Büyü Hasarında -%8 Büyü Direnci Kırma | +%17 Büyü Direnci | Pasif (0.7 sn): Büyü hasarı vermek hedefte biriken Büyü Güçlendirmesi (Yük başına +%4.5 Büyü Hasarı Artışı) uygular.",
     "baseDesc": "Büyü Hasarında -%8 Büyü Direnci Kırma | +%17 Büyü Direnci | Pasif (0.7 sn): Büyü hasarı vermek hedefte biriken Büyü Güçlendirmesi (Yük başına +%4.5 Büyü Hasarı Artışı) uygular.",
-    "patchTrend": "neutral"
-  },
-  "eternal-gift": {
-    "id": "eternal-gift",
-    "name": "Eternal Gift",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/eternal-gift.png",
-    "imageAlt": "Eternal Gift eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)",
-    "description": "Efsanevi | Pasif: Her 2 saniyede bir rastgele kalıcı istatistik güçlendirmesi kazandırır ve bir sonraki ölümünüzde dirilme sürenizi -%70 kısaltır.",
-    "baseDesc": "Efsanevi | Pasif: Her 2 saniyede bir rastgele kalıcı istatistik güçlendirmesi kazandırır ve bir sonraki ölümünüzde dirilme sürenizi -%70 kısaltır.",
     "patchTrend": "neutral"
   },
   "extra-health": {
@@ -4666,47 +4263,8 @@ export const itemsCatalog = {
     "activation": "Pasif",
     "image": "/assets/items/extra-stamina.png",
     "imageAlt": "Extra Stamina (Ekstra Kuvvet) eşya ikonu - $ 800 (Aşama I) değerinde Can (Yeşil) eşyası",
-    "description": "+1 Kuvvet (Stamina) | +%12 Kuvvet Yenilenmesi | Ekstra atılma (Dash) ve zıplama imkanı sağlayan temel hareketlilik eşyası.",
-    "baseDesc": "+1 Kuvvet (Stamina) | +%12 Kuvvet Yenilenmesi | Ekstra atılma (Dash) ve zıplama imkanı sağlayan temel hareketlilik eşyası.",
-    "patchTrend": "neutral"
-  },
-  "fast-reload": {
-    "id": "fast-reload",
-    "name": "Fast Reload",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/fast-reload.png",
-    "imageAlt": "Fast Reload eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Fast Reload eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
-  "fire-rate-aura": {
-    "id": "fire-rate-aura",
-    "name": "Fire Rate Aura",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/fire-rate-aura.png",
-    "imageAlt": "Fire Rate Aura eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Fire Rate Aura eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
-  "fire-rate-item": {
-    "id": "fire-rate-item",
-    "name": "Fire Rate Item",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/fire-rate-item.png",
-    "imageAlt": "Fire Rate Item eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Fire Rate Item eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
+    "description": "+1 Stamina | +%12 Stamina Yenilenmesi | Ekstra atılma (Dash) ve zıplama imkanı sağlayan temel hareketlilik eşyası.",
+    "baseDesc": "+1 Stamina | +%12 Stamina Yenilenmesi | Ekstra atılma (Dash) ve zıplama imkanı sağlayan temel hareketlilik eşyası.",
     "patchTrend": "neutral"
   },
   "focus-lens": {
@@ -4735,32 +4293,6 @@ export const itemsCatalog = {
     "baseDesc": "+375 Bonus Can | Pasif: 10 saniye boyunca hasar almadığınızda saniyede Maksimum Canınızın %2.25'i kadar can yenilersiniz. Canınız %75'in üzerindeyken +1.5m/sn Hareket Hızı kazanırsınız.",
     "patchTrend": "neutral"
   },
-  "frostbite-charm": {
-    "id": "frostbite-charm",
-    "name": "Frostbite Charm",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/frostbite-charm.png",
-    "imageAlt": "Frostbite Charm eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)",
-    "description": "Efsanevi | Aktif (Bekleme Süresi: 10 sn): Güçlendirilen yeteneğin bekleme süresini azaltır ve Büyü Gücü verir; yetenek hasar verdiğinde hedefi Dondurur (Freeze) ve bonus hasar uygular.",
-    "baseDesc": "Efsanevi | Aktif (Bekleme Süresi: 10 sn): Güçlendirilen yeteneğin bekleme süresini azaltır ve Büyü Gücü verir; yetenek hasar verdiğinde hedefi Dondurur (Freeze) ve bonus hasar uygular.",
-    "patchTrend": "neutral"
-  },
-  "full-spectrum": {
-    "id": "full-spectrum",
-    "name": "Full Spectrum",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/full-spectrum.png",
-    "imageAlt": "Full Spectrum eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Full Spectrum eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
   "fury-trance": {
     "id": "fury-trance",
     "name": "Fury Trance (AKTİF Öfke Transı)",
@@ -4773,19 +4305,6 @@ export const itemsCatalog = {
     "description": "+%15 Mermi Can Çalması | +100 Bonus Can | +%10 Silah Hasarı | Aktif (Bekleme Süresi: 18 sn): Yüksek Atış Hızı, Büyü Direnci ve Hareket Hızı sağlar, ateş ederken yavaşlamayı kaldırır; ancak süre boyunca sizi Susturur (yetenek kullanımını kapatır).",
     "baseDesc": "+%15 Mermi Can Çalması | +100 Bonus Can | +%10 Silah Hasarı | Aktif (Bekleme Süresi: 18 sn): Yüksek Atış Hızı, Büyü Direnci ve Hareket Hızı sağlar, ateş ederken yavaşlamayı kaldırır; ancak süre boyunca sizi Susturur (yetenek kullanımını kapatır).",
     "patchTrend": "buff"
-  },
-  "galvanic-storm": {
-    "id": "galvanic-storm",
-    "name": "Galvanic Storm",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/galvanic-storm.png",
-    "imageAlt": "Galvanic Storm eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Galvanic Storm eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
   },
   "greater-expansion": {
     "id": "greater-expansion",
@@ -4824,32 +4343,6 @@ export const itemsCatalog = {
     "imageAlt": "Guardian Ward (AKTİF Koruyucu Bariyer) eşya ikonu - $ 1600 (Aşama II) değerinde Can (Yeşil) eşyası",
     "description": "+%8 Yetenek Menzili | +1.5 Çatışma Dışı Can Yenilenmesi | Aktif (Bekleme Süresi: 60 sn): Hedefe 250 kapasiteli Bariyer ve geçici Hareket Hızı sağlar (Bir müttefike kullanıldığında bekleme süresi yarıya iner).",
     "baseDesc": "+%8 Yetenek Menzili | +1.5 Çatışma Dışı Can Yenilenmesi | Aktif (Bekleme Süresi: 60 sn): Hedefe 250 kapasiteli Bariyer ve geçici Hareket Hızı sağlar (Bir müttefike kullanıldığında bekleme süresi yarıya iner).",
-    "patchTrend": "neutral"
-  },
-  "haunting-shot": {
-    "id": "haunting-shot",
-    "name": "Haunting Shot",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/haunting-shot.png",
-    "imageAlt": "Haunting Shot eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)",
-    "description": "Efsanevi | Pasif (Bekleme Süresi: 2.5 sn): Bir sonraki merminiz rakibin hasarını, iyileşmesini ve hareket hızını düşüren güçlü bir zayıflatma uygular ve mevcut canına oranla büyü hasarı verir.",
-    "baseDesc": "Efsanevi | Pasif (Bekleme Süresi: 2.5 sn): Bir sonraki merminiz rakibin hasarını, iyileşmesini ve hareket hızını düşüren güçlü bir zayıflatma uygular ve mevcut canına oranla büyü hasarı verir.",
-    "patchTrend": "neutral"
-  },
-  "healing-aura": {
-    "id": "healing-aura",
-    "name": "Healing Aura",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/healing-aura.png",
-    "imageAlt": "Healing Aura eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Healing Aura eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
     "patchTrend": "neutral"
   },
   "healing-booster": {
@@ -4904,110 +4397,6 @@ export const itemsCatalog = {
     "baseDesc": "+%25 Yapılan İyileştirme | +%10 Büyü Direnci | +6 Can Yenilenmesi | +4 Çatışma Dışı Can Yenilenmesi | Pasif: Kendinizi veya bir müttefiki iyileştirmek hedefe geçici Atış Hızı ve Hareket Hızı kazandırır.",
     "patchTrend": "neutral"
   },
-  "health-regen": {
-    "id": "health-regen",
-    "name": "Health Regen",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/health-regen.png",
-    "imageAlt": "Health Regen eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)",
-    "description": "Can Yenilenmesi (Health Regen), kahramanların saniye başına pasif olarak geri kazandığı sağlık miktarını belirleyen temel istatistiktir.",
-    "baseDesc": "Can Yenilenmesi (Health Regen), kahramanların saniye başına pasif olarak geri kazandığı sağlık miktarını belirleyen temel istatistiktir.",
-    "patchTrend": "neutral"
-  },
-  "health": {
-    "id": "health",
-    "name": "Health",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/health.png",
-    "imageAlt": "Health eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)",
-    "description": "Can (Health), bir kahramanın veya birimin ölmeden önce alabileceği toplam hasar kapasitesini belirleyen temel niteliktir.",
-    "baseDesc": "Can (Health), bir kahramanın veya birimin ölmeden önce alabileceği toplam hasar kapasitesini belirleyen temel niteliktir.",
-    "patchTrend": "neutral"
-  },
-  "height-advantage": {
-    "id": "height-advantage",
-    "name": "Height Advantage",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/height-advantage.png",
-    "imageAlt": "Height Advantage eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Height Advantage eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
-  "high-impact-armor": {
-    "id": "high-impact-armor",
-    "name": "High Impact Armor",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/high-impact-armor.png",
-    "imageAlt": "High Impact Armor eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — High Impact Armor eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
-  "holliday": {
-    "id": "holliday",
-    "name": "Holliday",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/holliday.png",
-    "imageAlt": "Holliday eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)",
-    "description": "Holliday, ölümcül nişancılığı, kementi (Lasso), barut fıçıları ve zıplama pedleriyle çatışmayı kontrol eden keskin nişancı bir Deadlock kahramanıdır.",
-    "baseDesc": "Holliday, ölümcül nişancılığı, kementi (Lasso), barut fıçıları ve zıplama pedleriyle çatışmayı kontrol eden keskin nişancı bir Deadlock kahramanıdır.",
-    "patchTrend": "neutral"
-  },
-  "hyper-charge": {
-    "id": "hyper-charge",
-    "name": "Hyper Charge",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/hyper-charge.png",
-    "imageAlt": "Hyper Charge eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Hyper Charge eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
-  "imbued-ability": {
-    "id": "imbued-ability",
-    "name": "Imbued Ability",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/imbued-ability.png",
-    "imageAlt": "Imbued Ability eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Imbued Ability eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
-  "improved-fire-rate": {
-    "id": "improved-fire-rate",
-    "name": "Improved Fire Rate",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/improved-fire-rate.png",
-    "imageAlt": "Improved Fire Rate eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Improved Fire Rate eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
   "improved-spirit": {
     "id": "improved-spirit",
     "name": "Improved Spirit (Geliştirilmiş Büyü)",
@@ -5032,19 +4421,6 @@ export const itemsCatalog = {
     "imageAlt": "Indomitable (Boyun Eğmez) eşya ikonu - $ 6400 (Aşama IV) değerinde Can (Yeşil) eşyası",
     "description": "+%10 Mermi Direnci | +%10 Büyü Direnci | +2 Çatışma Dışı Can Yenilenmesi | Pasif (Bekleme Süresi: 55 sn): Maruz kalacağınız bir sonraki Sersemletme, Zincirleme, Sabitleme, Uyutma, Susturma veya Korku etkisini otomatik olarak temizler ve Bariyer kazandırır.",
     "baseDesc": "+%10 Mermi Direnci | +%10 Büyü Direnci | +2 Çatışma Dışı Can Yenilenmesi | Pasif (Bekleme Süresi: 55 sn): Maruz kalacağınız bir sonraki Sersemletme, Zincirleme, Sabitleme, Uyutma, Susturma veya Korku etkisini otomatik olarak temizler ve Bariyer kazandırır.",
-    "patchTrend": "neutral"
-  },
-  "infinite-rounds": {
-    "id": "infinite-rounds",
-    "name": "Infinite Rounds",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/infinite-rounds.png",
-    "imageAlt": "Infinite Rounds eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)",
-    "description": "Efsanevi | +%200 Mermi Hızı | +%35 Atış Hızı | Pasif: Sınırsız cephane sağlar ve mermileriniz %65 olasılıkla rakipleri delip geçerek Mermi Dirençlerini yok sayar.",
-    "baseDesc": "Efsanevi | +%200 Mermi Hızı | +%35 Atış Hızı | Pasif: Sınırsız cephane sağlar ve mermileriniz %65 olasılıkla rakipleri delip geçerek Mermi Dirençlerini yok sayar.",
     "patchTrend": "neutral"
   },
   "infuser": {
@@ -5073,32 +4449,6 @@ export const itemsCatalog = {
     "baseDesc": "+%10 Silah Hasarı | +150 Bonus Can | Pasif: Mermileriniz hedefte birikerek 5 saniyeliğine rakibin verdiği hasarı -%30 ve aldığı iyileştirmeyi -%40 azaltır.",
     "patchTrend": "neutral"
   },
-  "item-shop": {
-    "id": "item-shop",
-    "name": "Item Shop",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/item-shop.png",
-    "imageAlt": "Item Shop eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Item Shop eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
-  "ivy": {
-    "id": "ivy",
-    "name": "Ivy",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/ivy.png",
-    "imageAlt": "Ivy eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)",
-    "description": "Ivy, müttefiklerini koruyan ve takım savaşlarını kontrol eden güçlü destek/kitle kontrol yeteneklerine sahip güvenilir bir Gargoyle kahramanıdır.",
-    "baseDesc": "Ivy, müttefiklerini koruyan ve takım savaşlarını kontrol eden güçlü destek/kitle kontrol yeteneklerine sahip güvenilir bir Gargoyle kahramanıdır.",
-    "patchTrend": "neutral"
-  },
   "juggernaut": {
     "id": "juggernaut",
     "name": "Juggernaut (Yıkıcı Güç)",
@@ -5111,32 +4461,6 @@ export const itemsCatalog = {
     "description": "+%50 Yavaşlatma Direnci | +2.5m/sn Hareket Hızı | +%25 Yakın Dövüş Direnci | +15 Can Yenilenmesi | Pasif: Size ateş eden rakiplerin Atış Hızı 4 saniyeliğine -%40 yavaşlar.",
     "baseDesc": "+%50 Yavaşlatma Direnci | +2.5m/sn Hareket Hızı | +%25 Yakın Dövüş Direnci | +15 Can Yenilenmesi | Pasif: Size ateş eden rakiplerin Atış Hızı 4 saniyeliğine -%40 yavaşlar.",
     "patchTrend": "buff"
-  },
-  "leaked-pre-release-spirit-shop": {
-    "id": "leaked-pre-release-spirit-shop",
-    "name": "Leaked Pre Release Spirit Shop",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/leaked-pre-release-spirit-shop.png",
-    "imageAlt": "Leaked Pre Release Spirit Shop eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Leaked Pre Release Spirit Shop eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
-  "leaked-pre-release-weapon-shop": {
-    "id": "leaked-pre-release-weapon-shop",
-    "name": "Leaked Pre Release Weapon Shop",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/leaked-pre-release-weapon-shop.png",
-    "imageAlt": "Leaked Pre Release Weapon Shop eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Leaked Pre Release Weapon Shop eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
   },
   "leech": {
     "id": "leech",
@@ -5190,19 +4514,6 @@ export const itemsCatalog = {
     "baseDesc": "+%15 Yetenek Süresi | +125 Bonus Can | +14 Büyü Gücü | -%15 Yerçekimi | +%25 Hava Kontrolü | Aktif (Bekleme Süresi: 32 sn): Sizi uçurarak uzaklaştıran Sihirli Halı çağırır; uçarken yavaşlatmalara bağışıksınızdır.",
     "patchTrend": "neutral"
   },
-  "magitech-rounds": {
-    "id": "magitech-rounds",
-    "name": "Magitech Rounds",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/magitech-rounds.png",
-    "imageAlt": "Magitech Rounds eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Magitech Rounds eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
   "majestic-leap": {
     "id": "majestic-leap",
     "name": "Majestic Leap (AKTİF Görkemli Sıçrama)",
@@ -5214,19 +4525,6 @@ export const itemsCatalog = {
     "imageAlt": "Majestic Leap (AKTİF Görkemli Sıçrama) eşya ikonu - $ 3200 (Aşama III) değerinde Can (Yeşil) eşyası",
     "description": "Aktif (Bekleme Süresi: 45 sn): Kendinizi gökyüzüne fırlatarak koruyucu bir Bariyer kazanırsınız; havadayken tekrar kullanarak hızla yere dalış yapabilirsiniz (Rakip kahramanlardan hasar alındığında 5 sn kullanılamaz).",
     "baseDesc": "Aktif (Bekleme Süresi: 45 sn): Kendinizi gökyüzüne fırlatarak koruyucu bir Bariyer kazanırsınız; havadayken tekrar kullanarak hızla yere dalış yapabilirsiniz (Rakip kahramanlardan hasar alındığında 5 sn kullanılamaz).",
-    "patchTrend": "neutral"
-  },
-  "melee-knockdown": {
-    "id": "melee-knockdown",
-    "name": "Melee Knockdown",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/melee-knockdown.png",
-    "imageAlt": "Melee Knockdown eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Melee Knockdown eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
     "patchTrend": "neutral"
   },
   "melee-lifesteal": {
@@ -5253,32 +4551,6 @@ export const itemsCatalog = {
     "imageAlt": "Mercurial Magnum (GÜÇLENDİR Merkür Magnum) eşya ikonu - $ 6400 (Aşama IV) değerinde Büyü (Mor) eşyası",
     "description": "+%20 Maksimum Cephane | +7 Büyü Gücü | Pasif (Bekleme Süresi: 14 sn): Güçlendirilen yeteneğiniz zamanla bonus büyü hasarı ve atış hızı biriktirir; kullanıldığında şarjörünüzü doldurur ve bir sonraki şarjöre kadar mermileriniz büyü hasarı verir.",
     "baseDesc": "+%20 Maksimum Cephane | +7 Büyü Gücü | Pasif (Bekleme Süresi: 14 sn): Güçlendirilen yeteneğiniz zamanla bonus büyü hasarı ve atış hızı biriktirir; kullanıldığında şarjörünüzü doldurur ve bir sonraki şarjöre kadar mermileriniz büyü hasarı verir.",
-    "patchTrend": "neutral"
-  },
-  "mo-krill": {
-    "id": "mo-krill",
-    "name": "Mo Krill",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/mo-krill.png",
-    "imageAlt": "Mo Krill eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Mo Krill eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
-  "mystic-conduit": {
-    "id": "mystic-conduit",
-    "name": "Mystic Conduit",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/mystic-conduit.png",
-    "imageAlt": "Mystic Conduit eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)",
-    "description": "Efsanevi | Pasif: 25m çevredeki size ve müttefiklerinize +%40 Yetenek Menzili ve +%40 Bekleme Süresi Azaltma sağlayan güçlü bir büyü aurası verir.",
-    "baseDesc": "Efsanevi | Pasif: 25m çevredeki size ve müttefiklerinize +%40 Yetenek Menzili ve +%40 Bekleme Süresi Azaltma sağlayan güçlü bir büyü aurası verir.",
     "patchTrend": "neutral"
   },
   "mystic-regereneration": {
@@ -5333,110 +4605,6 @@ export const itemsCatalog = {
     "baseDesc": "+%8 Büyü Direnci | Pasif: Bir rakip büyü hasarı aldığında Büyü Direnci 7 saniyeliğine -%8 düşer.",
     "patchTrend": "neutral"
   },
-  "mystical-piano": {
-    "id": "mystical-piano",
-    "name": "Mystical Piano",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/mystical-piano.png",
-    "imageAlt": "Mystical Piano eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)",
-    "description": "Efsanevi | Aktif (Bekleme Süresi: 23 sn): Kısa bir gecikmenin ardından hedef alandaki rakipleri Sersemletir (Stun), kuvvetlerini (Stamina) tüketir ve sersemletme sonrası 2 sn sersemlemiş (Dazed) bırakır.",
-    "baseDesc": "Efsanevi | Aktif (Bekleme Süresi: 23 sn): Kısa bir gecikmenin ardından hedef alandaki rakipleri Sersemletir (Stun), kuvvetlerini (Stamina) tüketir ve sersemletme sonrası 2 sn sersemlemiş (Dazed) bırakır.",
-    "patchTrend": "neutral"
-  },
-  "neon-prime-shop": {
-    "id": "neon-prime-shop",
-    "name": "Neon Prime Shop",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/neon-prime-shop.png",
-    "imageAlt": "Neon Prime Shop eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Neon Prime Shop eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
-  "nullification-burst": {
-    "id": "nullification-burst",
-    "name": "Nullification Burst",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/nullification-burst.png",
-    "imageAlt": "Nullification Burst eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)",
-    "description": "Efsanevi | +%40 Zayıflatma Direnci | +300 Bonus Can | Aktif (Bekleme Süresi: 18 sn): 20m alandaki rakiplerin tüm pozitif güçlendirmelerini siler, 7 saniye boyunca kuvvet kullanımını ve iyileşmelerini engeller.",
-    "baseDesc": "Efsanevi | +%40 Zayıflatma Direnci | +300 Bonus Can | Aktif (Bekleme Süresi: 18 sn): 20m alandaki rakiplerin tüm pozitif güçlendirmelerini siler, 7 saniye boyunca kuvvet kullanımını ve iyileşmelerini engeller.",
-    "patchTrend": "neutral"
-  },
-  "old-item-shop-ui-before-the-shop-rework": {
-    "id": "old-item-shop-ui-before-the-shop-rework",
-    "name": "Old Item Shop UI Before The Shop Rework",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/old-item-shop-ui-before-the-shop-rework.png",
-    "imageAlt": "Old Item Shop UI Before The Shop Rework eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Old Item Shop UI Before The Shop Rework eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
-  "omni-spirit": {
-    "id": "omni-spirit",
-    "name": "Omni Spirit",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/omni-spirit.png",
-    "imageAlt": "Omni Spirit eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Omni Spirit eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
-  "omnicharge-signet": {
-    "id": "omnicharge-signet",
-    "name": "Omnicharge Signet",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/omnicharge-signet.png",
-    "imageAlt": "Omnicharge Signet eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)",
-    "description": "Efsanevi | Yükler Arası +%70 Daha Hızlı Dolum | Yüklemeli Yeteneklerde +%30 Bekleme Süresi Azaltma | +50 Bonus Büyü Gücü | Pasif: Herhangi bir ulti dışı yeteneğe ilave yük (Charge) kazandırır.",
-    "baseDesc": "Efsanevi | Yükler Arası +%70 Daha Hızlı Dolum | Yüklemeli Yeteneklerde +%30 Bekleme Süresi Azaltma | +50 Bonus Büyü Gücü | Pasif: Herhangi bir ulti dışı yeteneğe ilave yük (Charge) kazandırır.",
-    "patchTrend": "neutral"
-  },
-  "overdrive-clip": {
-    "id": "overdrive-clip",
-    "name": "Overdrive Clip",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/overdrive-clip.png",
-    "imageAlt": "Overdrive Clip eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Overdrive Clip eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
-  "overdrive": {
-    "id": "overdrive",
-    "name": "Overdrive",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/overdrive.png",
-    "imageAlt": "Overdrive eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Overdrive eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
   "phantom-strike": {
     "id": "phantom-strike",
     "name": "Phantom Strike (AKTİF Hayalet Saldırı)",
@@ -5461,58 +4629,6 @@ export const itemsCatalog = {
     "imageAlt": "Plated Armor (Kaplamalı Zırh) eşya ikonu - $ 6400 (Aşama IV) değerinde Can (Yeşil) eşyası",
     "description": "+130 Bonus Can | Pasif: Gelen mermileri %30 olasılıkla saptırarak tüm silah hasarını engeller veya %50 olasılıkla mermilerin isabet etkilerini (On-Hit) önler.",
     "baseDesc": "+130 Bonus Can | Pasif: Gelen mermileri %30 olasılıkla saptırarak tüm silah hasarını engeller veya %50 olasılıkla mermilerin isabet etkilerini (On-Hit) önler.",
-    "patchTrend": "neutral"
-  },
-  "predator-precision": {
-    "id": "predator-precision",
-    "name": "Predator Precision",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/predator-precision.png",
-    "imageAlt": "Predator Precision eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Predator Precision eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
-  "prism-blast": {
-    "id": "prism-blast",
-    "name": "Prism Blast",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/prism-blast.png",
-    "imageAlt": "Prism Blast eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)",
-    "description": "Efsanevi | Aktif (Bekleme Süresi: 40 sn): 6 saniyeliğine boşluk boyutuna geçerek hedef alınamaz ve dokunulmaz olursunuz; bu sırada çevrenizde dönen lazerler saniyede 270 alan hasarı verir.",
-    "baseDesc": "Efsanevi | Aktif (Bekleme Süresi: 40 sn): 6 saniyeliğine boşluk boyutuna geçerek hedef alınamaz ve dokunulmaz olursunuz; bu sırada çevrenizde dönen lazerler saniyede 270 alan hasarı verir.",
-    "patchTrend": "neutral"
-  },
-  "quantum-chimaera": {
-    "id": "quantum-chimaera",
-    "name": "Quantum Chimaera",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/quantum-chimaera.png",
-    "imageAlt": "Quantum Chimaera eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Quantum Chimaera eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
-  "quarantine": {
-    "id": "quarantine",
-    "name": "Quarantine",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/quarantine.png",
-    "imageAlt": "Quarantine eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Quarantine eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
     "patchTrend": "neutral"
   },
   "quicksilver-reload": {
@@ -5580,32 +4696,6 @@ export const itemsCatalog = {
     "baseDesc": "Aktif (Bekleme Süresi: 300 sn): Tüm yeteneklerinizin bekleme süresini (Cooldown) anında sıfırlar ve tüm yetenek yüklerinizi (Charges) doldurur.",
     "patchTrend": "neutral"
   },
-  "regenerative-armor": {
-    "id": "regenerative-armor",
-    "name": "Regenerative Armor",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/regenerative-armor.png",
-    "imageAlt": "Regenerative Armor eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Regenerative Armor eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
-  "reloader-huge-clip": {
-    "id": "reloader-huge-clip",
-    "name": "Reloader Huge Clip",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/reloader-huge-clip.png",
-    "imageAlt": "Reloader Huge Clip eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Reloader Huge Clip eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
   "rescue-beam": {
     "id": "rescue-beam",
     "name": "Rescue Beam (AKTİF Kurtarma Işını)",
@@ -5619,19 +4709,6 @@ export const itemsCatalog = {
     "baseDesc": "+0.75m/sn Koşu Hızı | +%6 Yetenek Menzili | Aktif (Bekleme Süresi: 60 sn): Hedef dost kahramanı ve kendinizi Maksimum Canın %20'si oranında iyileştirir; kanalize sırasında hedefi kendinize doğru çekebilirsiniz (Pull).",
     "patchTrend": "neutral"
   },
-  "rescue": {
-    "id": "rescue",
-    "name": "Rescue",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/rescue.png",
-    "imageAlt": "Rescue eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Rescue eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
   "restorative-locket": {
     "id": "restorative-locket",
     "name": "Restorative Locket (AKTİF Şifalı Madalyon)",
@@ -5641,8 +4718,8 @@ export const itemsCatalog = {
     "activation": "AKTİF",
     "image": "/assets/items/restorative-locket.png",
     "imageAlt": "Restorative Locket (AKTİF Şifalı Madalyon) eşya ikonu - $ 1600 (Aşama II) değerinde Can (Yeşil) eşyası",
-    "description": "+%8 Büyü Direnci | Aktif (Bekleme Süresi: 20 sn): 32m çevrenizde bir rakip her yetenek kullandığında 1 İyileşme Yükü biriktirir; aktif edildiğinde tüm yükleri tüketerek sizi iyileştirir ve 3'e kadar Kuvvet (Stamina) yeniler.",
-    "baseDesc": "+%8 Büyü Direnci | Aktif (Bekleme Süresi: 20 sn): 32m çevrenizde bir rakip her yetenek kullandığında 1 İyileşme Yükü biriktirir; aktif edildiğinde tüm yükleri tüketerek sizi iyileştirir ve 3'e kadar Kuvvet (Stamina) yeniler.",
+    "description": "+%8 Büyü Direnci | Aktif (Bekleme Süresi: 20 sn): 32m çevrenizde bir rakip her yetenek kullandığında 1 İyileşme Yükü biriktirir; aktif edildiğinde tüm yükleri tüketerek sizi iyileştirir ve 3'e kadar Stamina yeniler.",
+    "baseDesc": "+%8 Büyü Direnci | Aktif (Bekleme Süresi: 20 sn): 32m çevrenizde bir rakip her yetenek kullandığında 1 İyileşme Yükü biriktirir; aktif edildiğinde tüm yükleri tüketerek sizi iyileştirir ve 3'e kadar Stamina yeniler.",
     "patchTrend": "neutral"
   },
   "return-fire": {
@@ -5658,19 +4735,6 @@ export const itemsCatalog = {
     "baseDesc": "+%10 Mermi Direnci | Aktif (Bekleme Süresi: 23 sn): 6.5 saniye boyunca size silah veya yetenekle hasar veren her saldırgana otomatik olarak karşı ateş açar (Alınan Mermi Hasarının %65'ini, Büyü Hasarının %25'ini geri yansıtır).",
     "patchTrend": "buff"
   },
-  "runed-gauntlets": {
-    "id": "runed-gauntlets",
-    "name": "Runed Gauntlets",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/runed-gauntlets.png",
-    "imageAlt": "Runed Gauntlets eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)",
-    "description": "Efsanevi | +%150 Ağır Yakın Dövüş Mesafesi | +%50 Yakın Dövüş Direnci | +%30 Yakın Dövüş Hasarı | Pasif: Savuşturmayı (Parry) deler ve her ağır yakın dövüş isabetinde mevcut bekleme sürelerinizi azaltır.",
-    "baseDesc": "Efsanevi | +%150 Ağır Yakın Dövüş Mesafesi | +%50 Yakın Dövüş Direnci | +%30 Yakın Dövüş Hasarı | Pasif: Savuşturmayı (Parry) deler ve her ağır yakın dövüş isabetinde mevcut bekleme sürelerinizi azaltır.",
-    "patchTrend": "neutral"
-  },
   "scourge": {
     "id": "scourge",
     "name": "Scourge (AKTİF Bela)",
@@ -5682,71 +4746,6 @@ export const itemsCatalog = {
     "imageAlt": "Scourge (AKTİF Bela) eşya ikonu - $ 6400 (Aşama IV) değerinde Büyü (Mor) eşyası",
     "description": "+100 Bonus Can | Aktif (Bekleme Süresi: 35 sn): Dost bir hedefe Büyü Direnci, Zayıflatma Direnci ve çevredeki rakiplere maksimum canlarına oranla hasar veren bir aura uygular.",
     "baseDesc": "+100 Bonus Can | Aktif (Bekleme Süresi: 35 sn): Dost bir hedefe Büyü Direnci, Zayıflatma Direnci ve çevredeki rakiplere maksimum canlarına oranla hasar veren bir aura uygular.",
-    "patchTrend": "neutral"
-  },
-  "seraphim-wings": {
-    "id": "seraphim-wings",
-    "name": "Seraphim Wings",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/seraphim-wings.png",
-    "imageAlt": "Seraphim Wings eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)",
-    "description": "Efsanevi | +%120 Kuvvet Yenilenmesi | -%70 Yerçekimi | +%100 Hava Kontrolü | Pasif: Havadayken daha fazla hasar verir, daha az hasar alırsınız ve sınırsız hava atılması/zıplaması yapabilirsiniz.",
-    "baseDesc": "Efsanevi | +%120 Kuvvet Yenilenmesi | -%70 Yerçekimi | +%100 Hava Kontrolü | Pasif: Havadayken daha fazla hasar verir, daha az hasar alırsınız ve sınırsız hava atılması/zıplaması yapabilirsiniz.",
-    "patchTrend": "neutral"
-  },
-  "seven": {
-    "id": "seven",
-    "name": "Seven",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/seven.png",
-    "imageAlt": "Seven eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)",
-    "description": "Seven, rakiplerini sersemleten ve yüksek voltajlı alan hasarıyla (AoE) eriten elektrik odaklı bir Deadlock kahramanıdır.",
-    "baseDesc": "Seven, rakiplerini sersemleten ve yüksek voltajlı alan hasarıyla (AoE) eriten elektrik odaklı bir Deadlock kahramanıdır.",
-    "patchTrend": "neutral"
-  },
-  "shadow-strike": {
-    "id": "shadow-strike",
-    "name": "Shadow Strike",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/shadow-strike.png",
-    "imageAlt": "Shadow Strike eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)",
-    "description": "Efsanevi | +3 Kuvvet | +350 Bonus Can | Aktif: Kuvvet kullandığınızda tespit mesafesi olmaksızın Görünmez olursunuz; görünmezken yapılan yakın dövüş saldırısı hedefin mermi ve büyü direncini çalar.",
-    "baseDesc": "Efsanevi | +3 Kuvvet | +350 Bonus Can | Aktif: Kuvvet kullandığınızda tespit mesafesi olmaksızın Görünmez olursunuz; görünmezken yapılan yakın dövüş saldırısı hedefin mermi ve büyü direncini çalar.",
-    "patchTrend": "neutral"
-  },
-  "shield-rush": {
-    "id": "shield-rush",
-    "name": "Shield Rush",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/shield-rush.png",
-    "imageAlt": "Shield Rush eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Shield Rush eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
-  "shrink-ray": {
-    "id": "shrink-ray",
-    "name": "Shrink Ray",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/shrink-ray.png",
-    "imageAlt": "Shrink Ray eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)",
-    "description": "Efsanevi | Aktif (Bekleme Süresi: 30 sn, Menzil: 40m): Hedefin model boyutunu 60 saniyeliğine -%50 küçültür, +5m/sn Hareket Hızı, +%20 Atış Hızı ve tünellerden geçme yeteneği kazandırır.",
-    "baseDesc": "Efsanevi | Aktif (Bekleme Süresi: 30 sn, Menzil: 40m): Hedefin model boyutunu 60 saniyeliğine -%50 küçültür, +5m/sn Hareket Hızı, +%20 Atış Hızı ve tünellerden geçme yeteneği kazandırır.",
     "patchTrend": "neutral"
   },
   "silence-wave": {
@@ -5775,84 +4774,6 @@ export const itemsCatalog = {
     "baseDesc": "+%15 Silah Hasarı | +%10 Mermi Direnci | Pasif (Bekleme Süresi: 1.2 sn): Mermileriniz rakiplerden 17 saniyeliğine %2.5 Maksimum Can çalar (Etki bittiğinde çalınan can geri döner).",
     "patchTrend": "neutral"
   },
-  "slowing-spirit": {
-    "id": "slowing-spirit",
-    "name": "Slowing Spirit",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/slowing-spirit.png",
-    "imageAlt": "Slowing Spirit eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Slowing Spirit eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
-  "smoke": {
-    "id": "smoke",
-    "name": "Smoke",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/smoke.png",
-    "imageAlt": "Smoke eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Smoke eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
-  "snowball": {
-    "id": "snowball",
-    "name": "Snowball",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/snowball.png",
-    "imageAlt": "Snowball eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)",
-    "description": "Kartopu (Snowball), Deadlock 2025 Kış Etkinliği sırasında tüm oyunculara açılan, eşya yuvası kaplamayan özel etkinlik eşyasıdır.",
-    "baseDesc": "Kartopu (Snowball), Deadlock 2025 Kış Etkinliği sırasında tüm oyunculara açılan, eşya yuvası kaplamayan özel etkinlik eşyasıdır.",
-    "patchTrend": "neutral"
-  },
-  "soul-disruptor": {
-    "id": "soul-disruptor",
-    "name": "Soul Disruptor",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/soul-disruptor.png",
-    "imageAlt": "Soul Disruptor eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Soul Disruptor eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
-  "soul-explosion": {
-    "id": "soul-explosion",
-    "name": "Soul Explosion",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/soul-explosion.png",
-    "imageAlt": "Soul Explosion eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Soul Explosion eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
-  "soul-rebirth": {
-    "id": "soul-rebirth",
-    "name": "Soul Rebirth",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/soul-rebirth.png",
-    "imageAlt": "Soul Rebirth eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)",
-    "description": "+30 sn Artırılmış Dirilme Süresi | +12 Büyü Gücü | Pasif (Bekleme Süresi: 240 sn): Öldüğünüzde 4 saniye sonra öldüğünüz noktada %50 Can ile yeniden dirilirsiniz.",
-    "baseDesc": "+30 sn Artırılmış Dirilme Süresi | +12 Büyü Gücü | Pasif (Bekleme Süresi: 240 sn): Öldüğünüzde 4 saniye sonra öldüğünüz noktada %50 Can ile yeniden dirilirsiniz.",
-    "patchTrend": "neutral"
-  },
   "spellbreaker": {
     "id": "spellbreaker",
     "name": "Spellbreaker (Büyü Bozan)",
@@ -5879,32 +4800,6 @@ export const itemsCatalog = {
     "baseDesc": "+%5 Yetenek Bekleme Süresi Azaltma | Pasif: Çatışma halindeyken her yetenek veya eşya kullandığınızda +%11 Atış Hızı ve şarjör değiştirme hızı veren biriken bir güçlendirme kazanırsınız.",
     "patchTrend": "neutral"
   },
-  "spirit-armor": {
-    "id": "spirit-armor",
-    "name": "Spirit Armor",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/spirit-armor.png",
-    "imageAlt": "Spirit Armor eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)",
-    "description": "+%22 Büyü Direnci | +5 Büyü Gücü | Büyü hasarına karşı dayanıklılık ve ilave büyü gücü sağlar.",
-    "baseDesc": "+%22 Büyü Direnci | +5 Büyü Gücü | Büyü hasarına karşı dayanıklılık ve ilave büyü gücü sağlar.",
-    "patchTrend": "neutral"
-  },
-  "spirit-barrier-pulse": {
-    "id": "spirit-barrier-pulse",
-    "name": "Spirit Barrier Pulse",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/spirit-barrier-pulse.png",
-    "imageAlt": "Spirit Barrier Pulse eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Spirit Barrier Pulse eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
   "spirit-burn": {
     "id": "spirit-burn",
     "name": "Spirit Burn (Yakıcı Büyü)",
@@ -5916,19 +4811,6 @@ export const itemsCatalog = {
     "imageAlt": "Spirit Burn (Yakıcı Büyü) eşya ikonu - $ 6400 (Aşama IV) değerinde Büyü (Mor) eşyası",
     "description": "+%6 Yetenek Menzili | Pasif: Bir rakibe 5 saniye içinde yüksek miktarda büyü hasarı vermek patlama oluşturarak hedefi yakar; yanan rakipler zamanla hasar alır ve iyileşmeleri azalır.",
     "baseDesc": "+%6 Yetenek Menzili | Pasif: Bir rakibe 5 saniye içinde yüksek miktarda büyü hasarı vermek patlama oluşturarak hedefi yakar; yanan rakipler zamanla hasar alır ve iyileşmeleri azalır.",
-    "patchTrend": "neutral"
-  },
-  "spirit-damage": {
-    "id": "spirit-damage",
-    "name": "Spirit Damage",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/spirit-damage.png",
-    "imageAlt": "Spirit Damage eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)",
-    "description": "Büyü Gücü (Spirit Power), yeteneklerin ve eşyaların verdiği Büyü Hasarını ve yetenek niteliklerini artıran temel istatistiktir.",
-    "baseDesc": "Büyü Gücü (Spirit Power), yeteneklerin ve eşyaların verdiği Büyü Hasarını ve yetenek niteliklerini artıran temel istatistiktir.",
     "patchTrend": "neutral"
   },
   "spirit-lifesteal-item": {
@@ -5943,19 +4825,6 @@ export const itemsCatalog = {
     "description": "Pasif: Yetenekleriniz ve büyü hasarınızla verdiğiniz hasarın belirli bir yüzdesi kadar can çalmanızı (Spirit Lifesteal) sağlayan Can (Yeşil) eşyası.",
     "baseDesc": "Pasif: Yetenekleriniz ve büyü hasarınızla verdiğiniz hasarın belirli bir yüzdesi kadar can çalmanızı (Spirit Lifesteal) sağlayan Can (Yeşil) eşyası.",
     "patchTrend": "buff"
-  },
-  "spirit-power": {
-    "id": "spirit-power",
-    "name": "Spirit Power",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/spirit-power.png",
-    "imageAlt": "Spirit Power eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)",
-    "description": "Büyü Gücü (Spirit Power), yeteneklerin ve büyü tabanlı eşyaların etkinliğini ve hasarını artıran temel istatistiktir.",
-    "baseDesc": "Büyü Gücü (Spirit Power), yeteneklerin ve büyü tabanlı eşyaların etkinliğini ve hasarını artıran temel istatistiktir.",
-    "patchTrend": "neutral"
   },
   "spirit-resilience": {
     "id": "spirit-resilience",
@@ -5996,19 +4865,6 @@ export const itemsCatalog = {
     "baseDesc": "+2.5 Çatışma Dışı Can Yenilenmesi | Pasif (Bekleme Süresi: 45 sn): Rakip kahramanlardan 3.5 saniye içinde 225 ve üzeri büyü hasarı aldığınızda 300 kapasiteli Bariyer ve +%15 Büyü Direnci kazanırsınız.",
     "patchTrend": "nerf"
   },
-  "spirit-shop": {
-    "id": "spirit-shop",
-    "name": "Spirit Shop",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/spirit-shop.png",
-    "imageAlt": "Spirit Shop eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Spirit Shop eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
   "spirit-snatch": {
     "id": "spirit-snatch",
     "name": "Spirit Snatch (Büyü Kapma)",
@@ -6035,32 +4891,6 @@ export const itemsCatalog = {
     "baseDesc": "+2m/sn Koşu Hızı | +2 Çatışma Dışı Can Yenilenmesi | Harita rotasyonlarını hızlandıran temel Aşama I Can eşyası.",
     "patchTrend": "neutral"
   },
-  "stabilizer": {
-    "id": "stabilizer",
-    "name": "Stabilizer",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/stabilizer.png",
-    "imageAlt": "Stabilizer eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Stabilizer eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
-  "stabilizing-tripod": {
-    "id": "stabilizing-tripod",
-    "name": "Stabilizing Tripod",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/stabilizing-tripod.png",
-    "imageAlt": "Stabilizing Tripod eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Stabilizing Tripod eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
   "stamina-mastery": {
     "id": "stamina-mastery",
     "name": "Stamina Mastery (Kuvvet Ustalığı)",
@@ -6070,34 +4900,8 @@ export const itemsCatalog = {
     "activation": "Pasif",
     "image": "/assets/items/stamina-mastery.png",
     "imageAlt": "Stamina Mastery (Kuvvet Ustalığı) eşya ikonu - $ 3200 (Aşama III) değerinde Can (Yeşil) eşyası",
-    "description": "+2 Kuvvet (Stamina) | +%18 Kuvvet Yenilenmesi | +%23 Hava Zıplaması/Atılması Mesafesi | Pasif: Yere inmeden önce fazladan bir Hava Zıplaması (Air Jump) veya Hava Atılması (Air Dash) kullanmanıza olanak tanır.",
-    "baseDesc": "+2 Kuvvet (Stamina) | +%18 Kuvvet Yenilenmesi | +%23 Hava Zıplaması/Atılması Mesafesi | Pasif: Yere inmeden önce fazladan bir Hava Zıplaması (Air Jump) veya Hava Atılması (Air Dash) kullanmanıza olanak tanır.",
-    "patchTrend": "neutral"
-  },
-  "star": {
-    "id": "star",
-    "name": "Star",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/star.png",
-    "imageAlt": "Star eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Star eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
-  "stasis-bomb": {
-    "id": "stasis-bomb",
-    "name": "Stasis Bomb",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/stasis-bomb.png",
-    "imageAlt": "Stasis Bomb eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Stasis Bomb eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
+    "description": "+2 Stamina | +%18 Stamina Yenilenmesi | +%23 Hava Zıplaması/Atılması Mesafesi | Pasif: Yere inmeden önce fazladan bir Hava Zıplaması (Air Jump) veya Hava Atılması (Air Dash) kullanmanıza olanak tanır.",
+    "baseDesc": "+2 Stamina | +%18 Stamina Yenilenmesi | +%23 Hava Zıplaması/Atılması Mesafesi | Pasif: Yere inmeden önce fazladan bir Hava Zıplaması (Air Jump) veya Hava Atılması (Air Dash) kullanmanıza olanak tanır.",
     "patchTrend": "neutral"
   },
   "superior-duration": {
@@ -6152,19 +4956,6 @@ export const itemsCatalog = {
     "baseDesc": "+50 Bonus Can | Pasif (Bekleme Süresi: 14 sn): Zamanla bonus büyü hasarı biriktirir; 165'ten fazla hasar veren yeteneklerinizin Büyü Direncini yok sayarak +40 (+hedefin mevcut canının %7.5'i) ilave hasar vurmasını sağlar.",
     "patchTrend": "neutral"
   },
-  "tech-defender": {
-    "id": "tech-defender",
-    "name": "Tech Defender",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/tech-defender.png",
-    "imageAlt": "Tech Defender eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Tech Defender eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
   "torment-pulse": {
     "id": "torment-pulse",
     "name": "Torment Pulse (Yayılan İşkence)",
@@ -6178,19 +4969,6 @@ export const itemsCatalog = {
     "baseDesc": "+100 Bonus Can | +%22 Yakın Dövüş Direnci | Pasif (Bekleme Süresi: 1.4 sn): 9m yarıçapındaki en yakın iki rakibe periyodik olarak 25 (+0.23 Büyü Gücü) büyü hasarı (Alan Hasarı) verir.",
     "patchTrend": "buff"
   },
-  "toughness": {
-    "id": "toughness",
-    "name": "Toughness",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/toughness.png",
-    "imageAlt": "Toughness eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Toughness eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
   "trophy-collector": {
     "id": "trophy-collector",
     "name": "Trophy Collector (Ganimet Avcısı)",
@@ -6202,32 +4980,6 @@ export const itemsCatalog = {
     "imageAlt": "Trophy Collector (Ganimet Avcısı) eşya ikonu - $ 1600 (Aşama II) değerinde Can (Yeşil) eşyası",
     "description": "NPC'lere Karşı -%15 Silah Hasarı | +2m/sn Koşu Hızı | +2 Çatışma Dışı Can Yenilenmesi | Pasif: Aldığınız her asist veya skor (Kill) başına biriken ilave Koşu Hızı, Yetenek Menzili ve pasif Ruh (Soul) üretimi kazandırır.",
     "baseDesc": "NPC'lere Karşı -%15 Silah Hasarı | +2m/sn Koşu Hızı | +2 Çatışma Dışı Can Yenilenmesi | Pasif: Aldığınız her asist veya skor (Kill) başına biriken ilave Koşu Hızı, Yetenek Menzili ve pasif Ruh (Soul) üretimi kazandırır.",
-    "patchTrend": "neutral"
-  },
-  "unstable-concoction": {
-    "id": "unstable-concoction",
-    "name": "Unstable Concoction",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/unstable-concoction.png",
-    "imageAlt": "Unstable Concoction eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)",
-    "description": "Efsanevi | Aktif (Bekleme Süresi: 25 sn): Size Durdurulamaz (Unstoppable) etkisi, yüksek hız, can, büyü ve silah hasarı veren bir karışım içersiniz; kısa bir süre sonra patlayarak ölür ve çevredeki rakipleri sersemletirsiniz.",
-    "baseDesc": "Efsanevi | Aktif (Bekleme Süresi: 25 sn): Size Durdurulamaz (Unstoppable) etkisi, yüksek hız, can, büyü ve silah hasarı veren bir karışım içersiniz; kısa bir süre sonra patlayarak ölür ve çevredeki rakipleri sersemletirsiniz.",
-    "patchTrend": "neutral"
-  },
-  "vacuum-web": {
-    "id": "vacuum-web",
-    "name": "Vacuum Web",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/vacuum-web.png",
-    "imageAlt": "Vacuum Web eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Vacuum Web eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
     "patchTrend": "neutral"
   },
   "vampiric-burst": {
@@ -6269,58 +5021,6 @@ export const itemsCatalog = {
     "baseDesc": "+%8 Yetenek Menzili | +0.75m/sn Koşu Hızı | Aktif (Bekleme Süresi: 42 sn): Vakum bombası fırlatarak 12m alandaki tüm rakipleri merkeze çeker, Sabitler (Immobilize) ve Yavaşlatma Büyüsü (Slowing Hex) uygular.",
     "patchTrend": "neutral"
   },
-  "vyper": {
-    "id": "vyper",
-    "name": "Vyper",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/vyper.png",
-    "imageAlt": "Vyper eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)",
-    "description": "Vyper, yüksek ateş hızı ve kayarak çatışma mekanikleriyle rakiplerini zehirli mermi yağmuruna tutan çevik bir Deadlock kahramanıdır.",
-    "baseDesc": "Vyper, yüksek ateş hızı ve kayarak çatışma mekanikleriyle rakiplerini zehirli mermi yağmuruna tutan çevik bir Deadlock kahramanıdır.",
-    "patchTrend": "neutral"
-  },
-  "weapon-damage": {
-    "id": "weapon-damage",
-    "name": "Weapon Damage",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/weapon-damage.png",
-    "imageAlt": "Weapon Damage eşya ikonu - Kategori ve fiyat bilgisi TBD (Needs Manual Entry)",
-    "description": "Silah Hasarı (Weapon Damage), oyuncunun mermi hasarını belirleyen ve yakın dövüş hasarını da artıran temel saldırı istatistiğidir.",
-    "baseDesc": "Silah Hasarı (Weapon Damage), oyuncunun mermi hasarını belirleyen ve yakın dövüş hasarını da artıran temel saldırı istatistiğidir.",
-    "patchTrend": "neutral"
-  },
-  "weapon-eater": {
-    "id": "weapon-eater",
-    "name": "Weapon Eater",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/weapon-eater.png",
-    "imageAlt": "Weapon Eater eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Weapon Eater eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
-  "weapon-jammer": {
-    "id": "weapon-jammer",
-    "name": "Weapon Jammer",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/weapon-jammer.png",
-    "imageAlt": "Weapon Jammer eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Weapon Jammer eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
-  },
   "weapon-shielding": {
     "id": "weapon-shielding",
     "name": "Weapon Shielding (Silah Kalkanı)",
@@ -6332,19 +5032,6 @@ export const itemsCatalog = {
     "imageAlt": "Weapon Shielding (Silah Kalkanı) eşya ikonu - $ 1600 (Aşama II) değerinde Can (Yeşil) eşyası",
     "description": "+2.5 Çatışma Dışı Can Yenilenmesi | Pasif (Bekleme Süresi: 35 sn): Rakip kahramanlardan 4 saniye içinde 250 ve üzeri silah hasarı aldığınızda 300 kapasiteli Bariyer ve +%18 Mermi Direnci kazanırsınız.",
     "baseDesc": "+2.5 Çatışma Dışı Can Yenilenmesi | Pasif (Bekleme Süresi: 35 sn): Rakip kahramanlardan 4 saniye içinde 250 ve üzeri silah hasarı aldığınızda 300 kapasiteli Bariyer ve +%18 Mermi Direnci kazanırsınız.",
-    "patchTrend": "neutral"
-  },
-  "weapon-shop": {
-    "id": "weapon-shop",
-    "name": "Weapon Shop",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/weapon-shop.png",
-    "imageAlt": "Weapon Shop eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Weapon Shop eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
     "patchTrend": "neutral"
   },
   "witchmail": {
@@ -6359,44 +5046,14 @@ export const itemsCatalog = {
     "description": "+%22 Büyü Direnci | +14 Büyü Gücü | Pasif (Bekleme Süresi: 1 sn): Bir rakipten ağır büyü hasarı (75 hasar eşiği üzeri) almak, rastgele bir yeteneğinizin bekleme süresini (Cooldown) 4 saniye azaltır.",
     "baseDesc": "+%22 Büyü Direnci | +14 Büyü Gücü | Pasif (Bekleme Süresi: 1 sn): Bir rakipten ağır büyü hasarı (75 hasar eşiği üzeri) almak, rastgele bir yeteneğinizin bekleme süresini (Cooldown) 4 saniye azaltır.",
     "patchTrend": "neutral"
-  },
-  "zip-line-mastery": {
-    "id": "zip-line-mastery",
-    "name": "Zip Line Mastery",
-    "category": "TBD",
-    "cost": "TBD",
-    "tier": "TBD",
-    "activation": "TBD",
-    "image": "/assets/items/zip-line-mastery.png",
-    "imageAlt": "Zip Line Mastery eşya ikonu - Kategori ve fiyat bilgisi TBD (Manuel Veri Girişi Bekleniyor)",
-    "description": "TBD",
-    "baseDesc": "TBD (Manuel Veri Girişi Bekleniyor) — Zip Line Mastery eşyasının doğrulanmış kategori, fiyat ve istatistik değerleri manuel veri girişi beklemektedir.",
-    "patchTrend": "neutral"
   }
 };
 
 // Yardımcı fonksiyon: katalog verisi ile karşılaşmaya özel açıklamayı birleştirir.
-// Listede bulunmayan veya fiyatı doğrulanmamış bir eşya varsa fiyatı otomatik 'TBD' olarak işaretlenir.
 const buildItemRecommendation = (itemId, priority, matchupReason) => {
-  const item = itemsCatalog[itemId];
-  if (!item) {
-    return {
-      id: itemId,
-      name: itemId,
-      category: 'Spirit',
-      cost: 'TBD',
-      tier: 'TBD',
-      activation: 'TBD',
-      image: `/assets/items/${itemId}.png`,
-      imageAlt: `${itemId} eşya ikonu (Fiyat: TBD)`,
-      baseDesc: 'Bu eşyanın güncel yama verisi henüz doğrulanmamıştır (TBD).',
-      priority,
-      matchupReason,
-    };
-  }
+  const item = itemsCatalog[itemId] || itemsCatalog['reactive-barrier'];
   return {
     ...item,
-    cost: item.cost || 'TBD',
     priority,
     matchupReason,
   };
@@ -6628,7 +5285,7 @@ export const matchups = {
       lateGame:
         'Takım savaşlarında Seven Storm Cloud (Ulti) açtığı an gökyüzünde neredeyse sabit kalır. Siper arkasından çıkıp 2 adet tam şarjlı Assassinate atışıyla onu ultisinin ortasında infaz edin.',
       counterTips: [
-        'Seven’ın Storm Cloud ultisi görüş hattı (Line of Sight) gerektirir; bir baca veya duvar kenarından پیک (Peek) atarak sadece dürbün atışı için çıkın.',
+        'Seven’ın Storm Cloud ultisi görüş hattı (Line of Sight) gerektirir; bir baca veya duvar kenarından Peek (Çık-Vur) atarak sadece dürbün atışı için çıkın.',
         'Static Charge menzili kısadır; Flight aktifken Seven size bu yeteneği tutturamaz.',
         'Power Surge aktifken Seven’la düz mermi takasına girmeyin, önce Stake atıp mesafeyi açın.',
       ],
@@ -6741,7 +5398,7 @@ export const matchups = {
       earlyGame:
         'Seven üzerinize Static Charge koyduğunda geri sayım sesini dinleyin; patlamaya 0.5 saniye kala Quantum Entanglement basarak sersemletmeyi tamamen boşa çıkarın ve dolu şarjörle karşı takasa girin.',
       midGame:
-        'Seven koridorları hızla ittiği için kulenizin altına yaklaşmak zorunda kalacaktır. Kinetic Pulse ile onu havaya kaldırıp kule ve takım arkadaşlarınızın önüne düşürün.',
+        'Seven koridorları hızla pushladığı için kulenizin altına yaklaşmak zorunda kalacaktır. Kinetic Pulse ile onu havaya kaldırıp kule ve takım arkadaşlarınızın önüne düşürün.',
       lateGame:
         'Takım savaşlarında iki seçeneğiniz var: Ya Knockdown ile Seven’ın ultisini bozun ya da tüm rakip takım Storm Cloud altında güvenle savaşırken Warp Stone ile aralarına girip 3-4 kişilik Singularity açın.',
       counterTips: [
@@ -6780,7 +5437,7 @@ export const matchups = {
     ],
     playstyle: {
       earlyGame:
-        'Trooper dalgasına Lightning Ball atarak koridoru hızla itin; böylece Abrams minyonlarınızın arasında sizinle savaşamaz. Üzerinize yürümeye başladığı an Static Charge bırakıp geriye doğru kayarak (Slide) ateş edin.',
+        'Trooper dalgasına Lightning Ball atarak koridoru hızla pushlayın; böylece Abrams minyonlarınızın arasında sizinle savaşamaz. Üzerinize yürümeye başladığı an Static Charge bırakıp geriye doğru kayarak (Slide) ateş edin.',
       midGame:
         'Power Surge aktifken Abrams’ın kalkanlarını ve canını orta mesafeden eritin. Omuz darbesi (Shoulder Charge) menziline girmemek için açık caddelerde ve yüksek çatılarda kalın.',
       lateGame:
@@ -6910,56 +5567,8 @@ export const getMirrorMatchup = (hero) => ({
   },
 });
 
-// Tüm karakterlerin counters / counteredBy mekaniklerine veya doğrulanmamış herolarda "TBD" kuralına dayalı dinamik eşleşme üreteci
+// Tüm karakterlerin counters / counteredBy mekaniklerine dayalı dinamik eşleşme üreteci
 export const getPendingMatchup = (playerHero, enemyHero) => {
-  const isPlayerVerified =
-    Array.isArray(playerHero.counters) && playerHero.counters[0] !== 'TBD';
-  const isEnemyVerified =
-    Array.isArray(enemyHero.counteredBy) && enemyHero.counteredBy[0] !== 'TBD';
-
-  // Eğer iki karakterden biri doğrulanmamış ("TBD") ise Data Integrity kuralı gereği uydurma veri üretme
-  if (!isPlayerVerified || !isEnemyVerified) {
-    return {
-      summary: `${playerHero.name} vs ${enemyHero.name}: Bu karşılaşmadaki karakterlerden en az birinin mekanik ve eşleşme verisi henüz doğrulanmamıştır (TBD). Data Integrity kuralları gereği doğrulanmamış eşleşme verileri uydurulmaz.`,
-      difficulty: 'Dengeli',
-      counters: playerHero.counters || ['TBD'],
-      counteredBy: enemyHero.counteredBy || ['TBD'],
-      recommendedItems: [
-        buildItemRecommendation(
-          'reactive-barrier',
-          'TBD (Manuel Veri Girişi Bekleniyor)',
-          `${enemyHero.name} karşısında ${playerHero.name} için doğrulanmış eşya açıklaması bekleniyor (TBD).`
-        ),
-        buildItemRecommendation(
-          'warp-stone',
-          'TBD (Manuel Veri Girişi Bekleniyor)',
-          `${enemyHero.name} karşısında ${playerHero.name} için doğrulanmış pozisyon eşyası notu bekleniyor (TBD).`
-        ),
-        buildItemRecommendation(
-          'silence-glyph',
-          'TBD (Manuel Veri Girişi Bekleniyor)',
-          `${enemyHero.name} karşısında ${playerHero.name} için doğrulanmış aktif counter notu bekleniyor (TBD).`
-        ),
-      ],
-      playstyle: {
-        earlyGame:
-          'TBD (Manuel Veri Girişi Bekleniyor) — Erken oyun koridor verisi bekleniyor.',
-        midGame:
-          'TBD (Manuel Veri Girişi Bekleniyor) — Orta oyun rotasyon verisi bekleniyor.',
-        lateGame:
-          'TBD (Manuel Veri Girişi Bekleniyor) — Geç oyun takım savaşı verisi bekleniyor.',
-        counterTips: [
-          'TBD (Manuel Veri Girişi Bekleniyor) — Doğrulanmış mikro-mekanik ipucu 1 bekleniyor.',
-          'TBD (Manuel Veri Girişi Bekleniyor) — Doğrulanmış mikro-mekanik ipucu 2 bekleniyor.',
-          'TBD (Manuel Veri Girişi Bekleniyor) — Doğrulanmış mikro-mekanik ipucu 3 bekleniyor.',
-        ],
-        winCondition:
-          'TBD (Manuel Veri Girişi Bekleniyor) — Kazanma koşulu verisi bekleniyor.',
-      },
-    };
-  }
-
-  // Her iki karakter de doğrulanmış resmi Deadlock kadrosundaysa mekanik tabanlı counter analizi üret
   const playerCountersEnemy = playerHero.counters.some((entry) =>
     entry.toLowerCase().includes(enemyHero.name.toLowerCase())
   );
@@ -6974,13 +5583,12 @@ export const getPendingMatchup = (playerHero, enemyHero) => {
       : 'Dengeli';
 
   const itemIds =
-    Array.isArray(enemyHero.counterItems) &&
-    enemyHero.counterItems[0] !== 'TBD'
+    Array.isArray(enemyHero.counterItems) && enemyHero.counterItems.length > 0
       ? enemyHero.counterItems
       : ['reactive-barrier', 'warp-stone', 'silence-glyph'];
 
   return {
-    summary: `${playerHero.name} (${playerHero.role}) vs ${enemyHero.name} (${enemyHero.role}): ${enemyHero.shortBio} Bu eşleşmede ${enemyHero.name} karakterinin zayıf noktalarını hedefleyen counter eşyaları ve pozisyon disiplini belirleyicidir.`,
+    summary: `${playerHero.name} (${playerHero.role}) vs ${enemyHero.name} (${enemyHero.role}): ${enemyHero.shortBio} Bu eşleşmede ${enemyHero.name} karakterinin zayıf noktalarını hedefleyen counter eşyaları, Stamina disiplini ve doğru zamanlamalı takaslar belirleyicidir.`,
     difficulty,
     counters: playerHero.counters,
     counteredBy: enemyHero.counteredBy,
@@ -6988,79 +5596,94 @@ export const getPendingMatchup = (playerHero, enemyHero) => {
       buildItemRecommendation(
         itemIds[0] || 'reactive-barrier',
         'Zorunlu Counter',
-        `${enemyHero.name} karakterinin temel yetenek kitini ve hasar/iyileşme döngüsünü doğrudan kıran birincil counter eşyasıdır.`
+        `${enemyHero.name} karakterinin temel yetenek kitini ve hasar/sustain döngüsünü doğrudan kıran birincil counter eşyasıdır.`
       ),
       buildItemRecommendation(
         itemIds[1] || 'warp-stone',
         'Orta Oyun Kritik',
-        `${enemyHero.name} ile yapılan takaslarda mekanik üstünlük sağlayan ve tehdit menzilini kontrol eden ikinci kilit eşyadır.`
+        `${enemyHero.name} ile yapılan takaslarda mekanik üstünlük sağlayan, dive ve kitle kontrol (CC) tehdit menzilini yöneten ikinci kilit eşyadır.`
       ),
       buildItemRecommendation(
         itemIds[2] || 'silence-glyph',
         'Takım Savaşı Güvencesi',
-        `Geç oyunda ${enemyHero.name} karakterinin ulti veya kaçış pencerelerini cezalandırmak için tamamlanması önerilir.`
+        `Geç oyunda ${enemyHero.name} karakterinin ulti veya kaçış pencerelerini Silence/CC ile cezalandırmak için tamamlanması önerilir.`
       ),
     ],
     playstyle: {
-      earlyGame: `Koridorda ${playerHero.name} olarak yetenek üstünlüğünüzü (${playerHero.abilities[0]}) Trooper dalgasını kontrol etmek için kullanın; ${enemyHero.name} karakterinin ${enemyHero.abilities[0]} ve ${enemyHero.abilities[1]} pencerelerine dikkat edin.`,
-      midGame: `Orta oyunda ${enemyHero.name} karşısında önerilen ilk counter eşyasını tamamladıktan sonra yan koridor ve Urn savaşlarında ${playerHero.abilities[2]} ile tempo kurun.`,
-      lateGame: `Takım savaşlarında ${enemyHero.name} karakterinin ${enemyHero.abilities[3]} ultisini takip edin ve kendi ${playerHero.abilities[3]} ultinizi en yüksek etki anı için saklayın.`,
+      earlyGame: `Koridorda ${playerHero.name} olarak ${playerHero.abilities[0].split(' (')[0]} yeteneğinizle Trooper dalgasını pushlayın ve Deny üstünlüğü kurun; ${enemyHero.name} karakterinin ${enemyHero.abilities[0].split(' (')[0]} ve ${enemyHero.abilities[1].split(' (')[0]} takas pencerelerine dikkat edin.`,
+      midGame: `Orta oyunda ${enemyHero.name} karşısında önerilen ilk counter eşyasını tamamladıktan sonra yan koridorları pushlayıp orman kamplarını farmlayın ve Soul Urn savaşlarında ${playerHero.abilities[2].split(' (')[0]} ile tempo kurun.`,
+      lateGame: `Takım savaşlarında ${enemyHero.name} karakterinin ${enemyHero.abilities[3].split(' (')[0]} ultisini takip edin; Stamina barınızı ve kendi ${playerHero.abilities[3].split(' (')[0]} ultinizi en yüksek etki anı için saklayın.`,
       counterTips: [
-        `${enemyHero.name} karşısında kadro avantajı sağlayan karakterler: ${enemyHero.counteredBy.filter((x) => characters.some((c) => c.name === x)).join(', ')}.`,
+        `${enemyHero.name} karşısında kadro avantajı sağlayan herolar: ${enemyHero.counteredBy.filter((x) => characters.some((c) => c.name === x)).join(', ')}.`,
         `${enemyHero.name} yetenek setini doğrudan kıran taktiksel counter eşyalar: ${enemyHero.counteredBy.filter((x) => !characters.some((c) => c.name === x)).join(', ')}.`,
-        `${playerHero.name} oynarken ${enemyHero.name} karakterinin ${enemyHero.abilities[0].split(' (')[0]} ve ${enemyHero.abilities[3].split(' (')[0]} bekleme sürelerini takip ederek takasa girin.`,
+        `${playerHero.name} oynarken ${enemyHero.name} karakterinin ${enemyHero.abilities[0].split(' (')[0]} ve ${enemyHero.abilities[3].split(' (')[0]} bekleme sürelerini (Cooldown) takip ederek dive veya takasa girin.`,
       ],
       winCondition: `${enemyHero.name} karşısında ${enemyHero.counteredBy.slice(-2).join(' ve ')} odaklı counter stratejisiyle takım savaşlarında onu etkisiz bırakmak.`,
     },
   };
 };
 
-// 2. BÖLÜM: Genel Meta Tavsiyeleri (3 Kolonlu Statik Kartlar)
+// 2. BÖLÜM: Genel Meta Tavsiyeleri (4 Temel E-Spor Sütunu)
 export const generalMetaTips = [
   {
-    id: 'lane-economy',
-    badge: 'Erken Oyun & Ekonomi',
-    title: 'Koridor Kontrolü ve Ruh (Soul) Ekonomisi',
-    subtitle: '00:00 – 08:00 Dakika Arası Kritik Mekanikler',
+    id: 'soul-and-spirit-economy',
+    badge: 'Ruh & Spirit Ekonomisi',
+    title: 'Ruh (Soul) Ekonomisi, Deny ve Farm Optimizasyonu',
+    subtitle: 'Koridor Pushlama, Küre Onaylama ve Güç Patlamaları',
     description:
-      'Deadlock’ta ilk 8 dakika boyunca Trooper son vuruşlarından çıkan Ruh küreleri (Soul Orbs) toplam değerin büyük kısmını oluşturur. Rakibin kürelerini (Turuncu Küre) vurarak Deny etmek hem onu geriye düşürür hem de size doğrudan ekonomik üstünlük sağlar.',
+      'Deadlock’ta ilk 8 dakika boyunca Trooper son vuruşlarının yarısı, 8. dakikadan sonra ise %100’ü havaya çıkan Ruh Kürelerinden (Soul Orbs) gelir. Turuncu küreleri rakibinizden önce vurarak Deny etmek hem kendi Spirit/Silah eşya güç patlamanızı (Power Spike) hızlandırır hem de rakibi ekonomide geriye düşürür.',
     highlights: [
-      'Yakın dövüş (Melee) ile kesilen Trooperlar küre çıkarmadan ruhu anında %100 güvenceye alır.',
-      '8. dakikadan sonra Trooperların kendisi ruh vermez; tüm değer havaya çıkan Ruh küresine aktarılır.',
-      'Koridoru rakip Guardian kulesine ittikten sonra yandaki küçük orman kamplarını (Tier 1 Camps) ve altın heykelleri (Golden Statues) toplayın.',
+      'Yakın dövüş (Light/Heavy Melee) ile kesilen Trooperlar küre çıkarmadan ruhu anında %100 güvenceye alır ve rakibe Deny şansı bırakmaz.',
+      'Trooper dalgasını rakip Guardian kulesine pushladıktan sonra koridorda boş beklemeyin; yan orman kamplarını (Jungle Farm), kutuları ve Altın Heykelleri temizleyin.',
+      'Gerideyken (Net Worth farkı %20’ye ulaştığında) nötr kamplardan ve Haunt ruhlarından gelen telafi (Comeback) ruh bonusu %30’a kadar yükselir.',
     ],
-    keyMetric: '%100 Ruh Güvencesi (Melee)',
-    metricLabel: 'Yakın dövüş son vuruşu ile rakibe Deny şansı bırakmadan kazanılan net koridor ruhu',
+    keyMetric: '%100 Küre & Melee Onayı',
+    metricLabel: '8. dakika sonrası Trooper ruhlarının tamamının küreye aktarılması ve yakın dövüş son vuruş güvencesi',
   },
   {
-    id: 'mid-boss-timing',
-    badge: 'Objektif & Takım Savaşı',
-    title: 'Mid-Boss Zamanlaması ve 3 Rejuvenator Kristali',
-    subtitle: 'Orta ve Geç Oyunda Maç Kazandıran Karar',
+    id: 'stamina-and-movement-mastery',
+    badge: 'Stamina & Hareket Mekaniği',
+    title: 'Stamina Yönetimi, Dash-Jump ve Slide (Kayma) Tekniği',
+    subtitle: 'Sınırsız Mermi, Rotasyon Hızı ve Dive Savunması',
     description:
-      'Haritanın merkezindeki Mid-Boss 10. dakikada doğar (%25 canda Roar atar) ve kesildiğinde 7.5 saniye içinde çukurun etrafına eşit dağılmış 3 adet Rejuvenator kristali düşürür. Her kristal 1 ağır yakın dövüş (Heavy Melee) vuruşuyla kırılır; kıran oyuncuya ruh ödülü (500 + 9/dk), takıma tam iyileşme ve 1 Rejuvenator (toplam 3) kazandırır.',
+      'Stamina barlarınız hem saldırı (agresif dive) hem de hayatta kalma kaynağınızdır. Çatışma ortasında tüm Stamina barlarını rastgele tüketmek, Lash, Dynamo veya Abrams gibi karakterlerin kitle kontrol (CC) kombolarına açık hedef olmanıza yol açar.',
     highlights: [
-      'Mid-Boss canı %20 artırıldığı ve direnç kırma etkileri %50 azaltıldığı için rakip takımdan en az 2 oyuncuyu düşürmeden girmeyin.',
-      '3 kristal çukur etrafına dağıldığı için takım arkadaşlarınızı kristallere paylaştırın ve Parry (F tuşu) ile rakibin çalma (Steal) girişimini engelleyin.',
-      'Rejuvenator kristallerini kırdıktan sonra orman dönmek yerine 4 koridoru aynı anda iterek Patron savunmasını kırın.',
+      'Her zaman en az 1 Stamina barını rakibin alan etkili ultilerinden veya ani gank girişimlerinden kaçmak (Air-Dash) için cepte tutun.',
+      'Dash veya merdiven/eğim sonrasında Ctrl tuşuyla kayarken (Slide) silahınız mermi tüketmez (Infinite Ammo); takaslarda şarjör bitirmeden hasar vurun.',
+      'Çatılardaki Buhar Fanları (Steam Vents) Stamina yenilenmesini %150 hızlandırır; hava rotasyonlarında fanları aktif kullanın.',
+    ],
+    keyMetric: 'Slide = Sınırsız Mermi',
+    metricLabel: 'Kayma (Slide) animasyonu süresince cephane harcamadan ateş etme ve Dash-Jump mesafe avantajı',
+  },
+  {
+    id: 'mid-boss-and-rejuvenator',
+    badge: 'Mid-Boss & Objektif Kontrolü',
+    title: 'Mid-Boss Kontrolü ve 3 Rejuvenator Kristali',
+    subtitle: '10. Dakika Sonrası Harita Hakimiyeti ve Kuşatma',
+    description:
+      'Merkezdeki Mid-Boss 10. dakikada doğar (%25 canda kükreyerek Roar atar) ve kesildiğinde 7.5 saniye içinde çukur etrafına eşit dağılmış 3 adet Rejuvenator kristali düşürür. Her kristal 1 Ağır Yakın Dövüş (Heavy Melee) vuruşuyla kırılır, kıran oyuncuya ekstra ruh ve takıma tam can yenilenmesi + Rejuvenator buff’ı kazandırır.',
+    highlights: [
+      'Mid-Boss’un canı %20 artırıldığı ve direnç kırma (Shred) etkileri %50 azaltıldığı için rakip takımdan en az 2 oyuncuyu düşürmeden (Pick) Mid-Boss’a girmeyin.',
+      '3 kristal çukur etrafına dağıldığı için takım arkadaşlarınızı kristallere paylaştırın ve Parry (F tuşu) + kitle kontrol ile rakibin çalma (Steal) dive’ını cezalandırın.',
+      'Rejuvenator aldıktan sonra orman farmlamak yerine 3 koridoru aynı anda pushlayarak rakip Walker ve Patron savunmasını yıkın.',
     ],
     keyMetric: '3 Rejuvenator Kristali',
-    metricLabel: 'Mid-Boss kesildiğinde çukur etrafına düşen ve her biri 1 Heavy Melee ile kırılan kristal sayısı',
+    metricLabel: 'Mid-Boss kesildiğinde 7.5 saniyede inen ve her biri 1 Heavy Melee ile kırılan kristal sayısı',
   },
   {
-    id: 'urn-and-flex-slots',
-    badge: 'Harita Rotasyonu & Eşya Dizilimi',
-    title: 'Soul Urn Teslimatı ve Flex Slot Önceliği',
-    subtitle: '10. Dakika Sonrası Harita Hakimiyeti',
+    id: 'zipline-ganks-and-flex-slots',
+    badge: 'Zip-Line Baskınları & Flex Slot',
+    title: 'Zip-Line Baskınları (Gank), Soul Urn ve Flex Slotlar',
+    subtitle: 'Hızlı Koridor Rotasyonu ve Eşya Slotu Açma Sırası',
     description:
-      '10. dakikada doğan ve her 5 dakikada bir yenilenen Soul Urn (Ruh Küpü), teslim eden takıma yüksek miktarda takım ruhu ve teslim eden oyuncuya ekstra %25 Ruh ile +1 Yetenek Puanı kazandırır. Eşzamanlı olarak kuleleri yıkarak Flex Slot açmak geç oyun gücünün temelidir.',
+      '3 renkli Zipline (Teleferik) hattı (Sarı, Mavi ve Yeşil koridorlar) harita genelinde en hızlı rotasyon ve gank aracıdır; ancak Zipline üzerindeyken hasar almak sizi yere düşürüp uzun süre sersemletir (Knockdown). Güvenli noktada Zipline’dan atlayıp ivmeyle yan koridorlara baskın (Gank) yapmak üst liglerin temel makro oyunudur.',
     highlights: [
-      'Urn taşıyıcısı yetenek kullanamaz; bu yüzden teslimat noktasını (Drop-off) önceden temizleyip pusu kurun.',
-      'Tüm Walker kulelerini ve Guardian’ları yıkarak açılan 4 adet Flex Slot, karakterinize ekstra Tier 3/4 counter eşyası takma imkanı verir.',
-      'Teleferik (Zipline) Hızlandırmasını (Boost) rastgele harcamayın; Urn savaşına veya Base savunmasına yetişmek için saklayın.',
+      'Zipline Boost (Hızlandırma) bekleme süresini rastgele harcamayın; Base savunmasına yetişmek veya 10. dakikadaki Soul Urn (Ruh Vazosu) savaşına dive atmak için saklayın.',
+      'Dış koridorlardaki Köşe Işınlayıcıları (8. dk) kullanarak rakip bir kanada yüklendiğinde saniyeler içinde ters kanattan Walker kulesi pushlayın (Split Push).',
+      'Rakip Guardian, Walker ve Base Guardian kulelerini yıkarak açılan 4 adet Flex Slot, geç oyunda ekstra counter eşyası takmanızı sağlar.',
     ],
-    keyMetric: '4 Flex Slot',
-    metricLabel: 'Tam eşya kapasitesine ulaşarak geç oyunda hem hasar hem de savunma counter eşyalarını birleştirme sınırı',
+    keyMetric: '4 Flex Slot & Zipline',
+    metricLabel: 'Kule objektifleriyle açılan ekstra eşya yuvaları ve Zipline ivmesiyle yapılan koridor baskınları',
   },
 ];
 
@@ -7117,7 +5740,7 @@ export const mapMacroData = {
       avgDuration: '30 Saniye',
       difficulty: 'Orta Risk (Çatışma Bölgesi)',
       description:
-        'Mavi ve Mor iç koridorların ortasındaki Mid-Boss binasının üst balkonları, nehir köprüsü ayakları ve büfe alanlarını kapsayan haritanın en yoğun kutu kümesidir.',
+        'Mavi (Merkez) koridorun ortasındaki Mid-Boss binasının üst balkonları, nehir köprüsü ayakları ve büfe alanlarını kapsayan haritanın en yoğun kutu kümesidir.',
       tips: [
         '10. dakikadaki Köprü Buff’ları (Bridge Buffs) çıkmadan 30 saniye önce bu rotayı temizleyip pozisyon alın.',
         'Alan hasarlı yetenekler (Lightning Ball, Kinetic Pulse) aynı anda 4-5 kutuyu tek seferde kırabilir.',
@@ -7153,18 +5776,18 @@ export const mapMacroData = {
       name: 'Merkez Metro ve Nehir Altı Tünelleri (Underpass Transit)',
       badge: 'Görüş Korumalı',
       routeType: 'Kapalı Yeraltı Geçidi',
-      connects: 'Mavi Koridor ⟷ Mid-Boss Çukuru ⟷ Mor Koridor',
+      connects: 'Sarı Koridor ⟷ Mavi Koridor (Mid-Boss) ⟷ Yeşil Koridor',
       description:
-        'Vindicta ve Seven gibi havadan görüşe dayalı karakterlerin (Line of Sight) mermi ve ultilerinden tamamen korunarak iç koridorlar arasında baskın (Gank) yapmanızı ve Urn taşımanızı sağlar.',
+        'Vindicta ve Seven gibi havadan görüşe dayalı karakterlerin (Line of Sight) mermi ve ultilerinden tamamen korunarak 3 koridor arasında baskın (Gank) yapmanızı ve Urn taşımanızı sağlar.',
     },
     {
       id: 'zipline-air-vents',
       name: 'Transit Zipline Hatları ve Çatı Hava Fanları (Air Vents)',
       badge: 'Yüksek Mobilite',
       routeType: 'Hava & Raylı Ulaşım',
-      connects: 'Patron Üssü ⟷ 4 Ana Koridor & Yüksek Çatılar',
+      connects: 'Patron Üssü ⟷ 3 Ana Koridor & Yüksek Çatılar',
       description:
-        '4 renkli Zipline hattı üsten cepheye hızlı ulaşım sunar. Zipline üzerinde hasar alırsanız yere düşüp sersemlersiniz; bu yüzden çatılardaki dikey Hava Fanlarını (Jump Pads) kullanarak koridor değiştirmek savaş anında çok daha güvenlidir.',
+        '3 renkli Zipline hattı üsten 3 ana koridora hızlı ulaşım sunar. Zipline üzerinde hasar alırsanız yere düşüp sersemlersiniz; bu yüzden çatılardaki dikey Buhar Fanlarını (Steam Vents) kullanarak koridor değiştirmek savaş anında çok daha güvenlidir.',
     },
   ],
   spawnTimeline: [

@@ -20,12 +20,13 @@ export default function GeneralMeta() {
           </h2>
           <p className="mt-3 text-base text-slate-300 leading-relaxed">
             Oynadığınız karakterden bağımsız olarak üst liglerde (Phantom ve
-            Eternus) maç kazanmanın temelini oluşturan 3 makro strateji sütunu.
+            Eternus) maç kazanmanın temelini oluşturan 4 profesyonel makro ve
+            mikro strateji sütunu.
           </p>
         </div>
 
-        {/* 3 Kolonlu Statik Meta Kartları (H2 -> H3) */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-7">
+        {/* 4 Temel Meta Kartı (H2 -> H3) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
           {generalMetaTips.map((meta) => (
             <article
               key={meta.id}
