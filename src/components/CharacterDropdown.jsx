@@ -1,6 +1,66 @@
 import { useState, useRef, useEffect } from 'react';
 import { characters, createPlaceholderDataUri } from '../data';
 
+export function PatchTrendBadge({ trend, compact = false }) {
+  if (trend === 'buff') {
+    return (
+      <span
+        title="Yama Radarı: Güçlendirildi (Buff)"
+        aria-label="Son yamada güçlendirildi (Buff)"
+        className={`inline-flex items-center gap-0.5 font-extrabold rounded border bg-green-500/15 border-green-500/40 text-green-400 shrink-0 ${
+          compact ? 'px-1 py-0.5 text-[10px]' : 'px-1.5 py-0.5 text-xs'
+        }`}
+      >
+        <svg
+          className={compact ? 'w-3 h-3 text-green-400' : 'w-3.5 h-3.5 text-green-400'}
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2.5}
+            d="M5 10l7-7m0 0l7 7m-7-7v18"
+          />
+        </svg>
+        {!compact && <span>BUFF</span>}
+      </span>
+    );
+  }
+
+  if (trend === 'nerf') {
+    return (
+      <span
+        title="Yama Radarı: Zayıflatıldı (Nerf)"
+        aria-label="Son yamada zayıflatıldı (Nerf)"
+        className={`inline-flex items-center gap-0.5 font-extrabold rounded border bg-red-500/15 border-red-500/40 text-red-500 shrink-0 ${
+          compact ? 'px-1 py-0.5 text-[10px]' : 'px-1.5 py-0.5 text-xs'
+        }`}
+      >
+        <svg
+          className={compact ? 'w-3 h-3 text-red-500' : 'w-3.5 h-3.5 text-red-500'}
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2.5}
+            d="M19 14l-7 7m0 0l-7-7m7 7V3"
+          />
+        </svg>
+        {!compact && <span>NERF</span>}
+      </span>
+    );
+  }
+
+  return null;
+}
+
 export default function CharacterDropdown({
   id,
   label,
@@ -87,6 +147,7 @@ export default function CharacterDropdown({
                 <span className="text-lg font-extrabold text-white truncate">
                   {selectedHero.name}
                 </span>
+                <PatchTrendBadge trend={selectedHero.patchTrend} />
                 <span className="text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700">
                   Zorluk: {selectedHero.difficulty}
                 </span>
@@ -183,9 +244,12 @@ export default function CharacterDropdown({
                     className="w-12 h-12 rounded-lg object-cover bg-slate-800 border border-slate-700 shrink-0"
                   />
                   <div className="min-w-0">
-                    <p className="text-sm font-bold text-white truncate">
-                      {hero.name}
-                    </p>
+                    <div className="flex items-center gap-1.5">
+                      <p className="text-sm font-bold text-white truncate">
+                        {hero.name}
+                      </p>
+                      <PatchTrendBadge trend={hero.patchTrend} compact />
+                    </div>
                     <p className="text-xs text-slate-300 truncate">
                       {hero.role}
                     </p>
@@ -234,7 +298,8 @@ export default function CharacterDropdown({
                 }}
                 className="w-4 h-4 rounded-full object-cover"
               />
-              {hero.name}
+              <span>{hero.name}</span>
+              <PatchTrendBadge trend={hero.patchTrend} compact />
             </button>
           );
         })}

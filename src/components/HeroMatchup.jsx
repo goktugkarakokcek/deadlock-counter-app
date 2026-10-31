@@ -1,4 +1,4 @@
-import CharacterDropdown from './CharacterDropdown';
+import CharacterDropdown, { PatchTrendBadge } from './CharacterDropdown';
 import {
   itemsCatalog,
   categoryStyles,
@@ -224,9 +224,12 @@ export default function HeroMatchup({
               >
                 <div>
                   <div className="flex items-center justify-between gap-2 mb-1.5">
-                    <h3 className="text-xs font-bold uppercase tracking-wider text-amber-400">
-                      Senin Avantajların ({playerHero.name})
-                    </h3>
+                    <div className="flex items-center gap-2">
+                      <h3 className="text-xs font-bold uppercase tracking-wider text-amber-400">
+                        Senin Avantajların ({playerHero.name})
+                      </h3>
+                      <PatchTrendBadge trend={playerHero.patchTrend} compact />
+                    </div>
                     <span className="text-xs text-slate-300">
                       {playerHero.title}
                     </span>
@@ -253,9 +256,12 @@ export default function HeroMatchup({
               >
                 <div>
                   <div className="flex items-center justify-between gap-2 mb-1.5">
-                    <h3 className="text-xs font-bold uppercase tracking-wider text-rose-400">
-                      Dikkat Edilecek Rakip Yetenekleri ({enemyHero.name})
-                    </h3>
+                    <div className="flex items-center gap-2">
+                      <h3 className="text-xs font-bold uppercase tracking-wider text-rose-400">
+                        Dikkat Edilecek Rakip Yetenekleri ({enemyHero.name})
+                      </h3>
+                      <PatchTrendBadge trend={enemyHero.patchTrend} compact />
+                    </div>
                     <span className="text-xs text-slate-300">
                       {enemyHero.title}
                     </span>
@@ -392,9 +398,12 @@ export default function HeroMatchup({
                                 </span>
                               </div>
 
-                              <h4 className="text-lg font-extrabold text-white mt-1.5 truncate">
-                                {item.name}
-                              </h4>
+                              <div className="flex items-center gap-2 mt-1.5">
+                                <h4 className="text-lg font-extrabold text-white truncate">
+                                  {item.name}
+                                </h4>
+                                <PatchTrendBadge trend={item.patchTrend} compact />
+                              </div>
 
                               <div className="flex items-center gap-2 mt-1 text-xs text-slate-300">
                                 <span>{item.tier}</span>
@@ -527,9 +536,15 @@ export default function HeroMatchup({
                                     </div>
 
                                     <div className="min-w-0 flex-1">
-                                      <p className="text-xs sm:text-sm font-bold text-white truncate">
-                                        {itemName}
-                                      </p>
+                                      <div className="flex items-center justify-between gap-1.5">
+                                        <p className="text-xs sm:text-sm font-bold text-white truncate">
+                                          {itemName}
+                                        </p>
+                                        <PatchTrendBadge
+                                          trend={catalogItem?.patchTrend}
+                                          compact
+                                        />
+                                      </div>
                                       <div className="flex items-center gap-2 mt-1 flex-wrap">
                                         <span
                                           className={`text-[10px] font-bold px-2 py-0.5 rounded border ${catStyle.badge}`}
