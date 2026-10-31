@@ -38,12 +38,11 @@ export const characters = [
       "Seismic Impact (Sismik Darbe - Ulti: Gökyüzüne sıçrayıp hedeflenen alana hızla çarparak geniş alanda hasar ve sersemletme uygular)"
     ],
     "counters": [
-      "Pocket",
       "Calico",
       "Haze",
-      "Vyper",
       "Lash",
-      "Billy"
+      "Billy",
+      "Wraith"
     ],
     "counteredBy": [
       "Vindicta",
@@ -146,8 +145,8 @@ export const characters = [
       "Grey Talon",
       "Sinclair",
       "Infernus",
-      "Mina",
       "Wraith",
+      "Vyper",
       "Silence Wave (Susturma Dalgası)",
       "Cursed Relic (AKTİF Lanetli Yadigâr)",
       "Unstoppable (Durdurulamaz)",
@@ -186,7 +185,7 @@ export const characters = [
       "Rat King",
       "Warden",
       "Solomon",
-      "Mo & Krill"
+      "Ivy"
     ],
     "counteredBy": [
       "Vindicta",
@@ -194,8 +193,9 @@ export const characters = [
       "Bebop",
       "Paradox",
       "Yamato",
-      "Apollo",
       "Sinclair",
+      "Mo & Krill",
+      "Pocket",
       "Knockdown (Nakavt)",
       "Spirit Resilience (Büyü Dayanıklılığı)",
       "Spellbreaker (Büyü Bozan)"
@@ -370,14 +370,13 @@ export const characters = [
       "Chain Gang (Zincir Çetesi - Ulti: Yakındaki rakipleri zincirleyerek kaçmalarını engeller ve alan içinde yıkıcı kargaşa hasarı vurur)"
     ],
     "counters": [
-      "Vindicta",
       "Lash",
-      "Celeste",
       "Kelvin",
-      "Paige",
-      "Viscous",
       "McGinnis",
-      "Grey Talon"
+      "Grey Talon",
+      "Haze",
+      "Wraith",
+      "Seven"
     ],
     "counteredBy": [
       "Apollo",
@@ -429,10 +428,10 @@ export const characters = [
       "Abrams",
       "Mo & Krill",
       "Victor",
-      "Silver",
-      "Drifter",
       "Warden",
       "Rem",
+      "Kelvin",
+      "Celeste",
       "Slowing Hex (Yavaşlatma Büyüsü)",
       "Silence Wave (Susturma Dalgası)",
       "Reactive Barrier (Reaktif Bariyer)",
@@ -756,8 +755,8 @@ export const characters = [
       "Mo & Krill",
       "Graves",
       "Rat King",
-      "Kelvin",
-      "Solomon"
+      "Solomon",
+      "Billy"
     ],
     "counteredBy": [
       "Viscous",
@@ -899,7 +898,7 @@ export const characters = [
       "Abrams",
       "Warden",
       "Celeste",
-      "Silver",
+      "Kelvin",
       "Metal Skin (Metal Deri)",
       "Return Fire (AKTİF İade-i Ateş)",
       "Plated Armor (Kaplamalı Zırh)",
@@ -1264,8 +1263,7 @@ export const characters = [
       "Abrams",
       "Shiv",
       "Billy",
-      "Haze",
-      "Drifter"
+      "Bebop"
     ],
     "counteredBy": [
       "Lash",
@@ -1364,8 +1362,8 @@ export const characters = [
     "counteredBy": [
       "Mo & Krill",
       "Wraith",
-      "Solomon",
       "Celeste",
+      "Holliday",
       "Silence Wave (Susturma Dalgası)",
       "Slowing Hex (Yavaşlatma Büyüsü)",
       "Dispel Magic (AKTİF Etki Geçirme Büyüsü)",
@@ -1495,9 +1493,9 @@ export const characters = [
       "Pocket",
       "Calico",
       "Mina",
-      "McGinnis",
       "Graves",
-      "Kelvin"
+      "Kelvin",
+      "Haze"
     ],
     "counteredBy": [
       "Lady Geist",
@@ -1544,7 +1542,7 @@ export const characters = [
       "Calico",
       "Grey Talon",
       "Pocket",
-      "Violet"
+      "Vindicta"
     ],
     "counteredBy": [
       "Apollo",
@@ -1913,11 +1911,11 @@ export const characters = [
     ],
     "counters": [
       "Abrams",
-      "Mo & Krill",
       "Graves",
       "Seven",
       "Dynamo",
-      "McGinnis"
+      "McGinnis",
+      "Lady Geist"
     ],
     "counteredBy": [
       "Kelvin",
