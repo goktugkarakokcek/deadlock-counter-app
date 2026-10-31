@@ -275,9 +275,6 @@ export default function HeroMatchup({
                     >
                       Zorluk: {currentMatchup.difficulty}
                     </span>
-                    <span className="text-xs font-semibold px-3 py-1 rounded-full bg-slate-800 text-slate-200 border border-slate-700">
-                      Kazanma Oranı Dengesi: {currentMatchup.advantageScore}
-                    </span>
                   </div>
                 </div>
 
