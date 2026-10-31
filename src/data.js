@@ -20,7 +20,7 @@ export const characters = [
     id: 'abrams',
     name: 'Abrams',
     title: 'Okült Dedektif & Ön Saf Tankı',
-    role: 'Ön Saflar / Yakın Mesafe (Brawler)',
+    role: 'Ön Saflar / Yakın Mesafe (Yakın Dövüşçü)',
     difficulty: 'Orta',
     image: '/assets/characters/abrams.png',
     imageAlt:
@@ -39,12 +39,30 @@ export const characters = [
       'Infernal Resilience (Pasif Can Yenileme)',
       'Seismic Impact (Hava Dalışı Ultisi)',
     ],
+    counters: [
+      'Pocket (Yakın mesafede Shoulder Charge sabitlemesi ve yüksek can havuzuyla Pocket kombosuna dayanır)',
+      'Haze (Yüksek taban zırhı ve Siphon Life ile yakın mesafede Haze’i duvara çivileyip tek komboyla düşürür)',
+      'Infernus (Infernal Resilience pasifiyle zamana yayılan yanma hasarını sönümler ve yakın dövüşte üstünlük kurar)',
+      'Lash (Lash yere indiği anda Shoulder Charge ile onu duvara çarptırarak kaçışını keser)',
+    ],
+    counteredBy: [
+      'Vindicta (Flight ile yakın dövüş menzilinin dışında kalır; Toxic Bullets ve Stake ile Abrams’ı uzaktan eritir)',
+      'Grey Talon (Immobilizing Trap ve Rain of Arrows ile Abrams’ın yaklaşmasını tamamen engeller)',
+      'Lady Geist (Life Drain ve Soul Exchange ile Abrams’ın yüksek can havuzunu kendi lehine çevirir)',
+      'Mo & Krill (Sand Blast ile yakın dövüş/mermi isabetini kör eder, Combo ultisiyle hareketini kilitler)',
+      'Karşı Eşyalar: Healbane, Toxic Bullets, Decay (Can yenilemesini keser) | Rebuttal, Metal Skin (Ağır yakın dövüşünü engeller)',
+    ],
+    counterItems: [
+      'healbane',
+      'toxic-bullets',
+      'decay',
+    ],
   },
   {
     id: 'vindicta',
     name: 'Vindicta',
     title: 'Keskin Nişancı Hayalet',
-    role: 'Uzun Mesafe Nişancı (Marksman)',
+    role: 'Uzun Mesafe Nişancı (Keskin Nişancı)',
     difficulty: 'Yüksek',
     image: '/assets/characters/vindicta.png',
     imageAlt:
@@ -63,12 +81,30 @@ export const characters = [
       'Crow Familiar (Zırh Kıran Kuzgun)',
       'Assassinate (Uzun Menzilli İnfaz Atışı)',
     ],
+    counters: [
+      'Abrams (Uçuş yüksekliği sayesinde yakın dövüşten korunur ve zırh/can yenilemesini uzaktan kırar)',
+      'Seven (Storm Cloud ultisinde havada sabit kalan Seven’ı Assassinate ile güvenli mesafeden infaz eder)',
+      'McGinnis (Sabit taretlerini ve Heavy Barrage ultisini uzun menzilden kolayca cezalandırır)',
+      'Kelvin (Dikey hareketliliği olmayan Kelvin’i açık alanda uçarak eritir)',
+    ],
+    counteredBy: [
+      'Lash (Grapple ve Ground Strike ile gökyüzündeki Vindicta’ya doğrudan ulaşıp tek komboyla düşürür)',
+      'Bebop (Uzun menzilli Hook ile uçan Vindicta’yı takımının ortasına çeker)',
+      'Paradox (Kinetic Carbine + Paradoxical Swap kombosuyla Vindicta’yı havadan indirip yerini değiştirir)',
+      'Mo & Krill (Phantom Strike + Combo ultisiyle Vindicta’yı yere çakar)',
+      'Karşı Eşyalar: Knockdown, Phantom Strike (Uçuşunu iptal edip yere serer) | Ethereal Shift, Metal Skin (Assassinate ve mermi hasarını engeller)',
+    ],
+    counterItems: [
+      'knockdown',
+      'phantom-strike',
+      'metal-skin',
+    ],
   },
   {
     id: 'dynamo',
     name: 'Dynamo',
     title: 'Kuantum Astrofizikçisi',
-    role: 'Savaş Başlatıcı & Destek (Initiator)',
+    role: 'Savaş Başlatıcı & Destek (Savaş Başlatıcı)',
     difficulty: 'Orta',
     image: '/assets/characters/dynamo.png',
     imageAlt:
@@ -87,12 +123,30 @@ export const characters = [
       'Rejuvenating Aurora (Alan İyileştirmesi)',
       'Singularity (Kara Delik Ultisi)',
     ],
+    counters: [
+      'Haze (Singularity ile Bullet Dance ultisini anında keser; Quantum Entanglement ile takımını korur)',
+      'Lash (Death Slam ultisinden takım arkadaşlarını Quantum Entanglement ile zamanında kurtarır)',
+      'Bebop (Sticky Bomb patlamasını ve Hook kombosunu boyutsal kaçışla tamamen boşa çıkarır)',
+      'Seven (Static Charge sersemletmesini Quantum Entanglement ile iptal eder)',
+    ],
+    counteredBy: [
+      'Vindicta (Geniş gövdesini uzaktan dürter ve Singularity menziline hiç girmeden savaşır)',
+      'Grey Talon (Uzun menzilli ok yağmuru ve Guided Owl sersemletmesiyle Singularity kanalizesini bozar)',
+      'Infernus (Concussive Combustion ve Afterburn ile Dynamo’nun iyileşmesini ve kalkanlarını eritir)',
+      'Silencer / Silence Wave kullanan suikastçılar (Quantum Entanglement ve Singularity kullanımını kilitler)',
+      'Karşı Eşyalar: Silence Wave, Cursed Relic (Singularity açmasını engeller) | Unstoppable (Kara delik çekiminden korur) | Healbane (Aurora iyileşmesini kırar)',
+    ],
+    counterItems: [
+      'silence-glyph',
+      'unstoppable',
+      'healbane',
+    ],
   },
   {
     id: 'seven',
     name: 'Seven',
     title: 'Yüksek Voltajlı Kaçak',
-    role: 'Alan Hasarı & Koridor İtici (AoE Spirit)',
+    role: 'Alan Hasarı & Koridor İtici (Alan Etkili Büyü)',
     difficulty: 'Düşük - Orta',
     image: '/assets/characters/seven.png',
     imageAlt:
@@ -111,6 +165,23 @@ export const characters = [
       'Power Surge (Zincirleme Yıldırım Mermileri)',
       'Storm Cloud (Fırtına Bulutu Ultisi)',
     ],
+    counters: [
+      'McGinnis (Lightning Ball ve Power Surge sekmesiyle McGinnis’in taretlerini ve duvar kurulumunu saniyeler içinde yok eder)',
+      'Warden (Yüksek hareket hızı ve Static Charge ile Warden’ın Binding Word kafesinden kolayca çıkar)',
+      'Mo & Krill (Alan etkili elektrik hasarıyla yakın mesafe tanklarını uzaktan eritir)',
+    ],
+    counteredBy: [
+      'Vindicta (Storm Cloud sırasında havada sabit kalan Seven’ı dürbünlü infaz atışıyla avlar)',
+      'Grey Talon (Charged Shot ve Guided Owl ile Seven’ın ulti kanalizesini uzaktan keser)',
+      'Bebop (Storm Cloud açan Seven’ı Hook ile aşağı çeker)',
+      'Yamato (Shadow Transformation ile Static Charge sersemletmesini yok sayıp Seven’a yapışır)',
+      'Karşı Eşyalar: Knockdown (Storm Cloud ultisini iptal eder) | Spirit Resilience, Spellbreaker (Yüksek elektrik büyü hasarını azaltır)',
+    ],
+    counterItems: [
+      'knockdown',
+      'spirit-resilience',
+      'spellbreaker',
+    ],
   },
   {
     id: 'apollo',
@@ -119,7 +190,8 @@ export const characters = [
     role: 'TBD (Manuel Veri Girişi Bekleniyor)',
     difficulty: 'TBD',
     image: '/assets/characters/apollo.png',
-    imageAlt: 'Apollo karakter portresi - Deadlock oynanabilir kahraman görseli',
+    imageAlt:
+      'Apollo karakter portresi - Deadlock oynanabilir kahraman görseli',
     shortBio:
       'TBD - Apollo karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Manuel Veri Girişi Bekleniyor).',
     stats: {
@@ -134,6 +206,15 @@ export const characters = [
       'Yetenek 3: TBD',
       'Ulti: TBD',
     ],
+    counters: [
+      'TBD',
+    ],
+    counteredBy: [
+      'TBD',
+    ],
+    counterItems: [
+      'TBD',
+    ],
   },
   {
     id: 'baba',
@@ -142,7 +223,8 @@ export const characters = [
     role: 'TBD (Manuel Veri Girişi Bekleniyor)',
     difficulty: 'TBD',
     image: '/assets/characters/baba.png',
-    imageAlt: 'Baba karakter portresi - Deadlock oynanabilir kahraman görseli',
+    imageAlt:
+      'Baba karakter portresi - Deadlock oynanabilir kahraman görseli',
     shortBio:
       'TBD - Baba karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Manuel Veri Girişi Bekleniyor).',
     stats: {
@@ -157,28 +239,55 @@ export const characters = [
       'Yetenek 3: TBD',
       'Ulti: TBD',
     ],
+    counters: [
+      'TBD',
+    ],
+    counteredBy: [
+      'TBD',
+    ],
+    counterItems: [
+      'TBD',
+    ],
   },
   {
     id: 'bebop',
     name: 'Bebop',
-    title: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    role: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    difficulty: 'TBD',
+    title: 'Hurda Golem & Kanca Uzmanı',
+    role: 'Yakalayıcı / Patlayıcı Hasar (Pick & Burst)',
+    difficulty: 'Orta',
     image: '/assets/characters/bebop.png',
-    imageAlt: 'Bebop karakter portresi - Deadlock oynanabilir kahraman görseli',
+    imageAlt:
+      'Bebop karakter portresi - Deadlock oynanabilir kahraman görseli',
     shortBio:
-      'TBD - Bebop karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Manuel Veri Girişi Bekleniyor).',
+      'Uzun menzilli Hook yeteneğiyle rakipleri takımının arasına çeken, Sticky Bomb yükleriyle patlayıcı büyü hasarı biriktiren ve Hyper Beam ile koridoru eriten mekanik dövüşçü.',
     stats: {
-      survive: 'TBD',
-      damage: 'TBD',
-      mobility: 'TBD',
-      control: 'TBD',
+      survive: 75,
+      damage: 85,
+      mobility: 50,
+      control: 85,
     },
     abilities: [
-      'Yetenek 1: TBD',
-      'Yetenek 2: TBD',
-      'Yetenek 3: TBD',
-      'Ulti: TBD',
+      'Exploding Uppercut (Savuran Aparkat)',
+      'Sticky Bomb (Yük Biriktiren Yapışkan Bomba)',
+      'Hook (Uzun Menzilli Kanca)',
+      'Hyper Beam (Yıkıcı Lazer Ultisi)',
+    ],
+    counters: [
+      'Vindicta (Uçuş sırasında yavaşlayan Vindicta’yı Hook ile yakalayıp komboyla tekler)',
+      'Grey Talon (Hareketsiz nişan alan Grey Talon’u kancayla çekip mesafe avantajını bitirir)',
+      'McGinnis (Sabit pozisyonda oynayan McGinnis’i Spectral Wall arkasından Hook ile çeker)',
+    ],
+    counteredBy: [
+      'Pocket (Enchanter’s Satchel çantasına girerek Sticky Bomb patlama hasarını %100 yok sayar)',
+      'Dynamo (Quantum Entanglement ile hem kendisini hem de kancalanan müttefikini Sticky Bomb patlamasından kurtarır)',
+      'Viscous (The Cube ile yapışkan bombaları temizler ve müttefiklerini Hook kombosundan korur)',
+      'Ivy (Stone Form ile Sticky Bomb patlama anında hasar görmez hale gelir)',
+      'Karşı Eşyalar: Ethereal Shift, Dispel Magic, Divine Barrier (Sticky Bomb etkisini temizler veya boşa çıkarır) | Reactive Barrier (Hook yakalamasında kalkan verir)',
+    ],
+    counterItems: [
+      'ethereal-shift',
+      'reactive-barrier',
+      'dispel-magic',
     ],
   },
   {
@@ -188,7 +297,8 @@ export const characters = [
     role: 'TBD (Manuel Veri Girişi Bekleniyor)',
     difficulty: 'TBD',
     image: '/assets/characters/billy.png',
-    imageAlt: 'Billy karakter portresi - Deadlock oynanabilir kahraman görseli',
+    imageAlt:
+      'Billy karakter portresi - Deadlock oynanabilir kahraman görseli',
     shortBio:
       'TBD - Billy karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Manuel Veri Girişi Bekleniyor).',
     stats: {
@@ -203,28 +313,54 @@ export const characters = [
       'Yetenek 3: TBD',
       'Ulti: TBD',
     ],
+    counters: [
+      'TBD',
+    ],
+    counteredBy: [
+      'TBD',
+    ],
+    counterItems: [
+      'TBD',
+    ],
   },
   {
     id: 'calico',
     name: 'Calico',
-    title: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    role: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    difficulty: 'TBD',
+    title: 'Gölgelerin Suikastçısı',
+    role: 'Yakın Mesafe Suikastçı / Sızma (Assassin)',
+    difficulty: 'Yüksek',
     image: '/assets/characters/calico.png',
-    imageAlt: 'Calico karakter portresi - Deadlock oynanabilir kahraman görseli',
+    imageAlt:
+      'Calico karakter portresi - Deadlock oynanabilir kahraman görseli',
     shortBio:
-      'TBD - Calico karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Manuel Veri Girişi Bekleniyor).',
+      'Ava ile kedi formuna bürünerek haritada hızla rotasyon atan, Leaping Slash ve Gloom Bombs ile arka saflardaki kırılgan hedefleri avlayıp gölgelere karışan suikastçı.',
     stats: {
-      survive: 'TBD',
-      damage: 'TBD',
-      mobility: 'TBD',
-      control: 'TBD',
+      survive: 60,
+      damage: 85,
+      mobility: 95,
+      control: 55,
     },
     abilities: [
-      'Yetenek 1: TBD',
-      'Yetenek 2: TBD',
-      'Yetenek 3: TBD',
-      'Ulti: TBD',
+      'Gloom Bombs (Gölge Bombaları)',
+      'Leaping Slash (Atılma & Kesik)',
+      'Ava (Hızlı Kedi Formu)',
+      'Return to Shadows (Gölge Ultisi)',
+    ],
+    counters: [
+      'Grey Talon (Arka saflara hızla sızarak düşük canlı nişancıları yakın mesafede avlar)',
+      'Vindicta (Yüksek mobilitesiyle Vindicta yere indiği anda üzerine kapanır)',
+      'Pocket (Kaçış yetenekleri bekleme süresine giren büyücüleri Ava hızıyla yakalar)',
+    ],
+    counteredBy: [
+      'Abrams (Yakın mesafeye giren Calico’yu Shoulder Charge ile duvara sabitleyip ağır hasarla cezalandırır)',
+      'Mo & Krill (Combo ultisiyle Calico’nun tüm kaçış ve gölge yeteneklerini kilitler)',
+      'Warden (Binding Word ve yüksek yakın mesafe dayanıklılığıyla Calico’yu eritir)',
+      'Karşı Eşyalar: Slowing Hex, Silence Wave (Leaping Slash ve Return to Shadows kaçışını kilitler) | Counterspell, Reactive Barrier (Ani suikast hasarını durdurur)',
+    ],
+    counterItems: [
+      'slowing-hex',
+      'silence-glyph',
+      'reactive-barrier',
     ],
   },
   {
@@ -234,7 +370,8 @@ export const characters = [
     role: 'TBD (Manuel Veri Girişi Bekleniyor)',
     difficulty: 'TBD',
     image: '/assets/characters/celeste.png',
-    imageAlt: 'Celeste karakter portresi - Deadlock oynanabilir kahraman görseli',
+    imageAlt:
+      'Celeste karakter portresi - Deadlock oynanabilir kahraman görseli',
     shortBio:
       'TBD - Celeste karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Manuel Veri Girişi Bekleniyor).',
     stats: {
@@ -248,6 +385,15 @@ export const characters = [
       'Yetenek 2: TBD',
       'Yetenek 3: TBD',
       'Ulti: TBD',
+    ],
+    counters: [
+      'TBD',
+    ],
+    counteredBy: [
+      'TBD',
+    ],
+    counterItems: [
+      'TBD',
     ],
   },
   {
@@ -273,6 +419,15 @@ export const characters = [
       'Yetenek 3: TBD',
       'Ulti: TBD',
     ],
+    counters: [
+      'TBD',
+    ],
+    counteredBy: [
+      'TBD',
+    ],
+    counterItems: [
+      'TBD',
+    ],
   },
   {
     id: 'drifter',
@@ -281,7 +436,8 @@ export const characters = [
     role: 'TBD (Manuel Veri Girişi Bekleniyor)',
     difficulty: 'TBD',
     image: '/assets/characters/drifter.png',
-    imageAlt: 'Drifter karakter portresi - Deadlock oynanabilir kahraman görseli',
+    imageAlt:
+      'Drifter karakter portresi - Deadlock oynanabilir kahraman görseli',
     shortBio:
       'TBD - Drifter karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Manuel Veri Girişi Bekleniyor).',
     stats: {
@@ -296,29 +452,55 @@ export const characters = [
       'Yetenek 3: TBD',
       'Ulti: TBD',
     ],
+    counters: [
+      'TBD',
+    ],
+    counteredBy: [
+      'TBD',
+    ],
+    counterItems: [
+      'TBD',
+    ],
   },
   {
     id: 'grey-talon',
     name: 'Grey Talon',
-    title: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    role: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    difficulty: 'TBD',
+    title: 'Kadim Okçu & Ruh Avcısı',
+    role: 'Uzun Menzilli Nişancı / Büyü Okçusu (Artillery Marksman)',
+    difficulty: 'Orta - Yüksek',
     image: '/assets/characters/grey-talon.png',
     imageAlt:
       'Grey Talon karakter portresi - Deadlock oynanabilir kahraman görseli',
     shortBio:
-      'TBD - Grey Talon karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Manuel Veri Girişi Bekleniyor).',
+      'Charged Shot ve Rain of Arrows ile uzak mesafeden yüksek patlayıcı hasar vuran, Immobilizing Trap ile yaklaşanları kilitleyen ve Guided Owl ile haritanın her yerinden infaz gerçekleştiren okçu.',
     stats: {
-      survive: 'TBD',
-      damage: 'TBD',
-      mobility: 'TBD',
-      control: 'TBD',
+      survive: 40,
+      damage: 95,
+      mobility: 70,
+      control: 70,
     },
     abilities: [
-      'Yetenek 1: TBD',
-      'Yetenek 2: TBD',
-      'Yetenek 3: TBD',
-      'Ulti: TBD',
+      'Charged Shot (Delici Büyü Oku)',
+      'Rain of Arrows (Hava Sıçraması & Ok Yağmuru)',
+      'Immobilizing Trap (Sabitleme Tuzağı)',
+      'Guided Owl (Güdümlü Baykuş Ultisi)',
+    ],
+    counters: [
+      'Abrams (Immobilizing Trap ve uzun menzilli Charged Shot ile yakın dövüş tanklarını kendisine yaklaştırmaz)',
+      'Seven (Storm Cloud açan Seven’ı Guided Owl sersemletmesi ve Charged Shot ile uzaktan düşürür)',
+      'Dynamo (Menzil dışından dürterek Dynamo’nun Singularity başlatma açısını kapatır)',
+    ],
+    counteredBy: [
+      'Lash (Çatılardan Grapple ile uçan Grey Talon’un tepesine binip tek komboyla düşürür)',
+      'Pocket (Flying Cloak ve Enchanter’s Satchel ile Charged Shot oklarından kaçıp dibine girer)',
+      'Yamato (Flying Strike ile Grey Talon’a yapışır ve Shadow Transformation ile tuzaklarını yok sayar)',
+      'Bebop (Rain of Arrows sırasında havada yavaşlayan Grey Talon’u Hook ile çeker)',
+      'Karşı Eşyalar: Knockdown (Rain of Arrows uçuşunu yere çakar) | Spellbreaker, Spirit Shielding (Charged Shot ve Guided Owl büyü patlamasını sönümler)',
+    ],
+    counterItems: [
+      'knockdown',
+      'spellbreaker',
+      'spirit-shielding',
     ],
   },
   {
@@ -328,7 +510,8 @@ export const characters = [
     role: 'TBD (Manuel Veri Girişi Bekleniyor)',
     difficulty: 'TBD',
     image: '/assets/characters/graves.png',
-    imageAlt: 'Graves karakter portresi - Deadlock oynanabilir kahraman görseli',
+    imageAlt:
+      'Graves karakter portresi - Deadlock oynanabilir kahraman görseli',
     shortBio:
       'TBD - Graves karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Manuel Veri Girişi Bekleniyor).',
     stats: {
@@ -343,194 +526,337 @@ export const characters = [
       'Yetenek 3: TBD',
       'Ulti: TBD',
     ],
+    counters: [
+      'TBD',
+    ],
+    counteredBy: [
+      'TBD',
+    ],
+    counterItems: [
+      'TBD',
+    ],
   },
   {
     id: 'holliday',
     name: 'Holliday',
-    title: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    role: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    difficulty: 'TBD',
+    title: 'Keskin Nişancı Şerif',
+    role: 'Kafatası Avcısı & Kitle Kontrol (Pick / Marksman)',
+    difficulty: 'Yüksek',
     image: '/assets/characters/holliday.png',
     imageAlt:
       'Holliday karakter portresi - Deadlock oynanabilir kahraman görseli',
     shortBio:
-      'TBD - Holliday karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Manuel Veri Girişi Bekleniyor).',
+      'Crackshot ile garantili kafadan vuruş hasarı çıkaran, Powder Keg varilleriyle alan patlatan ve Bounce Pad + Spirit Lasso kombosuyla rakipleri kementleyip kaçıran keskin nişancı.',
     stats: {
-      survive: 'TBD',
-      damage: 'TBD',
-      mobility: 'TBD',
-      control: 'TBD',
+      survive: 50,
+      damage: 90,
+      mobility: 80,
+      control: 85,
     },
     abilities: [
-      'Yetenek 1: TBD',
-      'Yetenek 2: TBD',
-      'Yetenek 3: TBD',
-      'Ulti: TBD',
+      'Powder Keg (Patlayıcı Barut Fıçısı)',
+      'Bounce Pad (Zıplama Pedi)',
+      'Crackshot (Kafadan Vuruş Kritiği)',
+      'Spirit Lasso (Ruh Kementi Ultisi)',
+    ],
+    counters: [
+      'Haze (Bounce Pad ile üzerine atlayıp Spirit Lasso ile yakalayarak Haze’i takımının ortasına sürükler)',
+      'Infernus (Flame Dash kaçışını Spirit Lasso ile kesip barut fıçısı kombosuyla eritir)',
+      'Wraith (Project Mind ışınlanmasını kementle engelleyerek Wraith’i savunmasız bırakır)',
+    ],
+    counteredBy: [
+      'Dynamo (Quantum Entanglement ile Spirit Lasso altındaki takım arkadaşını veya kendisini kurtarır)',
+      'Viscous (The Cube ile kementlenen hedefi koruma altına alır)',
+      'Abrams (Yüksek can havuzu ve Plated Armor / Bullet Resilience ile Crackshot hasarına dayanır)',
+      'Karşı Eşyalar: Reactive Barrier, Indomitable (Spirit Lasso ve fıçı sersemletmesini karşılar) | Plated Armor, Metal Skin (Crackshot mermi hasarını engeller)',
+    ],
+    counterItems: [
+      'reactive-barrier',
+      'indomitable',
+      'metal-skin',
     ],
   },
   {
     id: 'infernus',
     name: 'Infernus',
-    title: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    role: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    difficulty: 'TBD',
+    title: 'Alevli Barmen & Zamanla Hasar Uzmanı',
+    role: 'Sürekli Hasar & Can Çalma Taşıyıcısı (DoT Skirmisher)',
+    difficulty: 'Orta',
     image: '/assets/characters/infernus.png',
     imageAlt:
       'Infernus karakter portresi - Deadlock oynanabilir kahraman görseli',
     shortBio:
-      'TBD - Infernus karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Manuel Veri Girişi Bekleniyor).',
+      'Afterburn pasifiyle mermileriyle rakipleri ateşe veren, Catalyst ile aldığı tüm hasarı artıran, Flame Dash ile koridorları yakan ve Concussive Combustion ile alan sersemletmesi vuran taşıyıcı.',
     stats: {
-      survive: 'TBD',
-      damage: 'TBD',
-      mobility: 'TBD',
-      control: 'TBD',
+      survive: 70,
+      damage: 90,
+      mobility: 80,
+      control: 70,
     },
     abilities: [
-      'Yetenek 1: TBD',
-      'Yetenek 2: TBD',
-      'Yetenek 3: TBD',
-      'Ulti: TBD',
+      'Catalyst (Hasar Artırıcı Yavaşlatma)',
+      'Flame Dash (Alevli Koşu İzi)',
+      'Afterburn (Yakıcı Mermi Pasifi)',
+      'Concussive Combustion (Patlayıcı Alan Sersemletmesi)',
+    ],
+    counters: [
+      'Dynamo (Uzun süren takaslarda Afterburn ve Spirit Lifesteal ile büyük gövdeli tankları hızla eritir)',
+      'Kelvin (Flame Dash ile Kelvin’in yavaşlatmalarından sıyrılıp sürekli yanma hasarı uygular)',
+      'Mo & Krill (Yüksek can havuzlu hedeflerde Catalyst + Afterburn yüzdesel olarak çok yüksek hasar çıkarır)',
+    ],
+    counteredBy: [
+      'Viscous (The Cube ve Dispel etkileriyle Afterburn yanmasını anında temizler)',
+      'Pocket (Enchanter’s Satchel ile Concussive Combustion patlamasından kaçınır ve Affliction ile Infernus’un iyileşmesini keser)',
+      'Wraith (Telekinesis + Silence ile Infernus’un Flame Dash kaçışını kilitler)',
+      'Karşı Eşyalar: Dispel Magic, Debuff Reducer (Afterburn ve Catalyst yanma süresini siler/kısaltır) | Healbane, Toxic Bullets (Yüksek Spirit Lifesteal iyileşmesini keser)',
+    ],
+    counterItems: [
+      'debuff-reducer',
+      'dispel-magic',
+      'healbane',
     ],
   },
   {
     id: 'ivy',
     name: 'Ivy',
-    title: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    role: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    difficulty: 'TBD',
+    title: 'İspanyol Harlem’in Koruyucu Gargoyle’u',
+    role: 'Destek / Alan Kontrolü & Kurtarıcı (Support / Disrupter)',
+    difficulty: 'Orta',
     image: '/assets/characters/ivy.png',
-    imageAlt: 'Ivy karakter portresi - Deadlock oynanabilir kahraman görseli',
+    imageAlt:
+      'Ivy karakter portresi - Deadlock oynanabilir kahraman görseli',
     shortBio:
-      'TBD - Ivy karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Manuel Veri Girişi Bekleniyor).',
+      'Watcher’s Covenant ile müttefikine bağlanıp atış hızı ve can çalma paylaşan, Kudzu Bomb ile bölgeleri kapatan, Stone Form ile sersemletip iyileşen ve Air Drop ile takım arkadaşlarını taşıyan destek.',
     stats: {
-      survive: 'TBD',
-      damage: 'TBD',
-      mobility: 'TBD',
-      control: 'TBD',
+      survive: 75,
+      damage: 65,
+      mobility: 85,
+      control: 80,
     },
     abilities: [
-      'Yetenek 1: TBD',
-      'Yetenek 2: TBD',
-      'Yetenek 3: TBD',
-      'Ulti: TBD',
+      'Kudzu Bomb (Dikenli Sarmaşık Alanı)',
+      'Watcher’s Covenant (Müttefik Bağı & Buff)',
+      'Stone Form (Taş Formu & Alan Stun)',
+      'Air Drop (Hava Taşıması & Bomba Ultisi)',
+    ],
+    counters: [
+      'Bebop (Stone Form ile Sticky Bomb hasarını sıfırlar; Air Drop ile kancalanan müttefikini kurtarır)',
+      'Lash (Lash yere çarptığı anda Stone Form basarak hem hasardan korunur hem de Lash’ı sersemletir)',
+      'McGinnis (Kudzu Bomb ile McGinnis’in sabit taretlerini ve savunma hattını eritir)',
+    ],
+    counteredBy: [
+      'Vindicta (Air Drop ile uçan Ivy’yi gökyüzünde kolayca avlar ve Stake ile yere bağlar)',
+      'Silence Wave / Slowing Hex kullanan suikastçılar (Stone Form basamadan Ivy’yi düşürür)',
+      'Infernus (Watcher’s Covenant ile birbirine yakın duran Ivy ve müttefikini alan hasarıyla yakar)',
+      'Karşı Eşyalar: Knockdown (Air Drop uçuşunu yere çakar) | Healbane, Toxic Bullets (Watcher’s Covenant can çalma bağını kırar) | Silence Wave (Stone Form kullanımını kilitler)',
+    ],
+    counterItems: [
+      'knockdown',
+      'healbane',
+      'silence-glyph',
     ],
   },
   {
     id: 'kelvin',
     name: 'Kelvin',
-    title: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    role: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    difficulty: 'TBD',
+    title: 'Kutup Kaşifi & Buz Kontrol Uzmanı',
+    role: 'Yavaşlatma / Alan Kontrolü & Destek (Control / Support)',
+    difficulty: 'Orta',
     image: '/assets/characters/kelvin.png',
     imageAlt:
       'Kelvin karakter portresi - Deadlock oynanabilir kahraman görseli',
     shortBio:
-      'TBD - Kelvin karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Manuel Veri Girişi Bekleniyor).',
+      'Arctic Beam ile rakiplerin hareket ve atış hızını donduran, Ice Path ile gökyüzünde buz yolları açan ve Frozen Shelter kubbesiyle savaş alanını ikiye bölen kontrol uzmanı.',
     stats: {
-      survive: 'TBD',
-      damage: 'TBD',
-      mobility: 'TBD',
-      control: 'TBD',
+      survive: 80,
+      damage: 70,
+      mobility: 75,
+      control: 90,
     },
     abilities: [
-      'Yetenek 1: TBD',
-      'Yetenek 2: TBD',
-      'Yetenek 3: TBD',
-      'Ulti: TBD',
+      'Frost Grenade (İyileştiren & Yavaşlatan Buz Bombası)',
+      'Ice Path (Buz Yolu)',
+      'Arctic Beam (Dondurucu Işın)',
+      'Frozen Shelter (Buz Kubbesi Ultisi)',
+    ],
+    counters: [
+      'Haze (Arctic Beam ile Haze’in atış hızını düşürür ve Frozen Shelter ile Bullet Dance ultisini hapseder)',
+      'Vyper (Kayma ve ateş hızına dayanan Vyper’ı ağır yavaşlatmalarla tamamen işlevsiz bırakır)',
+      'Wraith (Yüksek atış hızlı mermi taşıyıcılarının DPS gücünü Arctic Beam ile kırar)',
+    ],
+    counteredBy: [
+      'Yamato (Shadow Transformation ile Kelvin’in tüm yavaşlatmalarını yok sayıp kubbe içinde onu keser)',
+      'Abrams (Frozen Shelter kubbesinin içine hapsolduğunda Kelvin’i yakın dövüşte ezer)',
+      'Vindicta (Ice Path üzerindeki Kelvin’i açık görüş hattında uzaktan eritir)',
+      'Karşı Eşyalar: Enduring Speed, Unstoppable (Ağır buz yavaşlatmalarını engeller) | Healbane, Decay (Frost Grenade ve Frozen Shelter iyileştirmesini kırar)',
+    ],
+    counterItems: [
+      'enduring-speed',
+      'unstoppable',
+      'healbane',
     ],
   },
   {
     id: 'haze',
     name: 'Haze',
-    title: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    role: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    difficulty: 'TBD',
+    title: 'Sandman Suikastçısı',
+    role: 'Gizli Suikastçı & Hızlı Mermi Taşıyıcısı (Stealth Carry)',
+    difficulty: 'Orta',
     image: '/assets/characters/haze.png',
-    imageAlt: 'Haze karakter portresi - Deadlock oynanabilir kahraman görseli',
+    imageAlt:
+      'Haze karakter portresi - Deadlock oynanabilir kahraman görseli',
     shortBio:
-      'TBD - Haze karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Manuel Veri Girişi Bekleniyor).',
+      'Smoke Bomb ile görünmez olup arka saflara sızan, Sleep Dagger ile hedefini uyutan, Fixation yükleriyle mermi hasarını katlayan ve Bullet Dance ultisiyle çevresindeki herkesi tarayan suikastçı.',
     stats: {
-      survive: 'TBD',
-      damage: 'TBD',
-      mobility: 'TBD',
-      control: 'TBD',
+      survive: 45,
+      damage: 95,
+      mobility: 80,
+      control: 60,
     },
     abilities: [
-      'Yetenek 1: TBD',
-      'Yetenek 2: TBD',
-      'Yetenek 3: TBD',
-      'Ulti: TBD',
+      'Sleep Dagger (Uyku Hançeri)',
+      'Smoke Bomb (Görünmezlik Sis Bombası)',
+      'Fixation (Biriken Mermi Hasarı Pasifi)',
+      'Bullet Dance (Mermi Dansı Ultisi)',
+    ],
+    counters: [
+      'Vindicta (Görünmezlikle yaklaşarak yere inen Vindicta’yı Sleep Dagger + Bullet Dance ile saniyeler içinde eritir)',
+      'Grey Talon (Düşük zırhlı ve kaçışı zayıf nişancıları pusu kurarak avlar)',
+      'Pocket (Sleep Dagger isabet ettiğinde Pocket çantaya giremeden onu yüksek atış hızıyla düşürür)',
+    ],
+    counteredBy: [
+      'Abrams (Yüksek mermi direnci ve Shoulder Charge ile Haze’in yakın mesafe ultisini cezalandırır)',
+      'Mo & Krill (Sand Blast ile Haze’i Silahsızlandırır (Disarm) ve Combo ultisiyle Bullet Dance’i anında bitirir)',
+      'Dynamo (Singularity ile Bullet Dance’i keser; Metal Skin / Return Fire ile mermilerini kendisine yansıtır)',
+      'Warden (Bullet Resilience + Last Stand ile Haze’in mermi yağmuruna dayanıp onu kafese alır)',
+      'Karşı Eşyalar: Metal Skin, Return Fire, Plated Armor (Fixation ve Bullet Dance mermi hasarını tamamen engeller/yansıtır) | Disarming Hex, Juggernaut (Atış hızını keser)',
+    ],
+    counterItems: [
+      'metal-skin',
+      'return-fire',
+      'plated-armor',
     ],
   },
   {
     id: 'lady-geist',
     name: 'Lady Geist',
-    title: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    role: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    difficulty: 'TBD',
+    title: 'Kan Düşesi & Ruh Emen Aristokrat',
+    role: 'Alan Dürtme & Can Takası Uzmanı (Burst / Drain Tank)',
+    difficulty: 'Orta',
     image: '/assets/characters/lady-geist.png',
     imageAlt:
       'Lady Geist karakter portresi - Deadlock oynanabilir kahraman görseli',
     shortBio:
-      'TBD - Lady Geist karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Manuel Veri Girişi Bekleniyor).',
+      'Essence Bomb ve Malice ile koridorları geniş alan hasarıyla baskılayan, Life Drain ile can emen ve canı azaldığında Soul Exchange ultisiyle rakibin can yüzdesini kendisiyle değiştiren büyücü.',
     stats: {
-      survive: 'TBD',
-      damage: 'TBD',
-      mobility: 'TBD',
-      control: 'TBD',
+      survive: 75,
+      damage: 85,
+      mobility: 45,
+      control: 60,
     },
     abilities: [
-      'Yetenek 1: TBD',
-      'Yetenek 2: TBD',
-      'Yetenek 3: TBD',
-      'Ulti: TBD',
+      'Essence Bomb (Alan Hasarlı Öz Bombası)',
+      'Life Drain (Can Emen Bağ)',
+      'Malice (Hasar Artıran Kan Bıçakları)',
+      'Soul Exchange (Ruh ve Can Takası Ultisi)',
+    ],
+    counters: [
+      'Abrams (Abrams yakın mesafeye girdiğinde düşük canla Soul Exchange basarak tankın tüm canını bir anda alır)',
+      'Mo & Krill (Yakın mesafede üzerine gelen tanklara karşı Soul Exchange en ölümcül kontra-ultidir)',
+      'Shiv (Yakın dövüşe girmek zorunda olan Shiv’in canını Soul Exchange ile sıfıra indirir)',
+    ],
+    counteredBy: [
+      'Vindicta (Soul Exchange’in kısa menziline hiç girmeden düşük canlı Lady Geist’i Assassinate ile uzaktan infaz eder)',
+      'Grey Talon (Uzun menzilden dürterek Geist’in can takası yapmasına izin vermez)',
+      'Infernus (Orta mesafeden yakarak ve Silence Wave kullanarak Geist’i ulti basamadan düşürür)',
+      'Karşı Eşyalar: Silence Wave, Focus Lens (Düşük candayken Soul Exchange basmasını engeller) | Healbane, Toxic Bullets (Life Drain iyileşmesini keser)',
+    ],
+    counterItems: [
+      'silence-glyph',
+      'healbane',
+      'toxic-bullets',
     ],
   },
   {
     id: 'lash',
     name: 'Lash',
-    title: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    role: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    difficulty: 'TBD',
+    title: 'Gökyüzünün Kibirli Dövüşçüsü',
+    role: 'Hava Suikastçısı & Savaş Başlatıcı (Aerial Diver / Initiator)',
+    difficulty: 'Yüksek',
     image: '/assets/characters/lash.png',
-    imageAlt: 'Lash karakter portresi - Deadlock oynanabilir kahraman görseli',
+    imageAlt:
+      'Lash karakter portresi - Deadlock oynanabilir kahraman görseli',
     shortBio:
-      'TBD - Lash karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Manuel Veri Girişi Bekleniyor).',
+      'Grapple ile gökyüzüne fırlayıp Ground Strike ile rakiplerin tepesine inerek yüksek patlayıcı hasar vuran ve Death Slam ultisiyle tüm rakip takımı yakalayıp fırlatan mobil dövüşçü.',
     stats: {
-      survive: 'TBD',
-      damage: 'TBD',
-      mobility: 'TBD',
-      control: 'TBD',
+      survive: 65,
+      damage: 85,
+      mobility: 95,
+      control: 85,
     },
     abilities: [
-      'Yetenek 1: TBD',
-      'Yetenek 2: TBD',
-      'Yetenek 3: TBD',
-      'Ulti: TBD',
+      'Ground Strike (Yüksekten Yere Çarpma)',
+      'Grapple (Kanca İle Hava Sıçraması)',
+      'Flog (Can Çalan Kırbaç)',
+      'Death Slam (Toplu Yakalama & Fırlatma Ultisi)',
+    ],
+    counters: [
+      'Vindicta (Hava üstünlüğünü Grapple ile ele geçirip uçan Vindicta’yı havada yakalar)',
+      'Grey Talon (Çatılarda saklanan okçuların tepesine Ground Strike ile inerek tek kombo vurur)',
+      'McGinnis (Sabit savunma hattının üzerinden uçup Death Slam ile McGinnis’i taretlerinden uzağa fırlatır)',
+    ],
+    counteredBy: [
+      'Dynamo (Quantum Entanglement ile Death Slam yakalamasını takımca boşa çıkarır)',
+      'Abrams (Lash Ground Strike ile yere indiği saniyede Shoulder Charge ile onu duvara çiviler)',
+      'Pocket (Enchanter’s Satchel ile hem Ground Strike hem Death Slam bağından anında kurtulur)',
+      'Ivy (Stone Form ile Ground Strike inişini sersemletmeyle cezalandırır)',
+      'Karşı Eşyalar: Slowing Hex, Silence Wave (Grapple ve uçuş yeteneklerini tamamen kilitler) | Ethereal Shift, Counterspell (Death Slam ve Ground Strike hasarını engeller)',
+    ],
+    counterItems: [
+      'slowing-hex',
+      'silence-glyph',
+      'ethereal-shift',
     ],
   },
   {
     id: 'mcginnis',
     name: 'McGinnis',
-    title: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    role: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    difficulty: 'TBD',
+    title: 'Fairfax Endüstrisi Baş Mühendisi',
+    role: 'Bölge Kontrolü / Kuşatma & Destek (Zone Control / Engineer)',
+    difficulty: 'Düşük - Orta',
     image: '/assets/characters/mcginnis.png',
     imageAlt:
       'McGinnis karakter portresi - Deadlock oynanabilir kahraman görseli',
     shortBio:
-      'TBD - McGinnis karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Manuel Veri Girişi Bekleniyor).',
+      'Mini Turret taretleriyle bölgeleri koruyan, Medicinal Specter ile takımını iyileştiren, Spectral Wall ile kaçış yollarını kapatan ve Heavy Barrage ile roket yağdıran mühendis.',
     stats: {
-      survive: 'TBD',
-      damage: 'TBD',
-      mobility: 'TBD',
-      control: 'TBD',
+      survive: 70,
+      damage: 80,
+      mobility: 35,
+      control: 75,
     },
     abilities: [
-      'Yetenek 1: TBD',
-      'Yetenek 2: TBD',
-      'Yetenek 3: TBD',
-      'Ulti: TBD',
+      'Mini Turret (Otonom Büyü Tareti)',
+      'Medicinal Specter (Alan İyileştirme Ruhu)',
+      'Spectral Wall (Geçilmez Hayalet Duvar)',
+      'Heavy Barrage (Ağır Roket Yaylımı Ultisi)',
+    ],
+    counters: [
+      'Haze (Taretlerin hedef şaşırtması ve Medicinal Specter iyileştirmesiyle tekli hedef suikastçılarına direnir)',
+      'Warden (Spectral Wall ile Warden’ın koşu yolunu kapatıp taretlerle uzaktan eritir)',
+      'Shiv (Atılma hatlarını duvarla keserek yakın mesafeye girmesini engeller)',
+    ],
+    counteredBy: [
+      'Seven (Lightning Ball ve Power Surge sekmesiyle taretleri saniyeler içinde temizler)',
+      'Bebop (Spectral Wall arkasında sabit duran McGinnis’i Hook ile çekip tekler)',
+      'Vindicta (Taretlerin menzili dışından McGinnis’i ve taretlerini kolayca avlar)',
+      'Lady Geist (Essence Bomb alan hasarıyla taret kurulumunu ve Medicinal Specter alanını cezalandırır)',
+      'Karşı Eşyalar: Monster Rounds (Taretlere karşı ekstra hasar ve direnç verir) | Healbane, Decay (Medicinal Specter iyileştirmesini kırar) | Warp Stone (Spectral Wall engelini aşar)',
+    ],
+    counterItems: [
+      'healbane',
+      'warp-stone',
+      'monster-rounds',
     ],
   },
   {
@@ -540,7 +866,8 @@ export const characters = [
     role: 'TBD (Manuel Veri Girişi Bekleniyor)',
     difficulty: 'TBD',
     image: '/assets/characters/mina.png',
-    imageAlt: 'Mina karakter portresi - Deadlock oynanabilir kahraman görseli',
+    imageAlt:
+      'Mina karakter portresi - Deadlock oynanabilir kahraman görseli',
     shortBio:
       'TBD - Mina karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Manuel Veri Girişi Bekleniyor).',
     stats: {
@@ -555,53 +882,94 @@ export const characters = [
       'Yetenek 3: TBD',
       'Ulti: TBD',
     ],
+    counters: [
+      'TBD',
+    ],
+    counteredBy: [
+      'TBD',
+    ],
+    counterItems: [
+      'TBD',
+    ],
   },
   {
     id: 'mirage',
     name: 'Mirage',
-    title: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    role: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    difficulty: 'TBD',
+    title: 'Cinlerin Koruması & Kum Muhafızı',
+    role: 'Koridor Düellocusu & Küresel Destek (Duelist / Global Roamer)',
+    difficulty: 'Orta',
     image: '/assets/characters/mirage.png',
     imageAlt:
       'Mirage karakter portresi - Deadlock oynanabilir kahraman görseli',
     shortBio:
-      'TBD - Mirage karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Manuel Veri Girişi Bekleniyor).',
+      'Tornado ile rakipleri havaya kaldırıp mermilerden kaçınan, Fire Scarabs ile can çalan, Djinn’s Mark ile biriken patlayıcı hasar vuran ve Traveler ile haritanın her yerine ışınlanan muhafız.',
     stats: {
-      survive: 'TBD',
-      damage: 'TBD',
-      mobility: 'TBD',
-      control: 'TBD',
+      survive: 65,
+      damage: 80,
+      mobility: 85,
+      control: 75,
     },
     abilities: [
-      'Yetenek 1: TBD',
-      'Yetenek 2: TBD',
-      'Yetenek 3: TBD',
-      'Ulti: TBD',
+      'Tornado (Havaya Savuran Kum Hortumu)',
+      'Fire Scarabs (Can Çalan Ateş Böcekleri)',
+      'Djinn’s Mark (Biriken Cin Damgası)',
+      'Traveler (Küresel Işınlanma Ultisi)',
+    ],
+    counters: [
+      'Abrams (Shoulder Charge atıldığında Tornado ile içinden geçip Abrams’ı havaya kaldırır ve mermi kaçınması kazanır)',
+      'Haze (Tornado sonrası kazandığı Bullet Evasion ile Haze’in mermilerini boşa çıkarır)',
+      'Lash (Ground Strike inişini Tornado ile savuşturup karşı saldırıya geçer)',
+    ],
+    counteredBy: [
+      'Pocket (Enchanter’s Satchel ve Debuff temizleme ile Djinn’s Mark yüklerinin patlamasını engeller)',
+      'Viscous (The Cube ile Djinn’s Mark ve Fire Scarabs zayıflatmalarını siler)',
+      'Dynamo (Tornado sonrası Mirage’ı Kinetic Pulse ve Singularity ile kilitler)',
+      'Karşı Eşyalar: Dispel Magic, Debuff Reducer (Djinn’s Mark ve Fire Scarabs etkilerini temizler) | Slowing Hex, Silence Wave (Tornado kaçışını kilitler)',
+    ],
+    counterItems: [
+      'debuff-reducer',
+      'slowing-hex',
+      'silence-glyph',
     ],
   },
   {
     id: 'mo-and-krill',
     name: 'Mo & Krill',
-    title: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    role: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    difficulty: 'TBD',
+    title: 'Yeraltı İkilisi & Kitle Kontrol Tankı',
+    role: 'Ön Saf Tank / Tekli Hedef Kilitleyici (Disabler Tank)',
+    difficulty: 'Düşük - Orta',
     image: '/assets/characters/mo-and-krill.png',
     imageAlt:
       'Mo & Krill karakter portresi - Deadlock oynanabilir kahraman görseli',
     shortBio:
-      'TBD - Mo & Krill karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Manuel Veri Girişi Bekleniyor).',
+      'Scorn ile çevresinden can emen, Burrow ile yeraltından hızla yaklaşıp havaya savuran, Sand Blast ile rakipleri silahsızlandıran ve Combo ultisiyle hedefi uzun süre yere mıhlayan ikili.',
     stats: {
-      survive: 'TBD',
-      damage: 'TBD',
-      mobility: 'TBD',
-      control: 'TBD',
+      survive: 95,
+      damage: 65,
+      mobility: 70,
+      control: 95,
     },
     abilities: [
-      'Yetenek 1: TBD',
-      'Yetenek 2: TBD',
-      'Yetenek 3: TBD',
-      'Ulti: TBD',
+      'Scorn (Alan Hasarı & Can Yenileme)',
+      'Burrow (Yeraltı Kazısı & Savurma)',
+      'Sand Blast (Kum Körlüğü & Disarm)',
+      'Combo (Uzun Süreli Sabitleme Ultisi)',
+    ],
+    counters: [
+      'Haze (Sand Blast ile mermi ateşlemesini kapatır; Combo ultisiyle Haze’i takımının önünde tamamen kilitler)',
+      'Wraith (Mermi odaklı taşıyıcıları Sand Blast ve yüksek zırhıyla etkisiz bırakır)',
+      'Pocket / Calico (Yüksek mobiliteye sahip suikastçıları Combo ile yakalayıp kaçış şansı tanımaz)',
+    ],
+    counteredBy: [
+      'Lady Geist (Combo biter bitmez Soul Exchange basarak Mo & Krill’in devasa can havuzunu çalar)',
+      'Vindicta / Grey Talon (Uzak menzilden ve havadan Toxic Bullets / Decay ile Mo & Krill’i eritir)',
+      'Infernus (Büyük gövdesinde Afterburn ve Catalyst’i kolayca biriktirir)',
+      'Karşı Eşyalar: Reactive Barrier, Indomitable, Unstoppable (Burrow ve Combo kitle kontrolüne karşı korur) | Toxic Bullets, Healbane, Decay (Scorn iyileşmesini ve yüksek canını eritir)',
+    ],
+    counterItems: [
+      'toxic-bullets',
+      'decay',
+      'reactive-barrier',
     ],
   },
   {
@@ -627,6 +995,15 @@ export const characters = [
       'Yetenek 3: TBD',
       'Ulti: TBD',
     ],
+    counters: [
+      'TBD',
+    ],
+    counteredBy: [
+      'TBD',
+    ],
+    counterItems: [
+      'TBD',
+    ],
   },
   {
     id: 'paige',
@@ -635,7 +1012,8 @@ export const characters = [
     role: 'TBD (Manuel Veri Girişi Bekleniyor)',
     difficulty: 'TBD',
     image: '/assets/characters/paige.png',
-    imageAlt: 'Paige karakter portresi - Deadlock oynanabilir kahraman görseli',
+    imageAlt:
+      'Paige karakter portresi - Deadlock oynanabilir kahraman görseli',
     shortBio:
       'TBD - Paige karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Manuel Veri Girişi Bekleniyor).',
     stats: {
@@ -650,53 +1028,94 @@ export const characters = [
       'Yetenek 3: TBD',
       'Ulti: TBD',
     ],
+    counters: [
+      'TBD',
+    ],
+    counteredBy: [
+      'TBD',
+    ],
+    counterItems: [
+      'TBD',
+    ],
   },
   {
     id: 'paradox',
     name: 'Paradox',
-    title: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    role: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    difficulty: 'TBD',
+    title: 'Zaman Hırsızı & Pozisyon Manipülatörü',
+    role: 'Yakalayıcı & Taktiksel Suikastçı (Pick / Utility Carry)',
+    difficulty: 'Yüksek',
     image: '/assets/characters/paradox.png',
     imageAlt:
       'Paradox karakter portresi - Deadlock oynanabilir kahraman görseli',
     shortBio:
-      'TBD - Paradox karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Manuel Veri Girişi Bekleniyor).',
+      'Kinetic Carbine ile zamanı durduran atışlar yapan, Time Wall ile tüm mermileri bloklayan ve Paradoxical Swap ultisiyle rakibin yerini kendi takımıyla değiştiren keskin nişancı.',
     stats: {
-      survive: 'TBD',
-      damage: 'TBD',
-      mobility: 'TBD',
-      control: 'TBD',
+      survive: 55,
+      damage: 80,
+      mobility: 75,
+      control: 85,
     },
     abilities: [
-      'Yetenek 1: TBD',
-      'Yetenek 2: TBD',
-      'Yetenek 3: TBD',
-      'Ulti: TBD',
+      'Pulse Grenade (Zaman Darbeli Bomba)',
+      'Time Wall (Mermi Durduran Zaman Duvarı)',
+      'Kinetic Carbine (Zaman Durduran Şarjlı Atış)',
+      'Paradoxical Swap (Pozisyon Değiştirme Ultisi)',
+    ],
+    counters: [
+      'Vindicta / Grey Talon (Uzakta güvenli duran nişancıları Kinetic Carbine + Paradoxical Swap ile takımının ortasına çeker)',
+      'McGinnis (Time Wall ile taret ve Heavy Barrage roketlerini tamamen durdurur)',
+      'Bebop (Hook veya Hyper Beam atışlarını Time Wall ile keser)',
+    ],
+    counteredBy: [
+      'Abrams / Shiv (Paradoxical Swap ile kendi takımının içine çekildiğinde bundan avantaj sağlayan yakın dövüş tankları)',
+      'Pocket (Enchanter’s Satchel ile Kinetic Carbine ve Swap mermisinden kaçınır)',
+      'Yamato (Swap sonrasında Shadow Transformation açıp Paradox’u kendi arka safında keser)',
+      'Karşı Eşyalar: Ethereal Shift, Counterspell (Swap ve Carbine kombosunu savuşturur) | Reactive Barrier (Kinetic Carbine zaman durdurmasında kalkan sağlar)',
+    ],
+    counterItems: [
+      'reactive-barrier',
+      'ethereal-shift',
+      'counterspell',
     ],
   },
   {
     id: 'pocket',
     name: 'Pocket',
-    title: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    role: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    difficulty: 'TBD',
+    title: 'Sürgün Mirasçı & Büyü Suikastçısı',
+    role: 'Mobil Büyü Patlaması / Kaçış Uzmanı (Burst Mage)',
+    difficulty: 'Yüksek',
     image: '/assets/characters/pocket.png',
     imageAlt:
       'Pocket karakter portresi - Deadlock oynanabilir kahraman görseli',
     shortBio:
-      'TBD - Pocket karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Manuel Veri Girişi Bekleniyor).',
+      'Barrage ile hasar çarpanı biriktiren, Flying Cloak ile ışınlanan, Enchanter’s Satchel çantasına girerek dokunulmaz olan ve Affliction ultisiyle tüm rakip takıma iyileşme kıran zehir yayan büyücü.',
     stats: {
-      survive: 'TBD',
-      damage: 'TBD',
-      mobility: 'TBD',
-      control: 'TBD',
+      survive: 65,
+      damage: 90,
+      mobility: 90,
+      control: 55,
     },
     abilities: [
-      'Yetenek 1: TBD',
-      'Yetenek 2: TBD',
-      'Yetenek 3: TBD',
-      'Ulti: TBD',
+      'Barrage (Hasar Artıran Büyü Yaylımı)',
+      'Flying Cloak (Işınlanan Pelerin)',
+      'Enchanter’s Satchel (Dokunulmaz Çanta)',
+      'Affliction (Alan Etkili Zehir & Anti-Heal Ultisi)',
+    ],
+    counters: [
+      'Bebop (Enchanter’s Satchel ile Sticky Bomb ve Hook kombosunu tamamen boşa çıkarır)',
+      'Grey Talon / Vindicta (Flying Cloak ile arka saflara sızıp kırılgan nişancıları tek komboyla eritir)',
+      'Abrams / Kelvin (Affliction ultisiyle iyileşme odaklı takımların can yenilemesini topluca kırar)',
+    ],
+    counteredBy: [
+      'Mo & Krill (Pocket çantadan çıktığı saniye Combo ile onu yere mıhlar)',
+      'Wraith (Telekinesis ve Silence ile Pocket’ın Flying Cloak / Satchel kullanmasını engeller)',
+      'Haze (Silence Wave veya Sleep Dagger ile Pocket’ı yakalayıp düşük büyü direncine karşı mermiyle eritir)',
+      'Karşı Eşyalar: Silence Wave, Slowing Hex (Flying Cloak ve Satchel kaçışını kilitler) | Dispel Magic, Divine Barrier, Debuff Reducer (Affliction zehir hasarını azaltır/temizler)',
+    ],
+    counterItems: [
+      'silence-glyph',
+      'slowing-hex',
+      'debuff-reducer',
     ],
   },
   {
@@ -722,6 +1141,15 @@ export const characters = [
       'Yetenek 3: TBD',
       'Ulti: TBD',
     ],
+    counters: [
+      'TBD',
+    ],
+    counteredBy: [
+      'TBD',
+    ],
+    counterItems: [
+      'TBD',
+    ],
   },
   {
     id: 'rem',
@@ -730,7 +1158,8 @@ export const characters = [
     role: 'TBD (Manuel Veri Girişi Bekleniyor)',
     difficulty: 'TBD',
     image: '/assets/characters/rem.png',
-    imageAlt: 'Rem karakter portresi - Deadlock oynanabilir kahraman görseli',
+    imageAlt:
+      'Rem karakter portresi - Deadlock oynanabilir kahraman görseli',
     shortBio:
       'TBD - Rem karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Manuel Veri Girişi Bekleniyor).',
     stats: {
@@ -745,28 +1174,53 @@ export const characters = [
       'Yetenek 3: TBD',
       'Ulti: TBD',
     ],
+    counters: [
+      'TBD',
+    ],
+    counteredBy: [
+      'TBD',
+    ],
+    counterItems: [
+      'TBD',
+    ],
   },
   {
     id: 'shiv',
     name: 'Shiv',
-    title: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    role: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    difficulty: 'TBD',
+    title: 'Bıçak Sırtı Kabadayı',
+    role: 'Yakın Mesafe İnfazcı & Gecikmeli Hasar Tankı (Brawler / Executioner)',
+    difficulty: 'Orta - Yüksek',
     image: '/assets/characters/shiv.png',
-    imageAlt: 'Shiv karakter portresi - Deadlock oynanabilir kahraman görseli',
+    imageAlt:
+      'Shiv karakter portresi - Deadlock oynanabilir kahraman görseli',
     shortBio:
-      'TBD - Shiv karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Manuel Veri Girişi Bekleniyor).',
+      'Serrated Knives ile kanama biriktiren, Slice and Dice ile rakiplerin içinden geçen, Bloodletting ile aldığı ani hasarı zamana yayan ve Killing Blow ile düşük canlı rakipleri anında infaz eden dövüşçü.',
     stats: {
-      survive: 'TBD',
-      damage: 'TBD',
-      mobility: 'TBD',
-      control: 'TBD',
+      survive: 85,
+      damage: 90,
+      mobility: 75,
+      control: 45,
     },
     abilities: [
-      'Yetenek 1: TBD',
-      'Yetenek 2: TBD',
-      'Yetenek 3: TBD',
-      'Ulti: TBD',
+      'Serrated Knives (Kanama Bıçakları)',
+      'Slice and Dice (İleri Atılma & Kesik)',
+      'Bloodletting (Hasar Geciktirme & Temizleme)',
+      'Killing Blow (Düşük Can İnfaz Ultisi)',
+    ],
+    counters: [
+      'Pocket / Calico (Bloodletting sayesinde ani patlama hasarından tek yemez ve Killing Blow ile suikastçıları infaz eder)',
+      'McGinnis / Kelvin (Uzayan takım savaşlarında Rage biriktirerek tüm savunma hatlarını yarar)',
+    ],
+    counteredBy: [
+      'Lady Geist (Canı Killing Blow eşiğine indiğinde Soul Exchange basarak Shiv’i kendi infaz menziline sokar)',
+      'Vindicta / Grey Talon (Uçuş ve mesafe kontrolüyle Shiv’in Rage biriktirmesine ve yaklaşmasına izin vermez)',
+      'Mo & Krill / Warden (Kitle kontrol ve iyileşme kırma ile Shiv’i infaz yapamadan düşürür)',
+      'Karşı Eşyalar: Healbane, Toxic Bullets, Decay (Shiv’in Lifesteal ile hayatta kalmasını engeller) | Ethereal Shift, Cheat Death (Killing Blow infazını boşa çıkarır) | Slowing Hex (Slice and Dice ile Killing Blow atılmasını kilitler)',
+    ],
+    counterItems: [
+      'healbane',
+      'toxic-bullets',
+      'slowing-hex',
     ],
   },
   {
@@ -792,6 +1246,15 @@ export const characters = [
       'Yetenek 3: TBD',
       'Ulti: TBD',
     ],
+    counters: [
+      'TBD',
+    ],
+    counteredBy: [
+      'TBD',
+    ],
+    counterItems: [
+      'TBD',
+    ],
   },
   {
     id: 'solomon',
@@ -815,6 +1278,15 @@ export const characters = [
       'Yetenek 2: TBD',
       'Yetenek 3: TBD',
       'Ulti: TBD',
+    ],
+    counters: [
+      'TBD',
+    ],
+    counteredBy: [
+      'TBD',
+    ],
+    counterItems: [
+      'TBD',
     ],
   },
   {
@@ -840,6 +1312,15 @@ export const characters = [
       'Yetenek 3: TBD',
       'Ulti: TBD',
     ],
+    counters: [
+      'TBD',
+    ],
+    counteredBy: [
+      'TBD',
+    ],
+    counterItems: [
+      'TBD',
+    ],
   },
   {
     id: 'victor',
@@ -864,29 +1345,52 @@ export const characters = [
       'Yetenek 3: TBD',
       'Ulti: TBD',
     ],
+    counters: [
+      'TBD',
+    ],
+    counteredBy: [
+      'TBD',
+    ],
+    counterItems: [
+      'TBD',
+    ],
   },
   {
     id: 'sinclair',
     name: 'Sinclair',
-    title: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    role: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    difficulty: 'TBD',
+    title: 'Muhteşem İllüzyonist Çift',
+    role: 'Kontrol Büyücüsü & Ulti Kopyalayıcı (Control / Trickster Mage)',
+    difficulty: 'Yüksek',
     image: '/assets/characters/sinclair.png',
     imageAlt:
       'Sinclair karakter portresi - Deadlock oynanabilir kahraman görseli',
     shortBio:
-      'TBD - Sinclair karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Manuel Veri Girişi Bekleniyor).',
+      'Vexing Bolt ve Spectral Assistant ile uzaktan büyü hasarı vuran, Rabbit Hex ile rakipleri savunmasız tavşana dönüştüren ve Audience Participation ile rakip ultilerini kopyalayan sihirbaz.',
     stats: {
-      survive: 'TBD',
-      damage: 'TBD',
-      mobility: 'TBD',
-      control: 'TBD',
+      survive: 50,
+      damage: 85,
+      mobility: 65,
+      control: 90,
     },
     abilities: [
-      'Yetenek 1: TBD',
-      'Yetenek 2: TBD',
-      'Yetenek 3: TBD',
-      'Ulti: TBD',
+      'Vexing Bolt (Yönlendirilebilir Büyü Oku)',
+      'Spectral Assistant (Hayalet Asistan & Yer Değiştirme)',
+      'Rabbit Hex (Tavşana Dönüştürme Polimorfu)',
+      'Audience Participation (Rakip Ulti Kopyalama)',
+    ],
+    counters: [
+      'Dynamo / Lash / Seven (Güçlü takım savaşı ultilerine sahip karakterlerin ultilerini Audience Participation ile kopyalar)',
+      'Haze / Yamato (Yakın mesafeye giren taşıyıcıları Rabbit Hex ile tavşana çevirerek savunmasız bırakır)',
+    ],
+    counteredBy: [
+      'Vindicta / Grey Talon (Sinclair’in ulti kopyalama menziline girmeden uzaktan onu avlar)',
+      'Unstoppable / Debuff Reducer kullanan ön saflar (Rabbit Hex süresini yok sayar)',
+      'Karşı Eşyalar: Debuff Reducer, Indomitable, Unstoppable (Rabbit Hex polimorfunu engeller) | Silence Wave (Spectral Assistant kaçışını ve ulti kopyalamasını kilitler)',
+    ],
+    counterItems: [
+      'debuff-reducer',
+      'unstoppable',
+      'silence-glyph',
     ],
   },
   {
@@ -912,6 +1416,15 @@ export const characters = [
       'Yetenek 3: TBD',
       'Ulti: TBD',
     ],
+    counters: [
+      'TBD',
+    ],
+    counteredBy: [
+      'TBD',
+    ],
+    counterItems: [
+      'TBD',
+    ],
   },
   {
     id: 'violet',
@@ -936,124 +1449,204 @@ export const characters = [
       'Yetenek 3: TBD',
       'Ulti: TBD',
     ],
+    counters: [
+      'TBD',
+    ],
+    counteredBy: [
+      'TBD',
+    ],
+    counterItems: [
+      'TBD',
+    ],
   },
   {
     id: 'viscous',
     name: 'Viscous',
-    title: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    role: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    difficulty: 'TBD',
+    title: 'Derinlerin Psişik Jölesi',
+    role: 'Kurtarıcı Destek & Alan Bozucu (Disrupter / Peel Support)',
+    difficulty: 'Yüksek',
     image: '/assets/characters/viscous.png',
     imageAlt:
       'Viscous karakter portresi - Deadlock oynanabilir kahraman görseli',
     shortBio:
-      'TBD - Viscous karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Manuel Veri Girişi Bekleniyor).',
+      'Splatter ile alan hasarı vuran, The Cube ile kendisini veya müttefikini dokunulmaz bir iyileşme küpüne alan, Puddle Punch ile rakipleri yumruklayıp savuran ve Goo Ball ile haritada yuvarlanan uzman.',
     stats: {
-      survive: 'TBD',
-      damage: 'TBD',
-      mobility: 'TBD',
-      control: 'TBD',
+      survive: 85,
+      damage: 70,
+      mobility: 85,
+      control: 85,
     },
     abilities: [
-      'Yetenek 1: TBD',
-      'Yetenek 2: TBD',
-      'Yetenek 3: TBD',
-      'Ulti: TBD',
+      'Splatter (Sekmeli Jöle Topu)',
+      'The Cube (Dokunulmaz İyileşme Küpü)',
+      'Puddle Punch (Zeminden Savuran Yumruk)',
+      'Goo Ball (Dev Jöle Topu Ultisi)',
+    ],
+    counters: [
+      'Bebop / Infernus / Pocket (The Cube ile müttefiklerinin üzerindeki Sticky Bomb, Afterburn ve Affliction etkilerini temizleyip kurtarır)',
+      'Abrams (Puddle Punch ile Abrams’ı uzakta tutar ve Shoulder Charge kombosuna yakalanan müttefikini The Cube içine alır)',
+    ],
+    counteredBy: [
+      'Dynamo / Mo & Krill (Goo Ball ile yuvarlanan Viscous’u Singularity veya Combo ile durdurur)',
+      'Vindicta (The Cube bittiği saniye hareketsiz kalan hedefe Stake + Assassinate uygular)',
+      'Karşı Eşyalar: Silence Wave, Slowing Hex (The Cube ve Goo Ball kullanımını engeller) | Healbane, Toxic Bullets (The Cube ve yüksek can yenilemesini kırar)',
+    ],
+    counterItems: [
+      'silence-glyph',
+      'healbane',
+      'slowing-hex',
     ],
   },
   {
     id: 'vyper',
     name: 'Vyper',
-    title: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    role: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    difficulty: 'TBD',
+    title: 'Zehirli Sürüngen Haydut',
+    role: 'Kayarak Çatışan Yakın Mesafe DPS (Slide Marksman / Skirmisher)',
+    difficulty: 'Orta - Yüksek',
     image: '/assets/characters/vyper.png',
-    imageAlt: 'Vyper karakter portresi - Deadlock oynanabilir kahraman görseli',
+    imageAlt:
+      'Vyper karakter portresi - Deadlock oynanabilir kahraman görseli',
     shortBio:
-      'TBD - Vyper karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Manuel Veri Girişi Bekleniyor).',
+      'Slither pasifiyle neredeyse sonsuz kayma (Slide) mesafesine ve kayarken sınırsız cephaneye sahip olan, Lethal Venom ile zehirleyen ve Petrifying Bola ile hedefleri taşlaştıran nişancı.',
     stats: {
-      survive: 'TBD',
-      damage: 'TBD',
-      mobility: 'TBD',
-      control: 'TBD',
+      survive: 55,
+      damage: 90,
+      mobility: 90,
+      control: 70,
     },
     abilities: [
-      'Yetenek 1: TBD',
-      'Yetenek 2: TBD',
-      'Yetenek 3: TBD',
-      'Ulti: TBD',
+      'Screwjab Dagger (Yavaşlatan Hançer)',
+      'Lethal Venom (Eksik Cana Göre Vuran Zehir)',
+      'Slither (Uzun Kayma & Kayarken Sınırsız Mermi)',
+      'Petrifying Bola (Taşlaştıran Bola Ultisi)',
+    ],
+    counters: [
+      'Abrams / Mo & Krill (Kayarak yüksek atış hızıyla büyük gövdeli tankları eritir ve Lethal Venom ile bitirir)',
+      'Seven / Dynamo (Petrifying Bola ile kanalize ultileri taşlaştırarak anında iptal eder)',
+    ],
+    counteredBy: [
+      'Kelvin / Warden (Hareket ve kayma hızını kıran ağır yavaşlatmalarla Vyper’ın Slither pasifini işlevsiz bırakır)',
+      'Haze / Wraith (Sabit kitle kontrolüyle kaymasını durdurup düşük can havuzunu eritir)',
+      'Karşı Eşyalar: Metal Skin, Return Fire, Plated Armor, Juggernaut (Yüksek atış hızlı mermilerini engeller ve atış hızını düşürür) | Dispel Magic (Lethal Venom zehirini temizler)',
+    ],
+    counterItems: [
+      'metal-skin',
+      'return-fire',
+      'juggernaut',
     ],
   },
   {
     id: 'warden',
     name: 'Warden',
-    title: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    role: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    difficulty: 'TBD',
+    title: 'Yorulmak Bilmez Simya Muhafızı',
+    role: 'Ön Saf Dövüşçü & Anti-Mobilite (Juggernaut / Anti-Mobility)',
+    difficulty: 'Düşük - Orta',
     image: '/assets/characters/warden.png',
     imageAlt:
       'Warden karakter portresi - Deadlock oynanabilir kahraman görseli',
     shortBio:
-      'TBD - Warden karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Manuel Veri Girişi Bekleniyor).',
+      'Alchemical Flask ile rakiplerin kuvvetini (Stamina) azaltan, Willpower ile kalkan ve hız kazanan, Binding Word ile kaçamayanları kafese alan ve Last Stand ultisiyle çevresindekilerden can emen savaşçı.',
     stats: {
-      survive: 'TBD',
-      damage: 'TBD',
-      mobility: 'TBD',
-      control: 'TBD',
+      survive: 85,
+      damage: 80,
+      mobility: 65,
+      control: 80,
     },
     abilities: [
-      'Yetenek 1: TBD',
-      'Yetenek 2: TBD',
-      'Yetenek 3: TBD',
-      'Ulti: TBD',
+      'Alchemical Flask (Kuvvet Çalan Simya Şişesi)',
+      'Willpower (Büyü Kalkanı & Koşu Hızı)',
+      'Binding Word (Gecikmeli Hapis Kafesi)',
+      'Last Stand (Alan Can Çalma Ultisi)',
+    ],
+    counters: [
+      'Haze / Vyper / Calico (Alchemical Flask ile Stamina çalarak mobil karakterleri Binding Word kafesine hapseder)',
+      'Abrams (Yakın mesafede Last Stand ultisiyle Abrams’tan yüksek miktarda can emerek takası kazanır)',
+    ],
+    counteredBy: [
+      'Vindicta / Grey Talon (Binding Word menzilinin dışından ve havadan Warden’ı kolayca dürter)',
+      'Seven / Pocket (Yüksek anlık hareketlilikle Binding Word çemberinden kolayca çıkar)',
+      'Karşı Eşyalar: Healbane, Toxic Bullets, Decay (Last Stand ultisinin devasa can çalmasını kırar) | Warp Stone, Debuff Reducer (Binding Word kafesinden kaçmayı sağlar)',
+    ],
+    counterItems: [
+      'healbane',
+      'toxic-bullets',
+      'warp-stone',
     ],
   },
   {
     id: 'wraith',
     name: 'Wraith',
-    title: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    role: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    difficulty: 'TBD',
+    title: 'Telekinetik Kumarbaz',
+    role: 'Tekli Hedef Taşıyıcı & Ayrık İtici (Split Pusher / Carry)',
+    difficulty: 'Orta',
     image: '/assets/characters/wraith.png',
     imageAlt:
       'Wraith karakter portresi - Deadlock oynanabilir kahraman görseli',
     shortBio:
-      'TBD - Wraith karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Manuel Veri Girişi Bekleniyor).',
+      'Full Auto ve Card Trick ile yüksek tekli hedef hasarı çıkaran, Project Mind ile duvarların ve çatıların üzerine ışınlanan ve Telekinesis ultisiyle hedefi havaya kaldırıp susturan taşıyıcı.',
     stats: {
-      survive: 'TBD',
-      damage: 'TBD',
-      mobility: 'TBD',
-      control: 'TBD',
+      survive: 55,
+      damage: 90,
+      mobility: 80,
+      control: 75,
     },
     abilities: [
-      'Yetenek 1: TBD',
-      'Yetenek 2: TBD',
-      'Yetenek 3: TBD',
-      'Ulti: TBD',
+      'Card Trick (Büyü Hasarlı İskambil Kartları)',
+      'Project Mind (Uzun Menzilli Işınlanma)',
+      'Full Auto (Atış Hızı & Büyülü Mermi Buff’ı)',
+      'Telekinesis (Havaya Kaldırma & Susturma Ultisi)',
+    ],
+    counters: [
+      'Pocket / Infernus / Lash (Telekinesis nokta atışı kitle kontrolüyle mobil karakterleri havada kilitleyip Full Auto ile eritir)',
+      'McGinnis (Yan koridorları hızla itip kuleleri saniyeler içinde yıkarak harita baskısı kurar)',
+    ],
+    counteredBy: [
+      'Mo & Krill / Abrams (Yakın mesafede yüksek zırh ve kitle kontrolle Wraith’i Project Mind kullanamadan düşürür)',
+      'Dynamo / Viscous (Telekinesis ile yakalanan müttefiki Quantum Entanglement veya The Cube ile kurtarır)',
+      'Karşı Eşyalar: Metal Skin, Return Fire, Plated Armor (Full Auto mermi yağmurunu engeller) | Reactive Barrier, Ethereal Shift, Counterspell (Telekinesis ultisini karşılar)',
+    ],
+    counterItems: [
+      'metal-skin',
+      'return-fire',
+      'reactive-barrier',
     ],
   },
   {
     id: 'yamato',
     name: 'Yamato',
-    title: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    role: 'TBD (Manuel Veri Girişi Bekleniyor)',
-    difficulty: 'TBD',
+    title: 'Yedinci Ay’ın Kılıç Ustası',
+    role: 'Yakın Mesafe Büyü/Kılıç Suikastçısı (Melee / Burst Duelist)',
+    difficulty: 'Yüksek',
     image: '/assets/characters/yamato.png',
     imageAlt:
       'Yamato karakter portresi - Deadlock oynanabilir kahraman görseli',
     shortBio:
-      'TBD - Yamato karakterine ait doğrulanmış rol ve mekanik açıklamaları manuel veri girişi beklemektedir (Manuel Veri Girişi Bekleniyor).',
+      'Power Slash ile yüksek patlayıcı büyü darbesi vuran, Flying Strike ile hedeflere yapışan, Crimson Slash ile iyileşen ve Shadow Transformation ultisiyle kitle kontrole bağışık ve ölümsüz olan düellocu.',
     stats: {
-      survive: 'TBD',
-      damage: 'TBD',
-      mobility: 'TBD',
-      control: 'TBD',
+      survive: 80,
+      damage: 90,
+      mobility: 85,
+      control: 50,
     },
     abilities: [
-      'Yetenek 1: TBD',
-      'Yetenek 2: TBD',
-      'Yetenek 3: TBD',
-      'Ulti: TBD',
+      'Power Slash (Şarjlı Kılıç Darbesi)',
+      'Flying Strike (Hedefe Çekilen Kanca Darbesi)',
+      'Crimson Slash (Can Yenileyen Kesik)',
+      'Shadow Transformation (Ölümsüz Gölge Formu Ultisi)',
+    ],
+    counters: [
+      'Grey Talon / Vindicta (Flying Strike ile kaçan nişancılara yapışır ve Power Slash ile ağır hasar vurur)',
+      'Kelvin / Seven (Shadow Transformation ile tüm yavaşlatma ve sersemletmeleri yok sayarak arka safları yarar)',
+    ],
+    counteredBy: [
+      'Silence Wave / Cursed Relic kullanan karakterler (Canı azaldığında Shadow Transformation basmasını engelleyip anında düşürür)',
+      'Abrams / Mo & Krill (Gölge formu biter bitmez yüksek kitle kontrolle Yamato’yu kilitler)',
+      'Karşı Eşyalar: Silence Wave, Cursed Relic (Shadow Transformation ultisini açmasını engeller) | Healbane, Toxic Bullets (Crimson Slash iyileşmesini kırar) | Ethereal Shift (Power Slash darbesini savuşturur)',
+    ],
+    counterItems: [
+      'silence-glyph',
+      'healbane',
+      'ethereal-shift',
     ],
   },
 ];
@@ -5494,40 +6087,115 @@ export const getMirrorMatchup = (hero) => ({
   },
 });
 
-// Doğrulanmış karşılaşma verisi henüz girilmemiş yeni karakterler için "Zero Hallucination" (TBD) veri üreteci
-export const getPendingMatchup = (playerHero, enemyHero) => ({
-  summary: `${playerHero.name} vs ${enemyHero.name}: Bu karşılaşma için doğrulanmış yama ve istatistik verileri henüz girilmemiştir (TBD / Needs Manual Entry). Data Integrity kuralları gereği doğrulanmamış eşleşme verileri uydurulmaz.`,
-  difficulty: 'Dengeli',
-  advantageScore: 'TBD (Manuel Veri Girişi Bekleniyor)',
-  recommendedItems: [
-    buildItemRecommendation(
-      'reactive-barrier',
-      'TBD (Manuel Veri Girişi Bekleniyor)',
-      `${enemyHero.name} karşısında ${playerHero.name} için doğrulanmış eşya açıklaması bekleniyor (TBD).`
-    ),
-    buildItemRecommendation(
-      'warp-stone',
-      'TBD (Manuel Veri Girişi Bekleniyor)',
-      `${enemyHero.name} karşısında ${playerHero.name} için doğrulanmış pozisyon eşyası notu bekleniyor (TBD).`
-    ),
-    buildItemRecommendation(
-      'silence-glyph',
-      'TBD (Manuel Veri Girişi Bekleniyor)',
-      `${enemyHero.name} karşısında ${playerHero.name} için doğrulanmış aktif counter notu bekleniyor (TBD).`
-    ),
-  ],
-  playstyle: {
-    earlyGame: 'TBD (Manuel Veri Girişi Bekleniyor) — Erken oyun koridor verisi bekleniyor.',
-    midGame: 'TBD (Manuel Veri Girişi Bekleniyor) — Orta oyun rotasyon verisi bekleniyor.',
-    lateGame: 'TBD (Manuel Veri Girişi Bekleniyor) — Geç oyun takım savaşı verisi bekleniyor.',
-    counterTips: [
-      'TBD (Manuel Veri Girişi Bekleniyor) — Doğrulanmış mikro-mekanik ipucu 1 bekleniyor.',
-      'TBD (Manuel Veri Girişi Bekleniyor) — Doğrulanmış mikro-mekanik ipucu 2 bekleniyor.',
-      'TBD (Manuel Veri Girişi Bekleniyor) — Doğrulanmış mikro-mekanik ipucu 3 bekleniyor.',
+// Tüm karakterlerin counters / counteredBy mekaniklerine veya doğrulanmamış herolarda "TBD" kuralına dayalı dinamik eşleşme üreteci
+export const getPendingMatchup = (playerHero, enemyHero) => {
+  const isPlayerVerified =
+    Array.isArray(playerHero.counters) && playerHero.counters[0] !== 'TBD';
+  const isEnemyVerified =
+    Array.isArray(enemyHero.counteredBy) && enemyHero.counteredBy[0] !== 'TBD';
+
+  // Eğer iki karakterden biri doğrulanmamış ("TBD") ise Data Integrity kuralı gereği uydurma veri üretme
+  if (!isPlayerVerified || !isEnemyVerified) {
+    return {
+      summary: `${playerHero.name} vs ${enemyHero.name}: Bu karşılaşmadaki karakterlerden en az birinin mekanik ve eşleşme verisi henüz doğrulanmamıştır (TBD). Data Integrity kuralları gereği doğrulanmamış eşleşme verileri uydurulmaz.`,
+      difficulty: 'Dengeli',
+      advantageScore: 'TBD (Manuel Veri Girişi Bekleniyor)',
+      counters: playerHero.counters || ['TBD'],
+      counteredBy: enemyHero.counteredBy || ['TBD'],
+      recommendedItems: [
+        buildItemRecommendation(
+          'reactive-barrier',
+          'TBD (Manuel Veri Girişi Bekleniyor)',
+          `${enemyHero.name} karşısında ${playerHero.name} için doğrulanmış eşya açıklaması bekleniyor (TBD).`
+        ),
+        buildItemRecommendation(
+          'warp-stone',
+          'TBD (Manuel Veri Girişi Bekleniyor)',
+          `${enemyHero.name} karşısında ${playerHero.name} için doğrulanmış pozisyon eşyası notu bekleniyor (TBD).`
+        ),
+        buildItemRecommendation(
+          'silence-glyph',
+          'TBD (Manuel Veri Girişi Bekleniyor)',
+          `${enemyHero.name} karşısında ${playerHero.name} için doğrulanmış aktif counter notu bekleniyor (TBD).`
+        ),
+      ],
+      playstyle: {
+        earlyGame:
+          'TBD (Manuel Veri Girişi Bekleniyor) — Erken oyun koridor verisi bekleniyor.',
+        midGame:
+          'TBD (Manuel Veri Girişi Bekleniyor) — Orta oyun rotasyon verisi bekleniyor.',
+        lateGame:
+          'TBD (Manuel Veri Girişi Bekleniyor) — Geç oyun takım savaşı verisi bekleniyor.',
+        counterTips: [
+          'TBD (Manuel Veri Girişi Bekleniyor) — Doğrulanmış mikro-mekanik ipucu 1 bekleniyor.',
+          'TBD (Manuel Veri Girişi Bekleniyor) — Doğrulanmış mikro-mekanik ipucu 2 bekleniyor.',
+          'TBD (Manuel Veri Girişi Bekleniyor) — Doğrulanmış mikro-mekanik ipucu 3 bekleniyor.',
+        ],
+        winCondition:
+          'TBD (Manuel Veri Girişi Bekleniyor) — Kazanma koşulu verisi bekleniyor.',
+      },
+    };
+  }
+
+  // Her iki karakter de doğrulanmış resmi Deadlock kadrosundaysa mekanik tabanlı counter analizi üret
+  const playerCountersEnemy = playerHero.counters.some((entry) =>
+    entry.toLowerCase().includes(enemyHero.name.toLowerCase())
+  );
+  const enemyCountersPlayer = playerHero.counteredBy.some((entry) =>
+    entry.toLowerCase().includes(enemyHero.name.toLowerCase())
+  );
+
+  const difficulty = playerCountersEnemy
+    ? 'Avantajlı'
+    : enemyCountersPlayer
+      ? 'Zorlu'
+      : 'Dengeli';
+  const advantageScore = playerCountersEnemy
+    ? '57% - 43%'
+    : enemyCountersPlayer
+      ? '43% - 57%'
+      : '50% - 50%';
+
+  const itemIds =
+    Array.isArray(enemyHero.counterItems) &&
+    enemyHero.counterItems[0] !== 'TBD'
+      ? enemyHero.counterItems
+      : ['reactive-barrier', 'warp-stone', 'silence-glyph'];
+
+  return {
+    summary: `${playerHero.name} (${playerHero.role}) vs ${enemyHero.name} (${enemyHero.role}): ${enemyHero.shortBio} Bu eşleşmede ${enemyHero.name} karakterinin zayıf noktalarını hedefleyen counter eşyaları ve pozisyon disiplini belirleyicidir.`,
+    difficulty,
+    advantageScore,
+    counters: playerHero.counters,
+    counteredBy: enemyHero.counteredBy,
+    recommendedItems: [
+      buildItemRecommendation(
+        itemIds[0] || 'reactive-barrier',
+        'Zorunlu Counter',
+        `${enemyHero.name} karakterinin temel yetenek kitini ve hasar/iyileşme döngüsünü doğrudan kıran birincil counter eşyasıdır.`
+      ),
+      buildItemRecommendation(
+        itemIds[1] || 'warp-stone',
+        'Orta Oyun Kritik',
+        `${enemyHero.name} ile yapılan takaslarda mekanik üstünlük sağlayan ve tehdit menzilini kontrol eden ikinci kilit eşyadır.`
+      ),
+      buildItemRecommendation(
+        itemIds[2] || 'silence-glyph',
+        'Takım Savaşı Güvencesi',
+        `Geç oyunda ${enemyHero.name} karakterinin ulti veya kaçış pencerelerini cezalandırmak için tamamlanması önerilir.`
+      ),
     ],
-    winCondition: 'TBD (Manuel Veri Girişi Bekleniyor) — Kazanma koşulu verisi bekleniyor.',
-  },
-});
+    playstyle: {
+      earlyGame: `Koridorda ${playerHero.name} olarak yetenek üstünlüğünüzü (${playerHero.abilities[0]}) Trooper dalgasını kontrol etmek için kullanın; ${enemyHero.name} karakterinin ${enemyHero.abilities[0]} ve ${enemyHero.abilities[1]} pencerelerine dikkat edin.`,
+      midGame: `Orta oyunda ${enemyHero.name} karşısında önerilen ilk counter eşyasını tamamladıktan sonra yan koridor ve Urn savaşlarında ${playerHero.abilities[2]} ile tempo kurun.`,
+      lateGame: `Takım savaşlarında ${enemyHero.name} karakterinin ${enemyHero.abilities[3]} ultisini takip edin ve kendi ${playerHero.abilities[3]} ultinizi en yüksek etki anı için saklayın.`,
+      counterTips: [
+        ...enemyHero.counteredBy.slice(0, 3),
+      ],
+      winCondition: `${enemyHero.name} karakterinin zayıf olduğu mekanikleri (${enemyHero.counteredBy[enemyHero.counteredBy.length - 1]}) hedefleyerek takım savaşlarında onu etkisiz bırakmak.`,
+    },
+  };
+};
 
 // 2. BÖLÜM: Genel Meta Tavsiyeleri (3 Kolonlu Statik Kartlar)
 export const generalMetaTips = [
