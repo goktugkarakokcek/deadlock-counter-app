@@ -16,8 +16,8 @@ export default function Header() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-3">
         <a
-          href="#matchup-section"
-          aria-label="Deadlock Tactics ana sayfa ve karşılaşma simülatörü"
+          href="/"
+          aria-label="Deadlock Tactics ana sayfa"
           className="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 rounded-lg p-1 shrink-0"
         >
           <div
@@ -38,36 +38,6 @@ export default function Header() {
             </span>
           </div>
         </a>
-
-        <nav
-          aria-label="Sayfa Bölümleri"
-          className="hidden lg:flex items-center gap-1"
-        >
-          <a
-            href="#matchup-section"
-            className="px-3 py-2 rounded-lg text-sm font-semibold text-slate-200 hover:text-amber-400 hover:bg-slate-900 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400"
-          >
-            1. Hero Matchup
-          </a>
-          <a
-            href="#meta-section"
-            className="px-3 py-2 rounded-lg text-sm font-semibold text-slate-200 hover:text-amber-400 hover:bg-slate-900 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400"
-          >
-            2. Genel Meta
-          </a>
-          <a
-            href="#map-macro-section"
-            className="px-3 py-2 rounded-lg text-sm font-semibold text-slate-200 hover:text-amber-400 hover:bg-slate-900 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400"
-          >
-            3. Harita &amp; Zamanlamalar
-          </a>
-          <a
-            href="#methodology-section"
-            className="px-3 py-2 rounded-lg text-sm font-semibold text-slate-200 hover:text-amber-400 hover:bg-slate-900 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400"
-          >
-            4. Metodoloji
-          </a>
-        </nav>
 
         {/* Dinamik Yama / Son Güncelleme Etiketi (Badge) */}
         <div className="flex items-center gap-2 shrink-0">

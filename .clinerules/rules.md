@@ -1,0 +1,1 @@
+CRITICAL: Never write step-by-step tutorials or explanations. Execute ONLY ONE tool at a time and stop immediately.

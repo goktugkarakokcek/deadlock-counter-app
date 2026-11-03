@@ -5898,3 +5898,39 @@ export const createPlaceholderDataUri = (label, accentColor = '#f59e0b') => {
 };
 
 
+
+// Ana sayfa sekme (tab) menüsü tanımları. İlk eleman varsayılan sekmedir.
+export const appTabs = [
+  { id: 'matchup', label: 'Karakter Counter', shortLabel: 'Eşleşme', icon: '⚔️' },
+  { id: 'builds', label: 'Popüler Buildler', shortLabel: 'Buildler', icon: '🛠️' },
+  { id: 'meta', label: 'Genel Meta Tavsiyeleri', shortLabel: 'Meta', icon: '📈' },
+  { id: 'map', label: 'Harita & Zamanlamalar', shortLabel: 'Harita', icon: '🗺️' },
+  { id: 'methodology', label: 'Metodoloji', shortLabel: 'Metodoloji', icon: '📚' },
+];
+
+export const defaultTabId = appTabs[0].id;
+
+// Popüler build aşamaları (görsel stil tanımları)
+export const buildStages = [
+  {
+    key: 'earlyGame',
+    title: 'Early Game (Erken Oyun)',
+    subtitle: 'Koridor & Başlangıç ($ 800)',
+    badgeClass: 'bg-sky-500/15 text-sky-300 border-sky-500/30',
+    accentDot: 'bg-sky-400',
+  },
+  {
+    key: 'coreItems',
+    title: 'Core Items (Çekirdek Eşyalar)',
+    subtitle: 'Orta Oyun Güç Patlaması ($ 1600 - $ 3200)',
+    badgeClass: 'bg-amber-500/15 text-amber-300 border-amber-500/30',
+    accentDot: 'bg-amber-400',
+  },
+  {
+    key: 'lateGame',
+    title: 'Late Game (Geç Oyun)',
+    subtitle: 'Maksimum Taşıyıcı Dizilimi ($ 6400)',
+    badgeClass: 'bg-purple-500/15 text-purple-300 border-purple-500/30',
+    accentDot: 'bg-purple-400',
+  },
+];
