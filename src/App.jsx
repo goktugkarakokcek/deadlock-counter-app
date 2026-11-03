@@ -13,10 +13,14 @@ import PopularBuilds from './components/PopularBuilds';
 import GeneralMeta from './components/GeneralMeta';
 import MapRoutes from './components/MapRoutes';
 import Methodology from './components/Methodology';
+import AutoBattler from './components/AutoBattler';
 import Footer from './components/Footer';
+import useAutoBattler from './game/useAutoBattler';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState(defaultTabId);
+  // Oyun durumu App seviyesinde tutulur; sekme değişince oyun sıfırlanmaz
+  const autoBattler = useAutoBattler();
   const [playerHeroId, setPlayerHeroId] = useState('abrams');
   const [enemyHeroId, setEnemyHeroId] = useState('vindicta');
 
@@ -64,6 +68,8 @@ export default function App() {
         return <GeneralMeta />;
       case 'map':
         return <MapRoutes />;
+      case 'autobattler':
+        return <AutoBattler game={autoBattler} />;
       case 'methodology':
         return <Methodology />;
       case 'matchup':

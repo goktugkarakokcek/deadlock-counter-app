@@ -5905,6 +5905,7 @@ export const appTabs = [
   { id: 'builds', label: 'Popüler Buildler', shortLabel: 'Buildler', icon: '🛠️' },
   { id: 'meta', label: 'Genel Meta Tavsiyeleri', shortLabel: 'Meta', icon: '📈' },
   { id: 'map', label: 'Harita & Zamanlamalar', shortLabel: 'Harita', icon: '🗺️' },
+  { id: 'autobattler', label: 'Auto-Battler', shortLabel: 'Battler', icon: '♟️' },
   { id: 'methodology', label: 'Metodoloji', shortLabel: 'Metodoloji', icon: '📚' },
 ];
 
@@ -5934,3 +5935,57 @@ export const buildStages = [
     accentDot: 'bg-purple-400',
   },
 ];
+
+// ---------------------------------------------------------------------------
+// DEADLOCK AUTO-BATTLER (Taktiksel Çarpışma) MİNİ OYUN KURALLARI
+// Not: Aşağıdaki değerler resmi oyun verisi DEĞİLDİR; bu sitedeki basitleştirilmiş
+// simülasyonun denge (balance) ayarlarıdır. Kart gücü ve counter ilişkileri
+// yukarıdaki `characters` ve `itemsCatalog` verilerinden türetilir.
+// ---------------------------------------------------------------------------
+export const autoBattlerConfig = {
+  startingHp: 100,
+  boardSlots: 4,
+  shopSize: 4,
+  benchSize: 6,
+  rerollCost: 1,
+  heroShopChance: 0.6,
+  income: {
+    base: 5,
+    perRound: 1,
+    max: 10,
+  },
+  damage: {
+    counter: 15,
+    clash: 8,
+    unopposed: 10,
+  },
+  // Kahraman kartı maliyeti `difficulty` alanına göre belirlenir
+  heroCostByDifficulty: {
+    'Düşük - Orta': 2,
+    Orta: 3,
+    'Orta - Yüksek': 3,
+    Yüksek: 4,
+  },
+  defaultHeroCost: 3,
+  // Eşya kartı maliyeti itemsCatalog içindeki ruh (soul) bedeline göre belirlenir
+  itemCostBySoul: {
+    800: 1,
+    1600: 2,
+    3200: 3,
+    6400: 4,
+  },
+  itemPowerPerCost: 4,
+  ai: {
+    counterPickChance: 0.55,
+    counterItemChance: 0.5,
+    replaceCounteredChance: 0.5,
+  },
+  lanes: [
+    { id: 'lane-1', label: 'Koridor I', accent: 'amber' },
+    { id: 'lane-2', label: 'Koridor II', accent: 'purple' },
+    { id: 'lane-3', label: 'Koridor III', accent: 'rose' },
+    { id: 'lane-4', label: 'Koridor IV', accent: 'emerald' },
+  ],
+  disclaimer:
+    'Auto-Battler, karakterlerin counter ilişkilerini öğretmek için tasarlanmış basitleştirilmiş bir simülasyondur; Deadlock oyun içi mekaniklerini birebir yansıtmaz.',
+};
