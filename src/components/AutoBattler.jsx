@@ -84,6 +84,7 @@ export default function AutoBattler({ game }) {
         <BattlerHud
           state={state}
           timeLeft={timeLeft}
+          onSetDifficulty={actions.setDifficulty}
           onEndRound={handleEndRound}
           onReset={handleResetGame}
         />

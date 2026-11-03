@@ -1,6 +1,7 @@
 import { autoBattlerConfig } from '../data';
 import {
   createEmptyBoard,
+  getAiIncome,
   getIncome,
   getSellValue,
   planAiBoard,
@@ -12,15 +13,18 @@ const cfg = autoBattlerConfig;
 
 // Rastgelelik içeren tüm hesaplamalar (market, AI planı) reducer dışında
 // üretilir ve payload olarak gelir; böylece reducer saf (pure) kalır.
-export function createInitialState() {
-  const income = getIncome(1);
+export function createInitialState(difficulty = cfg.defaultDifficulty) {
+  const playerIncome = getIncome(1);
+  const aiIncome = getAiIncome(1, difficulty);
+  const diffLabel = cfg.difficulties?.[difficulty]?.label || 'Normal';
   return {
     phase: 'planning',
+    difficulty,
     round: 1,
     playerHp: cfg.startingHp,
     enemyHp: cfg.startingHp,
-    playerSoul: income,
-    enemySoul: income,
+    playerSoul: playerIncome,
+    enemySoul: aiIncome,
     shop: rollShop(),
     bench: [],
     playerBoard: createEmptyBoard(),
@@ -28,12 +32,18 @@ export function createInitialState() {
     selectedUid: null,
     lastCombat: null,
     winner: null,
-    message: 'Tur 1 başladı: Her iki tahta boş. Marketten kart satın alıp koridorlara yerleştir ve Turu Bitir.',
+    message: `Tur 1 (${diffLabel} Mod): Her iki tahta boş. Marketten kart satın alıp koridorlara yerleştir ve Turu Bitir.`,
   };
 }
 
 export function prepareEndRoundPayload(state) {
-  const ai = planAiBoard(state.enemyBoard, state.enemySoul, state.playerBoard, state.round);
+  const ai = planAiBoard(
+    state.enemyBoard,
+    state.enemySoul,
+    state.playerBoard,
+    state.round,
+    state.difficulty
+  );
   const combat = resolveCombat(state.playerBoard, ai.board);
   const damageToPlayer = combat.reduce((sum, r) => sum + r.damageToPlayer, 0);
   const damageToEnemy = combat.reduce((sum, r) => sum + r.damageToEnemy, 0);
@@ -56,6 +66,7 @@ export function prepareEndRoundPayload(state) {
 
   const nextRound = state.round + 1;
   const income = getIncome(nextRound);
+  const aiIncome = getAiIncome(nextRound, state.difficulty);
   return {
     combat,
     playerHp,
@@ -65,7 +76,7 @@ export function prepareEndRoundPayload(state) {
     damageToEnemy,
     income,
     enemyBoard: ai.board,
-    enemySoul: ai.soul + income,
+    enemySoul: ai.soul + aiIncome,
     shop: rollShop(),
   };
 }
@@ -73,9 +84,32 @@ export function prepareEndRoundPayload(state) {
 const findBenchCard = (state, uid) => state.bench.find((c) => c.uid === uid);
 
 export function autoBattlerReducer(state, action) {
-  if (state.phase === 'gameOver' && action.type !== 'RESET_GAME') return state;
+  if (
+    state.phase === 'gameOver' &&
+    action.type !== 'RESET_GAME' &&
+    action.type !== 'SET_DIFFICULTY'
+  ) {
+    return state;
+  }
 
   switch (action.type) {
+    case 'SET_DIFFICULTY': {
+      const nextDiff = cfg.difficulties?.[action.difficulty]
+        ? action.difficulty
+        : cfg.defaultDifficulty;
+      const diffInfo = cfg.difficulties[nextDiff];
+      const enemySoul =
+        state.round === 1 && !state.lastCombat
+          ? getAiIncome(1, nextDiff)
+          : state.enemySoul;
+      return {
+        ...state,
+        difficulty: nextDiff,
+        enemySoul,
+        message: `Zorluk seviyesi "${diffInfo.label}" olarak ayarlandı: ${diffInfo.description}`,
+      };
+    }
+
     case 'BUY_CARD': {
       const card = state.shop[action.index];
       if (!card) return state;

@@ -65,6 +65,13 @@ export function getIncome(round) {
   return Math.min(cfg.income.base + (round - 1) * cfg.income.perRound, cfg.income.max);
 }
 
+export function getAiIncome(round, difficultyId = cfg.defaultDifficulty) {
+  const diff = cfg.difficulties?.[difficultyId] || cfg.difficulties?.normal;
+  const baseIncome = getIncome(round);
+  if (!diff) return baseIncome;
+  return Math.max(diff.minAiIncome, baseIncome + diff.aiIncomeBonus);
+}
+
 export function getSellValue(card) {
   const baseValue = Math.max(1, Math.floor(card.cost / 2));
   const itemValue = card.item ? Math.max(1, Math.floor(card.item.cost / 2)) : 0;
@@ -135,63 +142,125 @@ export function resolveCombat(playerBoard, enemyBoard) {
 }
 
 // ---------------------------------------------------------------------------
-// Yapay Zeka (Düşman) tahta planlaması
+// Yapay Zeka (Düşman) tahta planlaması (Zorluk Seviyesine Göre Ağırlıklandırmalı)
 // ---------------------------------------------------------------------------
-function pickCounterHero(targetCard) {
-  const target = heroesByName[targetCard.name];
-  if (!target) return null;
-  const pool = heroList.filter(
-    (h) => target.counteredBy?.includes(h.name) || h.counters?.includes(target.name)
-  );
-  return pool.length ? randomOf(pool) : null;
+function getHeroCost(hero) {
+  return cfg.heroCostByDifficulty[hero.difficulty] ?? cfg.defaultHeroCost;
 }
 
-function pickCounterItem(targetCard, budget) {
-  const target = heroesByName[targetCard.name];
+function scoreHeroAgainstTarget(candidate, target) {
+  let score = getHeroPower(candidate);
+  if (!target) return score;
+
+  const countersDirect = candidate.counters?.includes(target.name);
+  const inCounteredBy = target.counteredBy?.includes(candidate.name);
+  const isCounteredBack =
+    target.counters?.includes(candidate.name) || candidate.counteredBy?.includes(target.name);
+
+  if (countersDirect || inCounteredBy) score += 100;
+  if (countersDirect && inCounteredBy) score += 25;
+  if (isCounteredBack) score -= 90;
+
+  return score;
+}
+
+function pickCounterHero(targetCard, budget, weighted = false) {
+  const affordable = heroList.filter((h) => getHeroCost(h) <= budget);
+  if (!affordable.length) return null;
+
+  const target = targetCard ? heroesByName[targetCard.name] : null;
+  if (!target) {
+    if (!weighted) return randomOf(affordable);
+    const sorted = [...affordable].sort((a, b) => getHeroPower(b) - getHeroPower(a));
+    return randomOf(sorted.slice(0, 3));
+  }
+
+  if (weighted) {
+    const scored = affordable
+      .map((hero) => ({ hero, score: scoreHeroAgainstTarget(hero, target) }))
+      .sort((a, b) => b.score - a.score);
+    const bestScore = scored[0].score;
+    const topPool = scored.filter((entry) => entry.score >= bestScore - 4).map((e) => e.hero);
+    return randomOf(topPool);
+  }
+
+  const pool = affordable.filter(
+    (h) => target.counteredBy?.includes(h.name) || h.counters?.includes(target.name)
+  );
+  return pool.length ? randomOf(pool) : randomOf(affordable);
+}
+
+function pickCounterItem(targetCard, budget, weighted = false) {
+  const target = targetCard ? heroesByName[targetCard.name] : null;
   if (!target) return null;
   const counteredByBase = (target.counteredBy || []).map(baseName);
   const pool = itemList
     .filter((it) => target.counterItems?.includes(it.id) || counteredByBase.includes(baseName(it.name)))
     .map(createItemCard)
     .filter((card) => card.cost <= budget);
-  return pool.length ? randomOf(pool) : null;
+
+  if (!pool.length) return null;
+  if (weighted) {
+    pool.sort((a, b) => b.power - a.power);
+    return pool[0];
+  }
+  return randomOf(pool);
 }
 
-export function planAiBoard(aiBoard, aiSoul, playerBoard, round = 1) {
+export function planAiBoard(
+  aiBoard,
+  aiSoul,
+  playerBoard,
+  round = 1,
+  difficultyId = cfg.defaultDifficulty
+) {
+  const diff = cfg.difficulties?.[difficultyId] || cfg.difficulties?.normal;
   const board = [...aiBoard];
   let soul = aiSoul;
   const isFirstRound = round === 1;
   let heroesAddedThisRound = 0;
-  const maxNewHeroesPerRound = isFirstRound ? 1 : 2;
+  const maxNewHeroesPerRound = isFirstRound ? 1 : diff.maxNewHeroesPerRound;
 
   const buyHeroFor = (laneIndex) => {
-    const playerCard = isFirstRound ? null : playerBoard[laneIndex];
-    const counterHero =
-      playerCard && Math.random() < cfg.ai.counterPickChance ? pickCounterHero(playerCard) : null;
-    const card = createHeroCard(counterHero || randomOf(heroList));
+    const affordable = heroList.filter((h) => getHeroCost(h) <= soul);
+    if (!affordable.length) return null;
+
+    // Kolay modda tamamen rastgele seçim; Normal/Zor modda counter ağırlıklı seçim
+    const canInspectLane = !isFirstRound || diff.weightedCounterPick;
+    const playerCard = canInspectLane ? playerBoard[laneIndex] : null;
+    const shouldCounterPick =
+      diff.counterPickChance > 0 && Math.random() < diff.counterPickChance;
+
+    const chosenHero = shouldCounterPick
+      ? pickCounterHero(playerCard, soul, diff.weightedCounterPick)
+      : randomOf(affordable);
+
+    if (!chosenHero) return null;
+    const card = createHeroCard(chosenHero);
     if (card.cost > soul) return null;
     soul -= card.cost;
     return card;
   };
 
-  // 1) Counterlanan kahramanları değiştir (1. tur hariç)
-  if (!isFirstRound) {
+  // 1) Counterlanan kahramanları değiştir (1. tur hariç ve zorluk şansına göre)
+  if (!isFirstRound && diff.replaceCounteredChance > 0) {
     board.forEach((card, i) => {
       const playerCard = playerBoard[i];
       if (!card || !playerCard) return;
       const isCountered = resolveLane(playerCard, card, i).outcome === 'player';
-      if (isCountered && Math.random() < cfg.ai.replaceCounteredChance) {
+      if (isCountered && Math.random() < diff.replaceCounteredChance) {
         const replacement = buyHeroFor(i);
         if (replacement) board[i] = replacement;
       }
     });
   }
 
-  // 2) Boş koridorları doldur (1. turda rastgele tek koridor, sonraki turlarda öncelikli)
+  // 2) Boş koridorları doldur (Kolay modda ve 1. turda tamamen rastgele koridor seçimi)
   const indices = board.map((_, i) => i);
-  const order = isFirstRound
-    ? indices.sort(() => Math.random() - 0.5)
-    : indices.sort((a, b) => Number(Boolean(playerBoard[b])) - Number(Boolean(playerBoard[a])));
+  const order =
+    !diff.prioritizePlayerLanes || (isFirstRound && !diff.weightedCounterPick)
+      ? indices.sort(() => Math.random() - 0.5)
+      : indices.sort((a, b) => Number(Boolean(playerBoard[b])) - Number(Boolean(playerBoard[a])));
 
   order.forEach((i) => {
     if (!board[i] && heroesAddedThisRound < maxNewHeroesPerRound) {
@@ -204,12 +273,12 @@ export function planAiBoard(aiBoard, aiSoul, playerBoard, round = 1) {
   });
 
   // 3) Kalan ruhla counter eşya tak (1. tur hariç)
-  if (!isFirstRound) {
+  if (!isFirstRound && diff.counterItemChance > 0) {
     board.forEach((card, i) => {
       const playerCard = playerBoard[i];
       if (!card || card.item || !playerCard) return;
-      if (Math.random() >= cfg.ai.counterItemChance) return;
-      const item = pickCounterItem(playerCard, soul);
+      if (Math.random() >= diff.counterItemChance) return;
+      const item = pickCounterItem(playerCard, soul, diff.weightedCounterPick);
       if (item) {
         soul -= item.cost;
         board[i] = { ...card, item };

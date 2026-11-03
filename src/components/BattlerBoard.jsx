@@ -17,15 +17,15 @@ const outcomeStyles = {
 
 function EmptySlot({ label, subLabel }) {
   return (
-    <div className="w-full h-full min-w-0 flex flex-col rounded-2xl border border-dashed border-white/10 bg-black/30 p-2.5">
-      <div className="w-full aspect-square rounded-xl bg-black/40 border border-white/5 flex items-center justify-center p-3 text-center">
-        <span className="text-[11px] font-bold uppercase tracking-wider text-slate-500">
+    <div className="w-full h-full min-w-0 flex flex-col rounded-2xl border border-dashed border-emerald-500/20 bg-zinc-950/75 p-2.5">
+      <div className="w-full aspect-square rounded-xl bg-black/60 border border-white/5 flex items-center justify-center p-3 text-center">
+        <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400">
           {label}
         </span>
       </div>
       <div className="pt-2 px-0.5">
-        <p className="text-xs font-bold text-slate-500 truncate">{subLabel}</p>
-        <p className="text-[10px] uppercase tracking-wider text-slate-600 truncate">Slot Hazır</p>
+        <p className="text-xs font-bold text-slate-400 truncate">{subLabel}</p>
+        <p className="text-[10px] uppercase tracking-wider text-slate-500 truncate">Slot Hazır</p>
       </div>
     </div>
   );
@@ -34,8 +34,8 @@ function EmptySlot({ label, subLabel }) {
 function LaneResult({ result }) {
   if (!result) {
     return (
-      <span className="text-[11px] font-bold uppercase tracking-widest text-slate-500">
-        VS • Çarpışma Bekleniyor
+      <span className="text-[11px] font-bold uppercase tracking-widest text-emerald-300/70">
+        ✦ VS • Çarpışma Hattı ✦
       </span>
     );
   }
@@ -50,7 +50,7 @@ function LaneResult({ result }) {
         {style.label}
         {damage > 0 && <span>• {damage} HP</span>}
       </span>
-      <p className="text-[10px] text-slate-300 leading-snug break-words">{result.reason}</p>
+      <p className="text-[10px] text-slate-200 leading-snug break-words">{result.reason}</p>
     </div>
   );
 }
@@ -67,18 +67,56 @@ export default function BattlerBoard({
   return (
     <section
       aria-labelledby="battler-board-heading"
-      className="rounded-2xl bg-gradient-to-b from-rose-950/30 via-black/50 to-amber-950/20 border border-white/10 p-3.5 sm:p-5 shadow-md overflow-hidden"
+      className="relative rounded-3xl border border-amber-500/30 ring-1 ring-inset ring-emerald-500/20 p-4 sm:p-6 shadow-lg overflow-hidden bg-[#06090e] bg-[radial-gradient(ellipse_75%_55%_at_50%_50%,rgba(16,185,129,0.14),rgba(88,28,135,0.18)_55%,rgba(5,7,11,0.96)_100%)]"
     >
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 sm:gap-3 mb-4">
-        <h3 id="battler-board-heading" className="text-base sm:text-lg font-extrabold text-white">
-          Savaş Tahtası (4 Koridor)
-        </h3>
-        <span className="text-[11px] font-semibold text-slate-400">
-          Yapay Zeka (Kırmızı) vs Sen (Kehribar)
+      {/* 1930'lar Noir & Okült Taktik Masası Katmanları (Grid + Mistik Çember + Vignette) */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(52,211,153,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(168,85,247,0.05)_1px,transparent_1px)] bg-[size:28px_28px]"
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_40%,rgba(0,0,0,0.75)_100%)]"
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 sm:w-[28rem] sm:h-[28rem] rounded-full border border-emerald-400/10 ring-8 ring-purple-500/5"
+      />
+
+      {/* Taktik Masası Köşe İşaretleri */}
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute top-2.5 left-2.5 w-3 h-3 border-t-2 border-l-2 border-amber-400/50 rounded-tl"
+      />
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute top-2.5 right-2.5 w-3 h-3 border-t-2 border-r-2 border-amber-400/50 rounded-tr"
+      />
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute bottom-2.5 left-2.5 w-3 h-3 border-b-2 border-l-2 border-amber-400/50 rounded-bl"
+      />
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute bottom-2.5 right-2.5 w-3 h-3 border-b-2 border-r-2 border-amber-400/50 rounded-br"
+      />
+
+      <div className="relative z-10 flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 sm:gap-3 pb-3.5 mb-4 border-b border-emerald-500/15">
+        <div className="flex items-center gap-2.5">
+          <span
+            aria-hidden="true"
+            className="w-2.5 h-2.5 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.8)]"
+          />
+          <h3 id="battler-board-heading" className="text-base sm:text-lg font-extrabold text-white">
+            Okült Taktik Masası • 4 Koridor Savaş Alanı
+          </h3>
+        </div>
+        <span className="text-[11px] font-semibold text-emerald-200/80">
+          Üst Hat: Yapay Zeka (Kırmızı) • Alt Hat: Sen (Kehribar)
         </span>
       </div>
 
-      <ol className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-4">
+      <ol className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-4">
         {autoBattlerConfig.lanes.map((lane, i) => {
           const enemyCard = enemyBoard[i];
           const playerCard = playerBoard[i];
@@ -86,7 +124,7 @@ export default function BattlerBoard({
             <li key={lane.id} className="min-w-0">
               <article
                 aria-label={`${lane.label} çarpışma alanı`}
-                className="h-full flex flex-col gap-3 rounded-2xl bg-black/40 border border-white/10 p-3"
+                className="h-full flex flex-col gap-3 rounded-2xl bg-zinc-950/85 border border-emerald-500/20 ring-1 ring-inset ring-purple-500/10 p-3 shadow-md"
               >
                 <div className="flex items-center justify-between gap-2">
                   <span className="text-[10px] font-bold uppercase tracking-wider text-rose-300/80 sm:hidden">
@@ -112,7 +150,7 @@ export default function BattlerBoard({
                     )}
                   </div>
 
-                  <div className="col-span-2 sm:col-span-1 order-3 sm:order-2 min-h-[2.75rem] flex items-center justify-center border-t sm:border-y border-white/5 pt-2 sm:py-2">
+                  <div className="col-span-2 sm:col-span-1 order-3 sm:order-2 min-h-[2.75rem] flex items-center justify-center border-t sm:border-y border-emerald-500/15 bg-black/40 rounded-lg px-2 py-2">
                     <LaneResult result={lastCombat?.[i]} />
                   </div>
 
@@ -124,9 +162,9 @@ export default function BattlerBoard({
                         type="button"
                         onClick={() => onPlace(i)}
                         aria-label={`Seçili kartı ${lane.label} koridoruna yerleştir`}
-                        className="w-full h-full min-w-0 flex flex-col rounded-2xl border-2 border-dashed border-purple-400/60 bg-purple-500/10 p-2.5 text-center transform-gpu will-change-transform transition-[transform,background-color] duration-200 hover:scale-[1.02] hover:bg-purple-500/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-400"
+                        className="w-full h-full min-w-0 flex flex-col rounded-2xl border-2 border-dashed border-purple-400/60 bg-purple-950/30 p-2.5 text-center transform-gpu will-change-transform transition-[transform,background-color] duration-200 hover:scale-[1.02] hover:bg-purple-900/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-400"
                       >
-                        <div className="w-full aspect-square rounded-xl bg-purple-950/40 border border-purple-400/30 flex items-center justify-center p-2">
+                        <div className="w-full aspect-square rounded-xl bg-purple-950/60 border border-purple-400/30 flex items-center justify-center p-2">
                           <span className="text-xs font-extrabold uppercase tracking-wider text-purple-200">
                             + Yerleştir
                           </span>

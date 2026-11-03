@@ -5,6 +5,10 @@ import { rollShop } from './autoBattlerEngine';
 export default function useAutoBattler() {
   const [state, dispatch] = useReducer(autoBattlerReducer, undefined, createInitialState);
 
+  const setDifficulty = useCallback(
+    (difficulty) => dispatch({ type: 'SET_DIFFICULTY', difficulty }),
+    []
+  );
   const buyCard = useCallback((index) => dispatch({ type: 'BUY_CARD', index }), []);
   const rerollShop = useCallback(() => dispatch({ type: 'REROLL_SHOP', shop: rollShop() }), []);
   const selectBenchCard = useCallback((uid) => dispatch({ type: 'SELECT_BENCH_CARD', uid }), []);
@@ -16,13 +20,14 @@ export default function useAutoBattler() {
     [state]
   );
   const resetGame = useCallback(
-    () => dispatch({ type: 'RESET_GAME', state: createInitialState() }),
-    []
+    () => dispatch({ type: 'RESET_GAME', state: createInitialState(state.difficulty) }),
+    [state.difficulty]
   );
 
   return {
     state,
     actions: {
+      setDifficulty,
       buyCard,
       rerollShop,
       selectBenchCard,

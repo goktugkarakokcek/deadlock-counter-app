@@ -1,5 +1,22 @@
 import { autoBattlerConfig } from '../data';
 
+const difficultyOptions = Object.values(autoBattlerConfig.difficulties);
+
+const difficultyToneStyles = {
+  easy: {
+    active: 'bg-emerald-500/20 text-emerald-200 border-emerald-400/60 shadow-[0_0_10px_-3px_rgba(16,185,129,0.5)]',
+    idle: 'bg-black/40 text-slate-300 border-white/10 hover:border-emerald-500/40 hover:text-emerald-200',
+  },
+  normal: {
+    active: 'bg-amber-500/20 text-amber-200 border-amber-400/60 shadow-[0_0_10px_-3px_rgba(245,158,11,0.5)]',
+    idle: 'bg-black/40 text-slate-300 border-white/10 hover:border-amber-500/40 hover:text-amber-200',
+  },
+  hard: {
+    active: 'bg-rose-500/20 text-rose-200 border-rose-400/60 shadow-[0_0_10px_-3px_rgba(244,63,94,0.5)]',
+    idle: 'bg-black/40 text-slate-300 border-white/10 hover:border-rose-500/40 hover:text-rose-200',
+  },
+};
+
 function HpBar({ label, hp, tone }) {
   const pct = Math.max(0, Math.min(100, (hp / autoBattlerConfig.startingHp) * 100));
   const barTone =
@@ -31,9 +48,17 @@ function HpBar({ label, hp, tone }) {
   );
 }
 
-export default function BattlerHud({ state, timeLeft, onEndRound, onReset }) {
+export default function BattlerHud({
+  state,
+  timeLeft,
+  onSetDifficulty,
+  onEndRound,
+  onReset,
+}) {
   const isOver = state.phase === 'gameOver';
   const isUrgent = !isOver && timeLeft <= 10;
+  const currentDifficulty =
+    autoBattlerConfig.difficulties[state.difficulty] || autoBattlerConfig.difficulties.normal;
 
   return (
     <section
@@ -41,12 +66,54 @@ export default function BattlerHud({ state, timeLeft, onEndRound, onReset }) {
       className="rounded-2xl bg-black/40 border border-white/10 p-4 sm:p-5 shadow-md"
     >
       <h3 id="battler-hud-heading" className="sr-only">
-        Oyun Durumu
+        Oyun Durumu ve Zorluk Seçimi
       </h3>
+
+      {/* Üst Bar: 3 Seviyeli Zorluk Seçici */}
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 mb-4 border-b border-white/10">
+        <div className="min-w-0">
+          <span className="text-xs font-extrabold uppercase tracking-wider text-purple-300 block">
+            Yapay Zeka Zorluk Seviyesi
+          </span>
+          <p className="text-xs text-slate-300 mt-0.5 truncate">
+            {currentDifficulty.description}
+          </p>
+        </div>
+
+        <div
+          role="group"
+          aria-label="Zorluk seviyesi seçimi"
+          className="inline-flex items-center gap-1.5 self-start sm:self-auto shrink-0"
+        >
+          {difficultyOptions.map((diff) => {
+            const isSelected = state.difficulty === diff.id;
+            const styles = difficultyToneStyles[diff.id] || difficultyToneStyles.normal;
+            return (
+              <button
+                key={diff.id}
+                type="button"
+                aria-pressed={isSelected}
+                aria-label={`Zorluk seviyesini ${diff.label} yap`}
+                onClick={() => onSetDifficulty(diff.id)}
+                className={`px-3 py-1.5 rounded-xl text-xs font-extrabold border transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 ${
+                  isSelected ? styles.active : styles.idle
+                }`}
+              >
+                {diff.label}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+
       <div className="flex flex-col lg:flex-row lg:items-center gap-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 flex-1 min-w-0">
           <HpBar label="Sen" hp={state.playerHp} tone="player" />
-          <HpBar label="Yapay Zeka" hp={state.enemyHp} tone="enemy" />
+          <HpBar
+            label={`Yapay Zeka (${currentDifficulty.label})`}
+            hp={state.enemyHp}
+            tone="enemy"
+          />
         </div>
 
         <div className="flex flex-wrap items-center justify-between sm:justify-end gap-2.5 sm:gap-3">
