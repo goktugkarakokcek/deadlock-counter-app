@@ -1,4 +1,4 @@
-@tailwind base;
+﻿@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -7,37 +7,44 @@
     background-color: #050507;
   }
 
-  /* Noir atmosfer: derin radial gradient katmanları (mor + kehribar sis) */
   body {
     @apply text-slate-100 font-sans antialiased;
     background-color: #050507;
+  }
+
+  /* Noir atmosfer: sabit (fixed) GPU katmanÄ±nda radial gradient - scroll'da yeniden Ã§izilmez */
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    transform: translateZ(0);
     background-image:
       radial-gradient(ellipse 80% 55% at 50% -10%, rgba(88, 28, 135, 0.28), transparent 70%),
       radial-gradient(ellipse 60% 45% at 100% 30%, rgba(120, 53, 15, 0.18), transparent 70%),
       radial-gradient(ellipse 60% 50% at 0% 80%, rgba(127, 29, 29, 0.16), transparent 70%),
       radial-gradient(ellipse at center, #18181b 0%, #09090b 55%, #000000 100%);
-    background-attachment: fixed;
   }
 
-  /* İnce taktiksel grid + film grain (noise) deseni */
+  /* Ä°nce taktiksel grid + film grain; blend-mode olmadan dÃ¼ÅŸÃ¼k opaklÄ±kla */
   body::before {
     content: '';
     position: fixed;
     inset: 0;
     z-index: 0;
     pointer-events: none;
+    transform: translateZ(0);
+    will-change: transform;
     background-image:
-      linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+      linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.2'/%3E%3C/svg%3E");
     background-size: 56px 56px, 56px 56px, 160px 160px;
-    opacity: 0.5;
-    mix-blend-mode: soft-light;
-    -webkit-mask-image: radial-gradient(ellipse at center, #000 40%, transparent 100%);
-    mask-image: radial-gradient(ellipse at center, #000 40%, transparent 100%);
+    opacity: 0.4;
   }
 
-  /* Tipografi hiyerarşisi: başlıklarda noir serif, gövdede Inter */
+  /* Tipografi hiyerarÅŸisi: baÅŸlÄ±klarda noir serif, gÃ¶vdede Inter */
   h1,
   h2,
   h3 {
@@ -81,3 +88,4 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #7e22ce;
 }
+

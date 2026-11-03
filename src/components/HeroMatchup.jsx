@@ -56,7 +56,7 @@ export default function HeroMatchup({
         {/* İki Adet Görsel Destekli Dropdown / Select Paneli (Semantic <article>) */}
         <article
           aria-labelledby="selection-panel-heading"
-          className="bg-zinc-950/50 border border-white/10 rounded-2xl p-5 sm:p-7 shadow-2xl mb-10 backdrop-blur-md hover:border-amber-500/40 hover:shadow-[0_0_28px_-8px_rgba(245,158,11,0.35)] transition-all duration-300"
+          className="bg-black/40 border border-white/10 rounded-2xl p-5 sm:p-7 shadow-lg mb-10 hover:border-amber-500/40 hover:shadow-[0_0_14px_-6px_rgba(245,158,11,0.35)] transform-gpu transition-all duration-300"
         >
           {/* Panel Üst Bilgi (H2) ve Seçimleri Temizle Aksiyon Çubuğu */}
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-5 mb-6 border-b border-slate-800/90">
@@ -188,7 +188,7 @@ export default function HeroMatchup({
             <div className="mt-6 pt-6 border-t border-slate-800/90 grid grid-cols-1 md:grid-cols-2 gap-4">
               <aside
                 aria-label={`${playerHero.name} karakter avantajları`}
-                className="p-4 rounded-xl bg-zinc-950/50 border border-amber-500/20 flex flex-col justify-between backdrop-blur-md"
+                className="p-4 rounded-xl bg-black/40 border border-amber-500/20 flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center justify-between gap-2 mb-1.5">
@@ -220,7 +220,7 @@ export default function HeroMatchup({
 
               <aside
                 aria-label={`${enemyHero.name} dikkat edilecek rakip yetenekleri`}
-                className="p-4 rounded-xl bg-zinc-950/50 border border-rose-500/20 flex flex-col justify-between backdrop-blur-md"
+                className="p-4 rounded-xl bg-black/40 border border-rose-500/20 flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center justify-between gap-2 mb-1.5">
@@ -257,12 +257,12 @@ export default function HeroMatchup({
         <article
           id="matchup-results-card"
           aria-live="polite"
-          className="rounded-3xl bg-gradient-to-br from-zinc-900/60 via-zinc-950/60 to-black/60 border border-amber-500/30 ring-1 ring-white/5 shadow-2xl shadow-amber-500/10 p-6 sm:p-8 lg:p-10 backdrop-blur-xl"
+          className="rounded-3xl bg-gradient-to-br from-zinc-900/70 via-zinc-950/70 to-black/70 border border-amber-500/30 ring-1 ring-white/5 shadow-lg shadow-amber-500/10 p-6 sm:p-8 lg:p-10"
         >
           {hasBothSelected && currentMatchup ? (
             <>
               {/* Karşılaşma Özet Banner'ı (H2) */}
-              <div className="rounded-2xl bg-zinc-950/50 border border-slate-700/80 p-5 sm:p-6 mb-10 shadow-xl backdrop-blur-md hover:border-amber-500/40 hover:shadow-[0_0_28px_-8px_rgba(245,158,11,0.35)] transition-all duration-300">
+              <div className="rounded-2xl bg-black/40 border border-slate-700/80 p-5 sm:p-6 mb-10 shadow-md hover:border-amber-500/40 hover:shadow-[0_0_14px_-6px_rgba(245,158,11,0.35)] transform-gpu transition-all duration-300">
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-slate-800">
                   <div className="flex items-center gap-3 flex-wrap">
                     <span className="text-xs font-extrabold uppercase tracking-widest px-3 py-1 rounded-lg bg-amber-500 text-slate-950">
@@ -333,7 +333,7 @@ export default function HeroMatchup({
                     return (
                       <article
                         key={item.id}
-                        className={`rounded-2xl bg-zinc-950/50 border-2 p-5 flex flex-col justify-between transition-all duration-200 shadow-xl ${catStyle.border} backdrop-blur-md hover:border-amber-500/40 hover:shadow-[0_0_28px_-8px_rgba(245,158,11,0.35)]`}
+                        className={`rounded-2xl bg-black/40 border-2 p-5 flex flex-col justify-between transition-all duration-200 shadow-md ${catStyle.border} hover:border-amber-500/40 hover:shadow-[0_0_14px_-6px_rgba(245,158,11,0.35)] transform-gpu`}
                       >
                         <div>
                           {/* Eşya Üst Bilgisi ve Görseli */}
@@ -429,7 +429,7 @@ export default function HeroMatchup({
 
                 {/* 3 Oyun Evresi Kartları */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-                  <article className="rounded-2xl bg-zinc-950/50 border border-white/10 p-5 shadow-lg backdrop-blur-md hover:border-amber-500/40 hover:shadow-[0_0_28px_-8px_rgba(245,158,11,0.35)] transition-all duration-300">
+                  <article className="rounded-2xl bg-black/40 border border-white/10 p-5 shadow-lg hover:border-amber-500/40 hover:shadow-[0_0_14px_-6px_rgba(245,158,11,0.35)] transform-gpu transition-all duration-300">
                     <div className="flex items-center justify-between mb-3">
                       <span className="text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-sky-500/15 text-sky-300 border border-sky-500/30">
                         00:00 - 10:00 Dk
@@ -446,7 +446,7 @@ export default function HeroMatchup({
                     </p>
                   </article>
 
-                  <article className="rounded-2xl bg-zinc-950/50 border border-white/10 p-5 shadow-lg backdrop-blur-md hover:border-amber-500/40 hover:shadow-[0_0_28px_-8px_rgba(245,158,11,0.35)] transition-all duration-300">
+                  <article className="rounded-2xl bg-black/40 border border-white/10 p-5 shadow-lg hover:border-amber-500/40 hover:shadow-[0_0_14px_-6px_rgba(245,158,11,0.35)] transform-gpu transition-all duration-300">
                     <div className="flex items-center justify-between mb-3">
                       <span className="text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-amber-500/15 text-amber-300 border border-amber-500/30">
                         10:00 - 22:00 Dk
@@ -463,7 +463,7 @@ export default function HeroMatchup({
                     </p>
                   </article>
 
-                  <article className="rounded-2xl bg-zinc-950/50 border border-white/10 p-5 shadow-lg backdrop-blur-md hover:border-amber-500/40 hover:shadow-[0_0_28px_-8px_rgba(245,158,11,0.35)] transition-all duration-300">
+                  <article className="rounded-2xl bg-black/40 border border-white/10 p-5 shadow-lg hover:border-amber-500/40 hover:shadow-[0_0_14px_-6px_rgba(245,158,11,0.35)] transform-gpu transition-all duration-300">
                     <div className="flex items-center justify-between mb-3">
                       <span className="text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-rose-500/15 text-rose-300 border border-rose-500/30">
                         22:00+ Dk
@@ -482,7 +482,7 @@ export default function HeroMatchup({
                 </div>
 
                 {/* Kritik Mekanik Counter İpuçları */}
-                <article className="rounded-2xl bg-zinc-950/50 border border-white/10 p-5 sm:p-6 shadow-lg backdrop-blur-md hover:border-amber-500/40 hover:shadow-[0_0_28px_-8px_rgba(245,158,11,0.35)] transition-all duration-300">
+                <article className="rounded-2xl bg-black/40 border border-white/10 p-5 sm:p-6 shadow-lg hover:border-amber-500/40 hover:shadow-[0_0_14px_-6px_rgba(245,158,11,0.35)] transform-gpu transition-all duration-300">
                   <h4 className="text-base sm:text-lg font-extrabold text-white mb-4 flex items-center gap-2">
                     <span className="text-amber-400" aria-hidden="true">
                       ⚡
@@ -493,7 +493,7 @@ export default function HeroMatchup({
                     {currentMatchup.playstyle.counterTips.map((tip, index) => (
                       <li
                         key={index}
-                        className="p-4 rounded-xl bg-zinc-950/50 border border-white/10 text-sm text-slate-200 leading-relaxed flex items-start gap-3 backdrop-blur-md"
+                        className="p-4 rounded-xl bg-black/40 border border-white/10 text-sm text-slate-200 leading-relaxed flex items-start gap-3"
                       >
                         <span className="w-6 h-6 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/40 font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">
                           {index + 1}

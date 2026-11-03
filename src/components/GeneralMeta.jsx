@@ -30,7 +30,7 @@ export default function GeneralMeta() {
           {generalMetaTips.map((meta) => (
             <article
               key={meta.id}
-              className="rounded-2xl bg-zinc-950/50 border border-white/10 hover:border-slate-700 p-6 flex flex-col justify-between shadow-xl transition-all backdrop-blur-md"
+              className="rounded-2xl bg-black/40 border border-white/10 hover:border-slate-700 p-6 flex flex-col justify-between shadow-md transition-all"
             >
               <div>
                 <div className="flex items-center justify-between gap-2 mb-4">

@@ -124,7 +124,7 @@ export default function CharacterDropdown({
         aria-expanded={isOpen}
         aria-labelledby={`${id}-label ${id}-button`}
         onClick={() => setIsOpen((prev) => !prev)}
-        className={`w-full flex items-center justify-between gap-4 p-3.5 rounded-xl bg-zinc-950/50 border-2 transition-all duration-200 text-left shadow-lg focus:outline-none focus-visible:ring-2 ${ringStyle} backdrop-blur-md`}
+        className={`w-full flex items-center justify-between gap-4 p-3.5 rounded-xl bg-black/40 border-2 transition-all duration-200 text-left shadow-lg focus:outline-none focus-visible:ring-2 ${ringStyle}`}
       >
         {selectedHero ? (
           <div className="flex items-center gap-3.5 min-w-0">
@@ -203,7 +203,7 @@ export default function CharacterDropdown({
         <ul
           role="listbox"
           aria-labelledby={`${id}-label`}
-          className="absolute z-30 mt-2 w-full max-h-72 overflow-y-auto rounded-xl bg-slate-900 border border-slate-700 shadow-2xl divide-y divide-slate-800/80"
+          className="absolute z-30 mt-2 w-full max-h-72 overflow-y-auto rounded-xl bg-slate-900 border border-slate-700 shadow-lg divide-y divide-slate-800/80"
         >
           {characters.map((hero) => {
             const isSelected = selectedHero?.id === hero.id;

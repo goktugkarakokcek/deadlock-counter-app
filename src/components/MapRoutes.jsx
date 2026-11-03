@@ -62,7 +62,7 @@ export default function MapRoutes() {
             {mapMacroData.crateRoutes.map((route) => (
               <article
                 key={route.id}
-                className="rounded-2xl bg-zinc-950/50 border border-white/10 hover:border-amber-500/40 p-6 flex flex-col justify-between shadow-xl transition-all backdrop-blur-md"
+                className="rounded-2xl bg-black/40 border border-white/10 hover:border-amber-500/40 p-6 flex flex-col justify-between shadow-md transition-all"
               >
                 <div>
                   <div className="flex items-center justify-between gap-2 flex-wrap mb-4">
@@ -137,7 +137,7 @@ export default function MapRoutes() {
             {mapMacroData.transitRoutes.map((transit) => (
               <article
                 key={transit.id}
-                className="rounded-2xl bg-zinc-950/50 border border-white/10 hover:border-sky-500/40 p-6 flex flex-col justify-between shadow-xl transition-all backdrop-blur-md"
+                className="rounded-2xl bg-black/40 border border-white/10 hover:border-sky-500/40 p-6 flex flex-col justify-between shadow-md transition-all"
               >
                 <div>
                   <div className="flex items-center justify-between gap-2 mb-3">
@@ -153,7 +153,7 @@ export default function MapRoutes() {
                     {transit.name}
                   </h4>
 
-                  <div className="p-3 rounded-xl bg-zinc-950/50 border border-white/10 mb-4 backdrop-blur-md">
+                  <div className="p-3 rounded-xl bg-black/40 border border-white/10 mb-4">
                     <span className="text-[11px] font-bold uppercase tracking-wider text-slate-300 block mb-0.5">
                       Bağlantı Hattı:
                     </span>
@@ -174,7 +174,7 @@ export default function MapRoutes() {
         {/* ALT BÖLÜM 3: ÖNEMLİ SPAWN SÜRELERİ ZAMAN ÇİZELGESİ (TIMELINE) (H3 -> H4) */}
         <article
           aria-labelledby="spawn-timeline-heading"
-          className="rounded-3xl bg-zinc-950/50 border border-white/10 p-6 sm:p-8 shadow-2xl backdrop-blur-md hover:border-amber-500/40 hover:shadow-[0_0_28px_-8px_rgba(245,158,11,0.35)] transition-all duration-300"
+          className="rounded-3xl bg-black/40 border border-white/10 p-6 sm:p-8 shadow-lg hover:border-amber-500/40 hover:shadow-[0_0_14px_-6px_rgba(245,158,11,0.35)] transform-gpu transition-all duration-300"
         >
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-8 pb-5 border-b border-slate-800">
             <div>
@@ -212,7 +212,7 @@ export default function MapRoutes() {
                     aria-hidden="true"
                   />
 
-                  <div className="p-5 rounded-2xl bg-zinc-950/50 border border-white/10 hover:border-slate-700 transition-all shadow-md backdrop-blur-md">
+                  <div className="p-5 rounded-2xl bg-black/40 border border-white/10 hover:border-slate-700 transition-all shadow-md">
                     <div className="flex flex-wrap items-center gap-2.5 mb-2">
                       <span className="text-sm sm:text-base font-black px-3 py-0.5 rounded-lg bg-amber-500 text-slate-950">
                         {item.time} Dk

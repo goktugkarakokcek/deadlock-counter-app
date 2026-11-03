@@ -7,7 +7,7 @@ export default function Footer() {
         {/* Veri Güvenilirliği ve Beta Uyarısı (Disclaimer) Kutusu */}
         <aside
           aria-label="Veri Güncelliği ve Beta Süreci Uyarısı"
-          className="rounded-2xl bg-zinc-950/50 border border-amber-500/30 p-4 sm:p-5 flex flex-col md:flex-row md:items-center justify-between gap-4 backdrop-blur-md hover:border-amber-500/40 hover:shadow-[0_0_28px_-8px_rgba(245,158,11,0.35)] transition-all duration-300"
+          className="rounded-2xl bg-black/40 border border-amber-500/30 p-4 sm:p-5 flex flex-col md:flex-row md:items-center justify-between gap-4 hover:border-amber-500/40 hover:shadow-[0_0_14px_-6px_rgba(245,158,11,0.35)] transform-gpu transition-all duration-300"
         >
           <div className="space-y-1">
             <div className="flex items-center gap-2 flex-wrap">

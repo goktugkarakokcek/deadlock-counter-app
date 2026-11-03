@@ -8,7 +8,7 @@ export default function Methodology() {
       className="py-14 sm:py-16"
     >
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-10 shadow-2xl">
+        <div className="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-10 shadow-lg">
           <div className="max-w-3xl">
             <span className="inline-block px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-widest bg-purple-500/15 text-purple-300 border border-purple-500/30 mb-3">
               Bölüm 04 • Araç Hakkında &amp; Metodoloji
@@ -31,7 +31,7 @@ export default function Methodology() {
             {methodologyData.pillars.map((pillar) => (
               <article
                 key={pillar.step}
-                className="p-5 rounded-2xl bg-zinc-950/50 border border-white/10 backdrop-blur-md hover:border-amber-500/40 hover:shadow-[0_0_28px_-8px_rgba(245,158,11,0.35)] transition-all duration-300"
+                className="p-5 rounded-2xl bg-black/40 border border-white/10 hover:border-amber-500/40 hover:shadow-[0_0_14px_-6px_rgba(245,158,11,0.35)] transform-gpu transition-all duration-300"
               >
                 <span className="text-xs font-black px-2.5 py-1 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30">
                   Adım {pillar.step}

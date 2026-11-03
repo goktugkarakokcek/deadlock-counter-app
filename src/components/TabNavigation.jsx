@@ -47,10 +47,10 @@ export default function TabNavigation({ activeTab, onChangeTab }) {
                 tabIndex={isActive ? 0 : -1}
                 onClick={() => onChangeTab(tab.id)}
                 onKeyDown={(e) => handleKeyDown(e, index)}
-                className={`shrink-0 inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-bold border backdrop-blur-md transition-all duration-300 hover:scale-105 motion-reduce:hover:scale-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 ${
+                className={`shrink-0 inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-bold border bg-clip-padding transform-gpu will-change-transform transition-[transform,box-shadow,background-color,border-color] duration-200 hover:scale-105 motion-reduce:hover:scale-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 ${
                   isActive
-                    ? 'bg-gradient-to-r from-amber-500 to-orange-600 text-slate-950 border-amber-300/60 shadow-[0_0_22px_-4px_rgba(245,158,11,0.6)]'
-                    : 'bg-white/5 text-slate-200 border-white/10 hover:bg-purple-500/15 hover:text-purple-200 hover:border-purple-400/50 hover:shadow-[0_0_20px_-4px_rgba(168,85,247,0.55)]'
+                    ? 'bg-gradient-to-r from-amber-500 to-orange-600 text-slate-950 border-amber-300/60 shadow-[0_0_12px_-4px_rgba(245,158,11,0.55)]'
+                    : 'bg-white/5 text-slate-200 border-white/10 hover:bg-purple-500/15 hover:text-purple-200 hover:border-purple-400/50 hover:shadow-[0_0_12px_-4px_rgba(168,85,247,0.5)]'
                 }`}
               >
                 <span aria-hidden="true">{tab.icon}</span>
