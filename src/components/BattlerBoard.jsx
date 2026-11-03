@@ -39,7 +39,7 @@ const outcomeStyles = {
 
 function TacticalEmptySocket({ isFrontline, isEnemy, isHighlighted, slotTitle }) {
   const borderTone = isHighlighted
-    ? 'border-amber-400 bg-amber-500/15 ring-2 ring-amber-400/40'
+    ? 'border-amber-400 bg-amber-500/15 ring-1 ring-amber-400/40'
     : isEnemy
     ? isFrontline
       ? 'border-rose-500/30 bg-rose-950/15'
@@ -54,29 +54,28 @@ function TacticalEmptySocket({ isFrontline, isEnemy, isHighlighted, slotTitle })
 
   return (
     <div
-      className={`w-full h-full min-w-0 flex flex-col rounded-2xl border-2 border-dashed p-2 transition-colors ${borderTone}`}
+      className={`w-full h-full min-w-0 flex flex-col items-center rounded-xl border border-dashed p-1.5 transition-colors ${borderTone}`}
     >
-      {/* TFT tarzı sekizgen/altıgen hissi veren iç taktiksel yuva */}
-      <div className="relative w-full aspect-square rounded-2xl bg-black/65 border border-white/10 ring-1 ring-inset ring-white/5 flex flex-col items-center justify-center p-2 text-center">
+      {/* Kompakt TFT tarzı yuva (w-16 / w-20) */}
+      <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-xl bg-black/65 border border-white/10 flex flex-col items-center justify-center p-1 text-center shrink-0">
         <span
           aria-hidden="true"
-          className="w-8 h-8 sm:w-9 sm:h-9 rotate-45 rounded-lg border border-white/15 bg-white/[0.03] flex items-center justify-center mb-1.5"
+          className="w-6 h-6 rotate-45 rounded border border-white/15 bg-white/[0.03] flex items-center justify-center mb-0.5"
         >
-          <span className="-rotate-45 text-xs font-black text-slate-300">
+          <span className="-rotate-45 text-[10px] font-black text-slate-300">
             {isFrontline ? '🛡️' : '🎯'}
           </span>
         </span>
-        <span className="text-[10px] font-extrabold uppercase tracking-wider text-slate-300">
-          {isHighlighted ? '+ Buraya Bırak' : slotTitle}
+        <span className="text-[9px] font-extrabold uppercase tracking-wider text-slate-300 truncate max-w-full">
+          {isHighlighted ? '+ Bırak' : slotTitle}
         </span>
       </div>
 
-      <div className="pt-1.5 px-0.5 flex items-center justify-between gap-1">
-        <span className={`text-[9px] font-black uppercase tracking-wider px-1.5 py-0.5 rounded border truncate ${badgeTone}`}>
+      <div className="w-full pt-1 px-0.5 flex items-center justify-center">
+        <span
+          className={`text-[9px] font-black uppercase tracking-wider px-1.5 py-0.2 rounded border truncate ${badgeTone}`}
+        >
           {isFrontline ? 'Ön Saf (+4)' : 'Arka Saf (+4)'}
-        </span>
-        <span className="text-[9px] font-semibold text-slate-500 truncate">
-          {isEnemy ? 'AI' : 'Slot'}
         </span>
       </div>
     </div>
@@ -88,29 +87,31 @@ function ColumnClashCell({ lane, result }) {
   const damage = result ? result.damageToEnemy || result.damageToPlayer : 0;
 
   return (
-    <div className="rounded-xl bg-black/65 border border-emerald-500/20 px-2.5 py-2 flex flex-col items-center justify-center text-center min-h-[4rem]">
-      <span
-        className={`px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-widest border mb-1 ${laneAccent[lane.accent]}`}
-      >
-        {lane.label}
-      </span>
-      {result ? (
-        <>
+    <div className="rounded-lg bg-black/65 border border-emerald-500/20 px-2 py-1 flex flex-col items-center justify-center text-center">
+      <div className="flex items-center justify-center gap-1.5 flex-wrap">
+        <span
+          className={`px-2 py-0.2 rounded-full text-[9px] font-black uppercase tracking-wider border ${laneAccent[lane.accent]}`}
+        >
+          {lane.label}
+        </span>
+        {result ? (
           <span
-            className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-black border ${style.className}`}
+            className={`inline-flex items-center gap-0.5 px-1.5 py-0.2 rounded-full text-[9px] font-black border ${style.className}`}
           >
             <span aria-hidden="true">{style.icon}</span>
             {style.label}
-            {damage > 0 && <span>• {damage} HP</span>}
+            {damage > 0 && <span>• {damage}HP</span>}
           </span>
-          <p className="text-[10px] text-slate-300 leading-tight mt-1 line-clamp-2">
-            {result.reason}
-          </p>
-        </>
-      ) : (
-        <span className="text-[10px] font-bold uppercase tracking-widest text-emerald-300/70">
-          ✦ Çarpışma Hattı ✦
-        </span>
+        ) : (
+          <span className="text-[9px] font-bold uppercase tracking-wider text-emerald-300/70">
+            ✦ VS ✦
+          </span>
+        )}
+      </div>
+      {result && (
+        <p className="w-full text-[9px] text-slate-300 leading-tight mt-0.5 truncate">
+          {result.reason}
+        </p>
       )}
     </div>
   );
@@ -178,19 +179,19 @@ export default function BattlerBoard({
     const isFront = rowIndex === 0;
     return (
       <div
-        className={`rounded-2xl p-2.5 sm:p-3 border ${
+        className={`rounded-xl p-1.5 sm:p-2 border ${
           isFront
             ? 'bg-rose-950/20 border-rose-500/30'
             : 'bg-black/45 border-white/10'
         }`}
       >
-        <div className="flex items-center justify-between gap-2 mb-2 px-1">
-          <span className="text-[11px] font-extrabold uppercase tracking-wider text-rose-300">
+        <div className="flex items-center justify-between gap-2 mb-1 px-1">
+          <span className="text-[10px] font-extrabold uppercase tracking-wider text-rose-300">
             {rowTitle}
           </span>
-          <span className="text-[10px] font-bold text-slate-400">{rowBadge}</span>
+          <span className="text-[9px] font-bold text-slate-400">{rowBadge}</span>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3">
+        <div className="grid grid-cols-4 gap-1.5 sm:gap-2">
           {autoBattlerConfig.lanes.map((lane, col) => {
             const slotIndex = rowIndex * autoBattlerConfig.boardCols + col;
             const card = enemyBoard[slotIndex];
@@ -211,7 +212,7 @@ export default function BattlerBoard({
                     isFrontline={isFront}
                     isEnemy
                     isHighlighted={false}
-                    slotTitle={`${lane.label}`}
+                    slotTitle={lane.label}
                   />
                 )}
               </div>
@@ -226,29 +227,31 @@ export default function BattlerBoard({
     const isFront = isFrontlineSlot(rowIndex * autoBattlerConfig.boardCols);
     return (
       <div
-        className={`rounded-2xl p-2.5 sm:p-3 border ${
+        className={`rounded-xl p-1.5 sm:p-2 border ${
           isFront
             ? 'bg-emerald-950/20 border-emerald-500/35 ring-1 ring-inset ring-emerald-500/15'
             : 'bg-purple-950/20 border-purple-500/35 ring-1 ring-inset ring-purple-500/15'
         }`}
       >
-        <div className="flex flex-wrap items-center justify-between gap-2 mb-2.5 px-1">
-          <div className="flex items-center gap-2">
+        <div className="flex flex-wrap items-center justify-between gap-1.5 mb-1 px-1">
+          <div className="flex items-center gap-1.5">
             <span
-              className={`px-2 py-0.5 rounded-md text-[10px] font-black uppercase tracking-wider border ${
+              className={`px-1.5 py-0.2 rounded text-[9px] font-black uppercase tracking-wider border ${
                 isFront
                   ? 'bg-emerald-500/20 text-emerald-200 border-emerald-400/40'
                   : 'bg-purple-500/20 text-purple-200 border-purple-400/40'
               }`}
             >
-              {isFront ? '🛡️ Ön Saf (Frontline)' : '🎯 Arka Saf (Backline)'}
+              {isFront ? '🛡️ Ön Saf' : '🎯 Arka Saf'}
             </span>
-            <span className="text-xs font-bold text-white">{rowTitle}</span>
+            <span className="text-[11px] font-bold text-white">{rowTitle}</span>
           </div>
-          <span className="text-[11px] font-semibold text-slate-300">{rowSubtitle}</span>
+          <span className="text-[10px] font-semibold text-slate-300 hidden sm:inline">
+            {rowSubtitle}
+          </span>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3">
+        <div className="grid grid-cols-4 gap-1.5 sm:gap-2">
           {autoBattlerConfig.lanes.map((lane, col) => {
             const slotIndex = rowIndex * autoBattlerConfig.boardCols + col;
             const card = playerBoard[slotIndex];
@@ -263,7 +266,7 @@ export default function BattlerBoard({
                 onDragOver={(e) => handleSlotDragOver(e, slotIndex)}
                 onDragLeave={(e) => handleSlotDragLeave(e, slotIndex)}
                 onDrop={(e) => handleSlotDrop(e, slotIndex)}
-                className={`min-w-0 flex flex-col gap-1.5 rounded-2xl transition-transform duration-150 ${
+                className={`min-w-0 flex flex-col gap-1 rounded-xl transition-transform duration-150 ${
                   isOver ? 'scale-[1.02] ring-2 ring-amber-400' : ''
                 }`}
               >
@@ -286,7 +289,7 @@ export default function BattlerBoard({
                     onClick={() => hasSelection && !disabled && onPlace(slotIndex)}
                     disabled={disabled}
                     aria-label={`${lane.label} ${isFront ? 'Ön Saf' : 'Arka Saf'} slotu — kart sürükle veya seçili kartı yerleştir`}
-                    className="w-full h-full text-left rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400"
+                    className="w-full h-full text-left rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400"
                   >
                     <TacticalEmptySocket
                       isFrontline={isFront}
@@ -304,15 +307,15 @@ export default function BattlerBoard({
                       onClick={() => onPlace(slotIndex)}
                       disabled={!hasSelection}
                       aria-label={`Seçili kartı ${lane.label} slotuna yerleştir veya eşya olarak tak`}
-                      className="text-[10px] font-bold py-1 px-1 rounded-lg bg-purple-500/15 text-purple-200 border border-purple-500/40 hover:bg-purple-500/25 transition-colors disabled:opacity-30 disabled:cursor-not-allowed truncate focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-400"
+                      className="text-[9px] font-bold py-0.5 px-1 rounded bg-purple-500/15 text-purple-200 border border-purple-500/40 hover:bg-purple-500/25 transition-colors disabled:opacity-30 disabled:cursor-not-allowed truncate focus:outline-none focus-visible:ring-1 focus-visible:ring-purple-400"
                     >
-                      Değiştir/Tak
+                      Tak/Değiş
                     </button>
                     <button
                       type="button"
                       onClick={() => onReturn(slotIndex)}
                       aria-label={`${card.name} kartını yedek kulübesine geri al`}
-                      className="text-[10px] font-bold py-1 px-1 rounded-lg bg-white/5 text-slate-200 border border-white/10 hover:bg-white/10 transition-colors truncate focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400"
+                      className="text-[9px] font-bold py-0.5 px-1 rounded bg-white/5 text-slate-200 border border-white/10 hover:bg-white/10 transition-colors truncate focus:outline-none focus-visible:ring-1 focus-visible:ring-amber-400"
                     >
                       Geri Al
                     </button>
@@ -329,7 +332,7 @@ export default function BattlerBoard({
   return (
     <section
       aria-labelledby="battler-board-heading"
-      className="relative rounded-3xl border border-amber-500/30 ring-1 ring-inset ring-emerald-500/20 p-3.5 sm:p-5 shadow-lg overflow-hidden bg-[#06090e] bg-[radial-gradient(ellipse_75%_55%_at_50%_50%,rgba(16,185,129,0.14),rgba(88,28,135,0.18)_55%,rgba(5,7,11,0.96)_100%)]"
+      className="relative rounded-2xl border border-amber-500/30 ring-1 ring-inset ring-emerald-500/20 p-2.5 sm:p-3.5 shadow-lg overflow-hidden bg-[#06090e] bg-[radial-gradient(ellipse_75%_55%_at_50%_50%,rgba(16,185,129,0.14),rgba(88,28,135,0.18)_55%,rgba(5,7,11,0.96)_100%)]"
     >
       {/* 1930'lar Noir & Okült Taktik Masası Katmanları */}
       <div
@@ -341,47 +344,39 @@ export default function BattlerBoard({
         className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_40%,rgba(0,0,0,0.75)_100%)]"
       />
 
-      <div className="relative z-10 flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 sm:gap-3 pb-3 mb-4 border-b border-emerald-500/15">
-        <div className="flex items-center gap-2.5">
+      <div className="relative z-10 flex flex-col sm:flex-row sm:items-center justify-between gap-1 pb-2 mb-2 border-b border-emerald-500/15">
+        <div className="flex items-center gap-2">
           <span
             aria-hidden="true"
-            className="w-2.5 h-2.5 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.8)]"
+            className="w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.8)]"
           />
-          <h3 id="battler-board-heading" className="text-base sm:text-lg font-extrabold text-white">
+          <h3 id="battler-board-heading" className="text-xs sm:text-sm font-extrabold text-white">
             TFT 2x4 Taktik Masası (Ön Saf &amp; Arka Saf Izgarası)
           </h3>
         </div>
-        <span className="text-[11px] font-semibold text-emerald-200/80">
-          Kartları Yedek Kulübesinden 2x4 Slotlara Sürükle &amp; Bırak
+        <span className="text-[10px] font-semibold text-emerald-200/80">
+          Yedek Kulübesinden 2x4 Slotlara Sürükle &amp; Bırak
         </span>
       </div>
 
-      <div className="relative z-10 space-y-3.5">
-        {/* Yapay Zeka 2x4 Alanı: Üstte Arka Saf, Merkeze Yakın Ön Saf */}
-        {renderEnemyRow(1, 'Yapay Zeka • Arka Saf (Backline)', 'Menzilli Destek Hattı')}
-        {renderEnemyRow(0, 'Yapay Zeka • Ön Saf (Frontline)', 'Öncü Çarpışma Hattı')}
+      <div className="relative z-10 space-y-1.5">
+        {/* Yapay Zeka 2x4 Alanı */}
+        {renderEnemyRow(1, 'Yapay Zeka • Arka Saf', 'Menzil Hattı')}
+        {renderEnemyRow(0, 'Yapay Zeka • Ön Saf', 'Öncü Hat')}
 
         {/* Merkez 4 Koridor Çarpışma Sonuç Hattı */}
         <div
           aria-label="Koridor çarpışma sonuçları"
-          className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 py-1"
+          className="grid grid-cols-2 sm:grid-cols-4 gap-1.5 py-0.5"
         >
           {autoBattlerConfig.lanes.map((lane, col) => (
             <ColumnClashCell key={lane.id} lane={lane} result={lastCombat?.[col]} />
           ))}
         </div>
 
-        {/* Oyuncu 2x4 Alanı: Merkeze Yakın Ön Saf, Altta Arka Saf */}
-        {renderPlayerRow(
-          0,
-          'Senin Ön Safın',
-          '+4 Siper Gücü • İlk Çarpışmayı Karşılar'
-        )}
-        {renderPlayerRow(
-          1,
-          'Senin Arka Safın',
-          '+4 Menzil Desteği • Ön Safa +%55 Güç ve Counter Desteği Verir'
-        )}
+        {/* Oyuncu 2x4 Alanı */}
+        {renderPlayerRow(0, 'Ön Saf (Frontline)', '+4 Siper Gücü • İlk Çarpışma')}
+        {renderPlayerRow(1, 'Arka Saf (Backline)', '+4 Menzil • +%55 Destek Gücü')}
       </div>
     </section>
   );
