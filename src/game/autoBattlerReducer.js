@@ -124,7 +124,7 @@ export function autoBattlerReducer(state, action) {
       if (card.cost > state.playerSoul)
         return { ...state, message: `Yetersiz ruh: ${card.name} için ${card.cost} ruh gerekli.` };
       if (state.bench.length >= cfg.benchSize)
-        return { ...state, message: 'Yedek kulübesi dolu. Kart sat veya tahtaya sürükle.' };
+        return { ...state, message: 'Yedek kulübesi dolu. Kart sat veya doğrudan tahtaya sürükle.' };
       const shop = state.shop.map((c, i) => (i === action.index ? null : c));
       return {
         ...state,
@@ -133,6 +133,65 @@ export function autoBattlerReducer(state, action) {
         playerSoul: state.playerSoul - card.cost,
         selectedUid: card.uid,
         message: `${card.name} Yedek Kulübesine eklendi. Tahtadaki bir slota sürükle veya tıkla.`,
+      };
+    }
+
+    case 'BUY_TO_BOARD': {
+      const { shopIndex, slotIndex } = action;
+      const card = state.shop[shopIndex];
+      if (!card || slotIndex == null) return state;
+      if (card.cost > state.playerSoul)
+        return { ...state, message: `Yetersiz ruh: ${card.name} için ${card.cost} ruh gerekli.` };
+
+      const occupant = state.playerBoard[slotIndex];
+      const playerBoard = [...state.playerBoard];
+      let bench = [...state.bench];
+      const slotLabel = getSlotLabel(slotIndex);
+
+      if (card.kind === 'hero') {
+        if (occupant && bench.length >= cfg.benchSize) {
+          return {
+            ...state,
+            message: 'Hedef slot dolu ve yedek kulübesinde boş yer yok; boş bir tahta slotuna sürükle.',
+          };
+        }
+        if (occupant) bench = [...bench, occupant];
+        playerBoard[slotIndex] = card;
+        const shop = state.shop.map((c, i) => (i === shopIndex ? null : c));
+        return {
+          ...state,
+          shop,
+          bench,
+          playerBoard,
+          playerSoul: state.playerSoul - card.cost,
+          selectedUid: null,
+          message: `${card.name} (${card.cost} ruh) satın alındı ve doğrudan ${slotLabel} slotuna yerleştirildi.`,
+        };
+      }
+
+      if (!occupant) {
+        return {
+          ...state,
+          message: 'Eşya kartları yalnızca üzerinde kahraman bulunan tahta slotlarına sürüklenebilir.',
+        };
+      }
+      if (occupant.item && bench.length >= cfg.benchSize) {
+        return {
+          ...state,
+          message: 'Kahramanın üzerinde zaten eşya var ve yedek kulübesi dolu.',
+        };
+      }
+      if (occupant.item) bench = [...bench, occupant.item];
+      playerBoard[slotIndex] = { ...occupant, item: card };
+      const shop = state.shop.map((c, i) => (i === shopIndex ? null : c));
+      return {
+        ...state,
+        shop,
+        bench,
+        playerBoard,
+        playerSoul: state.playerSoul - card.cost,
+        selectedUid: null,
+        message: `${card.name} (${card.cost} ruh) satın alındı ve ${occupant.name} kahramanına takıldı.`,
       };
     }
 

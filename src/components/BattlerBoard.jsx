@@ -124,6 +124,7 @@ export default function BattlerBoard({
   hasSelection,
   disabled,
   onPlace,
+  onBuyToSlot,
   onMoveSlot,
   onReturn,
 }) {
@@ -165,7 +166,9 @@ export default function BattlerBoard({
       const raw = event.dataTransfer.getData('application/x-deadlock-card');
       if (!raw) return;
       const payload = JSON.parse(raw);
-      if (payload.source === 'bench' && payload.uid) {
+      if (payload.source === 'shop' && typeof payload.shopIndex === 'number') {
+        onBuyToSlot(payload.shopIndex, slotIndex);
+      } else if (payload.source === 'bench' && payload.uid) {
         onPlace(slotIndex, payload.uid);
       } else if (payload.source === 'board' && typeof payload.slotIndex === 'number') {
         onMoveSlot(payload.slotIndex, slotIndex);

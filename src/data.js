@@ -6017,9 +6017,9 @@ export const autoBattlerConfig = {
     max: 10,
   },
   damage: {
-    counter: 15,
-    clash: 8,
-    unopposed: 10,
+    counter: 7,
+    clash: 4,
+    unopposed: 5,
   },
   // Kahraman kartı maliyeti `difficulty` alanına göre belirlenir
   heroCostByDifficulty: {

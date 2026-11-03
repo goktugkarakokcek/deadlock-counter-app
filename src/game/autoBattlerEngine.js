@@ -164,7 +164,7 @@ export function evaluateBoardSynergies(board = []) {
     activeCount: activeTraits.length,
     totalBonusPct,
     powerMultiplier: 1 + totalBonusPct,
-    damageMultiplier: 1 + weaponBonus + spiritBonus,
+    damageMultiplier: 1 + (weaponBonus + spiritBonus) * 0.5,
     damageReduction: Math.min(0.4, vitalityBonus),
   };
 }

@@ -10,6 +10,10 @@ export default function useAutoBattler() {
     []
   );
   const buyCard = useCallback((index) => dispatch({ type: 'BUY_CARD', index }), []);
+  const buyCardToBoard = useCallback(
+    (shopIndex, slotIndex) => dispatch({ type: 'BUY_TO_BOARD', shopIndex, slotIndex }),
+    []
+  );
   const rerollShop = useCallback(() => dispatch({ type: 'REROLL_SHOP', shop: rollShop() }), []);
   const selectBenchCard = useCallback((uid) => dispatch({ type: 'SELECT_BENCH_CARD', uid }), []);
   const sellBenchCard = useCallback((uid) => dispatch({ type: 'SELL_BENCH_CARD', uid }), []);
@@ -36,6 +40,7 @@ export default function useAutoBattler() {
     actions: {
       setDifficulty,
       buyCard,
+      buyCardToBoard,
       rerollShop,
       selectBenchCard,
       sellBenchCard,
