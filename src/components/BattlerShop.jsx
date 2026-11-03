@@ -25,7 +25,7 @@ export default function BattlerShop({ shop, soul, disabled, onBuy, onReroll }) {
             Market (Mağaza)
           </h3>
           <p className="text-[11px] text-slate-400 truncate">
-            Kartları Yedek Kulübesine sürükle veya tıkla.
+            Kartları doğrudan tahtaya veya yedek kulübesine sürükle ya da tıkla.
           </p>
         </div>
         <button
@@ -51,7 +51,7 @@ export default function BattlerShop({ shop, soul, disabled, onBuy, onReroll }) {
                   onDragStart={(e) => handleDragStart(e, index, card)}
                   onClick={() => onBuy(index)}
                   disabled={!canAfford}
-                  aria-label={`${card.name} satın al veya yedek kulübesine sürükle, ${card.cost} ruh`}
+                  aria-label={`${card.name} satın al veya doğrudan tahtaya/kulübeye sürükle, ${card.cost} ruh`}
                   className="w-full h-full min-w-0 text-left rounded-xl cursor-grab active:cursor-grabbing transform-gpu will-change-transform transition-transform duration-200 hover:scale-[1.03] disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:scale-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400"
                 >
                   <BattlerCard card={card} size="shop" />

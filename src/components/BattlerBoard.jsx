@@ -335,7 +335,7 @@ export default function BattlerBoard({
   return (
     <section
       aria-labelledby="battler-board-heading"
-      className="relative rounded-2xl border border-amber-500/30 ring-1 ring-inset ring-emerald-500/20 p-2.5 sm:p-3.5 shadow-lg overflow-hidden bg-[#06090e] bg-[radial-gradient(ellipse_75%_55%_at_50%_50%,rgba(16,185,129,0.14),rgba(88,28,135,0.18)_55%,rgba(5,7,11,0.96)_100%)]"
+      className="relative w-full h-full rounded-2xl border border-amber-500/30 ring-1 ring-inset ring-emerald-500/20 p-2.5 sm:p-3.5 shadow-lg overflow-hidden bg-[#06090e] bg-[radial-gradient(ellipse_75%_55%_at_50%_50%,rgba(16,185,129,0.14),rgba(88,28,135,0.18)_55%,rgba(5,7,11,0.96)_100%)] flex flex-col justify-between"
     >
       {/* 1930'lar Noir & Okült Taktik Masası Katmanları */}
       <div
@@ -358,11 +358,11 @@ export default function BattlerBoard({
           </h3>
         </div>
         <span className="text-[10px] font-semibold text-emerald-200/80">
-          Yedek Kulübesinden 2x4 Slotlara Sürükle &amp; Bırak
+          Marketten veya Yedek Kulübesinden 2x4 Slotlara Sürükle &amp; Bırak
         </span>
       </div>
 
-      <div className="relative z-10 space-y-1.5">
+      <div className="relative z-10 flex-1 flex flex-col justify-between space-y-1.5">
         {/* Yapay Zeka 2x4 Alanı */}
         {renderEnemyRow(1, 'Yapay Zeka • Arka Saf', 'Menzil Hattı')}
         {renderEnemyRow(0, 'Yapay Zeka • Ön Saf', 'Öncü Hat')}

@@ -100,13 +100,13 @@ export default function AutoBattler({ game }) {
 
         {/* Sol: Aktif Sinerjiler (Comp) Paneli | Sağ: 2x4 TFT Savaş Tahtası */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-3 sm:gap-4 items-stretch">
-          <div className="lg:col-span-4 xl:col-span-3 flex">
+          <div className="lg:col-span-4 xl:col-span-3 flex flex-col">
             <BattlerSynergies
               playerBoard={state.playerBoard}
               enemyBoard={state.enemyBoard}
             />
           </div>
-          <div className="lg:col-span-8 xl:col-span-9">
+          <div className="lg:col-span-8 xl:col-span-9 flex flex-col">
             <BattlerBoard
               playerBoard={state.playerBoard}
               enemyBoard={state.enemyBoard}
@@ -114,6 +114,7 @@ export default function AutoBattler({ game }) {
               hasSelection={Boolean(state.selectedUid)}
               disabled={isOver}
               onPlace={actions.placeOnLane}
+              onBuyToSlot={actions.buyCardToBoard}
               onMoveSlot={actions.moveBoardSlot}
               onReturn={actions.returnToBench}
             />

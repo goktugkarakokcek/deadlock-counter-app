@@ -7,31 +7,33 @@ export default function BattlerSynergies({ playerBoard, enemyBoard }) {
   return (
     <aside
       aria-labelledby="battler-synergies-heading"
-      className="h-full rounded-2xl bg-zinc-950/85 border border-purple-500/25 ring-1 ring-inset ring-white/5 p-3 sm:p-3.5 shadow-lg flex flex-col justify-between gap-2.5"
+      className="w-full h-full rounded-2xl bg-zinc-950/85 border border-purple-500/25 ring-1 ring-inset ring-white/5 p-3 sm:p-3.5 shadow-lg flex flex-col justify-between gap-2.5"
     >
-      <div>
-        <div className="flex items-center justify-between gap-2 pb-2 mb-2.5 border-b border-white/10">
-          <div>
-            <span className="text-[9px] font-extrabold uppercase tracking-widest text-purple-300 block">
-              TFT Comp Sistemi
+      <div className="flex-1 flex flex-col justify-between">
+        <div>
+          <div className="flex items-center justify-between gap-2 pb-2 mb-2 border-b border-white/10">
+            <div>
+              <span className="text-[9px] font-extrabold uppercase tracking-widest text-purple-300 block">
+                TFT Comp Sistemi
+              </span>
+              <h3 id="battler-synergies-heading" className="text-xs sm:text-sm font-extrabold text-white">
+                Aktif Sinerjiler
+              </h3>
+            </div>
+            <span className="px-2 py-0.5 rounded-full text-[10px] font-black bg-purple-500/15 text-purple-200 border border-purple-500/40">
+              {playerSyn.activeCount} Aktif
             </span>
-            <h3 id="battler-synergies-heading" className="text-xs sm:text-sm font-extrabold text-white">
-              Aktif Sinerjiler
-            </h3>
           </div>
-          <span className="px-2 py-0.5 rounded-full text-[10px] font-black bg-purple-500/15 text-purple-200 border border-purple-500/40">
-            {playerSyn.activeCount} Aktif
-          </span>
+
+          <p className="text-[11px] text-slate-300 leading-snug mb-2">
+            Aynı özellikten <strong className="text-amber-300">2 birim</strong>{' '}
+            <strong className="text-emerald-300">+%10</strong>,{' '}
+            <strong className="text-amber-300">3+ birim</strong>{' '}
+            <strong className="text-emerald-300">+%20</strong> güç/hasar verir.
+          </p>
         </div>
 
-        <p className="text-[11px] text-slate-300 leading-snug mb-2.5">
-          Aynı özellikten <strong className="text-amber-300">2 birim</strong>{' '}
-          <strong className="text-emerald-300">+%10</strong>,{' '}
-          <strong className="text-amber-300">3+ birim</strong>{' '}
-          <strong className="text-emerald-300">+%20</strong> güç/hasar verir.
-        </p>
-
-        <ul className="space-y-2">
+        <ul className="flex-1 flex flex-col justify-around gap-2 my-1">
           {playerSyn.traits.map((trait) => {
             const isActive = trait.bonusPct > 0;
             const fillPct = Math.min(100, (trait.count / 3) * 100);

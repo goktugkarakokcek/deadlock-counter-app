@@ -40,7 +40,7 @@ export function createInitialState(difficulty = cfg.defaultDifficulty) {
     selectedUid: null,
     lastCombat: null,
     winner: null,
-    message: `Tur 1 (${diffLabel} Mod): Marketten kartları Yedek Kulübesine sürükle (veya tıkla), oradan da 2x4 tahtadaki Ön/Arka Saf slotlarına yerleştir.`,
+    message: `Tur 1 (${diffLabel} Mod): Marketten kartları doğrudan 2x4 tahtadaki slotlara veya Yedek Kulübesine sürükle (veya tıkla).`,
   };
 }
 
