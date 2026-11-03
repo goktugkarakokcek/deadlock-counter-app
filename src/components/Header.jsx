@@ -2,7 +2,7 @@ import { appMetaInfo } from '../data';
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-40 backdrop-blur-md bg-slate-950/90 border-b border-slate-800/80">
+    <header className="sticky top-0 z-40 backdrop-blur-xl bg-black/60 border-b border-white/10">
       {/* Veri Güncelliği ve Beta Süreci Uyarısı Üst Şeridi (data.js'den dinamik çekilir) */}
       <div className="bg-amber-500/10 border-b border-amber-500/20 px-4 py-1.5 text-center">
         <p className="text-[11px] sm:text-xs font-medium text-amber-200 max-w-7xl mx-auto flex items-center justify-center gap-2 flex-wrap">

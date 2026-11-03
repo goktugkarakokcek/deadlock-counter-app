@@ -18,7 +18,7 @@ export default function PopularBuilds({ playerHero, onSelectPlayerHero }) {
     <section
       id="builds-section"
       aria-labelledby="builds-heading"
-      className="py-10 sm:py-14 bg-slate-950"
+      className="py-10 sm:py-14"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-8">
@@ -78,7 +78,7 @@ export default function PopularBuilds({ playerHero, onSelectPlayerHero }) {
                 return (
                   <article
                     key={stage.key}
-                    className="rounded-2xl bg-slate-950/90 border border-slate-800/90 p-5 shadow-xl"
+                    className="rounded-2xl bg-zinc-950/50 border border-white/10 p-5 shadow-xl backdrop-blur-md hover:border-amber-500/40 hover:shadow-[0_0_28px_-8px_rgba(245,158,11,0.35)] transition-all duration-300"
                   >
                     <div className="flex items-center justify-between gap-2 pb-3.5 mb-4 border-b border-slate-800">
                       <div>
@@ -117,7 +117,7 @@ export default function PopularBuilds({ playerHero, onSelectPlayerHero }) {
                         return (
                           <li
                             key={itemName}
-                            className={`flex items-center gap-3.5 p-2.5 rounded-xl bg-slate-900/90 border transition-all duration-150 ${catStyle.border}`}
+                            className={`flex items-center gap-3.5 p-2.5 rounded-xl bg-zinc-950/50 border transition-all duration-150 ${catStyle.border} backdrop-blur-md`}
                           >
                             <div className="w-12 h-12 rounded-lg bg-slate-950 border border-slate-700/80 p-1 shrink-0 flex items-center justify-center overflow-hidden shadow">
                               <img
@@ -168,7 +168,7 @@ export default function PopularBuilds({ playerHero, onSelectPlayerHero }) {
             </div>
           </article>
         ) : (
-          <div className="py-12 px-4 text-center max-w-xl mx-auto rounded-2xl bg-slate-900/80 border border-slate-800">
+          <div className="py-12 px-4 text-center max-w-xl mx-auto rounded-2xl bg-zinc-950/50 border border-white/10 backdrop-blur-md hover:border-amber-500/40 hover:shadow-[0_0_28px_-8px_rgba(245,158,11,0.35)] transition-all duration-300">
             <h3 className="text-xl font-extrabold text-white">
               {playerHero ? 'Build Verisi Bekleniyor' : 'Karakter Seçilmedi'}
             </h3>

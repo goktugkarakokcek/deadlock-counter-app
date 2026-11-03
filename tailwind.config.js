@@ -20,7 +20,7 @@ export default {
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
-        display: ['Georgia', ' Cambria', 'serif'],
+        display: ['Georgia', 'Cambria', 'Times New Roman', 'serif'],
       },
     },
   },

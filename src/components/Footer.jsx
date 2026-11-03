@@ -2,12 +2,12 @@ import { appMetaInfo } from '../data';
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-950 border-t border-slate-800 py-10">
+    <footer className="bg-black/50 backdrop-blur-md border-t border-white/10 py-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
         {/* Veri Güvenilirliği ve Beta Uyarısı (Disclaimer) Kutusu */}
         <aside
           aria-label="Veri Güncelliği ve Beta Süreci Uyarısı"
-          className="rounded-2xl bg-slate-900/90 border border-amber-500/30 p-4 sm:p-5 flex flex-col md:flex-row md:items-center justify-between gap-4"
+          className="rounded-2xl bg-zinc-950/50 border border-amber-500/30 p-4 sm:p-5 flex flex-col md:flex-row md:items-center justify-between gap-4 backdrop-blur-md hover:border-amber-500/40 hover:shadow-[0_0_28px_-8px_rgba(245,158,11,0.35)] transition-all duration-300"
         >
           <div className="space-y-1">
             <div className="flex items-center gap-2 flex-wrap">

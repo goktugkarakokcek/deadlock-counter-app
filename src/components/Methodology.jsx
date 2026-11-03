@@ -5,7 +5,7 @@ export default function Methodology() {
     <section
       id="methodology-section"
       aria-labelledby="methodology-heading"
-      className="py-14 sm:py-16 bg-slate-900/40"
+      className="py-14 sm:py-16"
     >
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-10 shadow-2xl">
@@ -31,7 +31,7 @@ export default function Methodology() {
             {methodologyData.pillars.map((pillar) => (
               <article
                 key={pillar.step}
-                className="p-5 rounded-2xl bg-slate-950/80 border border-slate-800/90"
+                className="p-5 rounded-2xl bg-zinc-950/50 border border-white/10 backdrop-blur-md hover:border-amber-500/40 hover:shadow-[0_0_28px_-8px_rgba(245,158,11,0.35)] transition-all duration-300"
               >
                 <span className="text-xs font-black px-2.5 py-1 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30">
                   Adım {pillar.step}

@@ -124,7 +124,7 @@ export default function CharacterDropdown({
         aria-expanded={isOpen}
         aria-labelledby={`${id}-label ${id}-button`}
         onClick={() => setIsOpen((prev) => !prev)}
-        className={`w-full flex items-center justify-between gap-4 p-3.5 rounded-xl bg-slate-900/95 border-2 transition-all duration-200 text-left shadow-lg focus:outline-none focus-visible:ring-2 ${ringStyle}`}
+        className={`w-full flex items-center justify-between gap-4 p-3.5 rounded-xl bg-zinc-950/50 border-2 transition-all duration-200 text-left shadow-lg focus:outline-none focus-visible:ring-2 ${ringStyle} backdrop-blur-md`}
       >
         {selectedHero ? (
           <div className="flex items-center gap-3.5 min-w-0">

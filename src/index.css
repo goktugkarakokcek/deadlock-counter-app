@@ -3,8 +3,63 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    background-color: #050507;
+  }
+
+  /* Noir atmosfer: derin radial gradient katmanları (mor + kehribar sis) */
   body {
-    @apply bg-slate-950 text-slate-100 font-sans antialiased;
+    @apply text-slate-100 font-sans antialiased;
+    background-color: #050507;
+    background-image:
+      radial-gradient(ellipse 80% 55% at 50% -10%, rgba(88, 28, 135, 0.28), transparent 70%),
+      radial-gradient(ellipse 60% 45% at 100% 30%, rgba(120, 53, 15, 0.18), transparent 70%),
+      radial-gradient(ellipse 60% 50% at 0% 80%, rgba(127, 29, 29, 0.16), transparent 70%),
+      radial-gradient(ellipse at center, #18181b 0%, #09090b 55%, #000000 100%);
+    background-attachment: fixed;
+  }
+
+  /* İnce taktiksel grid + film grain (noise) deseni */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+    background-size: 56px 56px, 56px 56px, 160px 160px;
+    opacity: 0.5;
+    mix-blend-mode: soft-light;
+    -webkit-mask-image: radial-gradient(ellipse at center, #000 40%, transparent 100%);
+    mask-image: radial-gradient(ellipse at center, #000 40%, transparent 100%);
+  }
+
+  /* Tipografi hiyerarşisi: başlıklarda noir serif, gövdede Inter */
+  h1,
+  h2,
+  h3 {
+    @apply font-display tracking-tight;
+  }
+
+  h4 {
+    @apply tracking-tight;
+  }
+
+  ::selection {
+    background: rgba(168, 85, 247, 0.45);
+    color: #fff;
+  }
+}
+
+@layer utilities {
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
   }
 }
 
@@ -15,14 +70,14 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #0f172a;
+  background: #09090b;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #334155;
+  background: #3f3f46;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #475569;
+  background: #7e22ce;
 }

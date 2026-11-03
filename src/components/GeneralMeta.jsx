@@ -5,7 +5,7 @@ export default function GeneralMeta() {
     <section
       id="meta-section"
       aria-labelledby="meta-heading"
-      className="py-14 sm:py-16 border-b border-slate-800/80 bg-slate-950"
+      className="py-14 sm:py-16 border-b border-white/5"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12">
@@ -30,7 +30,7 @@ export default function GeneralMeta() {
           {generalMetaTips.map((meta) => (
             <article
               key={meta.id}
-              className="rounded-2xl bg-slate-900/90 border border-slate-800 hover:border-slate-700 p-6 flex flex-col justify-between shadow-xl transition-all"
+              className="rounded-2xl bg-zinc-950/50 border border-white/10 hover:border-slate-700 p-6 flex flex-col justify-between shadow-xl transition-all backdrop-blur-md"
             >
               <div>
                 <div className="flex items-center justify-between gap-2 mb-4">

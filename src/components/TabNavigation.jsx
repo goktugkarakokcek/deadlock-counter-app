@@ -23,7 +23,7 @@ export default function TabNavigation({ activeTab, onChangeTab }) {
   return (
     <nav
       aria-label="Ana sayfa modülleri"
-      className="bg-slate-950 border-b border-slate-800/80"
+      className="bg-black/40 backdrop-blur-xl border-b border-white/10"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div
@@ -47,10 +47,10 @@ export default function TabNavigation({ activeTab, onChangeTab }) {
                 tabIndex={isActive ? 0 : -1}
                 onClick={() => onChangeTab(tab.id)}
                 onKeyDown={(e) => handleKeyDown(e, index)}
-                className={`shrink-0 inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-bold border transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 ${
+                className={`shrink-0 inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-bold border backdrop-blur-md transition-all duration-300 hover:scale-105 motion-reduce:hover:scale-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 ${
                   isActive
-                    ? 'bg-gradient-to-r from-amber-500 to-orange-500 text-slate-950 border-amber-400 shadow-lg shadow-amber-500/20'
-                    : 'bg-slate-900 text-slate-200 border-slate-800 hover:bg-slate-800 hover:text-amber-300 hover:border-slate-700'
+                    ? 'bg-gradient-to-r from-amber-500 to-orange-600 text-slate-950 border-amber-300/60 shadow-[0_0_22px_-4px_rgba(245,158,11,0.6)]'
+                    : 'bg-white/5 text-slate-200 border-white/10 hover:bg-purple-500/15 hover:text-purple-200 hover:border-purple-400/50 hover:shadow-[0_0_20px_-4px_rgba(168,85,247,0.55)]'
                 }`}
               >
                 <span aria-hidden="true">{tab.icon}</span>
