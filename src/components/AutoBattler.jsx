@@ -56,9 +56,9 @@ export default function AutoBattler({ game }) {
     <section
       id="autobattler-section"
       aria-labelledby="autobattler-heading"
-      className="py-3 sm:py-5 border-b border-white/5 overflow-x-hidden"
+      className="w-full max-w-full overflow-x-hidden py-3 sm:py-5 border-b border-white/5"
     >
-      <div className="max-w-7xl mx-auto px-3 sm:px-5 lg:px-6 space-y-3">
+      <div className="w-full max-w-7xl mx-auto px-3 sm:px-5 lg:px-6 space-y-3 overflow-x-hidden">
         <header className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
           <div className="flex items-center gap-2.5 flex-wrap">
             <span className="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-widest bg-purple-500/15 text-purple-300 border border-purple-500/30">
@@ -98,15 +98,11 @@ export default function AutoBattler({ game }) {
           />
         )}
 
-        {/* Sol: Aktif Sinerjiler (Comp) Paneli | Sağ: 2x4 TFT Savaş Tahtası */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-3 sm:gap-4 items-stretch">
-          <div className="lg:col-span-4 xl:col-span-3 flex flex-col">
-            <BattlerSynergies
-              playerBoard={state.playerBoard}
-              enemyBoard={state.enemyBoard}
-            />
-          </div>
-          <div className="lg:col-span-8 xl:col-span-9 flex flex-col">
+        {/* Mobil: Savaş Tahtası (order-1) -> Market & Bench (order-2) -> Sinerji Paneli (order-3)
+            Masaüstü (lg:): Sol Sinerji (lg:order-1 lg:col-span-4 / xl:col-span-3) + Sağ Tahta (lg:order-2 lg:col-span-8 / xl:col-span-9), altlarında Market & Bench (lg:order-3) */}
+        <div className="w-full max-w-full flex flex-col lg:grid lg:grid-cols-12 gap-3 sm:gap-4 items-stretch">
+          {/* Savaş Tahtası: Mobilde ilk sırada, Masaüstünde sağ sütunda */}
+          <div className="order-1 lg:order-2 lg:col-span-8 xl:col-span-9 flex flex-col w-full min-w-0">
             <BattlerBoard
               playerBoard={state.playerBoard}
               enemyBoard={state.enemyBoard}
@@ -119,25 +115,34 @@ export default function AutoBattler({ game }) {
               onReturn={actions.returnToBench}
             />
           </div>
-        </div>
 
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-3 sm:gap-4">
-          <BattlerShop
-            shop={state.shop}
-            soul={state.playerSoul}
-            disabled={isOver}
-            onBuy={actions.buyCard}
-            onReroll={actions.rerollShop}
-          />
-          <BattlerBench
-            bench={state.bench}
-            selectedUid={state.selectedUid}
-            disabled={isOver}
-            onSelect={actions.selectBenchCard}
-            onSell={actions.sellBenchCard}
-            onBuyFromShop={actions.buyCard}
-            onReturnFromBoard={actions.returnToBench}
-          />
+          {/* Market & Yedek Kulübesi: Mobilde 2. sırada, Masaüstünde 3. sırada (alt satır) */}
+          <div className="order-2 lg:order-3 lg:col-span-12 w-full grid grid-cols-1 xl:grid-cols-2 gap-3 sm:gap-4">
+            <BattlerShop
+              shop={state.shop}
+              soul={state.playerSoul}
+              disabled={isOver}
+              onBuy={actions.buyCard}
+              onReroll={actions.rerollShop}
+            />
+            <BattlerBench
+              bench={state.bench}
+              selectedUid={state.selectedUid}
+              disabled={isOver}
+              onSelect={actions.selectBenchCard}
+              onSell={actions.sellBenchCard}
+              onBuyFromShop={actions.buyCard}
+              onReturnFromBoard={actions.returnToBench}
+            />
+          </div>
+
+          {/* Sinerji Paneli: Mobilde en altta (3. sırada), Masaüstünde 1. sırada (sol sütunda) */}
+          <div className="order-3 lg:order-1 lg:col-span-4 xl:col-span-3 flex flex-col w-full min-w-0">
+            <BattlerSynergies
+              playerBoard={state.playerBoard}
+              enemyBoard={state.enemyBoard}
+            />
+          </div>
         </div>
 
         <p className="text-center text-[11px] text-slate-400">{autoBattlerConfig.disclaimer}</p>

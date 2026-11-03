@@ -36,6 +36,10 @@ export default function BattlerCard({
   side = 'neutral',
   isSelected = false,
   displayPower = null,
+  draggable,
+  onDragStart,
+  className = '',
+  ...rest
 }) {
   const sizing = sizeStyles[size] || sizeStyles.shop;
   const isItem = card.kind === 'item';
@@ -47,6 +51,8 @@ export default function BattlerCard({
 
   return (
     <article
+      draggable={draggable}
+      onDragStart={onDragStart}
       aria-label={`${card.name} (${traitKey}), maliyet ${card.cost} ruh, güç ${totalPower}`}
       className={`relative w-full h-full min-w-0 flex flex-col items-center rounded-xl overflow-hidden bg-gradient-to-b from-zinc-900/95 to-black/90 border ${sizing.pad} transition-colors duration-200 ${
         isSelected
@@ -54,7 +60,8 @@ export default function BattlerCard({
           : isItem
           ? traitStyle.border
           : sideStyles[side]
-      }`}
+      } ${className}`}
+      {...rest}
     >
       {/* Kompakt kare (w-16/w-20) görsel çerçevesi */}
       <div

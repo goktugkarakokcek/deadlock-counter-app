@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import BattlerCard from './BattlerCard';
 import { autoBattlerConfig } from '../data';
 import { getSellValue } from '../game/autoBattlerEngine';
@@ -13,29 +13,91 @@ export default function BattlerBench({
   onReturnFromBoard,
 }) {
   const [isDragOver, setIsDragOver] = useState(false);
+  const touchStartPos = useRef(null);
   const emptySlots = Math.max(0, autoBattlerConfig.benchSize - bench.length);
+
+  const processDropPayload = (payload) => {
+    if (!payload || disabled) return;
+    if (payload.source === 'shop' && typeof payload.shopIndex === 'number') {
+      onBuyFromShop(payload.shopIndex);
+    } else if (payload.source === 'board' && typeof payload.slotIndex === 'number') {
+      onReturnFromBoard(payload.slotIndex);
+    }
+  };
+
+  useEffect(() => {
+    const handleCustomDrop = (e) => {
+      if (e.detail?.target === 'bench') {
+        processDropPayload(e.detail.payload);
+      }
+    };
+    window.addEventListener('deadlock-touch-drop', handleCustomDrop);
+    return () => window.removeEventListener('deadlock-touch-drop', handleCustomDrop);
+  });
 
   const handleDragStart = (event, card) => {
     if (disabled) {
       event.preventDefault();
       return;
     }
+    event.stopPropagation();
+    const payloadObj = { source: 'bench', uid: card.uid };
+    const payload = JSON.stringify(payloadObj);
+    window.__deadlockDrag = payloadObj;
+
     event.dataTransfer.effectAllowed = 'move';
-    event.dataTransfer.setData(
-      'application/x-deadlock-card',
-      JSON.stringify({ source: 'bench', uid: card.uid })
-    );
-    onSelect(card.uid);
+    try {
+      event.dataTransfer.setData('text/plain', payload);
+      event.dataTransfer.setData('application/json', payload);
+    } catch {
+      // Fallback: window.__deadlockDrag devrede
+    }
+  };
+
+  const handleDragEnd = () => {
+    window.__deadlockDrag = null;
+    setIsDragOver(false);
+  };
+
+  const handleTouchStart = (event, card) => {
+    if (disabled) return;
+    const touch = event.touches[0];
+    touchStartPos.current = { x: touch.clientX, y: touch.clientY };
+    window.__deadlockDrag = { source: 'bench', uid: card.uid };
+  };
+
+  const handleTouchEnd = (event) => {
+    if (!touchStartPos.current || !window.__deadlockDrag) return;
+    const touch = event.changedTouches[0];
+    const dx = Math.abs(touch.clientX - touchStartPos.current.x);
+    const dy = Math.abs(touch.clientY - touchStartPos.current.y);
+    const payload = window.__deadlockDrag;
+    touchStartPos.current = null;
+    window.__deadlockDrag = null;
+
+    if (dx < 10 && dy < 10) return;
+
+    const target = document.elementFromPoint(touch.clientX, touch.clientY);
+    const slotEl = target?.closest('[data-player-slot]');
+    if (slotEl) {
+      window.dispatchEvent(
+        new CustomEvent('deadlock-touch-drop', {
+          detail: { target: 'board', slotIndex: Number(slotEl.dataset.playerSlot), payload },
+        })
+      );
+    }
   };
 
   const handleDragOver = (event) => {
-    if (disabled) return;
     event.preventDefault();
+    if (disabled) return;
+    event.stopPropagation();
     event.dataTransfer.dropEffect = 'move';
     if (!isDragOver) setIsDragOver(true);
   };
 
   const handleDragLeave = (event) => {
+    event.stopPropagation();
     if (!event.currentTarget.contains(event.relatedTarget)) {
       setIsDragOver(false);
     }
@@ -43,26 +105,29 @@ export default function BattlerBench({
 
   const handleDrop = (event) => {
     event.preventDefault();
+    event.stopPropagation();
     setIsDragOver(false);
     if (disabled) return;
 
-    try {
-      const raw = event.dataTransfer.getData('application/x-deadlock-card');
-      if (!raw) return;
-      const payload = JSON.parse(raw);
-      if (payload.source === 'shop' && typeof payload.shopIndex === 'number') {
-        onBuyFromShop(payload.shopIndex);
-      } else if (payload.source === 'board' && typeof payload.slotIndex === 'number') {
-        onReturnFromBoard(payload.slotIndex);
+    let payload = window.__deadlockDrag || null;
+    if (!payload) {
+      try {
+        const raw =
+          event.dataTransfer.getData('application/json') ||
+          event.dataTransfer.getData('text/plain');
+        if (raw) payload = JSON.parse(raw);
+      } catch {
+        payload = null;
       }
-    } catch {
-      // Geçersiz sürükleme verisini yoksay
     }
+    window.__deadlockDrag = null;
+    processDropPayload(payload);
   };
 
   return (
     <section
       aria-labelledby="battler-bench-heading"
+      data-bench-drop="true"
       onDragOver={handleDragOver}
       onDragLeave={handleDragLeave}
       onDrop={handleDrop}
@@ -91,18 +156,37 @@ export default function BattlerBench({
           const isSelected = card.uid === selectedUid;
           return (
             <li key={card.uid} className="min-w-0 flex flex-col gap-1">
-              <button
-                type="button"
+              <div
+                role="button"
+                tabIndex={disabled ? -1 : 0}
                 draggable={!disabled}
                 onDragStart={(e) => handleDragStart(e, card)}
-                onClick={() => onSelect(card.uid)}
-                disabled={disabled}
+                onDragEnd={handleDragEnd}
+                onTouchStart={(e) => handleTouchStart(e, card)}
+                onTouchEnd={handleTouchEnd}
+                onClick={() => !disabled && onSelect(card.uid)}
+                onKeyDown={(e) => {
+                  if (!disabled && (e.key === 'Enter' || e.key === ' ')) {
+                    e.preventDefault();
+                    onSelect(card.uid);
+                  }
+                }}
                 aria-pressed={isSelected}
+                aria-disabled={disabled}
                 aria-label={`${card.name} kartını ${isSelected ? 'seçimden çıkar' : 'seç veya tahtaya sürükle'}`}
-                className="w-full flex-1 min-w-0 text-left rounded-xl cursor-grab active:cursor-grabbing transform-gpu will-change-transform transition-transform duration-200 hover:scale-[1.03] disabled:cursor-not-allowed focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-400"
+                className={`w-full flex-1 min-w-0 text-left rounded-xl select-none transition-transform duration-200 [&_*]:pointer-events-none ${
+                  disabled
+                    ? 'cursor-not-allowed opacity-40'
+                    : 'cursor-grab active:cursor-grabbing hover:scale-[1.03] focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-400'
+                }`}
               >
-                <BattlerCard card={card} size="bench" side="player" isSelected={isSelected} />
-              </button>
+                <BattlerCard
+                  card={card}
+                  size="bench"
+                  side="player"
+                  isSelected={isSelected}
+                />
+              </div>
               <button
                 type="button"
                 onClick={() => onSell(card.uid)}
@@ -119,7 +203,7 @@ export default function BattlerBench({
           <li
             key={`bench-empty-${i}`}
             aria-hidden="true"
-            className={`min-w-0 flex flex-col items-center rounded-xl border border-dashed p-1.5 transition-colors ${
+            className={`min-w-0 flex flex-col items-center rounded-xl border border-dashed p-1.5 transition-colors pointer-events-none ${
               isDragOver
                 ? 'border-amber-400/50 bg-amber-500/10'
                 : 'border-white/10 bg-black/20'

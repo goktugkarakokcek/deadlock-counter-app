@@ -92,7 +92,7 @@ export default function App() {
   };
 
   return (
-    <div className="relative z-10 min-h-screen flex flex-col text-slate-100">
+    <div className="relative z-10 min-h-screen w-full max-w-full overflow-x-hidden flex flex-col text-slate-100">
       <Header />
       <TabNavigation activeTab={activeTab} onChangeTab={setActiveTab} />
 
@@ -100,7 +100,7 @@ export default function App() {
         role="tabpanel"
         id={`tabpanel-${activeTab}`}
         aria-labelledby={`tab-${activeTab}`}
-        className="flex-grow"
+        className="flex-grow w-full max-w-full overflow-x-hidden"
       >
         {renderActivePanel()}
       </main>
