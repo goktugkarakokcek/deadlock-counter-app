@@ -14,28 +14,27 @@ const cfg = autoBattlerConfig;
 // üretilir ve payload olarak gelir; böylece reducer saf (pure) kalır.
 export function createInitialState() {
   const income = getIncome(1);
-  const emptyBoard = createEmptyBoard();
-  const ai = planAiBoard(createEmptyBoard(), income, emptyBoard);
   return {
     phase: 'planning',
     round: 1,
     playerHp: cfg.startingHp,
     enemyHp: cfg.startingHp,
     playerSoul: income,
-    enemySoul: ai.soul,
+    enemySoul: income,
     shop: rollShop(),
     bench: [],
-    playerBoard: emptyBoard,
-    enemyBoard: ai.board,
+    playerBoard: createEmptyBoard(),
+    enemyBoard: createEmptyBoard(),
     selectedUid: null,
     lastCombat: null,
     winner: null,
-    message: 'Marketten kart satın al, yedek kulübesinden seçip koridorlara yerleştir.',
+    message: 'Tur 1 başladı: Her iki tahta boş. Marketten kart satın alıp koridorlara yerleştir ve Turu Bitir.',
   };
 }
 
 export function prepareEndRoundPayload(state) {
-  const combat = resolveCombat(state.playerBoard, state.enemyBoard);
+  const ai = planAiBoard(state.enemyBoard, state.enemySoul, state.playerBoard, state.round);
+  const combat = resolveCombat(state.playerBoard, ai.board);
   const damageToPlayer = combat.reduce((sum, r) => sum + r.damageToPlayer, 0);
   const damageToEnemy = combat.reduce((sum, r) => sum + r.damageToEnemy, 0);
   const playerHp = Math.max(0, state.playerHp - damageToPlayer);
@@ -43,12 +42,20 @@ export function prepareEndRoundPayload(state) {
   const isOver = playerHp === 0 || enemyHp === 0;
 
   if (isOver) {
-    return { combat, playerHp, enemyHp, isOver, damageToPlayer, damageToEnemy };
+    return {
+      combat,
+      playerHp,
+      enemyHp,
+      isOver,
+      damageToPlayer,
+      damageToEnemy,
+      enemyBoard: ai.board,
+      enemySoul: ai.soul,
+    };
   }
 
   const nextRound = state.round + 1;
   const income = getIncome(nextRound);
-  const ai = planAiBoard(state.enemyBoard, state.enemySoul + income, state.playerBoard);
   return {
     combat,
     playerHp,
@@ -58,7 +65,7 @@ export function prepareEndRoundPayload(state) {
     damageToEnemy,
     income,
     enemyBoard: ai.board,
-    enemySoul: ai.soul,
+    enemySoul: ai.soul + income,
     shop: rollShop(),
   };
 }
@@ -175,6 +182,8 @@ export function autoBattlerReducer(state, action) {
           phase: 'gameOver',
           playerHp: p.playerHp,
           enemyHp: p.enemyHp,
+          enemySoul: p.enemySoul,
+          enemyBoard: p.enemyBoard,
           lastCombat: p.combat,
           winner,
           selectedUid: null,

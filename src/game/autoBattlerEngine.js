@@ -157,12 +157,15 @@ function pickCounterItem(targetCard, budget) {
   return pool.length ? randomOf(pool) : null;
 }
 
-export function planAiBoard(aiBoard, aiSoul, playerBoard) {
+export function planAiBoard(aiBoard, aiSoul, playerBoard, round = 1) {
   const board = [...aiBoard];
   let soul = aiSoul;
+  const isFirstRound = round === 1;
+  let heroesAddedThisRound = 0;
+  const maxNewHeroesPerRound = isFirstRound ? 1 : 2;
 
   const buyHeroFor = (laneIndex) => {
-    const playerCard = playerBoard[laneIndex];
+    const playerCard = isFirstRound ? null : playerBoard[laneIndex];
     const counterHero =
       playerCard && Math.random() < cfg.ai.counterPickChance ? pickCounterHero(playerCard) : null;
     const card = createHeroCard(counterHero || randomOf(heroList));
@@ -171,39 +174,48 @@ export function planAiBoard(aiBoard, aiSoul, playerBoard) {
     return card;
   };
 
-  // 1) Counterlanan kahramanları değiştir
-  board.forEach((card, i) => {
-    const playerCard = playerBoard[i];
-    if (!card || !playerCard) return;
-    const isCountered = resolveLane(playerCard, card, i).outcome === 'player';
-    if (isCountered && Math.random() < cfg.ai.replaceCounteredChance) {
-      const replacement = buyHeroFor(i);
-      if (replacement) board[i] = replacement;
-    }
-  });
+  // 1) Counterlanan kahramanları değiştir (1. tur hariç)
+  if (!isFirstRound) {
+    board.forEach((card, i) => {
+      const playerCard = playerBoard[i];
+      if (!card || !playerCard) return;
+      const isCountered = resolveLane(playerCard, card, i).outcome === 'player';
+      if (isCountered && Math.random() < cfg.ai.replaceCounteredChance) {
+        const replacement = buyHeroFor(i);
+        if (replacement) board[i] = replacement;
+      }
+    });
+  }
 
-  // 2) Boş koridorları doldur (önce oyuncunun dolu koridorları)
-  const order = board
-    .map((_, i) => i)
-    .sort((a, b) => Number(Boolean(playerBoard[b])) - Number(Boolean(playerBoard[a])));
+  // 2) Boş koridorları doldur (1. turda rastgele tek koridor, sonraki turlarda öncelikli)
+  const indices = board.map((_, i) => i);
+  const order = isFirstRound
+    ? indices.sort(() => Math.random() - 0.5)
+    : indices.sort((a, b) => Number(Boolean(playerBoard[b])) - Number(Boolean(playerBoard[a])));
+
   order.forEach((i) => {
-    if (!board[i]) {
+    if (!board[i] && heroesAddedThisRound < maxNewHeroesPerRound) {
       const card = buyHeroFor(i);
-      if (card) board[i] = card;
+      if (card) {
+        board[i] = card;
+        heroesAddedThisRound += 1;
+      }
     }
   });
 
-  // 3) Kalan ruhla counter eşya tak
-  board.forEach((card, i) => {
-    const playerCard = playerBoard[i];
-    if (!card || card.item || !playerCard) return;
-    if (Math.random() >= cfg.ai.counterItemChance) return;
-    const item = pickCounterItem(playerCard, soul);
-    if (item) {
-      soul -= item.cost;
-      board[i] = { ...card, item };
-    }
-  });
+  // 3) Kalan ruhla counter eşya tak (1. tur hariç)
+  if (!isFirstRound) {
+    board.forEach((card, i) => {
+      const playerCard = playerBoard[i];
+      if (!card || card.item || !playerCard) return;
+      if (Math.random() >= cfg.ai.counterItemChance) return;
+      const item = pickCounterItem(playerCard, soul);
+      if (item) {
+        soul -= item.cost;
+        board[i] = { ...card, item };
+      }
+    });
+  }
 
   return { board, soul };
 }

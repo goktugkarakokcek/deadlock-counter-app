@@ -5944,6 +5944,7 @@ export const buildStages = [
 // ---------------------------------------------------------------------------
 export const autoBattlerConfig = {
   startingHp: 100,
+  roundDurationSeconds: 30,
   boardSlots: 4,
   shopSize: 4,
   benchSize: 6,

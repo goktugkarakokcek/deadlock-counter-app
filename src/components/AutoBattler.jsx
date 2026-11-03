@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from 'react';
 import { autoBattlerConfig } from '../data';
 import BattlerHud from './BattlerHud';
 import BattlerBoard from './BattlerBoard';
@@ -8,15 +9,55 @@ import BattlerGameOver from './BattlerGameOver';
 export default function AutoBattler({ game }) {
   const { state, actions } = game;
   const isOver = state.phase === 'gameOver';
-  const { damage } = autoBattlerConfig;
+  const { damage, roundDurationSeconds } = autoBattlerConfig;
+
+  const [timeLeft, setTimeLeft] = useState(roundDurationSeconds);
+  const endRoundRef = useRef(actions.endRound);
+
+  useEffect(() => {
+    endRoundRef.current = actions.endRound;
+  }, [actions.endRound]);
+
+  // Yeni tura geçildiğinde sayacı sıfırla
+  useEffect(() => {
+    setTimeLeft(roundDurationSeconds);
+  }, [state.round, roundDurationSeconds]);
+
+  // 1 saniyelik geri sayım; 0'a ulaştığında otomatik olarak Turu Bitir tetiklenir
+  useEffect(() => {
+    if (isOver) return undefined;
+
+    const timerId = setInterval(() => {
+      setTimeLeft((prev) => (prev > 0 ? prev - 1 : 0));
+    }, 1000);
+
+    return () => clearInterval(timerId);
+  }, [isOver, state.round]);
+
+  useEffect(() => {
+    if (!isOver && timeLeft === 0) {
+      setTimeLeft(roundDurationSeconds);
+      endRoundRef.current();
+    }
+  }, [timeLeft, isOver, roundDurationSeconds]);
+
+  const handleEndRound = () => {
+    setTimeLeft(roundDurationSeconds);
+    actions.endRound();
+  };
+
+  const handleResetGame = () => {
+    setTimeLeft(roundDurationSeconds);
+    actions.resetGame();
+  };
 
   return (
     <section
       id="autobattler-section"
       aria-labelledby="autobattler-heading"
-      className="py-10 sm:py-14 border-b border-white/5"
+      className="py-8 sm:py-14 border-b border-white/5 overflow-x-hidden"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+      <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 space-y-5 sm:space-y-6">
         <header className="text-center max-w-3xl mx-auto">
           <span className="inline-block px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-widest bg-purple-500/15 text-purple-300 border border-purple-500/30 mb-3">
             Mini Oyun • Taktiksel Çarpışma
@@ -31,18 +72,28 @@ export default function AutoBattler({ game }) {
             </span>
           </h2>
           <p className="mt-3 text-sm sm:text-base text-slate-300 leading-relaxed">
-            Her tur ruh kazan, marketten kart satın al ve 4 koridora yerleştir.{' '}
-            <strong className="text-white">Turu Bitir</strong> dediğinde karşılıklı koridorlar çarpışır:
-            counter avantajı <strong className="text-amber-300">{damage.counter} HP</strong>, güç üstünlüğü{' '}
+            Her tur ruh kazan, marketten kart satın al ve {roundDurationSeconds} saniye içinde 4
+            koridora yerleştir. <strong className="text-white">Turu Bitir</strong> dediğinde (veya süre
+            dolduğunda) karşılıklı koridorlar çarpışır: counter avantajı{' '}
+            <strong className="text-amber-300">{damage.counter} HP</strong>, güç üstünlüğü{' '}
             <strong className="text-amber-300">{damage.clash} HP</strong>, savunmasız koridor{' '}
             <strong className="text-amber-300">{damage.unopposed} HP</strong> hasar verir.
           </p>
         </header>
 
-        <BattlerHud state={state} onEndRound={actions.endRound} onReset={actions.resetGame} />
+        <BattlerHud
+          state={state}
+          timeLeft={timeLeft}
+          onEndRound={handleEndRound}
+          onReset={handleResetGame}
+        />
 
         {isOver && (
-          <BattlerGameOver winner={state.winner} round={state.round} onReset={actions.resetGame} />
+          <BattlerGameOver
+            winner={state.winner}
+            round={state.round}
+            onReset={handleResetGame}
+          />
         )}
 
         <BattlerBoard
@@ -55,7 +106,7 @@ export default function AutoBattler({ game }) {
           onReturn={actions.returnToBench}
         />
 
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-5 sm:gap-6">
           <BattlerShop
             shop={state.shop}
             soul={state.playerSoul}
