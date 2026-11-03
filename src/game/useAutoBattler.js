@@ -13,7 +13,14 @@ export default function useAutoBattler() {
   const rerollShop = useCallback(() => dispatch({ type: 'REROLL_SHOP', shop: rollShop() }), []);
   const selectBenchCard = useCallback((uid) => dispatch({ type: 'SELECT_BENCH_CARD', uid }), []);
   const sellBenchCard = useCallback((uid) => dispatch({ type: 'SELL_BENCH_CARD', uid }), []);
-  const placeOnLane = useCallback((lane) => dispatch({ type: 'PLACE_ON_LANE', lane }), []);
+  const placeOnLane = useCallback(
+    (lane, benchUid = null) => dispatch({ type: 'PLACE_ON_LANE', lane, benchUid }),
+    []
+  );
+  const moveBoardSlot = useCallback(
+    (fromSlot, toSlot) => dispatch({ type: 'MOVE_BOARD_SLOT', fromSlot, toSlot }),
+    []
+  );
   const returnToBench = useCallback((lane) => dispatch({ type: 'RETURN_TO_BENCH', lane }), []);
   const endRound = useCallback(
     () => dispatch({ type: 'END_ROUND', payload: prepareEndRoundPayload(state) }),
@@ -33,6 +40,7 @@ export default function useAutoBattler() {
       selectBenchCard,
       sellBenchCard,
       placeOnLane,
+      moveBoardSlot,
       returnToBench,
       endRound,
       resetGame,

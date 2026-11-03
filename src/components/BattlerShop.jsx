@@ -2,6 +2,18 @@ import BattlerCard from './BattlerCard';
 import { autoBattlerConfig } from '../data';
 
 export default function BattlerShop({ shop, soul, disabled, onBuy, onReroll }) {
+  const handleDragStart = (event, index, card) => {
+    if (disabled || card.cost > soul) {
+      event.preventDefault();
+      return;
+    }
+    event.dataTransfer.effectAllowed = 'move';
+    event.dataTransfer.setData(
+      'application/x-deadlock-card',
+      JSON.stringify({ source: 'shop', shopIndex: index })
+    );
+  };
+
   return (
     <section
       aria-labelledby="battler-shop-heading"
@@ -12,7 +24,9 @@ export default function BattlerShop({ shop, soul, disabled, onBuy, onReroll }) {
           <h3 id="battler-shop-heading" className="text-base sm:text-lg font-extrabold text-white">
             Market (Mağaza)
           </h3>
-          <p className="text-xs text-slate-400">Ruh harcayarak kahraman veya eşya satın al.</p>
+          <p className="text-xs text-slate-400">
+            Kartları <strong className="text-slate-200">Yedek Kulübesine sürükle</strong> veya tıklayarak satın al.
+          </p>
         </div>
         <button
           type="button"
@@ -26,33 +40,38 @@ export default function BattlerShop({ shop, soul, disabled, onBuy, onReroll }) {
       </div>
 
       <ul className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3.5">
-        {shop.map((card, index) => (
-          <li key={card ? card.uid : `sold-${index}`} className="min-w-0 flex">
-            {card ? (
-              <button
-                type="button"
-                onClick={() => onBuy(index)}
-                disabled={disabled || card.cost > soul}
-                aria-label={`${card.name} satın al, ${card.cost} ruh`}
-                className="w-full h-full min-w-0 text-left rounded-2xl transform-gpu will-change-transform transition-transform duration-200 hover:scale-[1.03] disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:scale-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400"
-              >
-                <BattlerCard card={card} size="shop" />
-              </button>
-            ) : (
-              <div className="w-full h-full min-w-0 flex flex-col rounded-2xl border border-dashed border-white/10 bg-black/30 p-2.5">
-                <div className="w-full aspect-square rounded-xl bg-black/40 border border-white/5 flex items-center justify-center">
-                  <span className="text-xs font-bold uppercase tracking-wider text-slate-500">
-                    Satıldı
-                  </span>
+        {shop.map((card, index) => {
+          const canAfford = Boolean(card && !disabled && card.cost <= soul);
+          return (
+            <li key={card ? card.uid : `sold-${index}`} className="min-w-0 flex">
+              {card ? (
+                <button
+                  type="button"
+                  draggable={canAfford}
+                  onDragStart={(e) => handleDragStart(e, index, card)}
+                  onClick={() => onBuy(index)}
+                  disabled={!canAfford}
+                  aria-label={`${card.name} satın al veya yedek kulübesine sürükle, ${card.cost} ruh`}
+                  className="w-full h-full min-w-0 text-left rounded-2xl cursor-grab active:cursor-grabbing transform-gpu will-change-transform transition-transform duration-200 hover:scale-[1.03] disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:scale-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400"
+                >
+                  <BattlerCard card={card} size="shop" />
+                </button>
+              ) : (
+                <div className="w-full h-full min-w-0 flex flex-col rounded-2xl border border-dashed border-white/10 bg-black/30 p-2.5">
+                  <div className="w-full aspect-square rounded-xl bg-black/40 border border-white/5 flex items-center justify-center">
+                    <span className="text-xs font-bold uppercase tracking-wider text-slate-500">
+                      Satıldı
+                    </span>
+                  </div>
+                  <div className="pt-2 px-0.5">
+                    <p className="text-xs font-bold text-slate-500 truncate">Alındı</p>
+                    <p className="text-[10px] uppercase tracking-wider text-slate-600 truncate">Slot Boş</p>
+                  </div>
                 </div>
-                <div className="pt-2 px-0.5">
-                  <p className="text-xs font-bold text-slate-500 truncate">Alındı</p>
-                  <p className="text-[10px] uppercase tracking-wider text-slate-600 truncate">Slot Boş</p>
-                </div>
-              </div>
-            )}
-          </li>
-        ))}
+              )}
+            </li>
+          );
+        })}
       </ul>
     </section>
   );

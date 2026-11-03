@@ -4,6 +4,7 @@ import {
   getAiIncome,
   getIncome,
   getSellValue,
+  isFrontlineSlot,
   planAiBoard,
   resolveCombat,
   rollShop,
@@ -11,8 +12,15 @@ import {
 
 const cfg = autoBattlerConfig;
 
-// Rastgelelik içeren tüm hesaplamalar (market, AI planı) reducer dışında
-// üretilir ve payload olarak gelir; böylece reducer saf (pure) kalır.
+const getSlotLabel = (slotIndex) => {
+  const col = slotIndex % cfg.boardCols;
+  const laneLabel = cfg.lanes[col]?.label || `Koridor ${col + 1}`;
+  const rowLabel = isFrontlineSlot(slotIndex)
+    ? cfg.rowDefs.frontline.shortLabel
+    : cfg.rowDefs.backline.shortLabel;
+  return `${laneLabel} (${rowLabel})`;
+};
+
 export function createInitialState(difficulty = cfg.defaultDifficulty) {
   const playerIncome = getIncome(1);
   const aiIncome = getAiIncome(1, difficulty);
@@ -32,7 +40,7 @@ export function createInitialState(difficulty = cfg.defaultDifficulty) {
     selectedUid: null,
     lastCombat: null,
     winner: null,
-    message: `Tur 1 (${diffLabel} Mod): Her iki tahta boş. Marketten kart satın alıp koridorlara yerleştir ve Turu Bitir.`,
+    message: `Tur 1 (${diffLabel} Mod): Marketten kartları Yedek Kulübesine sürükle (veya tıkla), oradan da 2x4 tahtadaki Ön/Arka Saf slotlarına yerleştir.`,
   };
 }
 
@@ -116,7 +124,7 @@ export function autoBattlerReducer(state, action) {
       if (card.cost > state.playerSoul)
         return { ...state, message: `Yetersiz ruh: ${card.name} için ${card.cost} ruh gerekli.` };
       if (state.bench.length >= cfg.benchSize)
-        return { ...state, message: 'Yedek kulübesi dolu. Kart sat veya tahtaya yerleştir.' };
+        return { ...state, message: 'Yedek kulübesi dolu. Kart sat veya tahtaya sürükle.' };
       const shop = state.shop.map((c, i) => (i === action.index ? null : c));
       return {
         ...state,
@@ -124,7 +132,7 @@ export function autoBattlerReducer(state, action) {
         bench: [...state.bench, card],
         playerSoul: state.playerSoul - card.cost,
         selectedUid: card.uid,
-        message: `${card.name} satın alındı. Yerleştirmek için bir koridor seç.`,
+        message: `${card.name} Yedek Kulübesine eklendi. Tahtadaki bir slota sürükle veya tıkla.`,
       };
     }
 
@@ -159,34 +167,54 @@ export function autoBattlerReducer(state, action) {
     }
 
     case 'PLACE_ON_LANE': {
-      const card = findBenchCard(state, state.selectedUid);
-      if (!card) return { ...state, message: 'Önce yedek kulübesinden bir kart seç.' };
-      const occupant = state.playerBoard[action.lane];
+      const targetUid = action.benchUid || state.selectedUid;
+      const card = findBenchCard(state, targetUid);
+      if (!card) return { ...state, message: 'Önce yedek kulübesinden bir kart seç veya sürükle.' };
+      const slotIndex = action.lane;
+      const occupant = state.playerBoard[slotIndex];
       let bench = state.bench.filter((c) => c.uid !== card.uid);
       const playerBoard = [...state.playerBoard];
+      const slotLabel = getSlotLabel(slotIndex);
 
       if (card.kind === 'hero') {
-        playerBoard[action.lane] = card;
+        playerBoard[slotIndex] = card;
         if (occupant) bench = [...bench, occupant];
         return {
           ...state,
           bench,
           playerBoard,
           selectedUid: null,
-          message: `${card.name}, ${cfg.lanes[action.lane].label} koridoruna yerleştirildi.`,
+          message: `${card.name}, ${slotLabel} slotuna yerleştirildi.`,
         };
       }
 
       if (!occupant)
-        return { ...state, message: 'Eşyalar yalnızca kahraman bulunan koridorlara takılabilir.' };
+        return { ...state, message: 'Eşyalar yalnızca kahraman bulunan tahta slotlarına takılabilir.' };
       if (occupant.item) bench = [...bench, occupant.item];
-      playerBoard[action.lane] = { ...occupant, item: card };
+      playerBoard[slotIndex] = { ...occupant, item: card };
       return {
         ...state,
         bench,
         playerBoard,
         selectedUid: null,
         message: `${card.name}, ${occupant.name} kahramanına takıldı.`,
+      };
+    }
+
+    case 'MOVE_BOARD_SLOT': {
+      const { fromSlot, toSlot } = action;
+      if (fromSlot === toSlot || fromSlot == null || toSlot == null) return state;
+      const sourceCard = state.playerBoard[fromSlot];
+      if (!sourceCard) return state;
+      const playerBoard = [...state.playerBoard];
+      const targetCard = playerBoard[toSlot];
+      playerBoard[toSlot] = sourceCard;
+      playerBoard[fromSlot] = targetCard || null;
+      return {
+        ...state,
+        playerBoard,
+        selectedUid: null,
+        message: `${sourceCard.name}, ${getSlotLabel(toSlot)} konumuna taşındı.`,
       };
     }
 
